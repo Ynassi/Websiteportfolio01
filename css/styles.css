@@ -1,0 +1,84 @@
+@font-face {
+    font-family: 'StreetWalks';
+    src: url('../fonts/Street_walks.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Helvetica';
+    src: url('../fonts/Helvetica.ttc') format('truetype');
+}
+
+/* Styles globaux */
+body {
+    background-color: #1e1e1e;
+    color: white;
+    font-family: 'Helvetica', sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* HEADER */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border-bottom: 2px solid white;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    height: 50px;
+    margin-right: 15px;
+}
+
+.name {
+    font-family: 'StreetWalks', sans-serif;
+    font-size: 24px;
+}
+
+.header-right a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    margin-left: 20px;
+    transition: color 0.3s;
+}
+
+.header-right a:hover {
+    color: #00bfff;
+}
+
+/* CONTENU PRINCIPAL */
+.profile-picture {
+    width: 200px;
+    border-radius: 50%;
+    margin-top: 50px;
+}
+
+.main-name {
+    font-size: 32px;
+    margin-top: 20px;
+}
+
+.subtitle {
+    font-size: 18px;
+    color: #ccc;
+    margin-bottom: 30px;
+}
+
+/* ICONES SOCIAUX */
+.social-links img {
+    width: 40px;
+    margin: 10px;
+    transition: transform 0.3s;
+}
+
+.social-links img:hover {
+    transform: scale(1.1);
+}
