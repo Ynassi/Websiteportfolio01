@@ -10,7 +10,7 @@
 
 /* Styles globaux */
 body {
-    background-color: #1e1e1e;
+    background-color: #1e1e1e;  /* Fond noir */
     color: white;
     font-family: 'Helvetica', sans-serif;
     margin: 0;
@@ -30,16 +30,21 @@ header {
 .header-left {
     display: flex;
     align-items: center;
+    padding-left: 20px;
 }
 
 .logo {
-    height: 50px;
+    height: 50px;  /* Taille réduite du logo */
     margin-right: 15px;
 }
 
 .name {
     font-family: 'StreetWalks', sans-serif;
     font-size: 24px;
+}
+
+.header-right {
+    padding-right: 20px;
 }
 
 .header-right a {
@@ -55,10 +60,19 @@ header {
 }
 
 /* CONTENU PRINCIPAL */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh - 100px);
+}
+
 .profile-picture {
-    width: 200px;
+    width: 200px; /* Taille réduite */
     border-radius: 50%;
     margin-top: 50px;
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.2);
 }
 
 .main-name {
@@ -73,9 +87,17 @@ header {
 }
 
 /* ICONES SOCIAUX */
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
 .social-links img {
-    width: 40px;
-    margin: 10px;
+    width: 40px;  /* Taille fixée pour éviter qu’ils soient énormes */
+    height: 40px;
+    filter: invert(1); /* Inversion des couleurs pour meilleure visibilité */
     transition: transform 0.3s;
 }
 
