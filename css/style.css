@@ -122,7 +122,8 @@ main {
 }
 header {
     background-color: #181818;
-    padding: 1px 50px; /* Presque minimal, avant : 3px */
+    padding: 0px 50px; /* Enlève presque tout le padding vertical */
+    height: 50px; /* Fixe une hauteur minimale très réduite */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -133,4 +134,16 @@ header {
     width: 100%;
     z-index: 10;
 }
+
+.name {
+    font-size: 2.5rem; /* Réduction de la taille du texte */
+    margin: 0; /* Supprime les marges inutiles */
+    padding: 0;
+    line-height: 1; /* Réduit l'espace autour du texte */
+}
+
+main {
+    margin-top: 60px; /* Ajuste la marge pour coller plus au header */
+}
+
 
