@@ -10,8 +10,8 @@
 
 /* Styles globaux */
 body {
-    background-color: #1e1e1e;  /* Fond noir */
-    color: white;
+    background-color: #181818;  /* Fond noir plus doux */
+    color: #f5f5f5;  /* Blanc légèrement cassé pour un effet premium */
     font-family: 'Helvetica', sans-serif;
     margin: 0;
     padding: 0;
@@ -20,11 +20,12 @@ body {
 
 /* HEADER */
 header {
+    background-color: #111; /* Noir plus foncé */
+    padding: 20px 50px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
-    border-bottom: 2px solid white;
+    border-bottom: 2px solid #222; /* Légère séparation */
 }
 
 .header-left {
@@ -34,29 +35,29 @@ header {
 }
 
 .logo {
-    height: 50px;  /* Taille réduite du logo */
+    height: 70px;  /* Logo agrandi */
     margin-right: 15px;
 }
 
-.name {
+.header-left h1 {
     font-family: 'StreetWalks', sans-serif;
-    font-size: 24px;
+    font-size: 2.2rem; /* Augmentation de la taille du texte Yanis NASSI */
 }
 
 .header-right {
     padding-right: 20px;
 }
 
-.header-right a {
+.nav-links a {
+    font-size: 1.2rem; /* Augmenter la taille des liens */
+    margin-left: 25px;
     color: white;
     text-decoration: none;
-    font-size: 18px;
-    margin-left: 20px;
     transition: color 0.3s;
 }
 
-.header-right a:hover {
-    color: #00bfff;
+.nav-links a:hover {
+    color: #00bfff;  /* Couleur au survol des liens */
 }
 
 /* CONTENU PRINCIPAL */
@@ -69,10 +70,21 @@ main {
 }
 
 .profile-picture {
-    width: 200px; /* Taille réduite */
+    width: 200px; /* Taille réduite de la photo de profil */
     border-radius: 50%;
     margin-top: 50px;
     box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.2);
+    margin-bottom: 10px;  /* Espacement réduit sous la photo */
+}
+
+.profile-name {
+    font-size: 2rem;
+    margin-bottom: 5px;  /* Moins d'espace entre nom et description */
+}
+
+.profile-description {
+    font-size: 1.2rem;
+    margin-bottom: 20px;  /* Moins d'espace avec les icônes */
 }
 
 .main-name {
@@ -95,12 +107,12 @@ main {
 }
 
 .social-links img {
-    width: 40px;  /* Taille fixée pour éviter qu’ils soient énormes */
+    width: 40px;
     height: 40px;
-    filter: invert(1); /* Inversion des couleurs pour meilleure visibilité */
+    filter: invert(1); /* Inverse les couleurs pour améliorer la visibilité */
     transition: transform 0.3s;
 }
 
 .social-links img:hover {
-    transform: scale(1.1);
+    transform: scale(1.1);  /* Agrandissement des icônes au survol */
 }
