@@ -122,8 +122,8 @@ main {
 }
 header {
     background-color: #181818;
-    padding: 0px 50px; /* Enlève presque tout le padding vertical */
-    height: 50px; /* Fixe une hauteur minimale très réduite */
+    padding: 4px 50px; /* Réduction plus douce (au lieu de 0px) */
+    height: auto; /* Ajustement dynamique plutôt que fixe */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -136,14 +136,16 @@ header {
 }
 
 .name {
-    font-size: 2.5rem; /* Réduction de la taille du texte */
-    margin: 0; /* Supprime les marges inutiles */
+    font-size: 2.8rem; /* Taille légèrement plus grande pour l'équilibre */
+    margin: 0;
     padding: 0;
-    line-height: 1; /* Réduit l'espace autour du texte */
+    line-height: 1.1; /* Réduction légère de l’espace autour du texte */
 }
 
 main {
-    margin-top: 60px; /* Ajuste la marge pour coller plus au header */
+    margin-top: 70px; /* Ajustement doux pour coller un peu plus au header */
 }
+
+
 
 
