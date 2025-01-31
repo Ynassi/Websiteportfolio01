@@ -1,6 +1,6 @@
 @font-face {
-    font-family: 'StreetWalks';
-    src: url('../fonts/Street_walks.ttf') format('truetype');
+    font-family: 'ThirdStreet';
+    src: url('../fonts/ThirdStreet-Regular.ttf') format('truetype');
 }
 
 @font-face {
@@ -20,12 +20,17 @@ body {
 
 /* HEADER */
 header {
-    background-color: #333; /* Gris plus clair que le noir */
-    padding: 20px 50px;
+    background-color: #444; /* Gris plus foncé que le reste de la page */
+    padding: 8px 50px;  /* Réduction de la taille du header */
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 2px solid #444; /* Légère séparation */
+    border-bottom: 2px solid #555; /* Légère séparation pour contraste */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
 }
 
 .header-left {
@@ -40,8 +45,8 @@ header {
 }
 
 .header-left h1 {
-    font-family: 'StreetWalks', sans-serif;
-    font-size: 4.4rem; /* Double taille du texte Yanis NASSI */
+    font-family: 'ThirdStreet', sans-serif;  /* Police "ThirdStreet-Regular" */
+    font-size: 4.4rem; /* Taille doublée de "Yanis Nassi" */
     color: #f5f5f5;  /* Couleur blanche pour correspondre au reste du texte */
 }
 
@@ -67,13 +72,14 @@ main {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: calc(100vh - 100px);
+    height: calc(100vh - 100px);  /* Ajustement de la hauteur pour laisser de la place au header */
+    margin-top: 80px;  /* Décalage du contenu sous le header */
 }
 
 .profile-picture {
     width: 200px; /* Taille réduite de la photo de profil */
     border-radius: 50%;
-    margin-top: 50px;
+    margin-top: 20px;
     box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.2);
     margin-bottom: 5px;  /* Réduction de l'espace sous la photo */
 }
@@ -96,7 +102,7 @@ main {
 .subtitle {
     font-size: 18px;
     color: #ccc;
-    margin-bottom: 30px;
+    margin-bottom: 10px;  /* Réduction de l'espace entre le texte et les icônes */
 }
 
 /* ICONES SOCIAUX */
