@@ -23,7 +23,7 @@ header {
     background-color: #181818; /* Gris encore plus foncé */
     padding: 12px 50px;
     display: flex;
-    justify-content: center;  /* Centre les éléments */
+    justify-content: space-between;  /* Éléments bien alignés */
     align-items: center;
     border-bottom: 2px solid #333;
     position: fixed;
@@ -37,17 +37,16 @@ header {
 .header-left {
     display: flex;
     align-items: center;
-    margin-right: 50px; /* Éloigne du menu */
 }
 
 .logo {
     height: 50px; /* Taille réduite */
-    margin-right: 30px; /* Plus d'espace avec le texte */
+    margin-right: 40px; /* Encore plus d'espace avec "Yanis NASSI" */
 }
 
 .name {
     font-family: 'Signatra', sans-serif;  
-    font-size: 3.4rem; /* Taille réduite */
+    font-size: 3.2rem; /* Taille légèrement réduite */
     color: #f0f0e6;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
 }
@@ -55,11 +54,12 @@ header {
 /* Liens du header */
 .header-right {
     display: flex;
-    gap: 50px; /* Espacement augmenté */
+    gap: 30px; /* Espacement réduit entre les liens */
+    margin-right: 80px; /* Ramène les liens plus vers le centre */
 }
 
 .header-right a {
-    font-size: 1.8rem; /* Légèrement réduit */
+    font-size: 1.6rem; /* Taille légèrement réduite */
     color: #f0f0e6 !important;
     text-decoration: none !important;
     transition: color 0.3s;
@@ -115,4 +115,21 @@ main {
 
 .social-links img:hover {
     transform: scale(1.1);
+}
+.logo {
+    height: 65px; /* Augmenté (avant : 50px) */
+    margin-right: 40px; /* Garde un bon espacement avec "Yanis NASSI" */
+}
+header {
+    background-color: #181818;
+    padding: 6px 50px; /* Réduit la hauteur (avant : 12px) */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #333;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
 }
