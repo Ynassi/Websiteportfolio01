@@ -11,7 +11,7 @@
 /* Styles globaux */
 body {
     background-color: #202020;  /* Gris foncé pour le fond */
-    color: #f0f0f0;  /* Blanc cassé pour une meilleure lisibilité */
+    color: #f0f0f0;  /* Blanc cassé pour meilleure lisibilité */
     font-family: 'Helvetica', sans-serif;
     margin: 0;
     padding: 0;
@@ -20,12 +20,12 @@ body {
 
 /* HEADER */
 header {
-    background-color: #333; /* Gris plus foncé que le reste de la page */
+    background-color: #1a1a1a; /* Encore plus foncé que le background */
     padding: 8px 50px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 2px solid #444; /* Légère séparation */
+    border-bottom: 2px solid #333; /* Séparation subtile */
     position: fixed;
     top: 0;
     left: 0;
@@ -45,10 +45,11 @@ header {
 }
 
 .header-left h1 {
-    font-family: 'Signatra', sans-serif;  /* Police Signatra */
+    font-family: 'Signatra', sans-serif;
     font-size: 4.4rem;
     color: #f5f5f5;
     margin: 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Ombre noire légère */
 }
 
 .header-right {
@@ -62,7 +63,7 @@ header {
 
 .nav-links a {
     font-size: 2.4rem;
-    color: #f0f0f0;  /* Blanc cassé */
+    color: #f0f0f0 !important; /* Blanc cassé */
     text-decoration: none;
     transition: color 0.3s;
 }
@@ -86,28 +87,28 @@ main {
     border-radius: 50%;
     margin-top: 20px;
     box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.2);
-    margin-bottom: 0px; /* Réduction de l'espace sous la photo */
+    margin-bottom: 5px;
 }
 
 .profile-name {
     font-size: 2rem;
-    margin-bottom: 2px; /* Réduction de l'espace entre la photo et le texte */
+    margin-bottom: 2px; /* Réduction de l'espace */
 }
 
 .profile-description {
     font-size: 1.2rem;
-    margin-bottom: 5px;  /* Moins d'espace entre la description et les icônes */
+    margin-bottom: 2px; /* Réduction encore plus serrée */
 }
 
 .main-name {
     font-size: 32px;
-    margin-top: 10px; /* Moins d'espace au-dessus */
+    margin-top: 5px; /* Moins d'espace */
 }
 
 .subtitle {
     font-size: 18px;
     color: #ccc;
-    margin-bottom: 5px; /* Espacement réduit */
+    margin-bottom: 5px; /* Réduction de l'espace */
 }
 
 /* ICONES SOCIAUX */
@@ -115,7 +116,7 @@ main {
     display: flex;
     justify-content: center;
     gap: 20px;
-    margin-top: 5px; /* Espacement réduit */
+    margin-top: 5px; /* Réduction */
 }
 
 .social-links img {
@@ -128,4 +129,3 @@ main {
 .social-links img:hover {
     transform: scale(1.1);
 }
-
