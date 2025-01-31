@@ -1,6 +1,6 @@
 @font-face {
-    font-family: 'ThirdStreet';
-    src: url('../fonts/ThirdStreet-Regular.ttf') format('truetype');
+    font-family: 'Signatra';
+    src: url('../fonts/Signatra.ttf') format('truetype');
 }
 
 @font-face {
@@ -10,8 +10,8 @@
 
 /* Styles globaux */
 body {
-    background-color: #181818;  /* Fond noir plus doux */
-    color: #f5f5f5;  /* Blanc légèrement cassé pour un effet premium */
+    background-color: #202020;  /* Gris foncé pour le fond */
+    color: #f0f0f0;  /* Blanc cassé pour une meilleure lisibilité */
     font-family: 'Helvetica', sans-serif;
     margin: 0;
     padding: 0;
@@ -20,12 +20,12 @@ body {
 
 /* HEADER */
 header {
-    background-color: #444; /* Gris plus foncé que le reste de la page */
-    padding: 8px 50px;  /* Réduction de la taille du header */
+    background-color: #333; /* Gris plus foncé que le reste de la page */
+    padding: 8px 50px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 2px solid #555; /* Légère séparation pour contraste */
+    border-bottom: 2px solid #444; /* Légère séparation */
     position: fixed;
     top: 0;
     left: 0;
@@ -40,30 +40,35 @@ header {
 }
 
 .logo {
-    height: 70px;  /* Logo agrandi */
+    height: 70px;
     margin-right: 15px;
 }
 
 .header-left h1 {
-    font-family: 'ThirdStreet', sans-serif;  /* Police "ThirdStreet-Regular" */
-    font-size: 4.4rem; /* Taille doublée de "Yanis Nassi" */
-    color: #f5f5f5;  /* Couleur blanche pour correspondre au reste du texte */
+    font-family: 'Signatra', sans-serif;  /* Police Signatra */
+    font-size: 4.4rem;
+    color: #f5f5f5;
+    margin: 0;
 }
 
 .header-right {
     padding-right: 20px;
 }
 
+.nav-links {
+    display: flex;
+    gap: 25px;
+}
+
 .nav-links a {
-    font-size: 2.4rem; /* Taille augmentée pour correspondre à "Yanis Nassi" */
-    margin-left: 25px;
-    color: #f5f5f5;  /* Couleur uniforme pour les liens */
+    font-size: 2.4rem;
+    color: #f0f0f0;  /* Blanc cassé */
     text-decoration: none;
     transition: color 0.3s;
 }
 
 .nav-links a:hover {
-    color: #00bfff;  /* Couleur au survol des liens */
+    color: #00bfff;
 }
 
 /* CONTENU PRINCIPAL */
@@ -72,37 +77,37 @@ main {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: calc(100vh - 100px);  /* Ajustement de la hauteur pour laisser de la place au header */
-    margin-top: 80px;  /* Décalage du contenu sous le header */
+    height: calc(100vh - 100px);
+    margin-top: 80px;
 }
 
 .profile-picture {
-    width: 200px; /* Taille réduite de la photo de profil */
+    width: 200px;
     border-radius: 50%;
     margin-top: 20px;
     box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.2);
-    margin-bottom: 5px;  /* Réduction de l'espace sous la photo */
+    margin-bottom: 0px; /* Réduction de l'espace sous la photo */
 }
 
 .profile-name {
     font-size: 2rem;
-    margin-bottom: 5px;  /* Moins d'espace entre nom et description */
+    margin-bottom: 2px; /* Réduction de l'espace entre la photo et le texte */
 }
 
 .profile-description {
     font-size: 1.2rem;
-    margin-bottom: 10px;  /* Espacement réduit avec les icônes */
+    margin-bottom: 5px;  /* Moins d'espace entre la description et les icônes */
 }
 
 .main-name {
     font-size: 32px;
-    margin-top: 20px;
+    margin-top: 10px; /* Moins d'espace au-dessus */
 }
 
 .subtitle {
     font-size: 18px;
     color: #ccc;
-    margin-bottom: 10px;  /* Réduction de l'espace entre le texte et les icônes */
+    margin-bottom: 5px; /* Espacement réduit */
 }
 
 /* ICONES SOCIAUX */
@@ -110,16 +115,16 @@ main {
     display: flex;
     justify-content: center;
     gap: 20px;
-    margin-top: 10px;  /* Réduction de l'espace entre texte et icônes */
+    margin-top: 5px; /* Espacement réduit */
 }
 
 .social-links img {
     width: 40px;
     height: 40px;
-    filter: invert(1); /* Inverse les couleurs pour améliorer la visibilité */
+    filter: invert(1);
     transition: transform 0.3s;
 }
 
 .social-links img:hover {
-    transform: scale(1.1);  /* Agrandissement des icônes au survol */
+    transform: scale(1.1);
 }
