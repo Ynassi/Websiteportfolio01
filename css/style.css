@@ -10,8 +10,8 @@
 
 /* Styles globaux */
 body {
-    background-color: #202020;  /* Gris foncé pour le fond */
-    color: #f0f0f0;  /* Blanc cassé pour meilleure lisibilité */
+    background-color: #202020;  /* Gris foncé */
+    color: #f0f0e6;  /* Blanc cassé */
     font-family: 'Helvetica', sans-serif;
     margin: 0;
     padding: 0;
@@ -20,12 +20,12 @@ body {
 
 /* HEADER */
 header {
-    background-color: #1a1a1a; /* Encore plus foncé que le background */
-    padding: 8px 50px;
+    background-color: #252525; /* Gris plus foncé */
+    padding: 12px 50px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 2px solid #333; /* Séparation subtile */
+    border-bottom: 2px solid #333;
     position: fixed;
     top: 0;
     left: 0;
@@ -36,39 +36,35 @@ header {
 .header-left {
     display: flex;
     align-items: center;
-    padding-left: 20px;
 }
 
 .logo {
-    height: 70px;
-    margin-right: 15px;
+    height: 60px;
+    margin-right: 25px;
 }
 
-.header-left h1 {
-    font-family: 'Signatra', sans-serif;
-    font-size: 4.4rem;
-    color: #f5f5f5;
-    margin: 0;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Ombre noire légère */
+.name {
+    font-family: 'Signatra', sans-serif;  
+    font-size: 3.8rem;
+    color: #f0f0e6;  /* Blanc cassé */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
 }
 
+/* Liens du header */
 .header-right {
-    padding-right: 20px;
-}
-
-.nav-links {
     display: flex;
-    gap: 25px;
+    align-items: center;
+    gap: 40px;
 }
 
-.nav-links a {
-    font-size: 2.4rem;
-    color: #f0f0f0 !important; /* Blanc cassé */
-    text-decoration: none;
+.header-right a {
+    font-size: 2rem; 
+    color: #f0f0e6 !important; /* Blanc cassé */
+    text-decoration: none !important;
     transition: color 0.3s;
 }
 
-.nav-links a:hover {
+.header-right a:hover {
     color: #00bfff;
 }
 
@@ -78,45 +74,35 @@ main {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: calc(100vh - 100px);
-    margin-top: 80px;
+    height: calc(100vh - 120px);
+    margin-top: 100px;
 }
 
 .profile-picture {
-    width: 200px;
+    width: 180px;
     border-radius: 50%;
-    margin-top: 20px;
     box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.2);
-    margin-bottom: 5px;
-}
-
-.profile-name {
-    font-size: 2rem;
-    margin-bottom: 2px; /* Réduction de l'espace */
-}
-
-.profile-description {
-    font-size: 1.2rem;
-    margin-bottom: 2px; /* Réduction encore plus serrée */
+    margin-bottom: 5px; /* Réduction de l’espace */
 }
 
 .main-name {
-    font-size: 32px;
-    margin-top: 5px; /* Moins d'espace */
+    font-size: 2.2rem;
+    margin-bottom: 5px; /* Réduction de l’espace */
+    color: #f0f0e6; /* Blanc cassé */
 }
 
 .subtitle {
-    font-size: 18px;
-    color: #ccc;
-    margin-bottom: 5px; /* Réduction de l'espace */
+    font-size: 1.3rem;
+    color: #f0f0e6; /* Blanc cassé */
+    margin-bottom: 20px;
 }
 
 /* ICONES SOCIAUX */
 .social-links {
     display: flex;
     justify-content: center;
-    gap: 20px;
-    margin-top: 5px; /* Réduction */
+    gap: 30px;
+    margin-top: 40px;
 }
 
 .social-links img {
