@@ -6,25 +6,40 @@
     <title>Portfolio - Yanis NASSI</title>
     <link rel="stylesheet" href="../css/style.css">
     <style>
+        @font-face {
+            font-family: 'Helvetica';
+            src: url('../fonts/Helvetica.ttc') format('truetype');
+        }
+        body {
+            font-family: 'Helvetica', sans-serif;
+        }
+        .portfolio-container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            text-align: center;
+        }
+        .portfolio-title {
+            text-align: left;
+            margin-left: 0;
+        }
+        .portfolio-intro, .portfolio-description {
+            text-align: center;
+            margin: 20px auto;
+        }
         .portfolio-categories {
             display: flex;
             justify-content: center;
-            gap: 20px;
+            gap: 50px; /* Augmentation de l'espace entre les images */
             margin-top: 20px;
         }
         .category-img {
-            width: 150px; /* Réduction significative de la taille */
+            width: 130px; /* Réduction encore plus importante de la taille */
             border-radius: 15px; /* Arrondir les coins */
             transition: transform 0.3s ease;
         }
         .category-img:hover {
             transform: scale(1.05);
-        }
-        .portfolio-description {
-            text-align: center;
-            max-width: 800px;
-            margin: 40px auto; /* Centrage avec marges */
-            padding: 20px;
         }
     </style>
 </head>
@@ -45,7 +60,7 @@
 
     <!-- CONTENU PRINCIPAL -->
     <main class="portfolio-container">
-        <h1 class="portfolio-title">Portfolio</h1>
+        <h1 class="portfolio-title" style="text-align: left;">Portfolio</h1>
         <p class="portfolio-intro">
             Here are some projects I had the chance to work on, classified according to the type of project: Data Analysis, Websites, and Event Planning.
         </p>

@@ -145,6 +145,68 @@ header {
 main {
     margin-top: 70px; /* Ajustement doux pour coller un peu plus au header */
 }
+.portfolio-title {
+    text-align: left;
+    width: 100%;
+    margin-left: 0;
+}
+.portfolio-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px 20px; /* Augmentation du padding pour équilibrer les espaces */
+    text-align: center;
+}
+
+.portfolio-title {
+    text-align: left;
+    margin-left: 0;
+    padding-left: 10px; /* Ajuste pour l'alignement avec les textes */
+}
+
+.portfolio-intro, .portfolio-description {
+    text-align: center;
+    margin: 40px auto; /* Augmentation de l'espacement haut/bas */
+    max-width: 600px; /* Assurer une largeur uniforme */
+}
+
+.portfolio-categories {
+    display: flex;
+    justify-content: center;
+    gap: 60px; /* Augmentation de l'espace entre les images */
+    margin: 40px 0; /* Espacement au-dessus et en dessous des images */
+}
+
+.category-img {
+    width: 120px; /* Taille réduite des images */
+    border-radius: 15px; /* Coins arrondis */
+    transition: transform 0.3s ease;
+}
+
+.category-img:hover {
+    transform: scale(1.05);
+}
+.portfolio-title {
+    margin-left: 0;
+    margin-bottom: 10px; /* Rapproche le titre du texte d'introduction */
+}
+
+.portfolio-intro, .portfolio-description {
+    text-align: center;
+    margin: 20px auto;
+    max-width: 600px; /* Alignement avec les images */
+}
+
+.portfolio-categories {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin: 40px 0; /* Uniformisation de l'espace haut/bas */
+}
+
+.portfolio-description {
+    margin-top: 40px; /* Ajustement pour égaliser avec l'intro */
+}
+
 
 
 
