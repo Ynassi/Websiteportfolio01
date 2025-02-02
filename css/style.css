@@ -11,7 +11,7 @@
 /* Styles globaux */
 body {
     background-color: #202020;  /* Gris foncé */
-    color: #f0f0e6;  /* Blanc cassé */
+    color: #ffffff;  /* Blanc */
     font-family: 'Helvetica', sans-serif;
     margin: 0;
     padding: 0;
@@ -21,9 +21,9 @@ body {
 /* HEADER */
 header {
     background-color: #181818; /* Gris encore plus foncé */
-    padding: 12px 50px;
+    padding: 10px 50px; /* Réduction plus douce */
     display: flex;
-    justify-content: space-between;  /* Éléments bien alignés */
+    justify-content: space-between;
     align-items: center;
     border-bottom: 2px solid #333;
     position: fixed;
@@ -40,26 +40,29 @@ header {
 }
 
 .logo {
-    height: 50px; /* Taille réduite */
-    margin-right: 40px; /* Encore plus d'espace avec "Yanis NASSI" */
+    height: 65px; /* Taille augmentée */
+    margin-right: 40px;
 }
 
 .name {
     font-family: 'Signatra', sans-serif;  
-    font-size: 3.2rem; /* Taille légèrement réduite */
-    color: #f0f0e6;
+    font-size: 2.8rem; /* Taille légèrement plus grande pour l'équilibre */
+
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+    margin: 0;
+    padding: 0;
+    line-height: 1.1;
 }
 
 /* Liens du header */
 .header-right {
     display: flex;
-    gap: 30px; /* Espacement réduit entre les liens */
-    margin-right: 80px; /* Ramène les liens plus vers le centre */
+    gap: 30px;
+    margin-right: 80px;
 }
 
 .header-right a {
-    font-size: 1.6rem; /* Taille légèrement réduite */
+    font-size: 1.6rem;
     color: #f0f0e6 !important;
     text-decoration: none !important;
     transition: color 0.3s;
@@ -76,7 +79,7 @@ main {
     align-items: center;
     justify-content: center;
     height: calc(100vh - 120px);
-    margin-top: 100px;
+    margin-top: 70px; /* Ajustement doux pour coller un peu plus au header */
 }
 
 .profile-picture {
@@ -88,13 +91,13 @@ main {
 
 .main-name {
     font-size: 2rem;
-    margin-bottom: 2px; /* Réduction encore plus */
-    color: #f0f0e6; /* Blanc cassé */
+    margin-bottom: 2px;
+    color: #f0f0e6;
 }
 
 .subtitle {
     font-size: 1.2rem;
-    color: #b0b0b0; /* Gris plus foncé */
+    color: #b0b0b0;
     margin-bottom: 20px;
 }
 
@@ -116,71 +119,3 @@ main {
 .social-links img:hover {
     transform: scale(1.1);
 }
-.logo {
-    height: 65px; /* Augmenté (avant : 50px) */
-    margin-right: 40px; /* Garde un bon espacement avec "Yanis NASSI" */
-}
-header {
-    background-color: #181818;
-    padding: 4px 50px; /* Réduction plus douce (au lieu de 0px) */
-    height: auto; /* Ajustement dynamique plutôt que fixe */
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-bottom: 2px solid #333;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 10;
-}
-
-.name {
-    font-size: 2.8rem; /* Taille légèrement plus grande pour l'équilibre */
-    margin: 0;
-    padding: 0;
-    line-height: 1.1; /* Réduction légère de l’espace autour du texte */
-}
-
-main {
-    margin-top: 70px; /* Ajustement doux pour coller un peu plus au header */
-}
-.portfolio-container {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-}
-
-.portfolio-title {
-    text-align: left;
-    margin-left: 100px; /* Assure-toi que la marge est la même que les textes */
-}
-
-.portfolio-intro, .portfolio-description {
-    text-align: left; /* Aligner avec le titre */
-    margin: 20px 20px; /* Uniformiser la marge gauche */
-    max-width: 600px; /* Assurer un alignement propre */
-}
-
-.portfolio-categories {
-    display: flex;
-    justify-content: center;
-    gap: 50px;
-    margin: 40px 0; /* Uniformisation de l'espace haut/bas */
-}
-.portfolio-title {
-    text-align: left;
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 600px; /* Même largeur que le texte descriptif */
-}
-.portfolio-intro, .portfolio-description {
-    text-align: left;
-    margin: 20px auto;
-    max-width: 600px; /* Uniformisation des marges */
-}
-
-
-
-
-

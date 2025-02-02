@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio - Yanis NASSI</title>
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/portfolio.css">
     <style>
         @font-face {
             font-family: 'Helvetica';
@@ -12,29 +13,35 @@
         }
         body {
             font-family: 'Helvetica', sans-serif;
+            text-align: center;
         }
         .portfolio-container {
             max-width: 800px;
             margin: 0 auto;
-            padding: 20px;
-            text-align: center;
+            padding: 100px;
+            padding-top: 100px; /* Ajout d'un padding pour éviter que le titre soit coupé */
         }
         .portfolio-title {
             text-align: left;
             margin-left: 0;
+            margin-top: 100px; /* Ajustement de l'espace sous le header */
+            font-size: 3rem; /* Augmentation de la taille du titre */
+            color: white; /* Garde le titre en blanc */
         }
-        .portfolio-intro, .portfolio-description {
-            text-align: center;
-            margin: 20px auto;
+        .portfolio-intro, .portfolio-description { 
+            margin: 40px auto;
+            font-size: 1.2rem; /* Augmentation de la taille du texte */
+            text-align: justify; /* Justification du texte */
+            color: #d3d3d3; /* Gris clair */
         }
         .portfolio-categories {
             display: flex;
             justify-content: center;
-            gap: 50px; /* Augmentation de l'espace entre les images */
-            margin-top: 20px;
+            gap: 50px; /* Doublement de l'espace entre les images */
+            margin-top: 20px; /* Augmentation de l'espacement au-dessus */
         }
         .category-img {
-            width: 130px; /* Réduction encore plus importante de la taille */
+            width: 200px; /* Réduction encore plus importante de la taille */
             border-radius: 15px; /* Arrondir les coins */
             transition: transform 0.3s ease;
         }
@@ -47,8 +54,12 @@
     <!-- HEADER -->
     <header>
         <div class="header-left">
-            <img src="../images/clipart.png" alt="Logo" class="logo">
-            <h1 class="name">Yanis NASSI</h1>
+            <a href="../index.html">
+                <img src="../images/clipart.png" alt="Logo" class="logo">
+            </a>
+            <a href="../index.html" style="text-decoration: none; color: inherit;">
+                <h1 class="name">Yanis NASSI</h1>
+            </a>
         </div>
         <nav class="header-right">
             <a href="portfolio.html">Portfolio</a>
@@ -60,7 +71,7 @@
 
     <!-- CONTENU PRINCIPAL -->
     <main class="portfolio-container">
-        <h1 class="portfolio-title" style="text-align: left;">Portfolio</h1>
+        <h1 class="portfolio-title">Portfolio</h1>
         <p class="portfolio-intro">
             Here are some projects I had the chance to work on, classified according to the type of project: Data Analysis, Websites, and Event Planning.
         </p>
