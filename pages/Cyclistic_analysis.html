@@ -1,0 +1,3176 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="../css/global.css" />
+    <link rel="stylesheet" href="../css/index.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Helvetica Neue:ital,wght@0,400;0,700;1,300;1,500;1,700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Courier New:wght@400;700&display=swap"
+    />
+  </head>
+  <body>
+    <div class="desktop-1">
+      <div class="homepage">
+        <img
+          class="image35-1-icon"
+          loading="lazy"
+          alt=""
+          src="./public/image35-1@2x.png"
+        />
+        <link rel="stylesheet" href="../css/style.css">
+        </style>
+    </head>
+    <style> header {
+            background-color: #181818; /* Gris encore plus foncé */
+            padding: 10px 50px; /* Réduction plus douce */
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 2px solid #333;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 10;
+        }
+        
+        /* Partie gauche du header */
+        .header-left {
+            display: flex;
+            align-items: center;
+        }
+        
+        .logo {
+            height: 65px; /* Taille augmentée */
+            margin-right: 40px;
+        }
+        
+        .name {
+            font-family: 'Signatra', sans-serif;  
+            font-size: 2.8rem; /* Taille légèrement plus grande pour l'équilibre */
+        
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+            margin: 0;
+            padding: 0;
+            line-height: 1.1;
+        }
+        
+        /* Liens du header */
+        .header-right {
+            display: flex;
+            gap: 30px;
+            margin-right: 80px;
+        }
+        
+        .header-right a {
+            font-size: 1.6rem;
+            color: #f0f0e6 !important;
+            text-decoration: none !important;
+            transition: color 0.3s;
+        }
+        
+        .header-right a:hover {
+            color: #00bfff;
+        }
+        </style>
+    
+        <!-- HEADER -->
+        <header>
+            <div class="header-left">
+                <a href="../index.html">
+                    <img src="../images/clipart.png" alt="Logo" class="logo">
+                </a>
+                <a href="../index.html" style="text-decoration: none; color: inherit;">
+                    <h1 class="name">Yanis NASSI</h1>
+                </a>
+            </div>
+            <nav class="header-right">
+                <a href="portfolio.html">Portfolio</a>
+                <a href="skills.html">Skills</a>
+                <a href="art.html">Art</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </header>
+    
+      </div>
+      <main class="header">
+        <div class="tude-de-cas-cyclistic-bike-s-wrapper">
+          <h2 class="tude-de-cas">ÉTUDE DE CAS : CYCLISTIC BIKE SHARE</h2>
+        </div>
+        <div class="scnario-wrapper">
+          <h3 class="scnario">Scénario</h3>
+        </div>
+        <section class="cyclistic-bike-share-est-une-e-wrapper">
+          <div class="cyclistic-bike-share-container">
+            <span>Cyclistic Bike Share est une entreprise qui propose un </span>
+            <b>programme de partage de vélo</b>
+            <span>
+              à Chicago depuis 2016. Leur but est de proposer une alternative de
+            </span>
+            <b>transport pratique, inclusive et écologique</b>
+            <span>
+              aux habitants de la ville de Chicago et à ses visiteurs. Dans
+              notre cas, nous sommes en 2025, Cyclistic a bien évolué depuis ses
+              débuts et comme toute entreprise, elle cherche à maximiser ses
+              profits. Chez Cyclistic, il y a possibilité d’opter pour un
+            </span>
+            <b>abonnement annuel</b>
+            <span>, de prendre un </span>
+            <b>pass pour la journée</b>
+            <span> ou de payer son </span>
+            <b>trajet</b>
+            <span> de façon </span>
+            <b>unitaire</b>
+            <span
+              >. Les utilisateurs qui ont un abonnement annuel sont considérés
+              comme des
+            </span>
+            <b>“membres”</b>
+            <span>
+              alors que les utilisateurs ponctuels (à la journée ou au trajet)
+              sont considérés comme des utilisateurs “casual”. La direction de
+              chez Cyclistic pense que</span
+            >
+            <b> les utilisateurs “membres” sont plus rentables</b>
+            <span> que les “casual” pour la compagnie et </span>
+            <b>aimerait en augmenter le nombre</b>
+            <span>. Nous allons ici essayer de repérer </span>
+            <b
+              >les tendances qui existent dans les comportement des “Membres” et
+              des “Casual”</b
+            >
+            <span>
+              vis à vis de l’utilisation du programme de partage de vélo Cyclist
+              et faire des recommandation basées sur les données pour aider
+              Cyclistic a augmenter le nombre de ses “membres”.</span
+            >
+          </div>
+        </section>
+        <section class="ask-content-wrapper">
+          <div class="ask-content">
+            <div class="ask-demander-wrapper">
+              <h3 class="ask-demander">“Ask” Demander</h3>
+            </div>
+            <div class="cyclistic-bike-share-container1">
+              <span
+                >Cyclistic Bike Share est une entreprise qui propose un
+              </span>
+              <b>programme de partage de vélo</b>
+              <span>
+                à Chicago depuis 2016. Leur but est de proposer une alternative
+                de
+              </span>
+              <b>transport pratique, inclusive et écologique</b>
+              <span>
+                aux habitants de la ville de Chicago et à ses visiteurs. Dans
+                notre cas, nous sommes en 2025, Cyclistic a bien évolué depuis
+                ses débuts et comme toute entreprise, elle cherche à maximiser
+                ses profits. Chez Cyclistic, il y a possibilité d’opter pour
+                un</span
+              >
+              <b> abonnement annuel</b>
+              <span>, de prendre un</span>
+              <b> pass pour la journée</b>
+              <span> ou de payer son </span>
+              <b>trajet</b>
+              <span> de façon </span>
+              <b>unitaire</b>
+              <span>. Les utilisateurs qui ont un </span>
+              <b>abonnement annuel </b>
+              <span>sont considérés comme des </span>
+              <b>“membres”</b>
+              <span> alors que les </span>
+              <b>utilisateurs ponctuels </b>
+              <span
+                >(à la journée ou au trajet) sont considérés comme des
+                utilisateurs
+              </span>
+              <b>“casual”</b>
+              <span>. La direction de chez Cyclistic pense que </span>
+              <b>les utilisateurs “membres” sont plus rentables</b>
+              <span> que les “casual” pour la compagnie et aimerait en </span>
+              <b>augmenter le nombre</b>
+              <span>. Nous allons ici essayer de </span>
+              <b>repérer les tendances</b>
+              <span> qui existent dans </span>
+              <b>les comportement des “Membres” et des “Casual”</b>
+              <span>
+                vis à vis de l’utilisation du programme de partage de vélo
+                Cyclist et faire des recommandation basées sur les données pour
+                aider Cyclistic a augmenter le nombre de ses “membres”.</span
+              >
+            </div>
+          </div>
+        </section>
+        <div class="prepare-data">
+          <h3 class="prparer-les-donnes"> Préparer les données :</h3>
+        </div>
+        <section class="download-content-wrapper">
+          <div class="download-content">
+            <div class="data-access-content-wrapper">
+              <div class="data-access-content">
+                <div class="nous-aurons-accs-container">
+                  <p class="nous-aurons-accs-aux-donnes">
+                    <span>
+                      <span
+                        >Nous aurons accès aux données historiques de Cyclistic
+                        pour l'année 2024, ces données sont des données privées
+                        de l’entreprise. Les données pour 2024 sont divisées
+                        en</span
+                      >
+                      <b class="fichiers-mensuels"> 12 fichiers mensuels </b>
+                      <span>organisés selon les colonnes suivante :</span>
+                    </span>
+                  </p>
+                  <p class="nous-aurons-accs-aux-donnes">
+                    <span>
+                      <span>&nbsp;</span>
+                    </span>
+                  </p>
+                  <p class="ride-id-identifiant-unique-d">
+                    <span>
+                      <b class="ride-id">ride_id:</b>
+                      <span class="identifiant-unique-des">
+                        identifiant unique des trajets enregistrés</span
+                      >
+                    </span>
+                  </p>
+                  <p class="ride-id-identifiant-unique-d">
+                    <span>
+                      <b class="ride-id">rideable_bike: </b>
+                      <span
+                        >type de vélo (classique, électrique, scooter
+                        électrique)</span
+                      >
+                    </span>
+                  </p>
+                  <p class="ride-id-identifiant-unique-d">
+                    <span>
+                      <b class="started-at">started_at: </b>
+                      <span
+                        >date et heure de début du trajet (M/j/aaaa hh:mm)</span
+                      >
+                    </span>
+                  </p>
+                  <p class="ride-id-identifiant-unique-d">
+                    <span>
+                      <b class="started-at">ended_at: </b>
+                      <span class="identifiant-unique-des">
+                        date et heure de fin du trajet (M/j/aaaa hh:mm)</span
+                      >
+                    </span>
+                  </p>
+                  <p class="ride-id-identifiant-unique-d">
+                    <span>
+                      <b class="ride-id">start_station_name:</b>
+                      <span> nom de la station où le trajet a commencé </span>
+                    </span>
+                  </p>
+                  <p class="ride-id-identifiant-unique-d">
+                    <span>
+                      <b class="ride-id">start_station_id:</b>
+                      <span class="identifiant-unique-des">
+                        identifiant de la station de départ</span
+                      >
+                    </span>
+                  </p>
+                  <p class="ride-id-identifiant-unique-d">
+                    <span>
+                      <b class="ride-id">end_station_name:</b>
+                      <span class="identifiant-unique-des">
+                        nom de la station où le trajet s'est terminé</span
+                      >
+                    </span>
+                  </p>
+                  <p class="ride-id-identifiant-unique-d">
+                    <span>
+                      <b class="ride-id">end_station_id:</b>
+                      <span class="identifiant-unique-des">
+                        identifiant de la station d’arrivée</span
+                      >
+                    </span>
+                  </p>
+                  <p class="ride-id-identifiant-unique-d">
+                    <span>
+                      <b class="ride-id">start_lat</b>
+                      <span class="identifiant-unique-des"
+                        >: latitude de la station de départ</span
+                      >
+                    </span>
+                  </p>
+                  <p class="ride-id-identifiant-unique-d">
+                    <span>
+                      <b class="ride-id">start_lng</b>
+                      <span class="identifiant-unique-des"
+                        >: longitude de la station de départ</span
+                      >
+                    </span>
+                  </p>
+                  <p class="ride-id-identifiant-unique-d">
+                    <span>
+                      <b class="ride-id">end_lat</b>
+                      <span class="identifiant-unique-des"
+                        >: latitude de la station d’arrivée</span
+                      >
+                    </span>
+                  </p>
+                  <p class="ride-id-identifiant-unique-d">
+                    <span>
+                      <b class="ride-id">end_lng</b>
+                      <span class="identifiant-unique-des"
+                        >: longitude de la station d’arrivée</span
+                      >
+                    </span>
+                  </p>
+                  <p class="ride-id-identifiant-unique-d">
+                    <span>
+                      <b class="ride-id">member_casual</b>
+                      <span class="identifiant-unique-des"
+                        >: type d'utilisateur (membre, occasionnel)</span
+                      >
+                    </span>
+                  </p>
+                  <p class="blank-line1">
+                    <span class="identifiant-unique-des">
+                      <span>&nbsp;</span>
+                    </span>
+                  </p>
+                  <p class="nous-aurons-accs-aux-donnes">
+                    <span>
+                      <span class="fichiers-mensuels"
+                        >Les 12 fichiers combinées contiennent
+                      </span>
+                      <b class="fichiers-mensuels"
+                        >plus de 6 millions d’observations</b
+                      >
+                      <span class="fichiers-mensuels"
+                        >, nous utiliserons donc
+                      </span>
+                      <b class="fichiers-mensuels">RStudio</b>
+                      <span>
+                        pour les traiter afin d'éviter les délais de traitement
+                        trop longs. Nous utiliserons aussi des API pour intégrer
+                        des données supplémentaires dans RStudio à partir
+                        d’autres applications (données géographiques et
+                        météorologiques), les
+                      </span>
+                      <b class="fichiers-mensuels">Rpackages</b>
+                      <span>
+                        utilisés seront spécifiés au fur et à mesure. </span
+                      >
+                    </span>
+                  </p>
+                  <p class="nous-aurons-accs-aux-donnes">
+                    <span>
+                      <span>&nbsp;</span>
+                    </span>
+                  </p>
+                  <p class="nous-aurons-accs-aux-donnes">
+                    <span>
+                      <span
+                        >Il est important de noter qu'en raison de problèmes de
+                      </span>
+                      <b class="fichiers-mensuels"
+                        >confidentialité des données</b
+                      >
+                      <span
+                        >, nous ne pouvons pas utiliser les informations
+                        personnelles identifiables des cyclistes. Cela signifie
+                        que nous ne pourrons pas relier les achats de pass aux
+                        numéros de carte de crédit pour déterminer si les
+                        utilisateurs occasionnels vivent dans la zone de service
+                        de Cyclistic ou s'ils ont acheté plusieurs pass
+                        individuels</span
+                      >
+                    </span>
+                  </p>
+                  <p class="ride-id-identifiant-unique-d">
+                    <span>
+                      <span
+                        >De plus, nous pouvons garantir l'intégrité et la
+                        fiabilité des données en utilisant le test ROCCC.</span
+                      >
+                    </span>
+                  </p>
+                  <p class="ride-id-identifiant-unique-d">
+                    <span>
+                      <span>&nbsp;</span>
+                    </span>
+                  </p>
+                  <ul class="les-donnes-sont-fiables-ell">
+                    <li class="les-donnes-sont-originales">
+                      <span>
+                        <span>Les données sont</span>
+                        <b class="fichiers-mensuels"> fiables</b>
+                        <span class="fichiers-mensuels">
+                          : elles sont représentatives de la population.</span
+                        >
+                      </span>
+                    </li>
+                    <li class="les-donnes-sont-originales">
+                      <span>
+                        <span class="fichiers-mensuels">Les données sont </span>
+                        <b class="fichiers-mensuels">originales</b>
+                        <span class="fichiers-mensuels">
+                          : la source primaire peut être identifiée.</span
+                        >
+                      </span>
+                    </li>
+                    <li class="les-donnes-sont-originales">
+                      <span>
+                        <span class="fichiers-mensuels">Les données sont </span>
+                        <b class="fichiers-mensuels">complètes</b>
+                        <span class="fichiers-mensuels">
+                          : elles contiennent les informations essentielles
+                          nécessaires pour résoudre la tâche en cours.</span
+                        >
+                      </span>
+                    </li>
+                    <li class="les-donnes-sont-originales">
+                      <span>
+                        <span class="fichiers-mensuels">Les données sont </span>
+                        <b class="fichiers-mensuels">actuelles</b>
+                        <span class="fichiers-mensuels">
+                          : nous utilisons les données pour l'année 2024 en
+                          janvier 2025.</span
+                        >
+                      </span>
+                    </li>
+                    <li>
+                      <span>
+                        <span class="fichiers-mensuels">Les données sont </span>
+                        <b class="fichiers-mensuels">citées</b>
+                        <span class="fichiers-mensuels">
+                          : elles proviennent d'une source vérifiée et
+                          crédible.</span
+                        >
+                      </span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="nettoyer-et-organiser-les-donn-wrapper">
+                  <h3 class="nettoyer-et-organiser">
+                    Nettoyer et organiser les données en vue de l’analyse :
+                  </h3>
+                </div>
+              </div>
+            </div>
+            <div class="download-description">
+              <div class="premirement-jai-tlcharg-container">
+                <p class="ride-id-identifiant-unique-d">
+                  <span class="fichiers-mensuels"
+                    >Premièrement, J’ai téléchargé les
+                  </span>
+                  <b class="fichiers-mensuels">12 fichiers mensuels</b>
+                  <span class="fichiers-mensuels">
+                    correspondant aux données de l'année 2024 a partir du
+                    dossier source suivant :</span
+                  >
+                </p>
+                <p class="ride-id-identifiant-unique-d">
+                  <span class="fichiers-mensuels"> </span>
+                </p>
+                <p class="ride-id-identifiant-unique-d">
+                  <a
+                    class="httpsdivvy-tripdatas3amaz1"
+                    href="https://divvy-tripdata.s3.amazonaws.com/index.html"
+                    target="_blank"
+                  >
+                    <b class="httpsdivvy-tripdatas3amaz2"
+                      >https://divvy-tripdata.s3.amazonaws.com/index.html</b
+                    >
+                  </a>
+                </p>
+                <p class="ride-id-identifiant-unique-d">
+                  <span class="fichiers-mensuels">&nbsp;</span>
+                </p>
+                <p class="ride-id-identifiant-unique-d">
+                  <span class="fichiers-mensuels"
+                    >Je  les ai téléchargés en format .csv et les ai stockées
+                    dans le fichier
+                  </span>
+                  <b class="fichiers-mensuels">“CASE_STUDY”</b>
+                  <span class="fichiers-mensuels"> de mon “Desktop”. </span>
+                </p>
+                <p class="ride-id-identifiant-unique-d">
+                  <span class="fichiers-mensuels"
+                    >Vous pourrez trouver ci joint un journal des modifications
+                    de nettoyage apportées aux données en vue de l’analyse
+                    : </span
+                  >
+                </p>
+                <p class="ride-id-identifiant-unique-d">
+                  <span class="fichiers-mensuels">&nbsp;</span>
+                </p>
+                <p class="ride-id-identifiant-unique-d">
+                  <a
+                    class="httpsdivvy-tripdatas3amaz1"
+                    href="https://docs.google.com/spreadsheets/d/19UcAWHayE-KBJxJCpwI9ibafUY5zoP5ffZqouSfvFKY/edit?gid=0#gid=0"
+                    target="_blank"
+                  >
+                    <b class="httpsdivvy-tripdatas3amaz2"
+                      >https://docs.google.com/spreadsheets/d/19UcAWHayE-KBJxJCpwI9ibafUY5zoP5ffZqouSfvFKY/edit?gid=0#gid=0</b
+                    >
+                  </a>
+                </p>
+                <p class="ride-id-identifiant-unique-d">
+                  <span class="fichiers-mensuels">&nbsp;</span>
+                </p>
+                <p class="ride-id-identifiant-unique-d">
+                  <span class="fichiers-mensuels"
+                    >Comme mentionné précédemment, nous utiliserons
+                  </span>
+                  <b class="fichiers-mensuels">RStudio</b>
+                  <span class="fichiers-mensuels">
+                    pour nettoyer les données. vous pouvez suivre le code “R” de
+                    mon analyse en suivant ce fichier
+                  </span>
+                  <b class="fichiers-mensuels">Rscript</b>
+                  <span class="fichiers-mensuels"> :</span>
+                </p>
+                <p class="ride-id-identifiant-unique-d">
+                  <span class="fichiers-mensuels">&nbsp;</span>
+                </p>
+                <p class="ride-id-identifiant-unique-d">
+                  <span class="fichiers-mensuels"
+                    >/Users/msayn47painter/Desktop/CASE_STUDY/Cyclistic01.R</span
+                  >
+                </p>
+                <p class="ride-id-identifiant-unique-d">
+                  <span class="fichiers-mensuels">&nbsp;</span>
+                </p>
+                <p class="ride-id-identifiant-unique-d">
+                  <span class="fichiers-mensuels"
+                    >Pour commencer, nous devons importer les 12 fichiers
+                    mensuels et les réunir en une seule table annuelle.</span
+                  >
+                </p>
+              </div>
+            </div>
+            <div class="clean-screenshot">
+              <img
+                class="capture-decran-le-2025-02-0"
+                loading="lazy"
+                alt=""
+                src="./public/capture-decran-le-20250201-a-011054-1@2x.png"
+              />
+            </div>
+            <div class="remove-duplicates-content">
+              <div class="suppression-des-doublons-wrapper">
+                <div class="suppression-des-doublons-container">
+                  <span>Suppression des </span>
+                  <b>doublons </b>
+                  <span>:</span>
+                </div>
+              </div>
+              <img
+                class="capture-decran-le-2025-02-01"
+                loading="lazy"
+                alt=""
+                src="./public/capture-decran-le-20250201-a-011404-1@2x.png"
+              />
+            </div>
+            <div class="download-description1">
+              <div class="format-check-parent">
+                <div class="format-check">
+                  <div class="suppression-des-doublons-container">
+                    <span>Vérification du </span>
+                    <b>format de date </b>
+                    <span>:</span>
+                  </div>
+                </div>
+                <img
+                  class="capture-decran-le-2025-02-02"
+                  loading="lazy"
+                  alt=""
+                  src="./public/capture-decran-le-20250201-a-011737-1@2x.png"
+                />
+              </div>
+            </div>
+            <div class="download-description1">
+              <div class="frame-parent">
+                <div class="format-check">
+                  <div class="suppression-des-doublons-container">
+                    <span>Création de </span>
+                    <b>nouvelles colonnes</b>
+                    <span> :</span>
+                  </div>
+                </div>
+                <img
+                  class="capture-decran-le-2025-02-03"
+                  loading="lazy"
+                  alt=""
+                  src="./public/capture-decran-le-20250201-a-011936-1@2x.png"
+                />
+              </div>
+            </div>
+            <div class="download-description3">
+              <div class="suppression-des-doublons-container">
+                <p class="ride-id-identifiant-unique-d">
+                  <b class="ride-id">tripduration_secs :</b>
+                  <span> le temps du trajet en secondes</span>
+                </p>
+                <p class="ride-id-identifiant-unique-d">
+                  <b class="ride-id">tripduration_min :</b>
+                  <span class="identifiant-unique-des">
+                    le temps du trajet en minutes</span
+                  >
+                </p>
+                <p class="ride-id-identifiant-unique-d">
+                  <b class="ride-id">month :</b>
+                  <span class="identifiant-unique-des">
+                    le mois du trajet </span
+                  >
+                </p>
+                <p class="ride-id-identifiant-unique-d">
+                  <b class="ride-id">hour : </b>
+                  <span class="identifiant-unique-des">
+                    la plage horaire du trajet.</span
+                  >
+                </p>
+              </div>
+            </div>
+            <div class="add-columns-content-wrapper">
+              <div class="add-columns-content">
+                <div class="nous-ajouterons-dautres-container">
+                  <p class="ride-id-identifiant-unique-d">
+                    Nous ajouterons d’autres colonnes dans notre table bike_data
+                    par la suite.
+                  </p>
+                  <p class="ride-id-identifiant-unique-d">&nbsp;</p>
+                  <p class="ride-id-identifiant-unique-d">
+                    Nous allons maintenant créer de nouvelles tables afin
+                    d’analyser quelles sont les préférences des différents types
+                    d’utilisateur en termes de temps de trajet :
+                  </p>
+                </div>
+                <div class="add-column-screenshot">
+                  <img
+                    class="capture-decran-le-2025-02-04"
+                    loading="lazy"
+                    alt=""
+                    src="./public/capture-decran-le-20250201-a-013019-1@2x.png"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="download-description4">
+              <div class="en-analysant-ces-container">
+                <p class="ride-id-identifiant-unique-d">
+                  <span class="fichiers-mensuels"
+                    >En analysant ces tables je me suis rendu compte que la
+                    table
+                  </span>
+                  <b class="fichiers-mensuels">moins de 1 seconde</b>
+                  <span class="fichiers-mensuels"> avait des durées de </span>
+                  <b class="fichiers-mensuels">temps de trajet négatifs</b>
+                  <span
+                    >. Plutôt que de supprimer ces données aberrantes j’ai émis
+                    l'hypothèse que les
+                  </span>
+                  <b class="fichiers-mensuels">“started_at”</b>
+                  <span class="fichiers-mensuels"> et </span>
+                  <b class="fichiers-mensuels">“ended_at”</b>
+                  <span class="fichiers-mensuels"> avaient pu être</span>
+                  <b class="fichiers-mensuels"> inversées</b>
+                  <span class="fichiers-mensuels">. </span>
+                </p>
+                <p class="ride-id-identifiant-unique-d">
+                  <span class="fichiers-mensuels"
+                    >J’ai donc supprimé les tables et effectué une commande
+                    permettant
+                  </span>
+                  <b class="fichiers-mensuels">d’inverser les dates</b>
+                  <span class="fichiers-mensuels">
+                    “started at” et “ended at” pour les trajets ayant une
+                  </span>
+                  <b class="fichiers-mensuels">“tripduration_secs” négative</b>
+                  <span
+                    >. Nous réeffectuons la commande pour la création de tables
+                    par intervalles de temps par la suite.</span
+                  >
+                </p>
+              </div>
+            </div>
+            <div class="analyze-table-content-wrapper">
+              <div class="analyze-table-content">
+                <img
+                  class="capture-decran-le-2025-02-05"
+                  alt=""
+                  src="./public/capture-decran-le-20250201-a-013926-1@2x.png"
+                />
+
+                <div class="en-analysant-les-container">
+                  <span
+                    >En analysant les différentes tables je me suis rendu compte
+                    qu’il y avait encore des lignes avec des
+                  </span>
+                  <b>données manquantes</b>
+                  <span> j’ai donc décidé de faire un </span>
+                  <b>dernier “round” de nettoyage general </b>
+                  <span>:</span>
+                </div>
+              </div>
+            </div>
+            <div class="analyze-screenshot">
+              <img
+                class="capture-decran-le-2025-02-06"
+                loading="lazy"
+                alt=""
+                src="./public/capture-decran-le-20250201-a-014534-1@2x.png"
+              />
+            </div>
+          </div>
+        </section>
+        <section class="analysis-content-wrapper">
+          <div class="analysis-content">
+            <div class="analyse-des-donnes-wrapper">
+              <h3 class="nettoyer-et-organiser">Analyse des données.</h3>
+            </div>
+            <div class="nous-arrivons-maintenant-container">
+              <p class="ride-id-identifiant-unique-d">
+                Nous arrivons maintenant à la partie la plus excitante de cette
+                étude de cas : L’analyse. 
+              </p>
+              <p class="ride-id-identifiant-unique-d">&nbsp;</p>
+              <p class="analyse-generale">
+                <b>ANALYSE GENERALE</b>
+              </p>
+              <p class="ride-id-identifiant-unique-d">
+                <span>
+                  <span>&nbsp;</span>
+                </span>
+              </p>
+              <p class="ride-id-identifiant-unique-d">
+                <span>
+                  <span
+                    >Nous allons commencer par analyser les variables
+                    individuellement avant de les mettre en relation.
+                    Premièrement, quel est le
+                  </span>
+                  <b class="fichiers-mensuels">pourcentage de membres</b>
+                  <span> par rapport au total d’utilisateurs en 2024 ?</span>
+                </span>
+              </p>
+              <p class="ride-id-identifiant-unique-d">
+                <span>
+                  <span>&nbsp;</span>
+                </span>
+              </p>
+              <p class="ride-id-identifiant-unique-d">
+                <span>
+                  <span>  member_casual   count percentage</span>
+                </span>
+              </p>
+              <p class="ride-id-identifiant-unique-d">
+                <span>
+                  <span>&nbsp;</span>
+                </span>
+              </p>
+              <p class="ride-id-identifiant-unique-d">
+                <span>
+                  <span
+                    >  &lt;chr&gt;                &lt;int&gt;       
+                    &lt;dbl&gt;</span
+                  >
+                </span>
+              </p>
+              <p class="ride-id-identifiant-unique-d">
+                <span>
+                  <span>&nbsp;</span>
+                </span>
+              </p>
+              <p class="ride-id-identifiant-unique-d">
+                <span>
+                  <span>1 casual           2151658       </span>
+                  <b class="fichiers-mensuels">36.7</b>
+                </span>
+              </p>
+              <p class="ride-id-identifiant-unique-d">
+                <span>
+                  <span>2 member        3708910       </span>
+                  <b class="fichiers-mensuels">63.3</b>
+                </span>
+              </p>
+              <p class="ride-id-identifiant-unique-d">
+                <span>
+                  <span>&nbsp;</span>
+                </span>
+              </p>
+              <p class="ride-id-identifiant-unique-d">
+                <span>
+                  <span>En 2024 il y a eu </span>
+                  <b class="fichiers-mensuels">63.3%</b>
+                  <span class="fichiers-mensuels"> de membres pour </span>
+                  <b class="fichiers-mensuels">36.7%</b>
+                  <span class="fichiers-mensuels"> de “casuals”</span>
+                </span>
+              </p>
+            </div>
+          </div>
+        </section>
+        <section class="data-analysis-content-wrapper">
+          <div class="data-analysis-content">
+            <div class="analysis-details">
+              <img
+                class="unnamed-1-icon"
+                loading="lazy"
+                alt=""
+                src="./public/unnamed-1@2x.png"
+              />
+            </div>
+            <div class="analysis-details1">
+              <img
+                class="capture-decran-le-2025-02-07"
+                loading="lazy"
+                alt=""
+                src="./public/capture-decran-le-20250201-a-022344-1@2x.png"
+              />
+            </div>
+            <div class="analysis-details2">
+              <div class="quel-est-le-container">
+                <p class="ride-id-identifiant-unique-d">
+                  Quel est le mois où les utilisateurs ont eu le plus recours au
+                  service de Bike Share ? 
+                </p>
+                <p class="ride-id-identifiant-unique-d">
+                    month    total_rides   percentage
+                </p>
+                <p class="ride-id-identifiant-unique-d">&nbsp;</p>
+                <p class="ride-id-identifiant-unique-d">
+                      &lt;chr&gt;          &lt;int&gt;          &lt;dbl&gt;
+                </p>
+                <p class="ride-id-identifiant-unique-d">&nbsp;</p>
+                <p class="ride-id-identifiant-unique-d">
+                  <span>1 </span>
+                  <b class="fichiers-mensuels"
+                    >2024-09      820867        14.0</b
+                  >
+                </p>
+                <p class="ride-id-identifiant-unique-d">&nbsp;</p>
+                <p class="ride-id-identifiant-unique-d">
+                  <span class="fichiers-mensuels">Le mois de </span>
+                  <b class="fichiers-mensuels">Septembre 2024</b>
+                  <span class="fichiers-mensuels">
+                    a enregistré un total de
+                  </span>
+                  <b class="fichiers-mensuels">820 867</b>
+                  <span class="fichiers-mensuels">
+                    trajets ce qui represente
+                  </span>
+                  <b class="fichiers-mensuels"
+                    >14% des trajets totaux en 2024</b
+                  >
+                  <span>. </span>
+                </p>
+                <p class="ride-id-identifiant-unique-d">&nbsp;</p>
+                <p class="ride-id-identifiant-unique-d">
+                  Quel est le mois ou les utilisateurs ont le moins eu recours
+                  au service de Bike Share ? 
+                </p>
+                <p class="ride-id-identifiant-unique-d">
+                  month   total_rides percentage
+                </p>
+                <p class="ride-id-identifiant-unique-d">&nbsp;</p>
+                <p class="ride-id-identifiant-unique-d">
+                      &lt;chr&gt;           &lt;int&gt;        &lt;dbl&gt;
+                </p>
+                <p class="ride-id-identifiant-unique-d">&nbsp;</p>
+                <p class="ride-id-identifiant-unique-d">
+                  <span>1 </span>
+                  <b class="fichiers-mensuels"
+                    >2024-01      144873       2.47</b
+                  >
+                </p>
+                <p class="ride-id-identifiant-unique-d">&nbsp;</p>
+                <p class="ride-id-identifiant-unique-d">
+                  <span class="fichiers-mensuels">Le mois de </span>
+                  <b class="fichiers-mensuels">Janvier 2024</b>
+                  <span>
+                    a été le mois le moins fréquenté par les utilisateurs de
+                    Cyclistic en 2024 avec
+                  </span>
+                  <b class="fichiers-mensuels">144 873 trajets</b>
+                  <span class="fichiers-mensuels"> ce qui représente </span>
+                  <b class="fichiers-mensuels">2.47% du total des trajets</b>
+                  <span class="fichiers-mensuels">.</span>
+                </p>
+              </div>
+            </div>
+            <div class="analysis-details3">
+              <img
+                class="capture-decran-le-2025-02-08"
+                loading="lazy"
+                alt=""
+                src="./public/capture-decran-le-20250201-a-031933-1@2x.png"
+              />
+            </div>
+            <div class="analysis-details4">
+              <img
+                class="capture-decran-le-2025-02-09"
+                loading="lazy"
+                alt=""
+                src="./public/capture-decran-le-20250201-a-032013-1@2x.png"
+              />
+            </div>
+            <div class="analysis-details5">
+              <div class="suppression-des-doublons-container">
+                <p class="analyse-generale">
+                  <b>EVOLUTION ANNUELLE PAR TYPE D’UTILISATEUR </b>
+                </p>
+                <p class="ride-id-identifiant-unique-d">&nbsp;</p>
+                <p class="ride-id-identifiant-unique-d">
+                  Intéressons nous maintenant à l'évolution de la tendance
+                  continue sur l'année 2024
+                </p>
+              </div>
+            </div>
+            <div class="analysis-details6">
+              <img
+                class="utilisateurs-par-mois-1-icon"
+                loading="lazy"
+                alt=""
+                src="./public/utilisateurs-par-mois-1@2x.png"
+              />
+            </div>
+            <div class="analysis-details6">
+              <img
+                class="capture-decran-le-2025-02-010"
+                loading="lazy"
+                alt=""
+                src="./public/capture-decran-le-20250201-a-033152-1@2x.png"
+              />
+            </div>
+            <div class="analysis-details8">
+              <div class="sans-surprise-les-container">
+                <span>Sans surprise, les utilisateurs ont beaucoup</span>
+                <b> plus utilisé</b>
+                <span> le service de Bikeshare </span>
+                <b>pendant les mois d'été</b>
+                <span>, il y a une grosse</span>
+                <b> augmentation</b>
+                <span> du nombre d’utilisateurs </span>
+                <b>au courant du mois d’avril </b>
+                <span
+                  >probablement expliquée par le retour des beaux jours. Le
+                </span>
+                <b>pic de l'activité</b>
+                <span> pour l'année 2024 a été en </span>
+                <b>Septembre</b>
+                <span>.  </span>
+              </div>
+            </div>
+            <div class="analysis-details9">
+              <div class="analyse-des-conditions-container">
+                <p class="analyse-des-conditions-mtoro">
+                  <b>ANALYSE DES CONDITIONS MÉTÉOROLOGIQUES</b>
+                </p>
+                <p class="nous-aurons-accs-aux-donnes">
+                  <span>
+                    <span> </span>
+                  </span>
+                </p>
+                <p class="nous-aurons-accs-aux-donnes">
+                  <span>
+                    <span>Nous allons maintenant intégrer des données de </span>
+                    <b class="fichiers-mensuels">température</b>
+                    <span class="fichiers-mensuels"> et de</span>
+                    <b class="fichiers-mensuels"> précipitations</b>
+                    <span class="fichiers-mensuels">
+                      pour Chicago en 2024 grâce à un jeu de données trouvé sur
+                    </span>
+                    <b class="fichiers-mensuels">Weatherstack</b>
+                    <span
+                      >. Le fichier csv “export.csv” contient les données
+                      météorologiques pour chaque journée de l'année 2024, il
+                      est organisé selon les colonnes suivantes :</span
+                    >
+                  </span>
+                </p>
+                <p class="ride-id-identifiant-unique-d">
+                  <span>
+                    <span>&nbsp;</span>
+                  </span>
+                </p>
+                <p class="ride-id-identifiant-unique-d">
+                  <span>
+                    <b class="ride-id">date :</b>
+                    <span> date de l’enregistrement </span>
+                  </span>
+                </p>
+                <p class="ride-id-identifiant-unique-d">
+                  <span>
+                    <b class="ride-id">tavg :</b>
+                    <span> température moyenne </span>
+                  </span>
+                </p>
+                <p class="ride-id-identifiant-unique-d">
+                  <span>
+                    <b class="ride-id">tmin :</b>
+                    <span> température minimale</span>
+                  </span>
+                </p>
+                <p class="ride-id-identifiant-unique-d">
+                  <span>
+                    <b class="ride-id">tmax :</b>
+                    <span> température maximale </span>
+                  </span>
+                </p>
+                <p class="ride-id-identifiant-unique-d">
+                  <span>
+                    <b class="ride-id">prcp :</b>
+                    <span> precipitations</span>
+                  </span>
+                </p>
+                <p class="ride-id-identifiant-unique-d">
+                  <span>
+                    <b class="ride-id">snow :</b>
+                    <span> neige</span>
+                  </span>
+                </p>
+                <p class="ride-id-identifiant-unique-d">
+                  <span>
+                    <b>wdir :</b>
+                    <span class="ride-id"> wdir</span>
+                  </span>
+                </p>
+                <p class="ride-id-identifiant-unique-d">
+                  <span>
+                    <b class="ride-id">wspd :</b>
+                    <span> direction du vent</span>
+                  </span>
+                </p>
+                <p class="ride-id-identifiant-unique-d">
+                  <span>
+                    <b class="ride-id">wpgt : </b>
+                    <span>rafales de vent</span>
+                  </span>
+                </p>
+                <p class="ride-id-identifiant-unique-d">
+                  <span>
+                    <b class="ride-id">pres :</b>
+                    <span> pression atmospherique</span>
+                  </span>
+                </p>
+                <p class="ride-id-identifiant-unique-d">
+                  <span>
+                    <b class="ride-id">tsun :</b>
+                    <span> ensoleillement</span>
+                  </span>
+                </p>
+                <p class="nous-aurons-accs-aux-donnes">
+                  <span>
+                    <span>&nbsp;</span>
+                  </span>
+                </p>
+                <p class="ride-id-identifiant-unique-d">
+                  <span>
+                    <span
+                      >Pour alléger le processus d’analyse, nous n'utilisons que
+                      les variables “tavg” et “prcp” </span
+                    >
+                  </span>
+                </p>
+                <p class="ride-id-identifiant-unique-d">
+                  <span>
+                    <span>&nbsp;</span>
+                  </span>
+                </p>
+                <p class="ride-id-identifiant-unique-d">
+                  <span>
+                    <span
+                      >De plus, nous pouvons garantir l'intégrité et la
+                      fiabilité des données en utilisant le test ROCCC.</span
+                    >
+                  </span>
+                </p>
+                <p class="ride-id-identifiant-unique-d">
+                  <span>
+                    <span>&nbsp;</span>
+                  </span>
+                </p>
+                <ul class="les-donnes-sont-fiables-ell2">
+                  <li class="les-donnes-sont-originales">
+                    <span>
+                      <span>Les données sont </span>
+                      <b class="fichiers-mensuels">fiables</b>
+                      <span class="fichiers-mensuels">
+                        : elles proviennent d’une source reconnue.</span
+                      >
+                    </span>
+                  </li>
+                  <li class="les-donnes-sont-originales">
+                    <span>
+                      <span class="fichiers-mensuels">Les données sont </span>
+                      <b class="fichiers-mensuels">originales</b>
+                      <span class="fichiers-mensuels">
+                        : la source primaire peut être identifiée.</span
+                      >
+                    </span>
+                  </li>
+                  <li class="les-donnes-sont-originales">
+                    <span>
+                      <span class="fichiers-mensuels">Les données sont </span>
+                      <b class="fichiers-mensuels">complètes</b>
+                      <span class="fichiers-mensuels">
+                        : elles contiennent les informations essentielles
+                        nécessaires pour résoudre la tâche en cours et chaque
+                        jour de l'année y figure.</span
+                      >
+                    </span>
+                  </li>
+                  <li class="les-donnes-sont-originales">
+                    <span>
+                      <span class="fichiers-mensuels">Les données sont </span>
+                      <b class="fichiers-mensuels">actuelles</b>
+                      <span class="fichiers-mensuels">
+                        : nous utilisons les données pour l'année 2024 en
+                        janvier 2025.</span
+                      >
+                    </span>
+                  </li>
+                  <li>
+                    <span>
+                      <span class="fichiers-mensuels">Les données sont </span>
+                      <b class="fichiers-mensuels">citées </b>
+                      <span class="fichiers-mensuels"
+                        >: elles proviennent d'une source vérifiée et
+                        crédible.</span
+                      >
+                    </span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="analysis-details3">
+              <img
+                class="capture-decran-le-2025-02-011"
+                loading="lazy"
+                alt=""
+                src="./public/capture-decran-le-20250201-a-153006-1@2x.png"
+              />
+            </div>
+            <div class="analysis-details6">
+              <img
+                class="meteo-1-icon"
+                loading="lazy"
+                alt=""
+                src="./public/meteo-1@2x.png"
+              />
+            </div>
+            <div class="analysis-details12">
+              <div class="en-analysant-ces-container">
+                Nous allons maintenant pousser plus loin notre étude pour
+                déterminer l’effet de la température et des précipitations sur
+                chacun des différents types d’utilisateurs et essayer de
+                quantifier cet effet. Pour cela nous utiliserons une régression
+                linéaire logistique dans RStudio.
+              </div>
+            </div>
+            <div class="analysis-details13">
+              <img
+                class="capture-decran-le-2025-02-012"
+                loading="lazy"
+                alt=""
+                src="./public/capture-decran-le-20250201-a-153646-1@2x.png"
+              />
+            </div>
+            <div class="regression-lineaire-container">
+              <p class="ride-id-identifiant-unique-d">
+                <b>REGRESSION LINEAIRE </b>
+              </p>
+              <p class="blank-line34">
+                <span>
+                  <span>&nbsp;</span>
+                </span>
+              </p>
+              <p class="ride-id-identifiant-unique-d">
+                <span>
+                  <span>Le nombre de trajet expliqué par la </span>
+                  <b class="fichiers-mensuels">température</b>
+                  <span class="fichiers-mensuels"> et les</span>
+                  <b class="fichiers-mensuels"> précipitations</b>
+                  <span> pour chaque type de client indépendamment.</span>
+                </span>
+              </p>
+              <p class="ride-id-identifiant-unique-d">
+                <span>
+                  <span>&nbsp;</span>
+                </span>
+              </p>
+              <p class="ride-id-identifiant-unique-d">
+                <span>
+                  <span>Le but ici est de mesurer la </span>
+                  <b class="fichiers-mensuels">sensibilité</b>
+                  <span>
+                    à la température et aux précipitations pour chaque type de
+                    client. L’influence de la température sur le recours au
+                    service de location de vélo est il plus important chez les
+                    membres ou chez les casual ? Quelle est cette influence en
+                    termes de mesure ? </span
+                  >
+                </span>
+              </p>
+            </div>
+            <div class="regression-formula">
+              <b class="suppression-des-doublons-container">
+                <p class="ride-id-identifiant-unique-d">
+                  n_trips = β0 ​+ β1​×temperature + β2​×precipitation + ϵ
+                </p>
+              </b>
+            </div>
+            <div class="analysis-details14">
+              <div class="suppression-des-doublons-container">
+                <p class="ride-id-identifiant-unique-d">
+                  La régression linéaire sera performée sur 2 ensembles distinct
+                  : 
+                </p>
+                <p class="ride-id-identifiant-unique-d">&nbsp;</p>
+                <p class="ride-id-identifiant-unique-d">
+                  1- les données pour les membres 
+                </p>
+                <p class="ride-id-identifiant-unique-d">
+                  2- les données pour les casual
+                </p>
+              </div>
+            </div>
+            <div class="analysis-details15">
+              <img
+                class="capture-decran-le-2025-02-013"
+                loading="lazy"
+                alt=""
+                src="./public/capture-decran-le-20250201-a-161514-1@2x.png"
+              />
+            </div>
+            <div class="analysis-details16">
+              <div class="rsultats-resultats-membres-container">
+                <p class="rsultats">
+                  <b>RÉSULTATS:</b>
+                </p>
+                <p class="blank-line34">
+                  <span>
+                    <span>&nbsp;</span>
+                  </span>
+                </p>
+                <p class="ride-id-identifiant-unique-d">
+                  <span>
+                    <b>Resultats membres : </b>
+                  </span>
+                </p>
+                <p class="ride-id-identifiant-unique-d">
+                  <span>
+                    <span class="identifiant-unique-des">&nbsp;</span>
+                  </span>
+                </p>
+                <p class="ride-id-identifiant-unique-d">
+                  <span>
+                    <span class="identifiant-unique-des">Call:</span>
+                  </span>
+                </p>
+                <p class="ride-id-identifiant-unique-d">
+                  <span>
+                    <span class="identifiant-unique-des"
+                      >lm(formula = n_trips ~ temperature + precipitation, data
+                      = member_data)</span
+                    >
+                  </span>
+                </p>
+                <p class="ride-id-identifiant-unique-d">
+                  <span>
+                    <span class="identifiant-unique-des">&nbsp;</span>
+                  </span>
+                </p>
+                <p class="ride-id-identifiant-unique-d">
+                  <span>
+                    <span class="identifiant-unique-des">Residuals:</span>
+                  </span>
+                </p>
+                <p class="ride-id-identifiant-unique-d">
+                  <span>
+                    <span class="identifiant-unique-des">&nbsp;</span>
+                  </span>
+                </p>
+                <p class="ride-id-identifiant-unique-d">
+                  <span>
+                    <span class="identifiant-unique-des"
+                      >   Min     1Q Median     3Q    Max </span
+                    >
+                  </span>
+                </p>
+                <p class="ride-id-identifiant-unique-d">
+                  <span>
+                    <span class="identifiant-unique-des"
+                      > -5781  -1437    -93   1411   5865 </span
+                    >
+                  </span>
+                </p>
+                <p class="ride-id-identifiant-unique-d">
+                  <span>
+                    <span class="identifiant-unique-des">&nbsp;</span>
+                  </span>
+                </p>
+                <p class="ride-id-identifiant-unique-d">
+                  <span>
+                    <span class="identifiant-unique-des">Coefficients:</span>
+                  </span>
+                </p>
+                <p class="ride-id-identifiant-unique-d">
+                  <span>
+                    <span class="identifiant-unique-des">&nbsp;</span>
+                  </span>
+                </p>
+                <p class="ride-id-identifiant-unique-d">
+                  <span>
+                    <span class="identifiant-unique-des"
+                      >               Estimate Std. Error t value
+                      Pr(&gt;|t|)    </span
+                    >
+                  </span>
+                </p>
+                <p class="ride-id-identifiant-unique-d">
+                  <span>
+                    <span class="identifiant-unique-des">(Intercept)    </span>
+                    <b class="fichiers-mensuels"> 5184.25</b>
+                    <span class="temperature">
+                          186.92  27.734   &lt;2e-16 ***</span
+                    >
+                  </span>
+                </p>
+                <p class="ride-id-identifiant-unique-d">
+                  <span>
+                    <span class="temperature">temperature     </span>
+                    <b class="fichiers-mensuels">399.82</b>
+                    <span class="identifiant-unique-des"
+                      >      11.01  36.316   &lt;2e-16 ***</span
+                    >
+                  </span>
+                </p>
+                <p class="ride-id-identifiant-unique-d">
+                  <span>
+                    <span class="identifiant-unique-des">precipitation  </span>
+                    <b class="fichiers-mensuels">-154.47</b>
+                    <span class="identifiant-unique-des"
+                      >      15.90  - 9.714   &lt;2e-16 ***</span
+                    >
+                  </span>
+                </p>
+                <p class="ride-id-identifiant-unique-d">
+                  <span>
+                    <span class="identifiant-unique-des">---</span>
+                  </span>
+                </p>
+                <p class="ride-id-identifiant-unique-d">
+                  <span>
+                    <span class="identifiant-unique-des"
+                      >Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1
+                      ‘ ’ 1</span
+                    >
+                  </span>
+                </p>
+                <p class="ride-id-identifiant-unique-d">
+                  <span>
+                    <span class="identifiant-unique-des">&nbsp;</span>
+                  </span>
+                </p>
+                <p class="ride-id-identifiant-unique-d">
+                  <span>
+                    <span class="identifiant-unique-des"
+                      >Residual standard error: 2108 on 359 degrees of
+                      freedom</span
+                    >
+                  </span>
+                </p>
+                <p class="ride-id-identifiant-unique-d">
+                  <span>
+                    <span class="identifiant-unique-des"
+                      >  (4 observations deleted due to missingness)</span
+                    >
+                  </span>
+                </p>
+                <p class="ride-id-identifiant-unique-d">
+                  <span>
+                    <span class="identifiant-unique-des">&nbsp;</span>
+                  </span>
+                </p>
+                <p class="ride-id-identifiant-unique-d">
+                  <span>
+                    <span class="identifiant-unique-des">Multiple</span>
+                    <b class="fichiers-mensuels"> R-squared:  0.7886</b>
+                    <span>, Adjusted R-squared:  0.7875 </span>
+                  </span>
+                </p>
+                <p class="ride-id-identifiant-unique-d">
+                  <span>
+                    <span
+                      >F-statistic: 669.8 on 2 and 359 DF,  p-value: &lt;
+                      2.2e-16</span
+                    >
+                  </span>
+                </p>
+                <p class="ride-id-identifiant-unique-d">
+                  <span>
+                    <span>&nbsp;</span>
+                  </span>
+                </p>
+                <p class="ride-id-identifiant-unique-d">
+                  <span>
+                    <b class="fichiers-mensuels">Température </b>
+                    <span class="fichiers-mensuels"
+                      >: Le coefficient pour la température est
+                    </span>
+                    <b class="fichiers-mensuels">399.82</b>
+                    <span
+                      >. Cela signifie qu'avec chaque augmentation de 1°C, le
+                      nombre de trajets pour les membres augmente en moyenne de
+                      399.82 trajets. Cela montre un effet positif et
+                      significatif de la température sur l'utilisation des vélos
+                      par les membres.</span
+                    >
+                  </span>
+                </p>
+                <p class="ride-id-identifiant-unique-d">
+                  <span>
+                    <span>&nbsp;</span>
+                  </span>
+                </p>
+                <p class="ride-id-identifiant-unique-d">
+                  <span>
+                    <b class="fichiers-mensuels">Précipitations :</b>
+                    <span class="fichiers-mensuels">
+                      Le coefficient pour les précipitations est
+                    </span>
+                    <b class="fichiers-mensuels">-154.47</b>
+                    <span
+                      >, ce qui signifie qu'en cas de pluie, le nombre de
+                      trajets diminue en moyenne de 154.47 trajets. Cela montre
+                      l'effet négatif des précipitations sur l'utilisation du
+                      vélo par les membres.</span
+                    >
+                  </span>
+                </p>
+                <p class="ride-id-identifiant-unique-d">
+                  <span>
+                    <span>&nbsp;</span>
+                  </span>
+                </p>
+                <p class="ride-id-identifiant-unique-d">
+                  <span>
+                    <span>R² : Le </span>
+                    <b class="fichiers-mensuels">R² est de 0.7886</b>
+                    <span class="fichiers-mensuels"
+                      >, ce qui signifie que
+                    </span>
+                    <b class="fichiers-mensuels">78.86%</b>
+                    <span class="fichiers-mensuels">
+                      de la variation du nombre de trajets des membres peut être
+                      expliquée par la température et les précipitations.</span
+                    >
+                  </span>
+                </p>
+              </div>
+            </div>
+            <div class="analysis-details17">
+              <img
+                class="utilisateurs-par-mois-1-icon"
+                alt=""
+                src="./public/rplot02-1@2x.png"
+              />
+            </div>
+            <div class="analysis-details18">
+              <img
+                class="utilisateurs-par-mois-1-icon"
+                alt=""
+                src="./public/rplot04-1@2x.png"
+              />
+            </div>
+            <div class="analysis-details19">
+              <div class="rsultats-casual-call-container">
+                <p class="ride-id-identifiant-unique-d">
+                  <span class="identifiant-unique-des">
+                    <b>Résultats Casual:</b>
+                  </span>
+                </p>
+                <p class="ride-id-identifiant-unique-d">
+                  <span class="identifiant-unique-des">
+                    <span class="identifiant-unique-des">&nbsp;</span>
+                  </span>
+                </p>
+                <p class="blank-line34">
+                  <span>
+                    <span class="identifiant-unique-des"> Call:</span>
+                  </span>
+                </p>
+                <p class="ride-id-identifiant-unique-d">
+                  <span>
+                    <span class="identifiant-unique-des"
+                      >lm(formula = n_trips ~ temperature + precipitation, data
+                      = casual_data)</span
+                    >
+                  </span>
+                </p>
+                <p class="ride-id-identifiant-unique-d">
+                  <span>
+                    <span class="identifiant-unique-des">&nbsp;</span>
+                  </span>
+                </p>
+                <p class="ride-id-identifiant-unique-d">
+                  <span>
+                    <span class="identifiant-unique-des">Residuals:</span>
+                  </span>
+                </p>
+                <p class="ride-id-identifiant-unique-d">
+                  <span>
+                    <span class="identifiant-unique-des"
+                      >    Min      1Q  Median      3Q     Max </span
+                    >
+                  </span>
+                </p>
+                <p class="ride-id-identifiant-unique-d">
+                  <span>
+                    <span class="identifiant-unique-des"
+                      >-5349.4 -1573.5  -416.8  1097.3  9635.7 </span
+                    >
+                  </span>
+                </p>
+                <p class="ride-id-identifiant-unique-d">
+                  <span>
+                    <span class="identifiant-unique-des"> </span>
+                  </span>
+                </p>
+                <p class="ride-id-identifiant-unique-d">
+                  <span>
+                    <span class="identifiant-unique-des">&nbsp;</span>
+                  </span>
+                </p>
+                <p class="ride-id-identifiant-unique-d">
+                  <span>
+                    <span class="identifiant-unique-des">Coefficients:</span>
+                  </span>
+                </p>
+                <p class="ride-id-identifiant-unique-d">
+                  <span>
+                    <span class="identifiant-unique-des">&nbsp;</span>
+                  </span>
+                </p>
+                <p class="ride-id-identifiant-unique-d">
+                  <span>
+                    <span class="identifiant-unique-des"
+                      >              Estimate Std. Error t value .
+                      Pr(&gt;|t|)    </span
+                    >
+                  </span>
+                </p>
+                <p class="ride-id-identifiant-unique-d">
+                  <span>
+                    <span class="identifiant-unique-des"
+                      >(Intercept)    1235.08     231.90   5.326 1.78e-07
+                      ***</span
+                    >
+                  </span>
+                </p>
+                <p class="ride-id-identifiant-unique-d">
+                  <span>
+                    <span class="identifiant-unique-des">temperature    </span>
+                    <b class="fichiers-mensuels"> 371.51</b>
+                    <span class="temperature"
+                      >     13.66  27.199  &lt; 2e-16 ***</span
+                    >
+                  </span>
+                </p>
+                <p class="ride-id-identifiant-unique-d">
+                  <span>
+                    <span class="temperature">precipitation </span>
+                    <b class="fichiers-mensuels"> -124.40</b>
+                    <span class="identifiant-unique-des">
+                           19.73  -6.306 8.42e-10 ***</span
+                    >
+                  </span>
+                </p>
+                <p class="ride-id-identifiant-unique-d">
+                  <span>
+                    <span class="identifiant-unique-des">---</span>
+                  </span>
+                </p>
+                <p class="ride-id-identifiant-unique-d">
+                  <span>
+                    <span class="identifiant-unique-des"
+                      >Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1
+                      ‘ ’ 1</span
+                    >
+                  </span>
+                </p>
+                <p class="ride-id-identifiant-unique-d">
+                  <span>
+                    <span class="identifiant-unique-des">&nbsp;</span>
+                  </span>
+                </p>
+                <p class="ride-id-identifiant-unique-d">
+                  <span>
+                    <span class="identifiant-unique-des"
+                      >Residual standard error: 2615 on 359 degrees of
+                      freedom</span
+                    >
+                  </span>
+                </p>
+                <p class="ride-id-identifiant-unique-d">
+                  <span>
+                    <span class="identifiant-unique-des"
+                      >  (4 observations deleted due to missingness)</span
+                    >
+                  </span>
+                </p>
+                <p class="ride-id-identifiant-unique-d">
+                  <span>
+                    <span class="identifiant-unique-des">&nbsp;</span>
+                  </span>
+                </p>
+                <p class="ride-id-identifiant-unique-d">
+                  <span>
+                    <span class="identifiant-unique-des">Multiple </span>
+                    <b class="fichiers-mensuels">R-squared:  0.675</b>
+                    <span>, Adjusted R-squared:  0.6732 </span>
+                  </span>
+                </p>
+                <p class="ride-id-identifiant-unique-d">
+                  <span>
+                    <span
+                      >F-statistic: 372.9 on 2 and 359 DF,  p-value: &lt;
+                      2.2e-16</span
+                    >
+                  </span>
+                </p>
+                <p class="ride-id-identifiant-unique-d">
+                  <span>
+                    <span>&nbsp;</span>
+                  </span>
+                </p>
+                <p class="ride-id-identifiant-unique-d">
+                  <span>
+                    <b class="fichiers-mensuels">Température :</b>
+                    <span class="fichiers-mensuels">
+                      Le coefficient pour la température est
+                    </span>
+                    <b class="fichiers-mensuels">371.51</b>
+                    <span
+                      >, ce qui signifie qu'une augmentation de 1°C correspond à
+                      une augmentation de 371.51 trajets en moyenne pour les
+                      casuals. Cet effet positif sur l'utilisation des vélos est
+                      également significatif.</span
+                    >
+                  </span>
+                </p>
+                <p class="ride-id-identifiant-unique-d">
+                  <span>
+                    <span>&nbsp;</span>
+                  </span>
+                </p>
+                <p class="ride-id-identifiant-unique-d">
+                  <span>
+                    <b class="fichiers-mensuels">Précipitations :</b>
+                    <span class="fichiers-mensuels">
+                      Le coefficient pour les précipitations est</span
+                    >
+                    <b class="fichiers-mensuels"> -124.40</b>
+                    <span
+                      >, ce qui montre que plus il pleut, moins les casuals
+                      utilisent leur vélo, avec une diminution moyenne de 124.40
+                      trajets pour chaque unité d'augmentation des
+                      précipitations.</span
+                    >
+                  </span>
+                </p>
+                <p class="ride-id-identifiant-unique-d">
+                  <span>
+                    <span>&nbsp;</span>
+                  </span>
+                </p>
+                <p class="ride-id-identifiant-unique-d">
+                  <span>
+                    <b class="fichiers-mensuels">R²</b>
+                    <span class="fichiers-mensuels"> : Le </span>
+                    <b class="fichiers-mensuels">R² est de 0.675</b>
+                    <span class="fichiers-mensuels"
+                      >, ce qui signifie que
+                    </span>
+                    <b class="fichiers-mensuels">67.5%</b>
+                    <span>
+                      de la variation du nombre de trajets des casuals peut être
+                      expliquée par la température et les précipitations.</span
+                    >
+                  </span>
+                </p>
+              </div>
+            </div>
+            <div class="analysis-details20">
+              <img
+                class="rplot01-2-icon"
+                loading="lazy"
+                alt=""
+                src="./public/rplot01-2@2x.png"
+              />
+            </div>
+            <div class="analysis-details20">
+              <img
+                class="rplot01-2-icon"
+                loading="lazy"
+                alt=""
+                src="./public/rplot05-1@2x.png"
+              />
+            </div>
+            <div class="analysis-details22">
+              <img
+                class="capture-decran-le-2025-02-014"
+                loading="lazy"
+                alt=""
+                src="./public/capture-decran-le-20250201-a-161950-1@2x.png"
+              />
+            </div>
+            <div class="analysis-details23">
+              <div class="analyse-des-habitudes-container">
+                <p class="ride-id-identifiant-unique-d">
+                  <span>
+                    <b
+                      >ANALYSE DES HABITUDES D'UTILISATION HEBDOMADAIRES ET
+                      QUOTIDIENNES PAR TYPE D’UTILISATEUR.</b
+                    >
+                  </span>
+                </p>
+                <p class="ride-id-identifiant-unique-d">
+                  <span>
+                    <b>&nbsp;</b>
+                  </span>
+                </p>
+                <p class="ride-id-identifiant-unique-d">
+                  <span>
+                    <span
+                      >Pour continuer notre analyse, nous allons maintenant nous
+                      intéresser aux préférences des utilisateurs et identifier
+                      des tendances dans les habitudes de chaque type de
+                      consommateur. Pour cela, nous utiliserons des graphiques à
+                      barres pour illustrer l’utilisation journalière et
+                      hebdomadaire du programme de partage de vélos. </span
+                    >
+                  </span>
+                </p>
+                <p class="ride-id-identifiant-unique-d">
+                  <span>
+                    <b>&nbsp;</b>
+                  </span>
+                </p>
+                <p class="ride-id-identifiant-unique-d">
+                  <span>
+                    <b>Jour de la semaine </b>
+                  </span>
+                </p>
+                <p class="blank-line34">&nbsp;</p>
+              </div>
+            </div>
+            <div class="analysis-details24">
+              <img
+                class="rplot01-2-icon"
+                alt=""
+                src="./public/jour-de-la-semaine-1@2x.png"
+              />
+            </div>
+            <div class="analysis-details22">
+              <img
+                class="capture-decran-le-2025-02-015"
+                loading="lazy"
+                alt=""
+                src="./public/capture-decran-le-20250201-a-163425-1@2x.png"
+              />
+            </div>
+            <div class="analysis-details26">
+              <div class="on-voit-ici-container">
+                <p class="ride-id-identifiant-unique-d">
+                  <span class="fichiers-mensuels">On voit ici que les </span>
+                  <b class="fichiers-mensuels">membres</b>
+                  <span class="fichiers-mensuels"> ont une </span>
+                  <b class="fichiers-mensuels"
+                    >utilisation beaucoup plus constante</b
+                  >
+                  <span>
+                    du service de partage de vélos que les casuals avec une
+                    baisse de leur utilisation en fin de semaine. Les
+                  </span>
+                  <b class="fichiers-mensuels">casuals</b>
+                  <span class="fichiers-mensuels">, eux, ont une claire </span>
+                  <b class="fichiers-mensuels">hausse</b>
+                  <span class="fichiers-mensuels"> de leur utilisation </span>
+                  <b>en fin de semaine.</b>
+                </p>
+                <p class="ride-id-identifiant-unique-d">
+                  <b>&nbsp;</b>
+                </p>
+                <p class="ride-id-identifiant-unique-d">
+                  <b>&nbsp;</b>
+                </p>
+                <p class="ride-id-identifiant-unique-d">
+                  <b>Heures de la journée</b>
+                </p>
+                <p class="ride-id-identifiant-unique-d">
+                  <b>&nbsp;</b>
+                </p>
+              </div>
+            </div>
+            <div class="analysis-details27">
+              <img
+                class="heures-de-la-journee-1"
+                alt=""
+                src="./public/heures-de-la-journee-1@2x.png"
+              />
+            </div>
+            <div class="analysis-details28">
+              <img
+                class="capture-decran-le-2025-02-016"
+                loading="lazy"
+                alt=""
+                src="./public/capture-decran-le-20250201-a-164839-1@2x.png"
+              />
+            </div>
+            <div class="ici-on-voit-bien-quil-y-a-2-p-wrapper">
+              <div class="on-voit-ici-container">
+                <p class="ride-id-identifiant-unique-d">
+                  <span class="fichiers-mensuels"
+                    >Ici on voit bien qu’il y a 2 pics d’utilisation pour
+                  </span>
+                  <b class="fichiers-mensuels"
+                    >les membres entre 06h00 et 09h00</b
+                  >
+                  <span class="fichiers-mensuels"> et entre </span>
+                  <b class="fichiers-mensuels">16h et 18h</b>
+                  <span>
+                    ce qui peut correspondre à des horaires de bureaux.
+                    L'évolution de l’utilisation des casuals est elle plus
+                  </span>
+                  <b class="fichiers-mensuels">constante</b>
+                  <span class="fichiers-mensuels">
+                    au cours de la journée avec un
+                  </span>
+                  <b class="fichiers-mensuels">pic d’utilisation à 17h</b>
+                  <span class="fichiers-mensuels">.</span>
+                </p>
+                <p class="ride-id-identifiant-unique-d">
+                  <b>&nbsp;</b>
+                </p>
+                <p class="ride-id-identifiant-unique-d">
+                  <b>&nbsp;</b>
+                </p>
+                <p class="ride-id-identifiant-unique-d">
+                  <b
+                    >ANALYSE DES PRÉFÉRENCES EN TERME DE TYPE DE VÉLO PAR TYPE
+                    D’UTILISATEUR.</b
+                  >
+                </p>
+              </div>
+            </div>
+            <div class="bike-types-content-wrapper">
+              <div class="bike-types-content">
+                <img
+                  class="velocasual-1-icon"
+                  alt=""
+                  src="./public/velocasual-1@2x.png"
+                />
+
+                <img
+                  class="velocasual-1-icon"
+                  alt=""
+                  src="./public/bikes-membres-1@2x.png"
+                />
+              </div>
+            </div>
+            <div class="analysis-details29">
+              <img
+                class="capture-decran-le-2025-02-017"
+                loading="lazy"
+                alt=""
+                src="./public/capture-decran-le-20250201-a-170938-1@2x.png"
+              />
+            </div>
+            <div class="analysis-details30">
+              <div class="ici-on-peut-container">
+                <p class="ride-id-identifiant-unique-d">
+                  <span class="fichiers-mensuels"
+                    >Ici on peut voir que les casual ont un plus recours aux
+                  </span>
+                  <b class="fichiers-mensuels">scooters électriques</b>
+                  <span>
+                    que les membres. Peut-être y a t il ici une information
+                    importante qui demanderait une analyse de marché plus
+                    approfondie, nous reviendrons la dessus dans la partie
+                    “recommandations”.</span
+                  >
+                </p>
+                <p class="ride-id-identifiant-unique-d">
+                  <span></span>
+                  <b>ANALYSE DES STATIONS</b>
+                </p>
+                <p class="ride-id-identifiant-unique-d">
+                  <b>&nbsp;</b>
+                </p>
+                <p class="ride-id-identifiant-unique-d">
+                  <span class="fichiers-mensuels"
+                    >Nous allons maintenant nous intéresser aux préférences des
+                    utilisateurs concernant les
+                  </span>
+                  <b class="fichiers-mensuels">types de stations</b>
+                  <span class="fichiers-mensuels"
+                    >. Pour cela nous ferons un
+                  </span>
+                  <b class="fichiers-mensuels"
+                    >graphique des 5 stations les plus utilisées
+                  </b>
+                  <span class="fichiers-mensuels">et une </span>
+                  <b class="fichiers-mensuels">carte interactive de Chicago</b>
+                  <span class="fichiers-mensuels">
+                    pour situer les stations géographiquement. Afin d’importer
+                    des données géographiques sur chicago nous utiliserons une
+                  </span>
+                  <b class="fichiers-mensuels">API google maps</b>
+                  <span class="fichiers-mensuels">
+                    pour importer nos données et utiliserons le package
+                  </span>
+                  <b class="fichiers-mensuels">”leaflet” </b>
+                  <span class="fichiers-mensuels"
+                    >pour lire les données sur
+                  </span>
+                  <b class="fichiers-mensuels">RStudio</b>
+                  <span
+                    >. Le code R pour la création de cette carte interactive est
+                    fastidieux et long. Pour suivre ce code veuillez vous
+                    référer au script R : </span
+                  >
+                </p>
+                <p class="ride-id-identifiant-unique-d">&nbsp;</p>
+                <p class="ride-id-identifiant-unique-d">Cyclistic01.R </p>
+                <p class="ride-id-identifiant-unique-d">&nbsp;</p>
+                <p class="ride-id-identifiant-unique-d">
+                  # Création d'une carte contenant les 20 stations les plus
+                  utilisées par type d'utilisateur.
+                </p>
+                <p class="ride-id-identifiant-unique-d">&nbsp;</p>
+                <p class="ride-id-identifiant-unique-d">Carte interactive:</p>
+                <p class="ride-id-identifiant-unique-d">&nbsp;</p>
+                <p class="ride-id-identifiant-unique-d">
+                  file:///Users/msayn47painter/Desktop/CASE_STUDY/Graph%20and%20Charts/Annual/carte_interactive_combined_extended.html
+                </p>
+              </div>
+            </div>
+            <div class="analysis-details31">
+              <img
+                class="station-les-plus-utilisees-1"
+                alt=""
+                src="./public/station-les-plus-utilisees-1@2x.png"
+              />
+            </div>
+            <div class="analysis-details32">
+              <img
+                class="stations-casual-1-icon"
+                loading="lazy"
+                alt=""
+                src="./public/stations-membres-1@2x.png"
+              />
+            </div>
+            <div class="analysis-details32">
+              <img
+                class="stations-casual-1-icon"
+                loading="lazy"
+                alt=""
+                src="./public/stations-casual-1@2x.png"
+              />
+            </div>
+            <div class="analysis-details34">
+              <div class="la-carte-et-container">
+                <p class="ride-id-identifiant-unique-d">
+                  <span class="fichiers-mensuels"
+                    >La carte et les graphiques offrent beaucoup d’informations
+                    importantes et pertinentes. Premièrement les
+                  </span>
+                  <b class="fichiers-mensuels">causals</b>
+                  <span class="fichiers-mensuels"> ont une </span>
+                  <b class="fichiers-mensuels">concentration plus forte</b>
+                  <span class="fichiers-mensuels">
+                    de leur utilisation sur
+                  </span>
+                  <b class="fichiers-mensuels">certaines stations</b>
+                  <span class="fichiers-mensuels"
+                    >, tandis que la répartition des stations utilisées par les
+                  </span>
+                  <b class="fichiers-mensuels">membres</b>
+                  <span class="fichiers-mensuels"> est plus </span>
+                  <b class="fichiers-mensuels">uniforme</b>
+                  <span
+                    >. Ce qui offre une opportunité de taille, nous reviendrons
+                    la dessus dans nos recommandations. </span
+                  >
+                </p>
+                <p class="ride-id-identifiant-unique-d">&nbsp;</p>
+                <p class="ride-id-identifiant-unique-d">
+                  <span>Nous pouvons aussi remarquer que </span>
+                  <b class="fichiers-mensuels"
+                    >les stations utilisées par les casuals</b
+                  >
+                  <span class="fichiers-mensuels">
+                    sont globalement plus situées sur le
+                  </span>
+                  <b class="fichiers-mensuels">bord du lac (est)</b>
+                  <span class="fichiers-mensuels"> alors que les </span>
+                  <b class="fichiers-mensuels">membres</b>
+                  <span class="fichiers-mensuels">
+                    utilisent des stations plus dans le</span
+                  >
+                  <b> centre ville (west).</b>
+                </p>
+                <p class="ride-id-identifiant-unique-d">
+                  <b>&nbsp;</b>
+                </p>
+              </div>
+            </div>
+            <div class="analysis-details35">
+              <img
+                class="graph-stations-1"
+                loading="lazy"
+                alt=""
+                src="./public/graph-stations-1@2x.png"
+              />
+            </div>
+            <div class="analysis-details36">
+              <img
+                class="capture-decran-le-2025-02-018"
+                loading="lazy"
+                alt=""
+                src="./public/capture-decran-le-20250201-a-174934-1@2x.png"
+              />
+            </div>
+            <div class="analysis-details37">
+              <div class="la-carte-et-container1">
+                <p class="nous-aurons-accs-aux-donnes">
+                  <span class="fichiers-mensuels"
+                    >La carte et les graphiques offrent beaucoup d’informations
+                    importantes et pertinentes. Premièrement les
+                  </span>
+                  <b class="fichiers-mensuels">causals</b>
+                  <span class="fichiers-mensuels"> ont une </span>
+                  <b class="fichiers-mensuels">concentration plus forte</b>
+                  <span class="fichiers-mensuels">
+                    de leur utilisation sur
+                  </span>
+                  <b class="fichiers-mensuels">certaines stations</b>
+                  <span class="fichiers-mensuels"
+                    >, tandis que la répartition des stations utilisées par les
+                  </span>
+                  <b class="fichiers-mensuels">membres</b>
+                  <span class="fichiers-mensuels"> est plus </span>
+                  <b class="fichiers-mensuels">uniforme</b>
+                  <span
+                    >. Ce qui offre une opportunité de taille, nous reviendrons
+                    la dessus dans nos recommandations. </span
+                  >
+                </p>
+                <p class="nous-aurons-accs-aux-donnes">&nbsp;</p>
+                <p class="ride-id-identifiant-unique-d">
+                  <span>Nous pouvons aussi remarquer que </span>
+                  <b class="fichiers-mensuels"
+                    >les stations utilisées par les casuals</b
+                  >
+                  <span class="fichiers-mensuels">
+                    sont globalement plus situées sur le
+                  </span>
+                  <b class="fichiers-mensuels">bord du lac (est)</b>
+                  <span class="fichiers-mensuels"> alors que les </span>
+                  <b class="fichiers-mensuels">membres</b>
+                  <span class="fichiers-mensuels">
+                    utilisent des stations plus dans le</span
+                  >
+                  <b> centre ville (west).</b>
+                </p>
+                <p class="nous-aurons-accs-aux-donnes">
+                  <b>&nbsp;</b>
+                </p>
+                <p class="ride-id-identifiant-unique-d">
+                  <b>&nbsp;</b>
+                </p>
+                <p class="ride-id-identifiant-unique-d">
+                  <b>ANALYSE DES DURÉES DE TRAJETS PAR TYPE D’UTILISATEUR</b>
+                </p>
+                <p class="ride-id-identifiant-unique-d">
+                  <b>&nbsp;</b>
+                </p>
+                <p class="nous-aurons-accs-aux-donnes">
+                  <span>Pour finir, nous allons analyser et comparer les </span>
+                  <b class="fichiers-mensuels">temps de trajets</b>
+                  <span class="fichiers-mensuels"> pour les utilisateurs</span>
+                  <b class="fichiers-mensuels"> par type d’utilisateurs</b>
+                  <span class="fichiers-mensuels"
+                    >. Pour cela nous allons utiliser les
+                  </span>
+                  <b class="fichiers-mensuels"
+                    >tables créées par intervalles de durée</b
+                  >
+                  <span class="fichiers-mensuels"> : </span>
+                </p>
+                <p class="nous-aurons-accs-aux-donnes">
+                  <b>&nbsp;</b>
+                </p>
+                <p class="ride-id-identifiant-unique-d">
+                  <b class="ride-id">less_than_1s:</b>
+                  <span>  trajets de moins d’un seconde</span>
+                </p>
+                <p class="ride-id-identifiant-unique-d">
+                  <b class="ride-id">less_than_1min:</b>
+                  <span> trajets de moins d’une minute</span>
+                </p>
+                <p class="ride-id-identifiant-unique-d">
+                  <b class="ride-id">less_than_4min:</b>
+                  <span> trajets de moins de 4 minutes</span>
+                </p>
+                <p class="ride-id-identifiant-unique-d">
+                  <b class="ride-id">less_than_15min :</b>
+                  <span> trajets de moins de 15 minutes</span>
+                </p>
+                <p class="ride-id-identifiant-unique-d">
+                  <b class="ride-id">less_thn_1hour :</b>
+                  <span> trajets de moins d’une heure </span>
+                </p>
+                <p class="ride-id-identifiant-unique-d">
+                  <b class="ride-id">between_1and2hour :</b>
+                  <span> trajets entre 1 et 2 heures</span>
+                </p>
+                <p class="ride-id-identifiant-unique-d">
+                  <b class="ride-id">between_2and6hour :</b>
+                  <span> trajets entre 2 et 6 heures</span>
+                </p>
+                <p class="ride-id-identifiant-unique-d">
+                  <b class="ride-id">between_6and10hour: </b>
+                  <span>trajets entre 6 et 10 heures</span>
+                </p>
+                <p class="ride-id-identifiant-unique-d">
+                  <b class="ride-id">more_than_10hour : </b>
+                  <span>trajets de plus de 10 heures</span>
+                </p>
+                <p class="ride-id-identifiant-unique-d">&nbsp;</p>
+              </div>
+            </div>
+            <div class="analysis-details38">
+              <img
+                class="courts-trajets-par-utilisateur"
+                loading="lazy"
+                alt=""
+                src="./public/courts-trajets-par-utilisateurs-1@2x.png"
+              />
+            </div>
+            <div class="analysis-details38">
+              <img
+                class="courts-trajets-par-utilisateur"
+                loading="lazy"
+                alt=""
+                src="./public/trajets-longs-1@2x.png"
+              />
+            </div>
+            <div class="analysis-details40">
+              <div class="suppression-des-doublons-container">
+                <span>On voit bien ici que les utilisateurs </span>
+                <b>casuals</b>
+                <span> utilisent le service de partage de vélos pour des </span>
+                <b>trajets en moyenne plus longs</b>
+                <span> que les membres.</span>
+              </div>
+            </div>
+            <div class="analysis-details41">
+              <img
+                class="capture-decran-le-2025-02-019"
+                loading="lazy"
+                alt=""
+                src="./public/capture-decran-le-20250201-a-183056-1@2x.png"
+              />
+            </div>
+            <div class="analysis-details42">
+              <div class="suppression-des-doublons-container">
+                <p class="ride-id-identifiant-unique-d">FIN DE L’ANALYSE</p>
+                <p class="ride-id-identifiant-unique-d">&nbsp;</p>
+              </div>
+            </div>
+            <div class="analysis-details43">
+              <div class="interprtations">
+                <p class="ride-id-identifiant-unique-d">
+                  <b>Interprétations</b>
+                </p>
+                <p class="blank-line93">&nbsp;</p>
+              </div>
+            </div>
+            <div class="analysis-details44">
+              <div class="pic-de-lutilisation-container">
+                <p class="rsultats">
+                  <b>PIC DE L'UTILISATION EN SEPTEMBRE : </b>
+                </p>
+                <p class="ride-id-identifiant-unique-d"> </p>
+                <p class="ride-id-identifiant-unique-d">
+                  <span class="fichiers-mensuels"
+                    >Plusieurs facteurs peuvent expliquer ce pic : le
+                  </span>
+                  <b class="fichiers-mensuels"
+                    >retour à l'école des étudiants</b
+                  >
+                  <span>
+                    (il serait intéressant dans ce cas de cibler cette clientèle
+                    dans notre campagne marketing afin d'inciter les étudiants
+                    “casual” à devenir “membres”). Des pistes de ciblage de
+                    cette clientèle seront évoquées dans la partie
+                    “recommandations”. Les
+                  </span>
+                  <b class="fichiers-mensuels">29 et 30 Septembres</b>
+                  <span class="fichiers-mensuels"> 2024, a eu lieu un </span>
+                  <b class="fichiers-mensuels">festival de musique</b>
+                  <span class="fichiers-mensuels">
+                    “The World Music Festival Chicago” il y a beaucoup d'</span
+                  >
+                  <b class="fichiers-mensuels">événements gratuits </b>
+                  <span class="fichiers-mensuels"
+                    >dans le cadre de ce festival
+                  </span>
+                  <b class="fichiers-mensuels"
+                    >répartis sur 11 sites différents</b
+                  >
+                  <span class="fichiers-mensuels">
+                    dans tout Chicago. On pourrait imaginer que
+                  </span>
+                  <b class="fichiers-mensuels"
+                    >ce type de festival influence positivement</b
+                  >
+                  <span class="fichiers-mensuels">
+                    l’utilisation de Cyclistic par les utilisateurs. Pour
+                    vérifier cette hypothèse, nous analyserons quels sont les
+                  </span>
+                  <b class="fichiers-mensuels"
+                    >5 jours de Septembre ayant enregistré la plus grosse
+                    activité :</b
+                  >
+                </p>
+                <p class="ride-id-identifiant-unique-d">&nbsp;</p>
+                <p class="ride-id-identifiant-unique-d">
+                    day        total_rides
+                </p>
+                <p class="ride-id-identifiant-unique-d">
+                          &lt;chr&gt;            &lt;int&gt;
+                </p>
+                <p class="ride-id-identifiant-unique-d">&nbsp;</p>
+                <p class="ride-id-identifiant-unique-d">
+                  <span>1 2024-09-</span>
+                  <b class="fichiers-mensuels">21 </b>
+                  <span class="fichiers-mensuels">      </span>
+                  <b class="fichiers-mensuels">34698</b>
+                </p>
+                <p class="ride-id-identifiant-unique-d">
+                  <span>2 2024-09-</span>
+                  <b class="fichiers-mensuels">14  </b>
+                  <span class="fichiers-mensuels">     </span>
+                  <b class="fichiers-mensuels">33705</b>
+                </p>
+                <p class="ride-id-identifiant-unique-d">
+                  <span>3 2024-09-</span>
+                  <b class="fichiers-mensuels">01</b>
+                  <span class="fichiers-mensuels">       </span>
+                  <b class="fichiers-mensuels">31869</b>
+                </p>
+                <p class="ride-id-identifiant-unique-d">
+                  <span>4 2024-09-</span>
+                  <b class="fichiers-mensuels">20</b>
+                  <span class="fichiers-mensuels">      </span>
+                  <b class="fichiers-mensuels"> 30814</b>
+                </p>
+                <p class="ride-id-identifiant-unique-d">
+                  <span>5 2024-09-</span>
+                  <b class="fichiers-mensuels">19</b>
+                  <span class="fichiers-mensuels">       </span>
+                  <b class="fichiers-mensuels">30671</b>
+                </p>
+                <p class="ride-id-identifiant-unique-d">&nbsp;</p>
+                <p class="ride-id-identifiant-unique-d">
+                  <span class="fichiers-mensuels"
+                    >Les journées ou les utilisateurs ont le plus utilisé le
+                    service de Cyclistic en Septembre 2024 sont les
+                  </span>
+                  <b class="fichiers-mensuels">21, 14, 01, 20 et 19</b>
+                  <span>
+                    Septembre. Cela ne concorde pas avec les dates du festival
+                    “The World Music Festival Chicago”, toutefois, il y avait un
+                    autre </span
+                  >
+                </p>
+                <p class="ride-id-identifiant-unique-d">
+                  <span>festival “Oktoberfest” à</span>
+                  <b class="fichiers-mensuels"> Lincoln Park</b>
+                  <span class="fichiers-mensuels"> le </span>
+                  <b class="fichiers-mensuels">21/09/2024</b>
+                  <span class="fichiers-mensuels">. Si la station de </span>
+                  <b class="fichiers-mensuels">Lincoln Park</b>
+                  <span>
+                    enregistre un nombre inhabituel de trajets, il pourrait être
+                    pertinent d’envisager une action Marketing directement dans
+                    ce festival les prochaines années. </span
+                  >
+                </p>
+                <p class="ride-id-identifiant-unique-d">&nbsp;</p>
+                <p class="ride-id-identifiant-unique-d">
+                   Total                                                        
+                  8725           8899         17624
+                </p>
+                <p class="ride-id-identifiant-unique-d">&nbsp;</p>
+                <p class="ride-id-identifiant-unique-d">
+                   Streeter Dr & Grand Ave                            629       
+                      638          1267
+                </p>
+                <p class="ride-id-identifiant-unique-d">
+                  <span> </span>
+                  <b class="fichiers-mensuels"
+                    >DuSable Lake Shore Dr & North Blvd    443            537  
+                            980</b
+                  >
+                </p>
+                <p class="ride-id-identifiant-unique-d">
+                   Michigan Ave & Oak St                              348       
+                      339           687
+                </p>
+                <p class="rsultats">
+                   DuSable Lake Shore Dr & Monroe St        334           318  
+                          652
+                </p>
+                <p class="rsultats">
+                   Theater on the Lake                                   260   
+                        314          574
+                </p>
+                <p class="rsultats">
+                   Clark St & Lincoln Ave                               261     
+                      274          535
+                </p>
+                <p class="rsultats">
+                   Wells St & Concord Ln                              265       
+                      258           523
+                </p>
+                <p class="rsultats">
+                   Millennium Park                                        243   
+                          259           502
+                </p>
+                <p class="rsultats">
+                  Clark St & Armitage Ave                            229       
+                      238           467
+                </p>
+                <p class="ride-id-identifiant-unique-d">&nbsp;</p>
+                <p class="ride-id-identifiant-unique-d">
+                  <span>La </span>
+                  <b class="fichiers-mensuels">2eme</b>
+                  <span class="fichiers-mensuels">
+                    station la plus utilisée le 21 Septembre est une station
+                    proche du Park Lincoln :
+                  </span>
+                  <b class="fichiers-mensuels"
+                    >DuSable Lake Shore Dr & North Blvd</b
+                  >
+                  <span class="fichiers-mensuels"
+                    >, mais de façon générale, les stations les plus utilisées
+                    ce jour là sont les stations proches du Lac. Nous
+                    proposerons des recommandations plus détaillées dans la
+                    partie “recommandations”</span
+                  >
+                </p>
+              </div>
+            </div>
+            <div class="bikes-screenshot">
+              <img
+                class="capture-decran-le-2025-02-020"
+                loading="lazy"
+                alt=""
+                src="./public/capture-decran-le-20250201-a-142639-1@2x.png"
+              />
+            </div>
+            <div class="usage-peak-content-wrapper">
+              <div class="usage-peak-content">
+                <div class="pic-de-lutilisation-container1">
+                  <p class="rsultats">
+                    <b>PIC DE L'UTILISATION EN SEPTEMBRE : </b>
+                  </p>
+                  <p class="ride-id-identifiant-unique-d"> </p>
+                  <p class="ride-id-identifiant-unique-d">
+                    <span class="fichiers-mensuels"
+                      >Plusieurs facteurs peuvent expliquer ce pic : le
+                    </span>
+                    <b class="fichiers-mensuels"
+                      >retour à l'école des étudiants</b
+                    >
+                    <span>
+                      (il serait intéressant dans ce cas de cibler cette
+                      clientèle dans notre campagne marketing afin d'inciter les
+                      étudiants “casual” à devenir “membres”). Des pistes de
+                      ciblage de cette clientèle seront évoquées dans la partie
+                      “recommandations”. Les
+                    </span>
+                    <b class="fichiers-mensuels">29 et 30 Septembres</b>
+                    <span class="fichiers-mensuels"> 2024, a eu lieu un </span>
+                    <b class="fichiers-mensuels">festival de musique</b>
+                    <span class="fichiers-mensuels">
+                      “The World Music Festival Chicago” il y a beaucoup
+                      d'</span
+                    >
+                    <b class="fichiers-mensuels">événements gratuits </b>
+                    <span class="fichiers-mensuels"
+                      >dans le cadre de ce festival
+                    </span>
+                    <b class="fichiers-mensuels"
+                      >répartis sur 11 sites différents</b
+                    >
+                    <span class="fichiers-mensuels">
+                      dans tout Chicago. On pourrait imaginer que
+                    </span>
+                    <b class="fichiers-mensuels"
+                      >ce type de festival influence positivement</b
+                    >
+                    <span class="fichiers-mensuels">
+                      l’utilisation de Cyclistic par les utilisateurs. Pour
+                      vérifier cette hypothèse, nous analyserons quels sont les
+                    </span>
+                    <b class="fichiers-mensuels"
+                      >5 jours de Septembre ayant enregistré la plus grosse
+                      activité :</b
+                    >
+                  </p>
+                  <p class="ride-id-identifiant-unique-d">&nbsp;</p>
+                  <p class="ride-id-identifiant-unique-d">
+                      day        total_rides
+                  </p>
+                  <p class="ride-id-identifiant-unique-d">
+                            &lt;chr&gt;            &lt;int&gt;
+                  </p>
+                  <p class="ride-id-identifiant-unique-d">&nbsp;</p>
+                  <p class="ride-id-identifiant-unique-d">
+                    <span>1 2024-09-</span>
+                    <b class="fichiers-mensuels">21 </b>
+                    <span class="fichiers-mensuels">      </span>
+                    <b class="fichiers-mensuels">34698</b>
+                  </p>
+                  <p class="ride-id-identifiant-unique-d">
+                    <span>2 2024-09-</span>
+                    <b class="fichiers-mensuels">14  </b>
+                    <span class="fichiers-mensuels">     </span>
+                    <b class="fichiers-mensuels">33705</b>
+                  </p>
+                  <p class="ride-id-identifiant-unique-d">
+                    <span>3 2024-09-</span>
+                    <b class="fichiers-mensuels">01</b>
+                    <span class="fichiers-mensuels">       </span>
+                    <b class="fichiers-mensuels">31869</b>
+                  </p>
+                  <p class="ride-id-identifiant-unique-d">
+                    <span>4 2024-09-</span>
+                    <b class="fichiers-mensuels">20</b>
+                    <span class="fichiers-mensuels">      </span>
+                    <b class="fichiers-mensuels"> 30814</b>
+                  </p>
+                  <p class="ride-id-identifiant-unique-d">
+                    <span>5 2024-09-</span>
+                    <b class="fichiers-mensuels">19</b>
+                    <span class="fichiers-mensuels">       </span>
+                    <b class="fichiers-mensuels">30671</b>
+                  </p>
+                  <p class="ride-id-identifiant-unique-d">&nbsp;</p>
+                  <p class="ride-id-identifiant-unique-d">
+                    <span class="fichiers-mensuels"
+                      >Les journées ou les utilisateurs ont le plus utilisé le
+                      service de Cyclistic en Septembre 2024 sont les
+                    </span>
+                    <b class="fichiers-mensuels">21, 14, 01, 20 et 19</b>
+                    <span>
+                      Septembre. Cela ne concorde pas avec les dates du festival
+                      “The World Music Festival Chicago”, toutefois, il y avait
+                      un autre </span
+                    >
+                  </p>
+                  <p class="ride-id-identifiant-unique-d">
+                    <span>festival “Oktoberfest” à</span>
+                    <b class="fichiers-mensuels"> Lincoln Park</b>
+                    <span class="fichiers-mensuels"> le </span>
+                    <b class="fichiers-mensuels">21/09/2024</b>
+                    <span class="fichiers-mensuels">. Si la station de </span>
+                    <b class="fichiers-mensuels">Lincoln Park</b>
+                    <span>
+                      enregistre un nombre inhabituel de trajets, il pourrait
+                      être pertinent d’envisager une action Marketing
+                      directement dans ce festival les prochaines années. </span
+                    >
+                  </p>
+                  <p class="ride-id-identifiant-unique-d">&nbsp;</p>
+                  <p class="ride-id-identifiant-unique-d">
+                     Total                                                      
+                      8725           8899         17624
+                  </p>
+                  <p class="ride-id-identifiant-unique-d">&nbsp;</p>
+                  <p class="ride-id-identifiant-unique-d">
+                     Streeter Dr & Grand Ave                            629     
+                          638          1267
+                  </p>
+                  <p class="ride-id-identifiant-unique-d">
+                    <span> </span>
+                    <b class="fichiers-mensuels"
+                      >DuSable Lake Shore Dr & North Blvd    443            537
+                                980</b
+                    >
+                  </p>
+                  <p class="ride-id-identifiant-unique-d">
+                     Michigan Ave & Oak St                              348     
+                          339           687
+                  </p>
+                  <p class="rsultats">
+                     DuSable Lake Shore Dr & Monroe St        334           318
+                              652
+                  </p>
+                  <p class="rsultats">
+                     Theater on the Lake                                   260 
+                            314          574
+                  </p>
+                  <p class="rsultats">
+                     Clark St & Lincoln Ave                               261   
+                          274          535
+                  </p>
+                  <p class="rsultats">
+                     Wells St & Concord Ln                              265     
+                          258           523
+                  </p>
+                  <p class="rsultats">
+                     Millennium Park                                        243 
+                              259           502
+                  </p>
+                  <p class="rsultats">
+                    Clark St & Armitage Ave                            229     
+                          238           467
+                  </p>
+                  <p class="ride-id-identifiant-unique-d">&nbsp;</p>
+                  <p class="ride-id-identifiant-unique-d">
+                    <span>La </span>
+                    <b class="fichiers-mensuels">2eme</b>
+                    <span class="fichiers-mensuels">
+                      station la plus utilisée le 21 Septembre est une station
+                      proche du Park Lincoln :
+                    </span>
+                    <b class="fichiers-mensuels"
+                      >DuSable Lake Shore Dr & North Blvd</b
+                    >
+                    <span class="fichiers-mensuels"
+                      >, mais de façon générale, les stations les plus utilisées
+                      ce jour là sont les stations proches du Lac. Nous
+                      proposerons des recommandations plus détaillées dans la
+                      partie “recommandations”</span
+                    >
+                  </p>
+                </div>
+                <div class="conditions-mtorologiques-tem-container">
+                  <p class="ride-id-identifiant-unique-d">
+                    <b>CONDITIONS MÉTÉOROLOGIQUES</b>
+                  </p>
+                  <p class="ride-id-identifiant-unique-d">&nbsp;</p>
+                  <p class="ride-id-identifiant-unique-d">
+                    <b class="fichiers-mensuels">Température : </b>
+                    <span class="fichiers-mensuels">La </span>
+                    <b class="fichiers-mensuels"
+                      >température a un effet positif</b
+                    >
+                    <span class="fichiers-mensuels">
+                      sur le nombre de trajets, à la fois pour les membres et
+                      les casuals, bien que l'effet soit
+                    </span>
+                    <b class="fichiers-mensuels"
+                      >légèrement plus marqué chez les membres</b
+                    >
+                    <span>
+                      (399.82 trajets par °C contre 371.51 trajets par °C pour
+                      les casuals). Cela montre que la température influence de
+                      manière significative la fréquentation des vélos pour les
+                      deux groupes. Plus il fait chaud, plus il y a de
+                      vélos. </span
+                    >
+                  </p>
+                  <p class="ride-id-identifiant-unique-d">&nbsp;</p>
+                  <p class="ride-id-identifiant-unique-d">
+                    <b class="fichiers-mensuels">Précipitations :</b>
+                    <span class="fichiers-mensuels"> Les </span>
+                    <b class="fichiers-mensuels"
+                      >précipitations ont un effet négatif</b
+                    >
+                    <span class="fichiers-mensuels">
+                      sur le nombre de trajets, à la fois pour les membres et
+                      les casuals, mais l'</span
+                    >
+                    <b class="fichiers-mensuels"
+                      >effet est plus prononcé pour les casuals</b
+                    >
+                    <span
+                      >. Pour chaque unité d'augmentation des précipitations, le
+                      nombre de trajets diminue davantage chez les casuals
+                      (124.40 trajets) que chez les membres (154.47
+                      trajets).</span
+                    >
+                  </p>
+                  <p class="ride-id-identifiant-unique-d">&nbsp;</p>
+                  <p class="ride-id-identifiant-unique-d">
+                    <b class="fichiers-mensuels">Comparaison des groupes</b>
+                    <span>
+                      : Les membres semblent plus sensibles aux changements de
+                      température, avec un effet plus marqué que les casuals.
+                      Cependant, les casuals sont plus sensibles aux
+                      précipitations. Cela peut s’expliquer par le fait que les
+                      membres paient déjà pour leur abonnement, c’est comme s'
+                      ils avaient déjà payé pour leur jour de pluie, les
+                      casuals, eux, peuvent opter pour un moyen de transport
+                      différent les jours de pluie sans avoir à assumer le coût
+                      d'opportunité lié au fait de payer un abonnement.   </span
+                    >
+                  </p>
+                  <p class="ride-id-identifiant-unique-d">&nbsp;</p>
+                  <p class="ride-id-identifiant-unique-d">
+                    Dans l’analyse des données météorologiques, on remarque
+                    aussi que les mois de Juillet Août ont été plus pluvieux que
+                    le mois de Septembre ce qui peut venir donner une
+                    explication supplémentaire  pour le pic d’utilisation annuel
+                    en Septembre. 
+                  </p>
+                  <p class="ride-id-identifiant-unique-d"> </p>
+                  <p class="ride-id-identifiant-unique-d">&nbsp;</p>
+                  <p class="ride-id-identifiant-unique-d">
+                    <span>&nbsp;</span>
+                    <b class="fichiers-mensuels"
+                      >HABITUDES QUOTIDIENNES ET HEBDOMADAIRES </b
+                    >
+                  </p>
+                  <p class="ride-id-identifiant-unique-d">&nbsp;</p>
+                  <p class="ride-id-identifiant-unique-d">
+                    <span class="fichiers-mensuels">Les </span>
+                    <b class="fichiers-mensuels">membres</b>
+                    <span>
+                      ont une utilisation du service de partage de vélos
+                    </span>
+                    <b class="fichiers-mensuels"
+                      >répartie sur toute la semaine</b
+                    >
+                    <span class="fichiers-mensuels"> avec une </span>
+                    <b class="fichiers-mensuels">petite baisse le week end</b>
+                    <span class="fichiers-mensuels"> tandis que les </span>
+                    <b class="fichiers-mensuels">casual</b>
+                    <span class="fichiers-mensuels">
+                      utilisent massivement les vélos les
+                    </span>
+                    <b class="fichiers-mensuels">samedi dimanche</b>
+                    <span class="fichiers-mensuels">
+                      et moins le reste de la semaine. Les
+                    </span>
+                    <b class="fichiers-mensuels"
+                      >pics d’utilisation journaliers</b
+                    >
+                    <span class="fichiers-mensuels"> pour les </span>
+                    <b class="fichiers-mensuels">membres</b>
+                    <span class="fichiers-mensuels"> sont </span>
+                    <b class="fichiers-mensuels">entre 06h et 09h</b>
+                    <span class="fichiers-mensuels"> et </span>
+                    <b class="fichiers-mensuels">entre 16 et 18h</b>
+                    <span class="fichiers-mensuels"
+                      >, l'évolution de l’utilisation des vélos par les
+                    </span>
+                    <b class="fichiers-mensuels">casuals</b>
+                    <span class="fichiers-mensuels"> est elle </span>
+                    <b class="fichiers-mensuels">plus constante</b>
+                    <span class="fichiers-mensuels">
+                      au cours de la journée. On peut en déduire que les
+                    </span>
+                    <b class="fichiers-mensuels">membres</b>
+                    <span class="fichiers-mensuels">
+                      utilisent plus le service de partage de vélos pour</span
+                    >
+                    <b class="fichiers-mensuels"> se rendre au travail </b>
+                    <span class="fichiers-mensuels">tandis que les </span>
+                    <b class="fichiers-mensuels">casuals</b>
+                    <span class="fichiers-mensuels">
+                      semblent plus avoir une
+                    </span>
+                    <b class="fichiers-mensuels"
+                      >utilisation de type “loisir”</b
+                    >
+                    <span class="fichiers-mensuels">.  </span>
+                  </p>
+                  <p class="ride-id-identifiant-unique-d">
+                    <span class="fichiers-mensuels"></span>
+                    <b>TYPES DE VÉLOS UTILISÉS </b>
+                  </p>
+                  <p class="ride-id-identifiant-unique-d">&nbsp;</p>
+                  <p class="ride-id-identifiant-unique-d">
+                    <span>Les deux types d’utilisateurs préfèrent les </span>
+                    <b class="fichiers-mensuels">vélos électriques</b>
+                    <span class="fichiers-mensuels"
+                      >. Toutefois les casuals utilisent plus les
+                    </span>
+                    <b class="fichiers-mensuels">scooters électriques</b>
+                    <span class="fichiers-mensuels"> que les membres. </span>
+                  </p>
+                  <p class="ride-id-identifiant-unique-d"></p>
+                  <p class="ride-id-identifiant-unique-d">
+                    <b>STATIONS LES PLUS UTILISÉES</b>
+                  </p>
+                  <p class="ride-id-identifiant-unique-d">&nbsp;</p>
+                  <p class="ride-id-identifiant-unique-d">
+                    <span class="fichiers-mensuels">Les </span>
+                    <b class="fichiers-mensuels">casuals</b>
+                    <span class="fichiers-mensuels"> ont une nette</span>
+                    <b class="fichiers-mensuels">
+                      concentration de leur utilisation du service sur certaines
+                      stations</b
+                    >
+                    <span class="fichiers-mensuels"> tandis que les </span>
+                    <b class="fichiers-mensuels">membres</b>
+                    <span class="fichiers-mensuels">
+                      ont une utilisation des
+                    </span>
+                    <b class="fichiers-mensuels"
+                      >stations plus uniformément répartie</b
+                    >
+                    <span class="fichiers-mensuels">. Si les </span>
+                    <b class="fichiers-mensuels">membres</b>
+                    <span class="fichiers-mensuels">
+                      utilisent leur vélo majoritairement pour aller au
+                    </span>
+                    <b class="fichiers-mensuels">travail</b>
+                    <span class="fichiers-mensuels">
+                      cela peut expliquer cette meilleure répartition (car les
+                      membres ne travaillent pas tous au même endroit). En
+                      s'intéressant à la
+                    </span>
+                    <b class="fichiers-mensuels">carte géographique</b>
+                    <span class="fichiers-mensuels"
+                      >, on se rend compte que les stations les plus utilisées
+                      par les
+                    </span>
+                    <b class="fichiers-mensuels">casuals</b>
+                    <span class="fichiers-mensuels"> sont des </span>
+                    <b class="fichiers-mensuels"
+                      >stations situées au bord de l’eau</b
+                    >
+                    <span class="fichiers-mensuels">, et les </span>
+                    <b class="fichiers-mensuels">membres</b>
+                    <span class="fichiers-mensuels"> des stations </span>
+                    <b class="fichiers-mensuels">situées plus en ville</b>
+                    <span>
+                      ou dans des zones résidentielles, les 2 stations proches
+                      de la gare sont aussi des stations de choix pour les
+                      membres. Les casuals aiment particulièrement les stations
+                      du port ou de Lincoln Park ainsi que toutes les stations
+                      proches du lac de manière générale. Encore un indice nous
+                      permettant d'affirmer que les
+                    </span>
+                    <b class="fichiers-mensuels">membres</b>
+                    <span class="fichiers-mensuels">
+                      utilisent en générale le service pour
+                    </span>
+                    <b class="fichiers-mensuels">le travail</b>
+                    <span>
+                      et les casuals pour le loisir. C’est important pour savoir
+                      ou cibler les différents segments de clientèle. Nous
+                      reviendrons la dessus dans la partie
+                      “recommandations”.</span
+                    >
+                  </p>
+                  <p class="ride-id-identifiant-unique-d">
+                    <span></span>
+                    <b class="fichiers-mensuels">LES TEMPS DE TRAJET</b>
+                  </p>
+                  <p class="ride-id-identifiant-unique-d">&nbsp;</p>
+                  <p class="ride-id-identifiant-unique-d">
+                    <span class="fichiers-mensuels">Les </span>
+                    <b class="fichiers-mensuels">membres</b>
+                    <span class="fichiers-mensuels">
+                      utilisent le service pour effectuer des
+                    </span>
+                    <b class="fichiers-mensuels"
+                      >trajets en général plus courts</b
+                    >
+                    <span class="fichiers-mensuels">
+                      que les casuals. Il y a une
+                    </span>
+                    <b
+                      >grande majorité de casuals sur les trajets de plus d’une
+                      heure</b
+                    >
+                    <span>. </span>
+                  </p>
+                  <p class="ride-id-identifiant-unique-d">&nbsp;</p>
+                  <p class="ride-id-identifiant-unique-d">
+                    <span>Les trajets de </span>
+                    <b class="fichiers-mensuels">moins d'une seconde</b>
+                    <span class="fichiers-mensuels"> sont surement des </span>
+                    <b class="fichiers-mensuels">erreurs système</b>
+                    <span class="fichiers-mensuels">. </span>
+                  </p>
+                  <p class="ride-id-identifiant-unique-d">&nbsp;</p>
+                  <p class="ride-id-identifiant-unique-d">
+                    <span class="fichiers-mensuels">Les trajets de </span>
+                    <b class="fichiers-mensuels">moins d’une minute</b>
+                    <span class="fichiers-mensuels">
+                      sont surement dus à un
+                    </span>
+                    <b class="fichiers-mensuels">vélo défectueux</b>
+                    <span
+                      >, l’utilisateur s’en rend compte et rend le vélo
+                      directement (ces informations peuvent s'avérer utile dans
+                      un cadre d’analyse qualité).</span
+                    >
+                  </p>
+                  <p class="ride-id-identifiant-unique-d"> </p>
+                  <p class="ride-id-identifiant-unique-d">
+                    <span>Les trajets de </span>
+                    <b class="fichiers-mensuels">moins de 4min</b>
+                    <span class="fichiers-mensuels"> peuvent être de </span>
+                    <b class="fichiers-mensuels">très courts trajets</b>
+                    <span
+                      >, ou alors l’utilisateur a pris un vélo “classique” dans
+                      une station ou aucun vélo électrique n'était disponible et
+                      s’est déplacé jusqu'à une autre station pour récupérer un
+                      vélo électrique, malheureusement nous sommes limités par
+                      la confidentialite des donnees pour mener cette analyse
+                      supplémentaire (pas de customer_id et impossibilité
+                      d’utiliser les données de carte de crédit).</span
+                    >
+                  </p>
+                  <p class="ride-id-identifiant-unique-d">&nbsp;</p>
+                  <p class="ride-id-identifiant-unique-d">
+                    <span>Les trajets de </span>
+                    <b class="fichiers-mensuels">moins de 15min</b>
+                    <span class="fichiers-mensuels">
+                      et de moins d’une heure sont des trajets courts réguliers,
+                      pour se rendre au travail par exemple ou se rendre d’un
+                      point A à un point B. </span
+                    >
+                  </p>
+                  <p class="ride-id-identifiant-unique-d">&nbsp;</p>
+                  <p class="ride-id-identifiant-unique-d">
+                    <span class="fichiers-mensuels">Les trajets de </span>
+                    <b class="fichiers-mensuels">plus d' une heure</b>
+                    <span>
+                      peuvent être perçus comme des randonnées cyclistes pour le
+                      plaisir ou une sortie sur le bord du lac en vélo. Encore
+                      une fois, notre hypothèse sur l’utilisation du service par
+                      les membres dans le cadre du travail est confirmée. </span
+                    >
+                  </p>
+                  <p class="ride-id-identifiant-unique-d">&nbsp;</p>
+                  <p class="ride-id-identifiant-unique-d">&nbsp;</p>
+                </div>
+                <img
+                  class="capture-decran-le-2025-02-021"
+                  loading="lazy"
+                  alt=""
+                  src="./public/capture-decran-le-20250201-a-142639-2@2x.png"
+                />
+              </div>
+            </div>
+            <div class="analysis-details45">
+              <div class="interprtations">
+                <p class="ride-id-identifiant-unique-d">
+                  <b>Recommandations</b>
+                </p>
+                <p class="blank-line93">&nbsp;</p>
+              </div>
+            </div>
+            <div class="afin-daugmenter-le-pourcentag-wrapper">
+              <div class="afin-daugmenter-le-container">
+                <p class="ride-id-identifiant-unique-d">
+                  Afin d’augmenter le pourcentage de membres parmi les
+                  utilisateurs de Cyclistic, plusieurs actions concrètes basées
+                  sur les données peuvent être envisagées. 
+                </p>
+                <p class="ride-id-identifiant-unique-d">&nbsp;</p>
+                <p class="ride-id-identifiant-unique-d">
+                  <b>DOUBLE TARIFICATION DES ABONNEMENTS.</b>
+                </p>
+                <p class="ride-id-identifiant-unique-d">
+                  <b>&nbsp;</b>
+                </p>
+                <p class="ride-id-identifiant-unique-d">
+                  <span class="fichiers-mensuels">Premièrement afin de </span>
+                  <b
+                    >capturer le plus fort achalandage dans la période d’Avril à
+                    Septembre</b
+                  >
+                  <span class="fichiers-mensuels"
+                    >, il semble indispensable de proposer un
+                  </span>
+                  <b class="fichiers-mensuels">abonnement mensuel</b>
+                  <span class="fichiers-mensuels">. </span>
+                </p>
+                <p class="ride-id-identifiant-unique-d">&nbsp;</p>
+                <p class="ride-id-identifiant-unique-d">
+                  <i class="mais-attention-cette"
+                    >Mais attention, cette double tarification doit toujours
+                    inciter à prendre</i
+                  >
+                  <i class="i"> </i>
+                  <i class="labonnement-annuel">l’abonnement annuel.</i>
+                  <i class="il-y-a">
+                    Il y a un risque que certains membres qui avaient
+                    l’abonnement annuel et n’utilisaient les vélos que d’Avril à
+                    Septembre arrêtent de payer l’abonnement annuel pour prendre
+                    des abonnements mensuels seulement d’Avril à Septembre. Il
+                    faut donc être très vigilant sur la tarification pour pas
+                    que cette stratégie se retourne contre Cyclistic. </i
+                  >
+                </p>
+                <p class="ride-id-identifiant-unique-d"></p>
+                <p class="ride-id-identifiant-unique-d">
+                  <b>PARTENARIAT AVEC DES EMPLOYEURS</b>
+                </p>
+                <p class="ride-id-identifiant-unique-d">&nbsp;</p>
+                <p class="ride-id-identifiant-unique-d">
+                  <span class="fichiers-mensuels">Pour </span>
+                  <b class="fichiers-mensuels"
+                    >inciter les casuals à utiliser le service pour aller au
+                    travail</b
+                  >
+                  <span class="fichiers-mensuels"
+                    >, des partenariats avec des
+                  </span>
+                  <b class="fichiers-mensuels">entreprises locales </b>
+                  <span
+                    >pourraient être envisagés afin d’inclure l’abonnement dans
+                    la rémunération de l'employé ou proposer des réductions aux
+                    employés de certaines entreprises. Des campagnes de
+                    prévention et de sensibilisation sur les bienfaits d’une
+                    pratique cycliste régulière pourraient être diffusées par le
+                    biais des employeurs. </span
+                  >
+                </p>
+                <p class="ride-id-identifiant-unique-d">
+                  <span></span>
+                  <b class="fichiers-mensuels"
+                    >PARTENARIATS AVEC DES FESTIVALS OU DES ÉVÉNEMENTS
+                    SPORTIFS.</b
+                  >
+                </p>
+                <p class="ride-id-identifiant-unique-d">&nbsp;</p>
+                <p class="ride-id-identifiant-unique-d">
+                  <span class="fichiers-mensuels"
+                    >Si les casuals préfèrent utiliser les vélos pour le loisir,
+                    des
+                  </span>
+                  <b class="fichiers-mensuels"
+                    >partenariats avec des événements sportifs ou des
+                    festivals</b
+                  >
+                  <span> par exemple pourraient être une bonne idée. </span>
+                </p>
+                <p class="ride-id-identifiant-unique-d">
+                  Proposer par exemple des avantages dans les festivals pour les
+                  membres comme par exemple un accès à un salon privé Cyclistic
+                  ou une consommation gratuite. 
+                </p>
+                <p class="ride-id-identifiant-unique-d">&nbsp;</p>
+                <p class="ride-id-identifiant-unique-d">
+                  <span>Les </span>
+                  <b class="fichiers-mensuels"
+                    >partenariats avec des événements sportifs</b
+                  >
+                  <span>
+                    peuvent aussi être une bonne opportunité de convertir des
+                    casuals en membres. Les randonnées de vélo, triathlons ou
+                    diverses courses de vélos pourraient représenter un atout de
+                    choix. Les événements sportifs pourraient alors offrir des
+                    avantages aux membres ou alors leur offrir la participation
+                    en échange de l’utilisation des vélos de Cyclistic dans le
+                    cadre de l'événement. Cyclistic pourrait aussi organiser son
+                    propre événement sportif en utilisant ses vélos et offrir la
+                    participation aux membres ou leur offrir une participation a
+                    prix réduit. </span
+                  >
+                </p>
+                <p class="ride-id-identifiant-unique-d">&nbsp;</p>
+                <p class="ride-id-identifiant-unique-d"> </p>
+                <p class="ride-id-identifiant-unique-d">
+                  <span>&nbsp;</span>
+                  <b class="fichiers-mensuels"
+                    >OFFRIR DES RÉDUCTIONS ÉTUDIANTES SUR LES ABONNEMENTS
+                    (ANNUELS SEULEMENT).</b
+                  >
+                </p>
+                <p class="ride-id-identifiant-unique-d">&nbsp;</p>
+                <p class="ride-id-identifiant-unique-d">
+                  <span class="fichiers-mensuels">La </span>
+                  <b class="fichiers-mensuels"
+                    >double tarification à destination des étudiants</b
+                  >
+                  <span class="fichiers-mensuels">
+                    semble être une bonne manière de
+                  </span>
+                  <b class="fichiers-mensuels">tendre la main</b>
+                  <span class="fichiers-mensuels">
+                    à un segment de clientèle avec des
+                  </span>
+                  <b class="fichiers-mensuels"
+                    >moyens généralement plus modestes</b
+                  >
+                  <span class="fichiers-mensuels"
+                    >. C’est un bon moyen de
+                  </span>
+                  <b class="fichiers-mensuels">fidéliser la clientèle</b>
+                  <span>
+                    a un moment où ils en ont vraiment besoin. Les étudiants
+                    pourront ainsi développer de bonnes habitudes de cycliste
+                    pour plus tard au travail.</span
+                  >
+                </p>
+                <p class="ride-id-identifiant-unique-d">&nbsp;</p>
+                <p class="ride-id-identifiant-unique-d"> </p>
+                <p class="ride-id-identifiant-unique-d">
+                  <b>STREET MARKETING ET PRÉSENCE DE RUE</b>
+                </p>
+                <p class="ride-id-identifiant-unique-d">&nbsp;</p>
+                <p class="ride-id-identifiant-unique-d">
+                  <span class="fichiers-mensuels">Les </span>
+                  <b class="fichiers-mensuels">lieux proches du lac</b>
+                  <span
+                    >, le port ou Lincoln park semblent représenter des cibles
+                    de choix pour des opérations marketing sur le terrain. Comme
+                    la concentration des casuals se fait en ces lieux et surtout
+                    pendant les beaux jours d'été, une
+                  </span>
+                  <b class="fichiers-mensuels"
+                    >présence dans ces zones d’achalandage</b
+                  >
+                  <span class="fichiers-mensuels"> dans le cadre de </span>
+                  <b class="fichiers-mensuels"
+                    >campagnes de sensibilisation santé ou de marketing</b
+                  >
+                  <span class="fichiers-mensuels">
+                    peuvent représenter une opportunité significative de
+                    transformer des non membres en membres et de prospecter pour
+                    de nouveaux clients.  </span
+                  >
+                </p>
+                <p class="ride-id-identifiant-unique-d"></p>
+                <p class="ride-id-identifiant-unique-d">
+                  <b>CRÉATION D’UNE APPLICATION</b>
+                </p>
+                <p class="ride-id-identifiant-unique-d">
+                  <b>&nbsp;</b>
+                </p>
+                <p class="ride-id-identifiant-unique-d">&nbsp;</p>
+                <p class="ride-id-identifiant-unique-d">
+                  <span class="fichiers-mensuels">La </span>
+                  <b class="fichiers-mensuels"
+                    >création d’une application web et mobile</b
+                  >
+                  <span class="fichiers-mensuels">
+                    pourrait faciliter et rendre plus attractive l’utilisation
+                    du service. Il pourrait être envisagé d’obliger les casual à
+                    créer un compte membre même pour un trajet simple et ainsi
+                    avoir
+                  </span>
+                  <b class="fichiers-mensuels">plus de données à intégrer</b>
+                  <span class="fichiers-mensuels">
+                    dans nos futures analyses, et mieux coller aux attentes de
+                    chaque segment de clientèle. Une application peut aussi être
+                    un bon vecteur pour proposer des</span
+                  >
+                  <b class="fichiers-mensuels">
+                    enquêtes de satisfaction et de qualité</b
+                  >
+                  <span>
+                    du service. Si la direction exécutive de Cyclistic ne
+                    souhaite pas imposer le téléchargement de l’application à
+                    ses utilisateurs, il est possible de naturellement les
+                    attirer dessus grâce à des offres promotionnelles ou à un
+                  </span>
+                  <b class="fichiers-mensuels">interface attractif.</b>
+                  <span class="fichiers-mensuels"> </span>
+                </p>
+                <p class="ride-id-identifiant-unique-d">
+                  <span class="fichiers-mensuels"></span>
+                  <b>SCOOTER ÉLECTRIQUES</b>
+                </p>
+                <p class="ride-id-identifiant-unique-d">
+                  <b>&nbsp;</b>
+                </p>
+                <p class="ride-id-identifiant-unique-d">&nbsp;</p>
+                <p class="ride-id-identifiant-unique-d">
+                  <span class="fichiers-mensuels"
+                    >Il serait intéressant de connaître la
+                  </span>
+                  <b class="fichiers-mensuels"
+                    >proportion de scooters électriques</b
+                  >
+                  <span>
+                    dans la flotte de Cyclistic afin de la comparer avec celle
+                    de sa concurrence. Les données ont démontré que les casuals
+                    utilisaient plus de scooters électriques que les membres. Si
+                    la flotte de Cyclistic ne reflète pas cette préférence, cela
+                    peut expliquer que certains casuals rechignent à devenir
+                    membres (surtout si les entreprises concurrentes en
+                    proposent). Il faudrait alors probablement
+                  </span>
+                  <b class="fichiers-mensuels"
+                    >augmenter la flotte de scooters électriques
+                  </b>
+                  <span class="fichiers-mensuels"
+                    >(après une enquête préalable).</span
+                  >
+                </p>
+                <p class="ride-id-identifiant-unique-d">
+                  <span class="fichiers-mensuels"></span>
+                  <b
+                    >RÉDUCTIONS POUR LES MEMBRES SUR LES TRAJETS DE PLUS D’UNE
+                    HEURE.</b
+                  >
+                </p>
+                <p class="ride-id-identifiant-unique-d">
+                  <b>&nbsp;</b>
+                </p>
+                <p class="ride-id-identifiant-unique-d">&nbsp;</p>
+                <p class="ride-id-identifiant-unique-d">
+                  <span class="fichiers-mensuels">Comme les </span>
+                  <b class="fichiers-mensuels">casuals</b>
+                  <span class="fichiers-mensuels">
+                    ont l’habitude de faire des
+                  </span>
+                  <b class="fichiers-mensuels">trajets plus longs</b>
+                  <span class="fichiers-mensuels"
+                    >, il pourrait être intéressant d'offrir des
+                  </span>
+                  <b class="fichiers-mensuels"
+                    >réductions aux membres sur les longs trajets</b
+                  >
+                  <span class="fichiers-mensuels">
+                    pour inciter les casuals à devenir membres. Un système de
+                  </span>
+                  <b class="fichiers-mensuels"
+                    >bonification des longues distances</b
+                  >
+                  <span class="fichiers-mensuels">
+                    pourrait aussi très bien être envisagé par le biais de
+                    l’application et seulement pour les membres. Un système de
+                  </span>
+                  <b class="fichiers-mensuels">compétition inter-membres</b>
+                  <span>
+                    pourrait être créé avec des défis sur les distances
+                    parcourues par exemple. Des défis “jour de pluie” pourrait
+                    aussi être envisagés pour booster l’utilisation du service
+                    pendant ces journées moins achalandées.</span
+                  >
+                </p>
+                <p class="ride-id-identifiant-unique-d">&nbsp;</p>
+                <p class="ride-id-identifiant-unique-d">&nbsp;</p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
