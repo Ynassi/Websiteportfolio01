@@ -1,0 +1,191 @@
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    text-align: justify;
+    line-height: 1.7rem;
+    font-size: 1.2rem ;
+}
+
+b {
+    font-weight: bold;
+}
+
+main {
+    max-width: 1000px;
+    margin: auto;
+    margin-top: 65px;
+}
+.paragraph_title {
+    margin: 50px;
+    padding-top: 20px;
+    text-align: left;
+    font-size: 35px;
+}
+.title_cyclistic {
+    margin-top: 50px;
+    font-size: 45px;
+}
+.custom-list {
+    list-style-type: none; /* Supprime les puces par défaut */
+    padding-left: 0; /* Supprime tout décalage */
+    counter-reset: list-counter;
+    font-size: 1.2rem;
+    margin: 20px;
+    text-align: left;
+    line-height: 1.7rem;
+}
+
+.custom-list li {
+    counter-increment: list-counter;
+    font-size: inherit; /* Garde la même taille de texte */
+    text-align: inherit; /* Garde le même alignement que le paragraphe */
+    display: flex; /* Empêche le centrage forcé */
+    align-items: flex-start; /* Garde l'alignement naturel */
+}
+
+.custom-list li::before {
+    content: counter(list-counter, lower-alpha) ") ";
+    margin-right: 5px; /* Espacement entre la lettre et le texte */
+    font-size: inherit; /* Même taille que le texte */
+    font-weight: normal; /* Pas de gras */
+}
+.data-list {
+ display: flex;
+ flex-direction: column;
+ align-items: flex-start;
+ justify-content: flex-start;
+ font-family: "Courier New", monospace; /* Appliquer Courier New */
+ font-size: var(--font-size-3xl);
+ color: var(--color-white);
+ font-size: 1.2rem;
+ margin: 50px;
+}
+  
+.data-list div {
+ display: flex;
+ flex-direction: row;
+ justify-content: flex-start;
+ gap: 10px; /* Espacement entre la catégorie et la valeur */
+ margin: 5px 0;
+}
+  
+.data-list b {
+ min-width: 200px; /* Largeur fixe pour alignement */
+ text-align: left;
+ font-weight: bold !important; /* Forcer le gras */
+ color: var(--color-white); /* Couleur de texte */
+ margin-right: 40px; /* Doubler l'espace à droite de la catégorie */
+}
+.bullet-list {
+    list-style-type: disc; /* Définit des puces classiques • */
+    padding-left: 20px; /* Assure un bon alignement */
+    line-height: 1.7rem ;
+}
+
+.bullet-list li {
+    font-size: 1.2rem;
+    text-align: left;
+}
+.liens {
+    color :#ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
+    align-items: left;
+    align-content: left;
+}
+.language-r {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.custom-table {
+    border-collapse: collapse;
+    width: 50%; /* Ajuste la largeur */
+    margin: 50px auto; /* Centre le tableau */
+    text-align: center;
+    color: white; /* Texte blanc */
+}
+
+.custom-table td, .custom-table th {
+    border: 1px solid lightgray; /* Bordures gris clair */
+    padding: 10px; /* Espacement intérieur */
+}
+
+/* Assombrit légèrement l'en-tête pour qu'il ressorte mieux sur fond sombre */
+.custom-table tr:first-child {
+    background-color: #333333; /* Gris foncé mais plus clair que le background */
+    font-weight: bold;
+}
+
+/* Mets en gras le texte de la première colonne */
+.custom-table td:first-child {
+    font-weight: bold;
+}
+.graphs_charts {
+    align-items: center;
+    size-adjust: 0.5rem;
+    width: 1000px;
+    margin: auto;
+    padding : 25px 0 25px 0
+}
+.single-row-table {
+    border-collapse: collapse;
+    width: 50%; /* Ajuste la largeur */
+    margin-left: 0; /* Aligne à gauche */
+    text-align: center;
+    color: white; /* Texte blanc */
+}
+
+.single-row-table td {
+    border: 1px solid lightgray; /* Bordures gris clair */
+    padding: 10px; /* Espacement intérieur */
+}
+
+/* Première cellule en gris clair */
+.single-row-table td:first-child {
+    background-color: #333333; /* Gris foncé mais plus clair que le background */
+    font-weight: bold;
+}
+.subtitle_analysis {
+   padding : 25px 
+}
+.formula {
+   Padding : 5px 260px 5px 260px
+}
+.image-container {
+    display: flex;
+    justify-content: center; /* Centre les images horizontalement */
+    align-items: center; /* Centre verticalement */
+    max-width: 1000px; /* Largeur max du conteneur */
+    margin: 0 auto; /* Centre le conteneur */
+    gap: 10px; /* Espacement entre les images */
+}
+
+.image-container img {
+    width: 50%; /* Chaque image prend la moitié du conteneur */
+    height: 370px; /* Hauteur égale pour les deux */
+    object-fit: cover; /* Coupe les bords pour zoomer */
+    border-radius: 10px; /* Arrondi des angles */
+}
+
+/* Ajustement du recadrage pour l’image de gauche */
+.image-container img:first-child {
+    object-position: 40% center; /* Décale légèrement vers la gauche */
+}
+.map-container {
+    display: flex;
+    justify-content: center; /* Centre la carte horizontalement */
+    align-items: center;
+    max-width: 1000px;
+    margin: 0 auto; /* Centre le conteneur */
+}
+
+.map-container iframe {
+    width: 1000px;
+    min-height: 750px;
+    height: auto;
+    border-radius: 10px; /* Arrondi des bords */
+}
+
+
+

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yanis NASSI - Portfolio</title>
+    <link rel="stylesheet" href="./css/cyclistic_style.css">
+   
+    <!-- PRISM / CODE VIEWER -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-javascript.min.js"></script>
+
+</head>
+<body>
+    <!-- HEADER -->
+    <header>
+        <div class="header-left">
+            <img src="./images/clipart.png" alt="Logo" class="logo img-sm">
+            <h1 class="name">Yanis NASSI</h1>
+        </div>
+        <nav class="header-right">
+            <a href="./pages/portfolio.html">Portfolio</a>
+            <a href="./pages/skills.html">Skills</a>
+            <a href="./pages/art.html">Art</a>
+            <a href="./pages/contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <!-- CONTENU PRINCIPAL -->
+    <main>
+        
+        <img style="width: 100%;" loading="lazy" alt="" src="./images/images_cyclistic/image35.png" />
+        <h1 class="title_cyclistic"> ÉTUDE DE CAS : CYCLISTIC BIKE SHARE</h1>
+        <div>
+            <h2 class="paragraph-title">Scénario</h2>
+            <p>
+                <span>Cyclistic Bike Share est une entreprise qui propose un </span><b>programme de partage de vélo</b>
+                <span>à Chicago depuis 2016. Leur but est de proposer une alternative de </span><b>transport pratique, inclusive
+                et écologique</b>
+                <span>aux habitants de la ville de Chicago et à ses visiteurs. Dans notre cas, nous sommes en 2025, Cyclistic a
+                bien évolué depuis ses débuts et comme toute entreprise, elle cherche à maximiser ses profits.
+                Chez Cyclistic, il y a possibilité d’opter pour un</span><b> abonnement annuel</b><span>, de prendre un
+                </span><b>pass pour la journée</b><span> ou de payer son </span><b>trajet</b><span> de façon </span>
+                <b>unitaire</b><span>. Les utilisateurs qui ont un abonnement annuel sont considérés comme
+                des</span><b>“membres”</b><span>alors que les utilisateurs ponctuels (à la journée ou au trajet) sont
+                considérés comme des utilisateurs “casual”. La direction de
+                chez Cyclistic pense que</span><b> les utilisateurs “membres” sont plus rentables</b><span> que les “casual”
+                pour la compagnie et </span><b>aimerait en augmenter le nombre</b><span>
+                . Nous allons ici essayer de repérer </span><b>les tendances qui existent dans les comportement des “Membres”
+                et des “Casual”</b>
+                <span>vis à vis de l’utilisation du programme de partage de vélo Cyclistic et faire des recommandation basées
+                sur les données pour l'aider a augmenter le nombre de ses “membres”.</span>
+
+            </p>
+            <div>
+                 <pre><code class="language-r">
+bike_data <- bike_data %>%
+mutate(
+    started_at = as.POSIXct(started_at, format = "%Y-%m-%d %H:%M:%S"),
+    ended_at = as.POSIXct(ended_at, format = "%Y-%m-%d %H:%M:%S")
+)
+                </code></pre>
+            </div>
+
+        </div>
+    </main>
+</body>
+</html>
+     
+
+
+   
