@@ -1,0 +1,96 @@
+    <!-- HEADER -->
+    <header>
+        <div class="header-left">
+            <a href="../index.html">
+                <img src="../images/clipart.png" alt="Logo" class="logo">
+            </a>
+            <a href="../index.html" style="text-decoration: none; color: inherit;">
+                <h1 class="name">Yanis NASSI</h1>
+            </a>
+        </div>
+        <nav class="header-right">
+            <a href="portfolio.html">Portfolio</a>
+            <a href="skills.html">Skills</a>
+            <a href="art.html">Art</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+    <style>
+    /* STYLES GLOBAUX POLICES ET HEADER */
+
+    @font-face {
+        font-family: 'Signatra';
+        src: url('../fonts/Signatra.ttf') format('truetype');
+    }
+    
+    @font-face {
+        font-family: 'Helvetica';
+        src: url('../fonts/Helvetica.ttc') format('truetype');
+    }
+    @font-face {
+    font-family: "Courier New";
+    src: url("../fonts/cour.ttf");
+    font-weight: 400;
+    }
+    /* Styles globaux */
+    body {
+        background-color: #202020;  /* Gris foncé */
+        color: #ffffff;  /* Blanc */
+        font-family: 'Helvetica', sans-serif;
+        text-align: center;
+    }
+    
+    /* HEADER */
+    header {
+        background-color: #181818; /* Gris encore plus foncé */
+        padding: 10px 50px; /* Réduction plus douce */
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 2px solid #333;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 10;
+    }
+    
+    /* Partie gauche du header */
+    .header-left {
+        display: flex;
+        align-items: center;
+    }
+    
+    .logo {
+        height: 65px; /* Taille augmentée */
+        margin-right: 40px;
+    }
+    
+    .name {
+        font-family: 'Signatra', sans-serif;  
+        font-size: 2.8rem; /* Taille légèrement plus grande pour l'équilibre */
+    
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+        margin: 0;
+        padding: 0;
+        line-height: 1.1;
+    }
+    
+    /* Liens du header */
+    .header-right {
+        display: flex;
+        gap: 30px;
+        margin-right: 80px;
+    }
+    
+    .header-right a {
+        font-size: 1.6rem;
+        color: #f0f0e6 !important;
+        text-decoration: none !important;
+        transition: color 0.3s;
+    }
+    
+    .header-right a:hover {
+        color: #00bfff;
+    }</style>
+    

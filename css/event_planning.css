@@ -1,0 +1,171 @@
+@font-face {
+    font-family: 'Signatra';
+    src: url('../fonts/Signatra.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Helvetica';
+    src: url('../fonts/Helvetica.ttc') format('truetype');
+}
+@font-face {
+font-family: "Courier New";
+src: url("../fonts/cour.ttf");
+font-weight: 400;
+}
+/* Styles globaux */
+body {
+    background-color: #202020;  /* Gris foncé */
+    color: #ffffff;  /* Blanc */
+    font-family: 'Helvetica', sans-serif;
+    text-align: center;
+}
+
+/* HEADER */
+header {
+    background-color: #181818; /* Gris encore plus foncé */
+    padding: 10px 50px; /* Réduction plus douce */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #333;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+}
+
+/* Partie gauche du header */
+.header-left {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    height: 65px; /* Taille augmentée */
+    margin-right: 40px;
+}
+
+.name {
+    font-family: 'Signatra', sans-serif;  
+    font-size: 2.8rem; /* Taille légèrement plus grande pour l'équilibre */
+
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+    margin: 0;
+    padding: 0;
+    line-height: 1.1;
+}
+
+/* Liens du header */
+.header-right {
+    display: flex;
+    gap: 30px;
+    margin-right: 80px;
+}
+
+.header-right a {
+    font-size: 1.6rem;
+    color: #f0f0e6 !important;
+    text-decoration: none !important;
+    transition: color 0.3s;
+}
+
+.header-right a:hover {
+    color: #00bfff;
+}
+.home-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: inherit; /* Garde la couleur du texte par défaut */
+}
+
+.home-link:hover {
+    opacity: 1 !important; /* Empêche l'effet de transparence */
+    color: inherit !important; /* Évite tout changement de couleur */
+}
+
+.home-link img {
+    transition: none; /* Supprime toute animation */
+}
+
+.home-link h1 {
+    transition: none; /* Empêche toute transition sur le texte */
+}
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    text-align: justify;
+    line-height: 1.7rem;
+    font-size: 1.2rem ;
+}
+
+b {
+    font-weight: bold;
+}
+
+g { 
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    text-align: justify;
+    line-height: 1.7rem;
+    font-size: 1.2rem ;}
+
+main {
+    max-width: 1000px;
+    margin: auto;
+    margin-top: 150px;
+    margin-bottom: 150px;
+}
+.paragraph_title {
+    padding-top: 20px;
+    text-align: left;
+    font-size: 35px;
+}
+.paragraph_subtitle {
+
+    text-align: left;
+    font-size: 24px;
+    color: #bdbdbd;
+    margin-top: -15px;
+    margin-bottom: 80px;
+}
+.text {
+    color: #202020;
+    line-height: 0.5rem;
+    margin-left: 40px;
+    
+}
+.text_title {
+    color: #202020;
+    font-size: 24px;
+    margin-left: 25px ;
+    
+}
+.carousel__item-link {
+    text-decoration: none; /* Supprimer le soulignement du lien */
+    color: inherit; /* Garder la couleur d'origine du texte */
+    display: block; /* S'assure que le lien prend tout l'espace de l'élément */
+}
+
+.banniere {
+    width: 100%;  /* L'image occupe toute la largeur du conteneur */
+    height: auto;  /* Laisse l'image ajuster sa hauteur en fonction de la largeur */
+    object-fit: contain;  /* Ajuste l'image pour qu'elle tienne dans le conteneur sans être rognée */
+    border-radius: 8px;  /* Optionnel, pour garder les coins arrondis */
+    margin-bottom: -10px ;
+}
+
+.carousel__item {
+    display: block; /* Modification ici pour empiler verticalement */
+    width: 100%; /* Optionnel, ajuster la largeur */
+    margin-bottom: 50px; /* Ajoute un espacement entre les items */
+    gap: 25px;
+}
+
+.carousel__item-body {
+    width: 100%;
+    background-color: #9a9a9a;
+    border-radius: 8px;
+    padding: 10px;
+}
