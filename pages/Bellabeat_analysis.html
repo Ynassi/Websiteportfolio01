@@ -1,0 +1,1933 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yanis NASSI - Portfolio</title>
+    <link rel="stylesheet" href="../css/bellabeat_style.css">
+   
+    <!-- PRISM / CODE VIEWER -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-javascript.min.js"></script>
+
+</head>
+<style>@font-face {
+    font-family: 'Signatra';
+    src: url('../fonts/Signatra.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Helvetica';
+    src: url('../fonts/Helvetica.ttc') format('truetype');
+}
+@font-face {
+font-family: "Courier New";
+src: url("../fonts/cour.ttf");
+font-weight: 400;
+}
+/* Styles globaux */
+body {
+    background-color: #202020;  /* Gris foncé */
+    color: #ffffff;  /* Blanc */
+    font-family: 'Helvetica', sans-serif;
+    text-align: center;
+}
+
+/* HEADER */
+header {
+    background-color: #181818; /* Gris encore plus foncé */
+    padding: 10px 50px; /* Réduction plus douce */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #333;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+}
+
+/* Partie gauche du header */
+.header-left {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    height: 65px; /* Taille augmentée */
+    margin-right: 40px;
+}
+
+.name {
+    font-family: 'Signatra', sans-serif;  
+    font-size: 2.8rem; /* Taille légèrement plus grande pour l'équilibre */
+
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+    margin: 0;
+    padding: 0;
+    line-height: 1.1;
+}
+
+/* Liens du header */
+.header-right {
+    display: flex;
+    gap: 30px;
+    margin-right: 80px;
+}
+
+.header-right a {
+    font-size: 1.6rem;
+    color: #f0f0e6 !important;
+    text-decoration: none !important;
+    transition: color 0.3s;
+}
+
+.header-right a:hover {
+    color: #00bfff;
+}</style>
+<body>
+    <!-- HEADER -->
+    <header>
+        <div class="header-left">
+            <a href="../index.html" class="home-link">
+            <img src="../images/clipart.png" alt="Logo" class="logo img-sm">
+            <h1 class="name">Yanis NASSI</h1>
+         </a>
+        </div>
+        <nav class="header-right">
+            <a href="../pages/portfolio.html">Portfolio</a>
+            <a href="../pages/skills.html">Skills</a>
+            <a href="../pages/art.html">Art</a>
+            <a href="../pages/contact.html">Contact</a>
+        </nav>
+    </header>
+    
+    <!-- CONTENU PRINCIPAL -->
+    <main>
+        
+        <img style="width: 100%;" loading="lazy" alt="" src="../images/images_bellabeat/Bellabeat banniere.JPG" />
+        <h1 class="title_cyclistic"> BELLABEAT CASE STUDY</h1>
+        <div>
+            <h2 class="paragraph_title">SCENARIO</h2>
+
+            <p>As a junior data analyst, I'm recently working for a company named <b>Bellabeat</b>. Bellabeat is an high-tech manufacturer of <b>health-focused smart devices for women</b> founded in 2013 
+                by <b>Urška Sršen & Sando Mur</b>. Here are some examples of bellabeat products :</p>
+      
+            <ul class="bullet-list">
+              <li><p><b>Bellabeat app :</b> The Bellabeat app provides users with health data related to their activity, sleep, stress,menstrual cycle, and mindfulness habits.
+                This data can help users better understand their current habits and make healthy decisions. The Bellabeat app connects to their line of sma wellness products.</p></li>
+              <li><p><b>Leaf</b> Bellabeat’s classic wellness tracker can be worn as a bracelet, necklace, or clip. The Leaf tracker connects to the Bellabeat app to track activity, sleep, and stress.</p></li>
+              <li><p><b>Time:</b> This wellness watch combines the timeless look of a classic timepiece with sma technology to track user activity, sleep, and stress. 
+                The Time watch connects to the Bellabeat app to provide you with insights into your daily wellness.</p></li>
+              <li><p><b>Spring:</b> This is a water bottle that tracks daily water intake using sma technology to ensure that you are appropriately hydrated throughout the day. 
+                The Spring bole connects to the Bellabeat app to track your hydration levels.</p></li>
+              <li><p><b>Bellabeat membership</b>Bellabeat also offers a subscription-based membership program for users. 
+                Membership gives users 24/7 access to fully personalized guidance on nutrition, activity, sleep, health and beauty, 
+                and mindfulness based on their lifestyle and goals.</p></li>
+             </ul>
+       
+            <h2 class="paragraph_title">BUSINESS TASK</h2>
+            <p>
+                To better understand their <b>customer needs and the smart devices market</b>, Urška Sršen asked me to conduct an analysis. 
+                We want to identify the <b>trends in smart device usage</b>, see how these trends can apply to Bellabeat customers and <b>help Bellabeat build a data driven marketing strategy</b>. 
+                I'll have <b>a week</b> to conduct the analysis and share it with the Bella beat marketing analytics team. But I'll force myself to do it in <b>3 days</b> without having to lower the 
+                quality of my study just to see how I would react to tight deadlines.
+            </p>
+            <h2 class="paragraph_title"> ASK</h2>
+            <p>
+                To define what kind of trend we want to identify in smart devices usage, we will try to answer a few questions :
+            </p>
+            <ul class="bullet-list">
+                <li><p>Do users always wear their device ? and if not when do they remove it ? What is the percentage of users that always wear their device ? </p></li>
+                <li><p>What motivates users to wear smart devices ? Sport ? Biometrics tracking ?
+                    Are there users that do sport without going into the app ? 
+                </p></li>
+                <li><p>What are the days of the week in which users use the app the most ? </p></li>
+                <li><p>What are the Sleep, Weight, Intensities of activities and calories burning trends among users</p></li>
+                <li><p>What is the percentage of users that use Weight monitoring and why ?</p></li>
+                <li><p>What are the customers "types”</p></li>
+               </ul>
+            <p>Id love to ask more question to Urška on the data she provided me to clarify some points. 
+                In a real life situation I would reach out to my supervisors to be sure I'm heading the good way with my analysis.</p>
+
+            <h2 class="paragraph_title">GET THE DATA READY</h2>
+            <p> In the case study, a <b>Kaggle</b> Dataset is provided containing data from 2016 on <b>30 random Fitbit Users</b>.  
+                First, we will perform The <b>ROCC test</b> to see if we can trust the dataset :
+            </p>
+            <ul class="bullet-list">
+                <li><p>Dataset is <b>RELIABLE : LOW </b> In this case the dataset is not really representative of the population, 
+                    30 people can't really represent all the customers of a global company like bellabeat.</p></li>
+                <li><p>Dataset is <b>ORIGINAL : MEDIUM </b> The dataset is provided by MOBIUS which seems to be a trustworthy source on Kaggle as he is a steady and respected contributor (Lots of medals and considered a Dataset Master). 
+                    But it is still third party data.</li>
+                <li><p>Dataset is <b>COMPLETE & UNDERSTANDABLE : LOW</b> Dataset misses a lot of information. Lots of information is missing, 
+                    in the “Daily_Activity” there are missing records for a lot of customers. We would also need gender info as Bellabeat is a women-oriented company. 
+                    Data is not well explained as there is no metadata. We do our best to make assumptions on data. </p></li>
+                <li><p>Dataset is <b>CURRENT : LOW</b> Dataset is not current as it is 10 years old now, smart devices users might have changed their habits.</p></li>
+                <li><p>Dataset <b>CITED : LOW</b> Dataset comes from a distributed survey via Amazon Mechanical Turk, so yes it is cited but not from a very reliable source</p></li>
+               </ul>
+
+            <p>
+                <b>RELIABILITY</b> issue : The dataset provided is already huge, there are approximately <b>2 millions observations</b> by table and there are <b>7 tables by period for 2 periods of time</b>. For technical reasons it will be difficult to deal with a bigger dataset on my personal laptop . 
+                As it is a Case study <b>we will perform the analysis on this sample size</b> but the recommendations i’ll do couldn't really apply in a real life scenario. 
+            </p>
+            <p>
+                Source is not really <b>UNDERSTANDABLE</b>: I'll try to make assumptions on the data.
+            </p>
+            <p>
+                Source is <b>OUTDATED </b>:  As it is a Case study we will still perform the analysis on this <b>outdated data</b> but the recommendations i’ll do couldn't really apply in a real life scenario.    
+            </p>
+            <p>
+                <b>Fitness data</b> about users seems to be really <b>hard to find</b> as there might be some <b>confidentiality issues</b> in sharing it publicly. 
+                I searched <b>BigQuery public</b> datasets and <b>fitabase</b> to find better data and couldn't find it for free. As this case study is provided by google (a trustworthy source) 
+                and that i can't just “give up”,  i'll take this case study as <b>a challenge to make sense out of this dataset by making assumptions on the data</b>. 
+                It can also be seen as an opportunity to do an analysis on Data inconsistency and explain why this dataset is a really bad one which should never be used to 
+                make data driven decisions.
+            </p>
+            <p>
+                The Kaggle dataset is organized in 2 folders containing the same type of tables for 2 months in 2016 (march and april).
+            </p><p>  </p>
+            <p>We have 3 types of data :</p>
+            <ol class="arabic-list">
+                <li><p>
+                    The data that is <b>continuously recorded by the device</b>, there is data as long as the user is <b>wearing the device</b>. 
+                    We have different types of metrics (Calories, Sleep, MET, Intensity, Steps) 
+                 </p>
+                 <p>
+                    There are different files for the same metrics (minutes, hour and day) . I'll import just the metrics by minutes for <b>Calories Sleep and Intensity</b>.
+                 </p>
+                 <ul class ="bullet-list">
+                    <li><b>Calories :</b> Calories burnt by minute. (continuous entire number)</li>
+                    <li><b>Intensity :</b> Intensity of the activity made by the user by minute. (0,1,2,3)</li>
+                    <li><b>Sleep :</b> There is a record if the user is asleep (1,2 or 3 for the recovering quality of sleep)</li>
+                 </ul>
+                 <p>We have the same tables for April and March</p>
+                </li>
+                <li><p>The user logs into the app to record activity himself, 
+                    he asks for a report on this day or he just opens the app which automatically generates a record for the day. 
+                    There is just one table by month called <b>DailyActivity</b> (by day).</p></li>
+                <li>
+                    <p>The user enters the data himself on the app. Also one table by month called <b>WeightLogInfo.</b> (We will discuss this point later on the analysis part)</p>
+                </li>
+            </ol>
+            <p>
+                I came up with this classification because we have way more data in the table "Continuous_record" than “DailyActivity”. 
+                WeightLogInfo is the one with the least data (maybe because it requires more effort from the user). 
+                A table called <b>SleepDay</b> is also available only for the month of april. We use the table to know how many people track their sleep on the total population. 
+            </p>
+            <p><b>DATA CHOICE EXPLANATION</b></p>
+            <p><ul class ="bullet-list">
+                <li><b>Calories :</b> if there is a record the user was wearing the watch.</li>
+                <li><b>Intensity :</b>  To see if there is some sport activity untracked by the app.</li>
+                <li><b>Sleep :</b> there is data only if the user is asleep so we can track sleeping habits of users and maybe link it to other habits they have.</li>
+             </ul>
+            </p>
+            <h2 class="paragraph_title">PROCESS</h2>
+            <p>We will use <b>BigQuery and Tableau</b> to perform this analysis.</p>
+            <p>
+                As I was trying to import data to BigQuery I noticed there was some <b>invalid format in the dates</b>. 
+                I tried to automatise the cleaning on Google Sheets but couldn't manage to switch AM/PM hours to 24h based timestamp. 
+                I tried to clean it on <b>RStudio</b> and finally succeeded in setting the appropriate timestamp for my data. Here is the process :
+            </p>
+            <div class="language-r"><pre><code class="language-r"> ## Charger les bibliothèques nécessaires
+   library(dplyr)
+   library(lubridate)
+                
+## Charger les données
+   data <- read.csv("/Users/msayn47painter/Desktop/CASE_STUDY_Bellabeat
+                     /Bellabeat_data/April_data
+                     /Fitabase Data 4.12.16-5.12.16/weightLogInfo_merged.csv")
+                
+## Vérifier que la colonne est bien en texte
+    data$Date <- as.character(data$Date)
+                
+## Convertir les dates en format Date-Time avec heure en 24h
+    data$Date <- mdy_hms(data$Date)
+                
+## Forcer l'affichage des heures, même pour minuit (00:00:00)
+    data$Date <- strftime(data$Date, format="%Y-%m-%d %H:%M:%S")
+                
+## Sauvegarder le fichier nettoyé en CSV
+    write.csv(data, "/Users/msayn47painter/Desktop/CASE_STUDY_Bellabeat/Bellabeat_data/April_data
+                     /CleanedData_april/WeightLogInfo_april.csv", row.names = FALSE, quote = FALSE)
+                </code></pre></div>
+           <p>I did the same operation for all tables.</p>
+           <p> Now we have to organize the data to better understand it and clean it. First I'll group these 3 tables (Sleep, Intensity and Calories) in one with the following columns </p>
+          <div class="data-list">
+             <div><b>Id :</b><span> fitbit user id</span></div>
+             <div><b>Activity minute :</b><span>Minute in which record happens</span></div>
+             <div><b>Calories :</b><span>Calories burnt at this time</span></div>
+             <div><b>Intensity :</b><span>0 if the user is awake 1 2 3 he or she sleeps.</span></div>
+           </div>
+           <p> As it is more complete, We'll use the data by minutes tables and use it to create a table by hours: <b>Continuous_record (minutes) and Continuous_hours</b></p>
+           <div class="language-r"><pre><code class="language-r">-- march
+
+            CREATE TABLE `nimble-mode-447321-p1.bellabeat.Continuous_record_march` AS
+            WITH 
+                calories AS (
+                    SELECT 
+                        ActivityMinute AS date,  
+                        Calories,
+                        id  -- Ajout de la colonne id de Calories_march
+                    FROM `nimble-mode-447321-p1.bellabeat.Calories_march`
+                ),
+                sleep AS (
+                    SELECT 
+                        date,  
+                        Value 
+                    FROM `nimble-mode-447321-p1.bellabeat.Sleep_march`
+                ),
+                intensities AS (
+                    SELECT 
+                        ActivityMinute AS date,  
+                        Intensity 
+                    FROM `nimble-mode-447321-p1.bellabeat.Intensities_march`
+                )
+            SELECT 
+                c.date AS ActivityMinute, 
+                c.id,  
+                MAX(c.Calories) AS Calories,  
+                COALESCE(MAX(s.Value), 0) AS Sleep_Value, 
+                MAX(i.Intensity) AS Intensity  
+            FROM calories c
+            LEFT JOIN sleep s ON c.date = s.date  
+            LEFT JOIN intensities i ON c.date = i.date  
+            GROUP BY c.date, c.id
+            
+-- april 
+            
+            CREATE TABLE `nimble-mode-447321-p1.bellabeat.Continuous_record_april` AS
+            WITH 
+                calories AS (
+                    SELECT 
+                        ActivityMinute AS date,  
+                        Calories,
+                        id  
+                    FROM `nimble-mode-447321-p1.bellabeat.Calories_april`
+                ),
+                sleep AS (
+                    SELECT 
+                        date,  
+                        Value 
+                    FROM `nimble-mode-447321-p1.bellabeat.Sleep_april`
+                ),
+                intensities AS (
+                    SELECT 
+                        ActivityMinute AS date,  
+                        Intensity 
+                    FROM `nimble-mode-447321-p1.bellabeat.Intensities_april`
+                )
+            SELECT 
+                c.date AS ActivityMinute, 
+                c.id,  
+                MAX(c.Calories) AS Calories, 
+                COALESCE(MAX(s.Value), 0) AS Sleep_Value,  
+                MAX(i.Intensity) AS Intensity  
+            FROM calories c
+            LEFT JOIN sleep s ON c.date = s.date  
+            LEFT JOIN intensities i ON c.date = i.date  
+            GROUP BY c.date, c.id</code></pre></div>
+            <p>We will also use the table <b>DailyActivity (daily Data)</b></p>
+            
+            <div class="data-list">
+            <div><b>Id :</b><span> Fitbit user id</span></div>
+            <div><b>Activity Date :</b><span>Date in which record happens</span></div>
+            <div><b>TotalSteps :</b><span>Total steps the day of the record</span></div>
+            <div><b>TotalDistance :</b><span>Total distance traveled (Fitbit and logged activity)</span></div>
+            <div><b>TrackerDistance :</b><span>Total distance traveled recorded by device</span></div>
+            <div><b>LoggedActivitiesDistance :</b><span>Total distance entered by the user manually</span></div>
+            <div><b>VeryActiveDistance :</b><span>Total distance being very Active (Running or sport)</span></div>
+            <div><b>ModeratelyActiveDst:</b><span>Total distance being moderately active (light sport session, manual work, walking fast) </span></div>
+            <div><b>LightActiveDistance:</b><span>Total distance being lightly active (Cooking, walking,groceries family meeting or light activities)</span></div>
+            <div><b>VeryActiveMinutes :</b><span>Total minutes being Very active</span></div>
+            <div><b>FailyActiveMinutes :</b><span>Total minutes being Fairly active</span></div>
+            <div><b>LightlyActiveMinutes:</b><span>Total minutes being Lightly active</span></div>
+            <div><b>SedentaryMinutes :</b><span>Total minutes being Sedentary</span></div>
+            <div><b>Calories :</b><span>Total calories burnt during the day</span></div>
+          </div>
+          <p>And the table <b>WeighLogInfo (Daily Data) :</b></p>
+          <div class="data-list">
+            <div><b>Id :</b><span> Fitbit user id</span></div>
+            <div><b>Date :</b><span>Date of record</span></div>
+            <div><b>WeightKg :</b><span>Total steps the day of the record</span></div>
+            <div><b>WeightPounds :</b><span>Total distance traveled (Fitbit and logged activity)</span></div>
+            <div><b>Fat :</b><span>fat index</span></div>
+            <div><b>BMI :</b><span>Body Mass Index</span></div>
+            <div><b>IsManualReport :</b><span>TRUE/FALSE </span></div>
+          </div>
+          <p>And Finally the table <b>SleepDay :</b></p>
+          <div class="data-list">
+            <div><b>Id :</b><span> Fitbit user id</span></div>
+            <div><b>SleepDay :</b><span>Day of record</span></div>
+            <div><b>TotalSleepRecords :</b><span>Number of sleep record</span></div>
+            <div><b>TotalMinutesAsleep :</b><span>Total minutes being Asleep</span></div>
+            <div><b>TotalMintesInBed :</b><span>Total minutes being in Bed</span></div>
+          </div>
+        <h2 class="paragraph_title"> DATA CLEANING</h2>
+        <p><b><u>DATA MERGING</u></b> :</p>
+        <p> First it is important to merge the data from both monthes to have all the data in the same table</p>
+
+<div class="language-r"><pre><code class="language-r">
+-- Continuous record
+INSERT INTO `nimble-mode-447321-p1.bellabeat.Continuous_record` 
+(id, ActivityMinute, Calories, Sleep_Value, Intensity)
+SELECT id, ActivityMinute, Calories, Sleep_Value, Intensity
+FROM `nimble-mode-447321-p1.bellabeat.Continuous_record_april`
+UNION ALL
+SELECT id, ActivityMinute, Calories, Sleep_Value, Intensity
+FROM `nimble-mode-447321-p1.bellabeat.Continuous_record_march`;
+    
+-- Dailyactivity 
+CREATE TABLE `nimble-mode-447321-p1.bellabeat.Dailyactivity` AS
+SELECT * FROM `nimble-mode-447321-p1.bellabeat.Dailyactivity_april`
+UNION ALL
+SELECT * FROM `nimble-mode-447321-p1.bellabeat.Dailyactivity_march`;
+    
+-- WeightLogInfo 
+CREATE TABLE `nimble-mode-447321-p1.bellabeat.WeightLogInfo` AS
+SELECT * FROM `nimble-mode-447321-p1.bellabeat.WeightLogInfo_april`
+UNION ALL
+SELECT * FROM `nimble-mode-447321-p1.bellabeat.WeightLogInfo_march`;</code></pre></div>
+       <p>
+        <u>Checking <b>FORMATS</b></u> :
+      </p>
+      <div class="language-r">
+        <pre><code class="language-r">
+SELECT column_name, data_type
+FROM `nimble-mode-447321-p1.bellabeat.INFORMATION_SCHEMA.COLUMNS`
+WHERE table_name = 'Continuous_record';
+
+SELECT column_name, data_type
+FROM `nimble-mode-447321-p1.bellabeat.INFORMATION_SCHEMA.COLUMNS`
+WHERE table_name = 'DailyActivity';
+
+SELECT column_name, data_type
+FROM `nimble-mode-447321-p1.bellabeat.INFORMATION_SCHEMA.COLUMNS`
+WHERE table_name = 'WeightLogInfo';</code></pre></div>
+
+<p><b>Continuous_record :</b></p>
+<table class="custom-table">
+    <tr>
+        <td>Column</td>
+        <td>Format</td>
+    </tr>
+    <tr>
+        <td>ID</td>
+        <td>INT64</td>
+    </tr>
+    <tr>
+        <td>Activity Minute</td>
+        <td>TIMESTAMP</td>
+    </tr>
+    <tr>
+        <td>Calories</td>
+        <td>FLOAT64</td>
+    </tr>
+    <tr>
+        <td>Sleep_Value</td>
+        <td>INT64</td>
+    </tr>
+    <tr>
+        <td>Intensity</td>
+        <td>INT64</td>
+    </tr>
+</table>
+
+<p><b>DailyActivity :</b></p>
+<table class="custom-table">
+    <tr>
+        <td>Column</td>
+        <td>Format</td>
+    </tr>
+    <tr>
+        <td>ID</td>
+        <td>INT64</td>
+    </tr>
+    <tr>
+        <td>Activity Date</td>
+        <td>DATE</td>
+    </tr>
+    <tr>
+        <td>TotalSteps</td>
+        <td>INT64</td>
+    </tr>
+    <tr>
+        <td>TotalDistance</td>
+        <td>FLOAT64</td>
+    </tr>
+    <tr>
+        <td>LoggedActivitiesDistance</td>
+        <td>FLOAT64</td>
+    </tr>
+    <tr>
+        <td>VeryActiveDistance</td>
+        <td>FLOAT64</td>
+    </tr>
+    <tr>
+        <td>ModeratelyActiveDistance</td>
+        <td>FLOAT64</td>
+    </tr>
+    <tr>
+        <td>LightActiveDistance</td>
+        <td>FLOAT64</td>
+    </tr>
+    <tr>
+        <td>SedentaryActiveDistance</td>
+        <td>FLOAT64</td>
+    </tr>
+    <tr>
+        <td>VeryActiveMinutes</td>
+        <td>INT64</td>
+    </tr>
+    <tr>
+        <td>LoggedActivitiesDistance</td>
+        <td>INT64</td>
+    </tr>
+    <tr>
+        <td>VeryActiveDistance</td>
+        <td>INT64</td>
+    </tr>
+    <tr>
+        <td>FairlyActiveMinutes</td>
+        <td>INT64</td>
+    </tr>
+    <tr>
+        <td>SedentaryMinutes</td>
+        <td>INT64</td>
+    </tr>
+    <tr>
+        <td>SedentaryActiveDistance</td>
+        <td>INT64</td>
+    </tr>
+    <tr>
+        <td>Calories</td>
+        <td>INT64</td>
+    </tr>
+</table>
+<p><b>WeightLogInfo :</b></p>
+<table class="custom-table">
+    <tr>
+        <td>Column</td>
+        <td>Format</td>
+    </tr>
+    <tr>
+        <td>ID</td>
+        <td>INT64</td>
+    </tr>
+    <tr>
+        <td>Date</td>
+        <td>TIMESTAMP</td>
+    </tr>
+    <tr>
+        <td>WeightKg</td>
+        <td>FLOAT64</td>
+    </tr>
+    <tr>
+        <td>WeightPounds</td>
+        <td>FLOAT64</td>
+    </tr>
+    <tr>
+        <td>Fat</td>
+        <td>STRING</td>
+    </tr>
+    <tr>
+        <td>BMI</td>
+        <td>FLOAT64</td>
+    </tr>
+    <tr>
+        <td>IsManualReport</td>
+        <td>BOOL</td>
+    </tr>
+    <tr>
+        <td>LogId</td>
+        <td>INT64</td>
+    </tr>
+</table>
+<p>All the tables have a good data format (except "fat" which should be a Int64 but as the colum is empty we'll ignore this format).</p>
+
+     <p><u>Checking for <b>NULL values</u></b> :
+    </p><div class="language-r">
+      <pre><code class="language-r">
+SELECT 
+    COUNT(*) AS total_rows,
+    COUNTIF(id IS NULL) AS missing_id,
+    COUNTIF(ActivityMinute IS NULL) AS missing_activity_minute,
+    COUNTIF(Calories IS NULL) AS missing_calories,
+    COUNTIF(Sleep_Value IS NULL) AS missing_sleep_value,
+    COUNTIF(Intensity IS NULL) AS missing_intensity
+FROM `nimble-mode-447321-p1.bellabeat.Continuous_record`;
+    
+SELECT 
+    COUNT(*) AS total_lignes,
+    COUNTIF(Id IS NULL) AS id_nulls,
+    COUNTIF(ActivityHour IS NULL) AS activityhour_nulls,
+    COUNTIF(Calories IS NULL) AS calories_nulls,
+    COUNTIF(Sleep_Value IS NULL) AS sleep_value_nulls,
+    COUNTIF(Intensity IS NULL) AS intensity_nulls
+FROM `nimble-mode-447321-p1.bellabeat.Dailyactivity`;
+    
+    
+SELECT 
+    COUNT(*) AS total_lignes,
+    COUNTIF(Id IS NULL) AS id_nulls,
+    COUNTIF(Date IS NULL) AS date_nulls,
+    COUNTIF(WeightKg IS NULL) AS weightkg_nulls,
+    COUNTIF(WeightPounds IS NULL) AS weightpounds_nulls,
+    COUNTIF(Fat IS NULL) AS fat_nulls,
+    COUNTIF(BMI IS NULL) AS bmi_nulls,
+    COUNTIF(IsManualReport IS NULL) AS ismanualreport_nulls,
+    COUNTIF(LogId IS NULL) AS logid_nulls
+FROM `nimble-mode-447321-p1.bellabeat.WeightLogInfo`;
+</code></pre></div>
+<p>
+    No NULL Values
+</p>
+    <p>
+    <u>Checking for <b>ABNORMAL VALUES</b></u>: 
+    </p>
+    <div class="language-r">
+      <pre><code class="language-r">
+SELECT 
+    COUNT(*) AS total_lignes,
+    COUNTIF(Calories < 0) AS calories_negatives,
+    COUNTIF(Sleep_Value NOT IN (0,1,2,3)) AS sleep_value_invalides,
+    COUNTIF(Intensity NOT IN (0,1,2,3)) AS intensity_invalides
+FROM `nimble-mode-447321-p1.bellabeat.Continuous_record`;
+    
+SELECT 
+    COUNT(*) AS total_lignes,
+    COUNTIF(Total_Calories < 0) AS calories_negatives,
+    COUNTIF(Sleep_Value NOT IN (0,1,2,3)) AS sleep_value_invalides,
+    COUNTIF(Intensity NOT IN (0,1,2,3)) AS intensity_invalides
+FROM `nimble-mode-447321-p1.bellabeat.WeightLogInfo`;
+    
+SELECT 
+    COUNT(*) AS total_lignes,
+    COUNTIF(TotalSteps < 0) AS total_steps_negatifs,
+    COUNTIF(TrackerDistance < 0) AS tracker_distance_negatifs,
+    COUNTIF(VeryActiveDistance < 0) AS very_active_distance_negatifs,
+    COUNTIF(ModeratelyActiveDistance < 0) AS moderately_active_distance_negatifs,
+    COUNTIF(LightActiveDistance < 0) AS light_active_distance_negatifs,
+    COUNTIF(SedentaryActiveDistance < 0) AS sedentary_active_distance_negatifs,
+    COUNTIF(VeryActiveMinutes < 0) AS very_active_minutes_negatifs,
+    COUNTIF(FairlyActiveMinutes < 0) AS fairly_active_minutes_negatifs,
+    COUNTIF(LightlyActiveMinutes < 0) AS lightly_active_minutes_negatifs,
+    COUNTIF(SedentaryMinutes < 0) AS sedentary_minutes_negatifs,
+    COUNTIF(Calories < 0) AS calories_negatives
+FROM `nimble-mode-447321-p1.bellabeat.Dailyactivity`
+  </code></pre></div>
+  <p>
+    There are some missing values in WeightLogInfo for "Fat", We ll keep everything and discuss it later.
+  </p>
+  <p><u> Checking for <b>DUPLICATES</b></u> :</p>
+<div class="language-r">
+<pre><code class="language-r">
+SELECT Id, ActivityMinute, COUNT(*) AS nb_occurences
+    FROM `nimble-mode-447321-p1.bellabeat.Continuous_record`
+    GROUP BY Id, ActivityMinute
+    HAVING COUNT(*) > 1;
+    
+SELECT Date, id, COUNT(*) AS nb_occurences
+    FROM `nimble-mode-447321-p1.bellabeat.WeightLogInfo`
+    GROUP BY Date, id
+    HAVING COUNT(*) > 1;
+    
+SELECT ActivityDate, id, COUNT(*) AS nb_occurences
+    FROM `nimble-mode-447321-p1.bellabeat.Dailyactivity`
+    GROUP BY ActivityDate, id
+    HAVING COUNT(*) > 1;</code></pre></div>
+<p><u>Deleting <b>DUPLICATES</b></u></p>
+<div class="language-r">
+    <pre><code class="language-r">
+REPLACE TABLE `nimble-mode-447321-p1.bellabeat.Continuous_record` AS
+SELECT DISTINCT
+    ActivityMinute, 
+    id, 
+    Calories, 
+    Sleep_Value, 
+    Intensity
+FROM `nimble-mode-447321-p1.bellabeat.Continuous_record`
+GROUP BY ActivityMinute, id, Calories, Sleep_Value, Intensity;
+        
+REPLACE TABLE `nimble-mode-447321-p1.bellabeat.DailyActivity` AS
+SELECT DISTINCT 
+    Id, 
+    ActivityDate, 
+    TotalSteps, 
+    TrackerDistance, 
+    LoggedActivitiesDistance, 
+    VeryActiveDistance, 
+    ModeratelyActiveDistance, 
+    LightActiveDistance, 
+    SedentaryActiveDistance, 
+    VeryActiveMinutes, 
+    FairlyActiveMinutes, 
+    LightlyActiveMinutes, 
+    SedentaryMinutes, 
+    Calories
+FROM `nimble-mode-447321-p1.bellabeat.DailyActivity`;
+        
+REPLACE TABLE `nimble-mode-447321-p1.bellabeat.WeightLogInfo` AS
+SELECT DISTINCT 
+    Id, 
+    Date, 
+    WeightKg, 
+    WeightPounds, 
+    Fat, 
+    BMI, 
+    IsManualReport, 
+    LogId
+FROM `nimble-mode-447321-p1.bellabeat.WeightLogInfo`;
+        </code></pre></div>
+<p><u>Checking for <b>DATA INCONSISTENCY</b> :</u></p>
+<div class="language-r">
+    <pre><code class="language-r">
+
+        SELECT DISTINCT id
+        FROM `nimble-mode-447321-p1.bellabeat.Continuous_record` 
+
+        SELECT DISTINCT id
+        FROM `nimble-mode-447321-p1.bellabeat.Continuous_hours`
+
+        SELECT DISTINCT id
+        FROM `nimble-mode-447321-p1.bellabeat.Dailyactivity`
+
+        SELECT DISTINCT id
+        FROM `nimble-mode-447321-p1.bellabeat.WeightLogInfo`
+
+        SELECT DISTINCT id
+        FROM `nimble-mode-447321-p1.bellabeat.SleepDay`
+    </code></pre></div>
+
+<p>
+    <u><b>Users</b></u> : 
+</p>
+<p>
+    <b>35 users</b> in Continuous_record
+    <b>35 users</b> in DailyActivity
+    <b>24 users</b> in SleepDay
+    <b>13 users</b> in WeightLogInfo
+</p>
+
+<p><u>Generating <b>MORE DATA</b> :</u></p>
+<p>
+    We can now generate more data from our cleaned Tables.
+    First we will create a table by hour from the table "<b>Continuous_record</b>" :
+</p>
+<div class="language-r">
+<pre><code class="language-r">
+-- Continuous record en heures
+
+CREATE TABLE `nimble-mode-447321-p1.bellabeat.Continuous_hours` AS
+WITH aggregated_data AS (
+    SELECT
+        EXTRACT(DATE FROM ActivityMinute) AS Date,  -- Extraire la date
+        EXTRACT(HOUR FROM ActivityMinute) AS Hour,  -- Extraire l'heure
+        id,
+        ROUND(Calories) AS Calories,  -- Arrondir les calories avant d'agréger
+        Sleep_Value,
+        Intensity
+    FROM `nimble-mode-447321-p1.bellabeat.Continuous_record`
+)
+SELECT
+    Date,
+    Hour,
+    id,
+    SUM(Calories) AS Total_Calories,  -- Somme des calories pour chaque heure
+    ROUND(AVG(Sleep_Value)) AS Sleep_Value,  -- Moyenne arrondie pour Sleep_Value
+    ROUND(AVG(Intensity)) AS Intensity  -- Moyenne arrondie pour Intensity
+FROM aggregated_data
+GROUP BY
+    Date, Hour, id
+ORDER BY
+    Date, Hour, id;
+</code></pre></div>
+<p>
+    We'll call this table "<b>Continuous_hours</b>"
+</p>
+<p>
+    Then, We're will create <b>new columns</b> for our tables.
+</p>
+<p>
+    We can add A column to track the day of the week in "<b>DailyActivity</b>" :
+</p>
+<div class="language-r">
+<pre><code class="language-r">
+REPLACE TABLE `nimble-mode-447321-p1.bellabeat.DailyActivity` AS
+SELECT 
+    Id,
+    ActivityDate,
+    EXTRACT(DAYOFWEEK FROM ActivityDate) AS DayOfWeek,
+    TotalSteps,
+    TrackerDistance,
+    LoggedActivities,
+    VeryActiveDistance,
+    ModeratelyActiveDistance,
+    LightActiveDistance,
+    SedentaryActiveDistance,
+    VeryActiveMinutes,
+    FairlyActiveMinutes,
+    LightlyActiveMinutes,
+    SedentaryMinutes,
+    Calories
+FROM 
+`nimble-mode-447321-p1.bellabeat.DailyActivity`;
+</code></pre></div>
+<p>
+    We can add a new column to know the DayoftheWeek in <b>"Continuous_hours"</b>.
+</p>
+<div class="language-r">
+<pre><code class="language-r">
+REPLACE TABLE `nimble-mode-447321-p1.bellabeat.Continuous_hours` AS
+SELECT 
+    Date,
+    Hour,
+    id,
+    EXTRACT(DAYOFWEEK FROM Date) AS DayOfWeek,
+    Total_Calories,
+    Sleep_Value,
+    Intensity
+FROM 
+    `nimble-mode-447321-p1.bellabeat.Continuous_hours`
+</code></pre></div>
+<p>
+    We will do the same for <b>each table</b>.
+</p>
+<p>
+    To have hints about users <b>Inactivity</b> we can create a table from <b>"Continuous_hours"</b>.
+</p>
+<div class="language-r">
+    <pre><code class="language-r">WITH
+ordered_data AS (
+    SELECT
+    id,
+    Date,
+    Hour,
+    LAG(TIMESTAMP(CONCAT(CAST(Date AS STRING), ' ', CAST(Hour AS STRING), ':00:00'))) 
+        OVER (PARTITION BY id ORDER BY Date, Hour) AS previous_activity,
+    TIMESTAMP_DIFF(
+        TIMESTAMP(CONCAT(CAST(Date AS STRING), ' ', CAST(Hour AS STRING), ':00:00')), 
+        LAG(TIMESTAMP(CONCAT(CAST(Date AS STRING), ' ', CAST(Hour AS STRING), ':00:00'))) 
+        OVER (PARTITION BY id ORDER BY Date, Hour),
+        HOUR
+    ) AS time_diff
+    FROM
+    `nimble-mode-447321-p1.bellabeat.Continuous_hours`
+),
+inactivity_periods AS (
+    SELECT
+    id,
+    previous_activity AS inactivity_start,
+    TIMESTAMP(CONCAT(CAST(Date AS STRING), ' ', CAST(Hour AS STRING), ':00:00')) AS inactivity_end,
+    TIMESTAMP_DIFF(
+        TIMESTAMP(CONCAT(CAST(Date AS STRING), ' ', CAST(Hour AS STRING), ':00:00')), 
+        previous_activity, HOUR
+    ) AS inactivity_duration
+    FROM
+    ordered_data
+    WHERE
+    time_diff > 1  -- Si l'écart entre les horaires est supérieur à 1 heure
+)
+SELECT
+id,
+inactivity_start,
+inactivity_end,
+inactivity_duration
+FROM
+inactivity_periods
+ORDER BY
+id, inactivity_start;
+</code></pre></div>
+<p>
+    We'll call this table "<b>Inactivity_continuous</b>"
+    it shows the periods of time that has more than 1 hour between 2 records.
+</p>
+<p>
+   We have a "Sedentary" timespan in "DailyActivity". We ll add a table to track time spent <b>Sedentary but not in bed</b>.
+   The table "SleepDay" is only available for April so we will do an average for time in bed by user and substract it from "SedentaryTime".
+</p>
+<div class="language-r">
+    <pre><code class="language-r">WITH AverageTimeInBed AS (
+    SELECT 
+        Id, 
+        AVG(TotalTimeInBed) AS AvgTimeInBed
+    FROM 
+        nimble-mode-447321-p1.bellabeat.SleepDay
+    GROUP BY 
+        Id
+)
+
+SELECT 
+    da.*, -- Sélectionne toutes les colonnes de DailyActivity
+    COALESCE(atb.AvgTimeInBed, 0) AS AvgTimeInBed, 
+    da.SedentaryMinutes - COALESCE(atb.AvgTimeInBed, 0) AS Sedentary_notinbed 
+FROM 
+    nimble-mode-447321-p1.bellabeat.DailyActivity da
+LEFT JOIN 
+    AverageTimeInBed atb
+    ON da.Id = atb.Id;
+</code></pre></div>
+<p>
+Now we have to check for <b>negtive values</b> in this table.
+</p>
+<div class="language-r">
+    <pre><code class="language-r">SELECT *
+FROM nimble-mode-447321-p1.bellabeat.DailySedentary_notinbed
+WHERE Sedentary_notinbed < 0;
+</code></pre></div>
+<p>
+    There are <b>61 records</b> with negative values on a 1397 total records (4%). User 6117666160 combine 12 of these 61 records. Lets now check for time spent sedentary but not <b>Asleep</b> :
+</p>
+<div class="language-r">
+    <pre><code class="language-r">WITH AverageMinutesAsleep AS (
+    SELECT 
+        Id, 
+        AVG(TotalMinutesAsleep) AS AvgMinutesAsleep
+    FROM 
+        nimble-mode-447321-p1.bellabeat.SleepDay
+    GROUP BY 
+        Id
+)        
+SELECT 
+    da.*, -- Select all columns from DailyActivity
+    COALESCE(ams.AvgMinutesAsleep, 0) AS AvgMinutesAsleep, 
+    da.SedentaryMinutes - COALESCE(ams.AvgMinutesAsleep, 0) AS Sedentary_notAsleep
+FROM 
+    nimble-mode-447321-p1.bellabeat.DailyActivity da
+LEFT JOIN 
+    AverageMinutesAsleep ams
+    ON da.Id = ams.Id; </code></pre></div>
+<p>We still have </b> 47 negative values</b> in column "Sedentary_notAsleep" for this table. We ll try to give an explanation for that later.</p>
+<p> One last table will be created to check for record "Hight Intensity Activity" in Continuous_hours without record in "DailyActivity" (to know what is the share of people who do sports without tracking it in the App</p>
+<div class="language-r">
+    <pre><code class="language-r">SELECT DISTINCT ch.Id, ch.Date
+FROM nimble-mode-447321-p1.bellabeat.Continuous_hours ch
+LEFT JOIN nimble-mode-447321-p1.bellabeat.DailyActivity da 
+    ON ch.Id = da.Id AND ch.Date = da.ActivityDate
+WHERE ch.Intensity = 3
+  AND da.Id IS NULL;</code></pre></div>
+  <h2 class="paragraph_title">ANALYSIS</h2>
+  <p>Now we can enter the most exciting part of this study : <b>the Analysis</b>. 
+    To better understand our data, we’ll use <b>Tableau</b> to make visualizations. 
+    Data patterns and trends will be more accessible that way. Unfortunately I'm using 
+  <b>Tableau public</b> and there is no way I can directly link Tableau to Big Query. 
+    I have no choice but to download the tables from BigQuery through Google Cloud Storage 
+    as CSV files and upload it to Tableau. For security reasons i wont put the Query 
+    containing my google bucket name publicly on this website</p>
+    <p class = "subtitle_analysis"><b>INACTIVITY ANALYSIS</b></p>
+    <div class='tableauPlaceholder' id='viz1739601624878' style='position: relative'>
+        <noscript><a href='#'><img alt='INACTIVITY DASHBOARD ' 
+            src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;BE&#47;BELLABEATINACTIVEDASHBOARD&#47;INACTIVITYDASHBOARD&#47;1_rss.png' 
+            style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' 
+            value='https%3A%2F%2Fpublic.tableau.com%2F' /> 
+            <param 
+            name='embed_code_version' 
+            value='3' /> <param 
+            name='site_root' 
+            value='' /><param 
+            name='name' 
+            value='BELLABEATINACTIVEDASHBOARD&#47;INACTIVITYDASHBOARD' /><param 
+            name='tabs' 
+            value='no' /><param 
+            name='toolbar' 
+            value='yes' /><param 
+            name='static_image' 
+            value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;BE&#47;BELLABEATINACTIVEDASHBOARD&#47;INACTIVITYDASHBOARD&#47;1.png' /> 
+            <param 
+            name='animate_transition' 
+            value='yes' /><param 
+            name='display_static_image' 
+            value='yes' /><param 
+            name='display_spinner' 
+            value='yes' /><param 
+            name='display_overlay' 
+            value='yes' /><param 
+            name='display_count' 
+            value='yes' /><param 
+            name='language' 
+            value='fr-FR' /></object></div>                
+            <script 
+            type='text/javascript'>                    
+            var divElement = document.getElementById('viz1739601624878');                   
+            var vizElement = divElement.getElementsByTagName('object')[0];                    
+            if ( divElement.offsetWidth > 800 ) { vizElement.style.width='1000px';vizElement.style.height='827px';} 
+            else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='1000px';vizElement.style.height='827px';} 
+            else { vizElement.style.width='100%';vizElement.style.height='1277px';}                     
+            var scriptElement = document.createElement('script');                    
+            scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                
+            </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class = "data-list"> 
+      <div><b> tripduration_secs :</b> le temps du trajet en secondes</div>
+      <div><b> tripduration_min :</b>le temps du trajet en minutes</span></div>
+      <div><b> month :</b>le mois du trajet</span></div>
+      <div><b> hour : </b> la plage horaire du trajet.</span></div>
+    </div>
+  <p>
+    Nous ajouterons d’autres colonnes dans notre table <b> bike_data </b> par la suite.
+  </p>
+  <p>
+    Nous allons maintenant créer de nouvelles tables afin d’analyser quelles sont les préférences des différents types d’utilisateur en termes de temps de trajet : 
+  </p>
+  <div class="language-r">
+  <pre><code class="language-r"># Creation de tables pour les differents temps de trajets par intervalles 
+
+# Moins de 1 seconde
+less_than_1s <- bike_data %>% filter(trip_duration_secs < 1)
+
+# Moins de 1 minute (60 secondes)
+less_than_1min <- bike_data %>% filter(trip_duration_secs < 60)
+
+# Moins de 4 minutes (240 secondes)
+less_than_4min <- bike_data %>% filter(trip_duration_secs < 240)
+
+# Moins de 15 minutes (900 secondes)
+less_than_15min <- bike_data %>% filter(trip_duration_secs < 900)
+
+# Moins de 1 heure (3600 secondes)
+less_than_1hour <- bike_data %>% filter(trip_duration_secs < 3600)
+
+# Entre 1 et 2 heures (3600 à 7200 secondes)
+between_1and2hour <- bike_data %>% filter(trip_duration_secs >= 3600 & trip_duration_secs < 7200)
+
+# Entre 2 et 6 heures (7200 à 21600 secondes)
+between_2and6hour <- bike_data %>% filter(trip_duration_secs >= 7200 & trip_duration_secs < 21600)
+
+# Entre 6 et 10 heures (21600 à 36000 secondes)
+between_6and10hour <- bike_data %>% filter(trip_duration_secs >= 21600 & trip_duration_secs < 36000)
+
+# Plus de 10 heures (36000 secondes et plus)
+more_than_10hour <- bike_data %>% filter(trip_duration_secs >= 36000)
+</code></pre></div>
+<p>
+  En analysant ces tables je me suis rendu compte que la table <b>moins de 1 seconde</b> avait des durées de <b>temps de trajet négatifs</b>. 
+  Plutôt que de supprimer ces données aberrantes j’ai émis l'hypothèse que les “started_at” et “ended_at” avaient pu être inversées. 
+  J’ai donc supprimé les tables et effectué une commande permettant <b>d’inverser les dates</b> “started at” et “ended at” pour les trajets ayant une <b>“tripduration_secs” négative</b>. 
+  Nous réeffectuons la commande pour la création de tables par intervalles de temps par la suite.
+</p>
+<div class="language-r">
+  <pre><code class="language-r"># Certains temps de trajet sont a l'envers : 
+# Hypothese : les dates de depart et d'arrivee sont inversees.
+# Remise a l'endroit des dates inversees 
+bike_data <- bike_data %>% mutate(started_at = if_else(trip_duration_secs < 0, ended_at, started_at),
+                              ended_at = if_else(trip_duration_secs < 0, started_at, ended_at),
+                              trip_duration_secs = as.numeric(difftime(ended_at, started_at, units = "secs")),
+                              trip_duration_min = trip_duration_secs / 60)
+</code></pre></div>
+<p>
+  En analysant les différentes tables je me suis rendu compte qu’il y avait encore des lignes avec <b>des données manquantes</b>, 
+  j’ai donc décidé de faire un dernier “round” de nettoyage general : 
+</p><div class="language-r">
+<pre><code class="language-r"># supprimer les valeurs manquantes 
+bike_data <- bike_data %>% drop_na()
+clean_tables <- function(...) {
+  tables <- list(...)
+  cleaned_tables <- lapply(tables, drop_na)
+  return(cleaned_tables)
+}
+
+# Utilisation de la fonction
+list_cleaned <- clean_tables(less_than_1s, less_than_1min, less_than_4min, 
+                             less_than_15min, less_than_1hour, 
+                             between_1and2hour, between_2and6hour, 
+                             between_6and10hour, more_than_10hour)
+
+# Attribution des résultats aux tables originales
+less_than_1s <- list_cleaned[[1]]
+less_than_1min <- list_cleaned[[2]]
+less_than_4min <- list_cleaned[[3]]
+less_than_15min <- list_cleaned[[4]]
+less_than_1hour <- list_cleaned[[5]]
+between_1and2hour <- list_cleaned[[6]]
+between_2and6hour <- list_cleaned[[7]]
+between_6and10hour <- list_cleaned[[8]]
+more_than_10hour <- list_cleaned[[9]]</code></pre></div>
+<h2 class="paragraph_title">Analyse des données.</h2>
+<p>Nous arrivons maintenant à la partie la plus excitante de cette étude de cas : <b>L’analyse.</b></p>
+<div class = "subtitle_analysis"><p><b><u>ANALYSE GENERALE</u></b></p></div>
+<p> Nous allons commencer par analyser les variables individuellement avant de les mettre en relation. Premièrement, 
+  quel est le pourcentage de membres par rapport au total d’utilisateurs en 2024 ?</p>
+<p>  member_casual   count percentage
+  <table class="custom-table">
+    <tr>
+        <td></td>
+        <td>Nombre</td>
+        <td>Pourcentage</td>
+    </tr>
+    <tr>
+        <td>Casual</td>
+        <td>2 151 658</td>
+        <td>36.7%</td>
+    </tr>
+    <tr>
+        <td>Member</td>
+        <td>3 708 910</td>
+        <td>63.3%</td>
+    </tr>
+</table>
+<p>En 2024 il y a eu 63.3% des utilisateurs ayant effectué des trajets avec Cyclistic étaient des <b>membres</b> et 36.7 étaient des <b>casuals</b>
+<div>
+<img class = "graphs_charts" src ="../images/images_cyclistic/image24.png" alt="Prcnt_members"></div>
+<div class ="language-r"><pre><code class="language-r"># DEBUT DE L"ANALYSE DES DONNEES
+
+  # Analyse individuelle des differentes variables.
+  
+  # Pourcentages de "membres" et "casual"
+  library(dplyr)
+  percentage_member_casual <- function(data) {
+    # Filtrer les données pour l'année 2024
+    data_2024 <- data %>% filter(format(started_at, "%Y") == "2024")
+    
+    # Calculer le nombre total de trajets
+    total_rides <- nrow(data_2024)
+    
+    # Calculer le nombre de trajets par type d'utilisateur
+    counts <- data_2024 %>%
+      group_by(member_casual) %>%
+      summarise(count = n(), .groups = "drop")
+    
+    # Ajouter la colonne de pourcentage
+    counts <- counts %>%
+      mutate(percentage = (count / total_rides) * 100)
+    
+    return(counts)
+  }
+  
+  # Utilisation de la fonction
+  percentage_results <- percentage_member_casual(bike_data)
+  
+  # Affichage des résultats
+  print(percentage_results)
+</code></pre></div>
+<p>
+  Quel est <b>le mois</b> où les utilisateurs ont eu le <b>plus</b> recours au service de Bike Share ? 
+</p>
+<table class="single-row-table">
+  <tr>
+      <td>Septembre 2024</td>
+      <td>820867</td>
+      <td>14.0 %</td>
+  </tr>
+</table>
+<p> Le mois de <b>Septembre 2024 </b>a été le plus fréquenté avec un total de <b>820 867 trajets</b> ce qui represente <b>14% des trajets totaux</b> en 2024. </p>
+<p> Quel est <b>le mois</b> où les utilisateurs ont eu le <b>moins</b> recours au service de Bike Share ? </p>
+<table class="single-row-table">
+  <tr>
+      <td>Jannvier 2024</td>
+      <td>144873</td>
+      <td>2.47 %</td>
+  </tr>
+</table>
+<p> Le mois de <b>Janvier 2024</b> a été le mois le moins fréquenté par les utilisateurs de Cyclistic en 2024 avec 144 873 <b>trajets</b> ce qui représente <b>2.47% du total des trajets</b>.</p>
+<div class = "language-r"><pre><code># Mois le plus frequente et le moins frequente de l'annee 2024 :
+
+  # Mois le plus frequente ; 
+  
+  most_frequent_month_percentage <- function(data) {
+    # Filtrer les données pour l'année 2024
+    data_2024 <- data %>% filter(format(started_at, "%Y") == "2024")
+    
+    # Extraire le mois et compter les trajets
+    monthly_counts <- data_2024 %>%
+      mutate(month = format(started_at, "%Y-%m")) %>%
+      group_by(month) %>%
+      summarise(total_rides = n(), .groups = "drop")
+    
+    # Calcul du total des trajets sur l'année
+    total_rides_2024 <- sum(monthly_counts$total_rides)
+    
+    # Trouver le mois avec le maximum de trajets
+    most_frequent <- monthly_counts %>%
+      filter(total_rides == max(total_rides)) %>%
+      mutate(percentage = (total_rides / total_rides_2024) * 100)
+    
+    return(most_frequent)
+  }
+</code></pre></div>
+<div class = "language-r"><pre><code># Mois le moisn frequente : 
+
+  least_frequent_month_percentage <- function(data) {
+    # Filtrer les données pour l'année 2024
+    data_2024 <- data %>% filter(format(started_at, "%Y") == "2024")
+    
+    # Extraire le mois et compter les trajets
+    monthly_counts <- data_2024 %>%
+      mutate(month = format(started_at, "%Y-%m")) %>%
+      group_by(month) %>%
+      summarise(total_rides = n(), .groups = "drop")
+    
+    # Calcul du total des trajets sur l'année
+    total_rides_2024 <- sum(monthly_counts$total_rides)
+    
+    # Trouver le mois avec le minimum de trajets
+    least_frequent <- monthly_counts %>%
+      filter(total_rides == min(total_rides)) %>%
+      mutate(percentage = (total_rides / total_rides_2024) * 100)
+    
+    return(least_frequent)
+  }
+  
+  # Utilisation de la fonction
+  least_frequent_month_percentage(bike_data)
+</code></pre></div>
+<div class = "subtitle_analysis"><p><b><u> ANALYSE DE L'ÉVOLUTION ANNUELLE PAR TYPE D’UTILISATEUR </u></b></p></div>
+<p>Intéressons nous maintenant à l'évolution de la tendance continue sur l'année 2024</p>
+<img class = "graphs_charts" src ="../images/images_cyclistic/image16.png" alt="Prcnt_members"></div>
+<div class = "language-r"><pre><code>
+  # Creation d'un graphique evolution du nombre d'utilisateurs par rapport au temps
+  library("ggplot2")
+  library("dplyr")
+  monthly_counts <- bike_data %>%
+    group_by(month, member_casual) %>%
+    summarise(count = n(), .groups = "drop")
+  ggplot(monthly_counts, aes(x = month, y = count, color = member_casual, group = member_casual)) +
+    geom_line(size = 1) +
+    geom_point(size = 2) +
+    labs(title = "Évolution du nombre de trajets par type d'utilisateur",
+         x = "Mois",
+         y = "Nombre de trajets",
+         color = "Type d'utilisateur") +
+    theme_minimal() +
+    theme(axis.text.x = element_text(angle = 45, hjust = 1))
+</code></pre></div>
+<p>
+  Sans surprise, les utilisateurs ont beaucoup <b>plus utilisé</b> le service de Bikeshare <b>pendant les mois d'été</b>,
+   il y a une grosse <b>augmentation</b> du nombre d’utilisateurs <b>au cours du mois d’avril</b> probablement expliquée par le retour des beaux jours.
+    <b>Le pic de l'activité</b> pour l'année 2024 a été en <b>Septembre</b>.  
+</p>
+<div class = "subtitle_analysis"><p><b><u> ANALYSE DES CONDITIONS MÉTÉOROLOGIQUES </u></b></p></div>
+<p>Nous allons maintenant intégrer des données de <b>température</b> et de <b>précipitations</b> pour <b>Chicago</b> en 2024 grâce à un jeu de données trouvé sur <b>Weatherstack</b>. 
+  Le fichier csv “export.csv” contient les données météorologiques pour <b>chaque journée de l'année 2024</b>, 
+  il est organisé selon les colonnes suivantes :
+  <div class="data-list">
+    <div><b>date : </b><span>Date de l’enregistrement</span></div>
+    <div><b>tavg : </b><span>Température moyenne </span></div>
+    <div><b>tmin : </b><span>Température minimale</span></div>
+    <div><b>tmax : </b><span>Température maximale</span></div>
+    <div><b>prcp : </b><span>Precipitations</span></div>
+    <div><b>snow : </b><span>Neige</span></div>
+    <div><b>wdir : </b><span>Direction du vent</span></div>
+    <div><b>wspd : </b><span>Vitesse du vent</span></div>
+    <div><b>wpgt : </b><span>Rafales de vent</span></div>
+    <div><b>pres : </b><span>Pression atmospherique</span></div>
+    <div><b>tsun : </b><span>Ensoleillement</span></div>
+  </div> 
+
+<p>Pour alléger le processus d’analyse, nous n'utilisons que les variables “tavg” et “prcp”</p>
+
+<p>De plus, nous pouvons garantir l'intégrité et la fiabilité des données en utilisant le test ROCCC : </p>
+      
+  <ul class="bullet-list">
+    <li>Les données sont <b>fiables</b> : elles sont représentatives de la population.</li>
+    <li>Les données sont <b>originales</b> : la source primaire peut être identifiée.</li>
+    <li>Les données sont <b>complètes </b> elles contiennent les informations essentielles nécessaires pour résoudre la tâche en cours.</li>
+    <li>Les données sont <b>actuelles</b> : nous utilisons les données pour l'année 2024 en janvier 2025.</li>
+    <li>Les données sont <b>citées</b> : elles proviennent d'une source vérifiée et crédible.</li>
+   </ul>
+</p>
+<div class = "language-r"><pre><code># Ajout des variables de precipitations et de temperature
+library(dplyr)
+library(lubridate)
+
+# Charger le fichier export.csv
+weather_data <- read.csv("/Users/msayn47painter/Desktop/export.csv")
+
+# Convertir la colonne "date" en type Date
+weather_data$date <- as.Date(weather_data$date)
+
+# Charger bike_data (si ce n'est pas déjà fait)
+# bike_data <- read.csv("chemin/vers/bike_data.csv")
+
+# Extraire les dates de la colonne 'started_at' de bike_data et les convertir en type Date
+bike_data$started_at <- as.POSIXct(bike_data$started_at)
+
+# Extraire uniquement la date (sans l'heure) de started_at
+bike_data$date <- as.Date(bike_data$started_at)
+
+# Joindre les données météorologiques avec bike_data sur la date
+bike_data <- left_join(bike_data, weather_data[, c("date", "tavg", "prcp")], by = "date")
+
+# Renommer les colonnes pour correspondre aux nouvelles colonnes attendues
+bike_data <- bike_data %>%
+  rename(temperature = tavg, precipitation = prcp)
+
+# Vérifier les premières lignes pour s'assurer que tout est bien intégré
+head(bike_data)
+</code></pre></div>
+<img class = "graphs_charts" src ="../images/images_cyclistic/image8.png" alt="Prcnt_members"></div>
+<div class = "language-r"><pre><code># Analyse des tempertures et precipitations annuelles.
+# Charger les bibliothèques nécessaires
+library(ggplot2)
+library(dplyr)
+library(lubridate)
+library(tidyr)
+
+# avec les colonnes "date" (format YYYY-MM-DD), "tavg" (température moyenne) et "prcp" (précipitations)
+
+# Convertir la colonne date en format Date et extraire le mois pour s'assurer que tous les mois apparaissent
+weather_data$date <- as.Date(weather_data$date)
+weather_data$month <- format(weather_data$date, "%Y-%m") # Format YYYY-MM pour affichage mensuel
+
+# Transformer les données au format long pour ggplot
+weather_long <- weather_data %>%
+  select(date, month, tavg, prcp) %>%
+  pivot_longer(cols = c(tavg, prcp), names_to = "variable", values_to = "value")
+
+# Créer le graphique avec les précipitations en barres et la température en ligne
+ggplot(weather_long, aes(x = date, y = value, group = variable)) +
+  geom_col(data = subset(weather_long, variable == "prcp"), aes(fill = "Précipitations"), width = 0.7) + 
+  geom_line(data = subset(weather_long, variable == "tavg"), aes(color = "Température"), size = 1) +
+  scale_x_date(date_breaks = "1 month", date_labels = "%b %Y") +  # Affichage de tous les mois
+  scale_fill_manual(values = c("Précipitations" = "blue")) +  
+  scale_color_manual(values = c("Température" = "red")) +  
+  facet_wrap(~variable, scales = "free_y", ncol = 1) +  # Une colonne, chaque variable sur un graphique séparé
+  labs(title = "Évolution des précipitations et de la température",
+       x = "Date",
+       y = "Valeur",
+       fill = "Légende",
+       color = "Légende") +
+  theme_minimal() +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1))  # Incline les labels des mois pour meilleure lisibilité
+</code></pre></div>
+<p>
+  Nous allons maintenant pousser <b>plus loin</b> notre étude pour déterminer l’effet de la température et des précipitations sur chacun des différents types d’utilisateurs et essayer de quantifier cet effet. 
+  Pour cela nous utiliserons une <b>régression linéaire dans RStudio</b>.
+</p>
+<div class = "subtitle_analysis"><p><b><u>RÉGRESSION LINÉAIRE </u></b></p></div>
+<p> Le nombre de trajets expliqués par la <b>température</b> et les <b>précipitations</b> pour chaque type de client indépendamment.
+</p>
+<p>
+  Le but ici est de mesurer <b>la sensibilité à la température et aux précipitations</b> pour chaque type de client.
+   L’influence de la température sur le recours au service de location de vélo est il plus important chez les membres ou chez les casual ?
+   Quelle est cette influence en termes de mesure ?
+</p>
+<p>Modèle : </p>
+<div class = "formula"><p><b> n_trips = β0 ​+ β1​×temperature + β2​×precipitation + ϵ </b></p></div>
+<p>
+  La régression linéaire sera performée sur 2 ensembles distinct : 
+</p>
+<ul class="bullet-list">
+  <li>Les données pour les <b>membres</b></li>
+  <li>Les données pour les <b>casual</b></li>
+</ul>
+<div class = "language-r"><pre><code># Creation d'une regression lineaire pour mesurer la sensibilite de chaque type de consommateur
+# Par rapport a la temperature et aux precipitations sur le nombre de trajets 
+
+# Séparer les données en fonction du type de consommateur (membres vs casuals)
+member_data <- daily_data %>% filter(member_casual == "member")
+casual_data <- daily_data %>% filter(member_casual == "casual")
+
+# Régression pour les membres
+member_model <- lm(n_trips ~ temperature + precipitation, data = member_data)
+summary(member_model)
+
+# Régression pour les casuals
+casual_model <- lm(n_trips ~ temperature + precipitation, data = casual_data)
+summary(casual_model)
+</code></pre></div>
+<div class = "subtitle_analysis"><p><b><u>RÉSULTATS:</u></b></p></div>
+<div class = "subtitle_analysis"><p><b><u>Résultats membres:</u></b></p></div>
+<div class = "language-r"><pre><code>
+Call:
+lm(formula = n_trips ~ temperature + precipitation, data = casual_data)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-5349.4 -1573.5  -416.8  1097.3  9635.7 
+ 
+
+Coefficients:
+              Estimate Std. Error t value Pr(>|t|)    
+(Intercept)    1235.08     231.90   5.326 1.78e-07 ***
+temperature     371.51      13.66  27.199  < 2e-16 ***
+precipitation  -124.40      19.73  -6.306 8.42e-10 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+
+Residual standard error: 2615 on 359 degrees of freedom
+  (4 observations deleted due to missingness)
+Multiple R-squared:  0.675,	Adjusted R-squared:  0.6732 
+F-statistic: 372.9 on 2 and 359 DF,  p-value: < 2.2e-16 </code></pre></div>
+<p>
+  <b>Température </b>: Le coefficient pour la température est <b>371.51</b>, 
+  ce qui signifie qu'une augmentation de 1°C correspond à une augmentation de <b>371.51 trajets</b> en moyenne pour les casuals. 
+  Cet effet positif sur l'utilisation des vélos est également significatif.
+</p><p>
+
+  <b>Précipitations </b>: Le coefficient pour les précipitations est <b>-124.40</b>, 
+  ce qui montre que plus il pleut, moins les casuals utilisent leur vélo, 
+  avec une diminution moyenne de <b>124.40 trajets</b> pour chaque unité d'augmentation des précipitations.
+</p><p>
+  
+  <b>R² </b>: Le R² est de <b>0.675</b>, ce qui signifie que <b>67.5%</b> de la variation du nombre de trajets des 
+  casuals peut être expliquée par la température et les précipitations.
+</p>
+<img class = "graphs_charts" src ="../images/images_cyclistic/image18.png" alt="Reg_lin_members"></div>
+<img class = "graphs_charts" src ="../images/images_cyclistic/image22.png" alt="Reg_lin_members"></div>
+<div class = "subtitle_analysis"><p><b><u>Résultats casuals:</u></b></p></div>
+<div class = "language-r"><pre><code>Call:
+lm(formula = n_trips ~ temperature + precipitation, data = casual_data)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-5349.4 -1573.5  -416.8  1097.3  9635.7 
+ 
+
+Coefficients:
+              Estimate Std. Error t value Pr(>|t|)    
+(Intercept)    1235.08     231.90   5.326 1.78e-07 ***
+temperature     371.51      13.66  27.199  < 2e-16 ***
+precipitation  -124.40      19.73  -6.306 8.42e-10 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+
+Residual standard error: 2615 on 359 degrees of freedom
+  (4 observations deleted due to missingness)
+Multiple R-squared:  0.675,	Adjusted R-squared:  0.6732 
+F-statistic: 372.9 on 2 and 359 DF,  p-value: < 2.2e-16</code></pre></div>
+<p><b>Température</b> : Le coefficient pour la température est <b>371.51</b>, ce qui signifie qu'une augmentation de 1°C correspond à une augmentation de
+<b>371.51 trajets</b> en moyenne pour les casuals. Cet effet positif sur l'utilisation des vélos est également significatif.
+
+
+<b>Précipitations</b> : Le coefficient pour les précipitations est <b>-124.40</b>, ce qui montre que plus il pleut, moins les casuals utilisent leur vélo, 
+avec une diminution moyenne de <b>124.40 trajets</b> pour chaque unité d'augmentation des précipitations.
+
+
+<b>R²</b> : Le R² est de <b>0.675</b>, ce qui signifie que <b>67.5%</b> de la variation du nombre de trajets des casuals peut être expliquée par la température et 
+les précipitations.
+</p>
+<img class = "graphs_charts" src ="../images/images_cyclistic/image23.png" alt="Reg_lin_members"></div>
+<img class = "graphs_charts" src ="../images/images_cyclistic/Rplot05.png" alt="Reg_lin_members"></div>
+<div class = "language-r"><pre><code># Creations de visualisation pour la relation entre temperature et le nombre de trajets.
+
+# Visualisation pour les membres
+ggplot(member_data, aes(x = temperature, y = n_trips)) +
+  geom_point() +
+  geom_smooth(method = "lm", se = FALSE, color = "#2bbec5") +  # Bleu turquoise pour les membres
+  labs(title = "Impact de la Température sur les Trajets des Membres",
+       x = "Température (°C)", y = "Nombre de Trajets")
+
+# Visualisation pour les casuals
+ggplot(casual_data, aes(x = temperature, y = n_trips)) +
+  geom_point() +
+  geom_smooth(method = "lm", se = FALSE, color = "#f4776b") +  # Rouge saumon pour les casuals
+  labs(title = "Impact de la Température sur les Trajets des Casuals",
+       x = "Température (°C)", y = "Nombre de Trajets")
+
+# Creations de visualisation pour l relation entre les precipitations et le nombre de trajets.
+
+# Visualisation pour les membres
+ggplot(member_data, aes(x = precipitation, y = n_trips)) +
+  geom_point() +
+  geom_smooth(method = "lm", se = FALSE, color = "#2bbec5") +  # Bleu turquoise pour les membres
+  labs(title = "Impact des Précipitations sur les Trajets des Membres",
+       x = "Précipitations (mm)", y = "Nombre de Trajets")
+
+# Visualisation pour les casuals
+ggplot(casual_data, aes(x = precipitation, y = n_trips)) +
+  geom_point() +
+  geom_smooth(method = "lm", se = FALSE, color = "#f4776b") +  # Rouge saumon pour les casuals
+      x = "Précipitations (mm)", y = "Nombre de Trajets")
+</code></pre></div>
+<div class = "subtitle_analysis"><p><b><u>ANALYSE DES HABITUDES D'UTILISATION HEBDOMADAIRES ET QUOTIDIENNES PAR TYPE D’UTILISATEUR.</u></b></p></div>
+<p>
+  Pour continuer notre analyse, nous allons maintenant nous intéresser aux <b>préférences des utilisateurs</b> et identifier des 
+<b>tendances</b> dans les habitudes de chaque type de consommateur. 
+  Pour cela, nous utiliserons des graphiques à barres pour illustrer l’utilisation 
+<b>journalière</b> et <b>hebdomadaire</b> du programme de partage de vélos. 
+</p>
+<div class = "subtitle_analysis"><p><b><u>Jour de la semaine </u></b></p></div>
+<img class = "graphs_charts" src ="../images/images_cyclistic/image37.png" alt="Reg_lin_members"></div>
+<div class = "language-r"><pre><code># Creation d'un graphique pour definir le jour de la semaines ou les differents utilisateurs sont actifs.
+library(ggplot2)
+library(dplyr)
+
+# Groupement des données par jour de la semaine et type d'utilisateur
+bike_data_weekday <- bike_data %>%
+  group_by(day_of_week, member_casual) %>%
+  summarise(count = n()) %>%
+  ungroup()
+
+# Création du graphique
+ggplot(bike_data_weekday, aes(x = day_of_week, y = count, fill = member_casual)) +
+  geom_bar(stat = "identity", position = "dodge") +
+  scale_fill_manual(values = c("member" = "#2bbec5", "casual" = "#f4776b")) +
+  labs(title = "Nombre d'utilisateurs par jour de la semaine",
+       x = "Jour de la semaine",
+       y = "Nombre d'utilisateurs",
+       fill = "Type d'utilisateur") +
+  theme_minimal() +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1))
+</code></pre></div>
+<p>
+  On voit ici que les <b>membres</b> ont une utilisation beaucoup <b>plus constante</b> du service de partage de vélos que les <b>casuals</b> avec une baisse de 
+  leur utilisation en fin de semaine. 
+  Les <b>casuals</b>, eux, ont une claire hausse de leur utilisation en <b>fin de semaine</b>. 
+</p>
+<div class = "subtitle_analysis"><p><b><u>Heures de la journée </u></b></p></div>
+<img class = "graphs_charts" src ="../images/images_cyclistic/image13.png" alt="Reg_lin_members"></div>
+<p>
+  Ici on voit bien qu’il y a 2 pics d’utilisation pour les <b>membres entre 06h00 et 09h00</b> et <b>entre 16h et 18h</b> ce qui peut correspondre à des horaires de bureaux. 
+  L'évolution de l’utilisation des <b>casuals</b> est elle plus <b>constante</b> au cours de la journée avec un <b>pic d’utilisation à 17h</b>.
+</p>
+<div class = "subtitle_analysis"><p><b><u>ANALYSE DES PRÉFÉRENCES EN TERME DE TYPE DE VÉLO PAR TYPE D’UTILISATEUR.</u></b></p></div>
+<div class="image-container">
+  <img src="../images/images_cyclistic/image6.png" alt="Reg_lin_members">
+  <img src="../images/images_cyclistic/image9.png" alt="Reg_lin_members">
+</div>
+<div class = "language-r"><pre><code># Creation de graphiques par type d'utilisateur pour les velos
+library(ggplot2)
+library(dplyr)
+
+# Préparation des données pour les membres et casuals
+bike_data_members <- bike_data %>%
+  filter(member_casual == "member") %>%
+  count(rideable_type)
+
+bike_data_casual <- bike_data %>%
+  filter(member_casual == "casual") %>%
+  count(rideable_type)
+
+# Graphique en donut pour les membres
+ggplot(bike_data_members, aes(x = "", y = n, fill = rideable_type)) +
+  geom_bar(stat = "identity", width = 1) +
+  coord_polar(theta = "y") +
+  scale_fill_manual(values = c("electric_bike" = "#8E8D8A",  # Gris clair pour les vélos électriques
+                               "classic_bike" = "#A3B18C",   # Vert olive pour les vélos classiques
+                               "docked_bike" = "#F1C6A4",    # Beige pour les vélos dockés
+                               "electric_scooter" = "#D1C6B1")) +  # Gris pâle pour les scooters électriques
+  labs(title = "Préférences des membres par type de vélo", fill = "Type de vélo") +
+  theme_void() +
+  theme(legend.position = "right") +
+  theme(plot.title = element_text(hjust = 0.5))
+
+# Graphique en donut pour les utilisateurs casual
+ggplot(bike_data_casual, aes(x = "", y = n, fill = rideable_type)) +
+  geom_bar(stat = "identity", width = 1) +
+  coord_polar(theta = "y") +
+  scale_fill_manual(values = c("electric_bike" = "#8E8D8A",  # Gris clair pour les vélos électriques
+                               "classic_bike" = "#A3B18C",   # Vert olive pour les vélos classiques
+                               "docked_bike" = "#F1C6A4",    # Beige pour les vélos dockés
+                               "electric_scooter" = "#D1C6B1")) +  # Gris pâle pour les scooters électriques
+  labs(title = "Préférences des utilisateurs casual par type de vélo", fill = "Type de vélo") +
+  theme_void() +
+  theme(legend.position = "right") +
+  theme(plot.title = element_text(hjust = 0.5))
+</code></pre></div>
+<p>Ici on peut voir que les <b>casual</b> ont un plus recours aux <b>scooters électriques</b> que les membres. Peut-être y a t il ici une information 
+  importante qui demanderait une analyse de marché plus approfondie, 
+  nous reviendrons la dessus dans la partie “recommandations”.</p>
+<div class = "subtitle_analysis"><p><b><u>ANALYSE DES STATIONS </u></b></p></div>
+<p>
+  Nous allons maintenant nous intéresser aux préférences des utilisateurs concernant les <b>types de stations</b>. Pour cela nous ferons un graphique des <b>5 stations 
+  les plus utilisées</b> et une <b>carte interactive de Chicago</b> pour situer les stations géographiquement. 
+  Afin d’importer des données géographiques sur chicago nous utiliserons une API google maps pour importer nos données et utiliserons 
+  le package ”leaflet” pour lire les données sur RStudio. 
+  Le code R pour la création de cette carte interactive est fastidieux et long. 
+  Pour suivre ce code veuillez vous référer au Script R.
+</p>
+<div class = "subtitle_analysis"><p><b><u>Carte interactive</u></b></p></div>
+<div class="map-container">
+  <iframe src="../images/images_cyclistic/carte_interactive_combined_extended.html" 
+          width="1000px" height="1000px" 
+          style="border: none;"></iframe>
+</div>
+<img class = "graphs_charts" src="../images/images_cyclistic/image11.png" alt="Reg_lin_members">
+<img class = "graphs_charts" src="../images/images_cyclistic/image5.png" alt="Reg_lin_members">
+<img class = "graphs_charts" src="../images/images_cyclistic/image7.png" alt="Reg_lin_members">
+<p>
+  La carte et les graphiques offrent beaucoup d’informations importantes et pertinentes.
+   Premièrement les <b>causals</b> ont une <b>concentration plus forte</b> de leur utilisation sur <b>certaines stations</b>, 
+   tandis que la répartition des stations utilisées par les <b>membres</b> est <b>plus uniforme</b>. Ce qui offre une opportunité de taille, 
+   nous reviendrons la dessus dans nos recommandations. 
+</p><p>
+  Nous pouvons aussi remarquer que les <b>stations utilisées par les casuals</b> sont globalement plus situées sur le <b>bord du lac </b>
+  (est) alors que les <b>membres</b> utilisent des stations plus dans le <b>centre ville (west)</b>. 
+</p>
+<div class = "subtitle_analysis"><p><b><u>ANALYSE DES DURÉES DE TRAJETS PAR TYPE D’UTILISATEUR</u></b></p></div>
+<p>
+  Pour finir, nous allons analyser et comparer les temps de trajets pour les utilisateurs par type d’utilisateurs. 
+  Pour cela nous allons utiliser les tables créées par intervalles de durée :
+</p>
+<div class="data-list">
+  <div><b>less_than_1s:</b><span>trajets de moins d’un seconde</span></div>
+  <div><b>less_than_1min:</b><span>trajets de moins d’un minute</span></div>
+  <div><b>less_than_4min:</b><span>trajets de moins de 4 minutes</span></div>
+  <div><b>less_than_15min:</b><span>trajets de moins de 15 minutes</span></div>
+  <div><b>less_thn_1hour :</b><span>trajets de moins d’une heure</span></div>
+  <div><b>between_1and2hour :</b><span>trajets entre 1 et 2 heures</span></div>
+  <div><b>between_2and6hour :</b><span>trajets entre 2 et 6 heures</span></div>
+  <div><b>between_6and10hour:</b><span>trajets entre 6 et 10 heuresi</span></div>
+  <div><b>more_than_10hour :</b><span>trajets de plus de 10 heures</span></div>
+</div>
+<img class = "graphs_charts" src="../images/images_cyclistic/image27.png" alt="Reg_lin_members">
+<p>
+  On voit bien ici que les utilisateurs <b>casuals</b> utilisent le service de partage de vélos pour des <b>trajets en moyenne plus longs</b> que les membres
+</p>
+<div class = "language-r"><pre><code># Creation d'un graphique representant l'utilisation par type de membres dans differents intervalles de temps
+  library(ggplot2)
+  library(dplyr)
+  
+  # Création des intervalles de temps pour la durée des trajets
+  bike_data <- bike_data %>%
+    mutate(duration_category = case_when(
+      trip_duration < 1 ~ "less_than_1s",
+      trip_duration < 60 ~ "less_than_1min",
+      trip_duration < 240 ~ "less_than_4min",
+      trip_duration < 900 ~ "less_than_15min",
+      trip_duration < 3600 ~ "less_than_1hour",
+      trip_duration < 7200 ~ "between_1and2hour",
+      trip_duration < 21600 ~ "between_2and6hour",
+      trip_duration < 36000 ~ "between_6and10hour",
+      TRUE ~ "more_than_10hour"
+    ))
+  
+  # Compter le nombre de trajets par catégorie de durée et par type d'utilisateur
+  bike_data_duration <- bike_data %>%
+    count(duration_category, member_casual) %>%
+    arrange(factor(duration_category, levels = c("less_than_1s", "less_than_1min", 
+                                                 "less_than_4min", "less_than_15min", 
+                                                 "less_than_1hour", "between_1and2hour",
+                                                 "between_2and6hour", "between_6and10hour",
+                                                 "more_than_10hour")))
+  
+  # Générer le graphique
+  ggplot(bike_data_duration, aes(x = duration_category, y = n, fill = member_casual)) +
+    geom_bar(stat = "identity", position = "dodge") +
+    scale_fill_manual(values = c("member" = "#2bbec5", "casual" = "#f4776b")) +
+    labs(title = "Répartition des trajets par durée et type d'utilisateur",
+         x = "Durée du trajet",
+         y = "Nombre de trajets",
+         fill = "Type d'utilisateur") +
+    theme_minimal() +
+    theme(axis.text.x = element_text(angle = 45, hjust = 1))
+  </code></pre></div>
+  <h2 class="paragraph_title">Interprétations</h2>
+  <div class = "subtitle_analysis"><p><b><u>PIC DE L'UTILISATION EN SEPTEMBRE : </u></b></p></div>
+  <p>
+    Plusieurs facteurs peuvent expliquer ce pic : <b>le retour à l'école des étudiants</b> (il serait intéressant dans ce cas de cibler cette clientèle dans notre campagne marketing afin d'inciter les étudiants “casual” à devenir “membres”). 
+    Des pistes de ciblage de cette clientèle seront évoquées dans la partie “recommandations”. 
+    Les 29 et 30 Septembres 2024, a eu lieu un <b>festival de musique “The World Music Festival Chicago”</b> il y a beaucoup d'<b>événements gratuits</b> dans le cadre de ce festival répartis sur <b>11 sites différents</b> dans tout Chicago. 
+    On pourrait imaginer que ce type de festival influence <b>positivement</b> l’utilisation de Cyclistic par les utilisateurs. 
+    Pour vérifier cette hypothèse, nous analyserons quels sont les 5 jours de Septembre ayant enregistré la plus grosse activité. 
+  </p>
+  <table class="custom-table">
+    <tr>
+        <td>Jour</td>
+        <td>Nombre de trajets</td>
+    </tr>
+    <tr>
+        <td> 2024-09-21 </td>
+        <td> 34698</td>
+    </tr>
+    <tr>
+        <td>2024-09-14</td>
+        <td>33705</td>
+    </tr>
+    <tr>
+      <td>2024-09-01</td>
+      <td>31869</td>
+  </tr>
+  <tr>
+    <td>2024-09-20</td>
+    <td>30814</td>
+  </tr>
+  <tr>
+    <td>2024-09-19</td>
+    <td>30671</td>
+  </tr>
+  </table>
+<p>
+  Les journées ou les utilisateurs ont le plus utilisé le service de Cyclistic en Septembre 2024 sont les <b>21, 14, 01, 20 et 19 Septembre</b>. 
+  Cela ne concorde pas avec les dates du festival “The World Music Festival Chicago”, toutefois, il y avait un autre 
+  festival “Oktoberfest” à Lincoln Park le 21/09/2024. Si la station de <b>Lincoln Park</b> enregistre un nombre inhabituel de trajets, 
+  il pourrait être pertinent d’envisager une action Marketing directement dans ce festival les prochaines années. 
+</p>
+<table class="custom-table">
+  <tr>
+      <td>Station</td>
+      <td>Nombre de trajets ( arrivées + départs )</td>
+  </tr>
+  <tr>
+      <td> Streeter Dr & Grand Ave </td>
+      <td> 1267</td>
+  </tr>
+  <tr>
+      <td><b>DuSable Lake Shore Dr & North Blvd</td>
+      <td>980</b></td>
+  </tr>
+  <tr>
+    <td>Michigan Ave & Oak St</td>
+    <td> 687</td>
+</tr>
+<tr>
+  <td> DuSable Lake Shore Dr & Monroe St</td>
+  <td>652</td>
+</tr>
+<tr>
+  <td>Theater on the Lake</td>
+  <td>574</td>
+</tr>
+<tr>
+  <td>Clark St & Lincoln Ave</td>
+  <td>535</td>
+</tr>
+<tr>
+  <td>Wells St & Concord Ln</td>
+  <td>523</td>
+</tr>
+<tr>
+  <td>Millennium Park</td>
+  <td>502</td>
+</tr>
+<tr>
+  <td>Clark St & Armitage Ave</td>
+  <td>467</td>
+</tr>
+</table>
+<p>
+  La 2eme station la plus utilisée le 21 Septembre est une station proche du <b>Park Lincoln : DuSable Lake Shore Dr & North Blvd</b>, 
+  mais de façon générale, les stations les plus utilisées ce jour là sont les <b>stations proches du Lac</b>. 
+  Nous proposerons des recommandations plus détaillées dans la partie “recommandations” 
+</p>
+<div class = "language-r"><pre><code>
+  # Analyse supplementaire pour les journees les plus actives de Septembre 
+## (Y-a-til une augmentation de l'activite pendant "World Music festival Chicago" les 29 & 30 Septembres)
+top_5_active_days_september <- function(data) {
+  # Filtrer les données pour septembre 2024
+  data_september <- data %>%
+    filter(format(started_at, "%Y-%m") == "2024-09")
+  
+  # Grouper par jour et compter les trajets
+  daily_counts <- data_september %>%
+    mutate(day = format(started_at, "%Y-%m-%d")) %>%
+    group_by(day) %>%
+    summarise(total_rides = n(), .groups = "drop")
+  
+  # Trier et sélectionner les 5 jours les plus actifs
+  top_5_days <- daily_counts %>%
+    arrange(desc(total_rides)) %>%
+    head(5)
+  
+  return(top_5_days)
+}
+
+# Utilisation de la fonction
+top_5_active_days_september(bike_data)
+
+# Analyse supplementaire : Stations les plus utilisees le jour le plus actif de Septembre 2024
+
+library(dplyr)
+library(tidyr)  # Ajoute cette ligne pour utiliser replace_na()
+
+top_stations_sept21 <- function(data) {
+  # Filtrer les données pour le 21 septembre 2024
+  data_sept21 <- data %>%
+    filter(format(started_at, "%Y-%m-%d") == "2024-09-21")
+  
+  # Compter les départs par station
+  departures <- data_sept21 %>%
+    group_by(start_station_name) %>%
+    summarise(total_departures = n(), .groups = "drop")
+  
+  # Compter les arrivées par station
+  arrivals <- data_sept21 %>%
+    group_by(end_station_name) %>%
+    summarise(total_arrivals = n(), .groups = "drop")
+  
+  # Fusionner les deux tables sur le nom des stations
+  station_usage <- full_join(departures, arrivals, 
+                             by = c("start_station_name" = "end_station_name")) %>%
+    replace_na(list(total_departures = 0, total_arrivals = 0)) %>%  # Corrige les NA
+    mutate(total_traffic = total_departures + total_arrivals) %>%
+    arrange(desc(total_traffic))
+  
+  # Renommer la colonne des stations
+  station_usage <- station_usage %>%
+    rename(station_name = start_station_name)
+  
+  return(station_usage)
+}
+
+# Utilisation de la fonction
+top_stations_sept21(bike_data)
+</code></pre></div>
+<div class = "subtitle_analysis"><p><b><u>CONDITIONS MÉTÉOROLOGIQUES</u></b></p></div>
+<p>
+  <p><b>Température </b>: La température a un effet positif sur le nombre de trajets, à la fois pour les membres et les casuals, 
+  bien que l'effet soit légèrement plus marqué chez les membres (399.82 trajets par °C contre 371.51 trajets par °C pour les casuals). 
+  Cela montre que la température influence de manière significative la fréquentation des vélos pour les deux groupes. Plus il fait chaud, 
+  plus il y a de vélos. </p>
+
+<p><b>Précipitations</b> : Les précipitations ont un effet négatif sur le nombre de trajets, à la fois pour les membres et les casuals, 
+ mais l'effet est plus prononcé pour les casuals. Pour chaque unité d'augmentation des précipitations, le nombre de trajets diminue davantage chez les 
+ casuals (124.40 trajets) que chez les membres (154.47 trajets).
+ Comparaison des groupes : Les membres semblent plus sensibles aux changements de température, avec un effet plus marqué que les casuals. 
+ Cependant, les casuals sont plus sensibles aux précipitations. Cela peut s’expliquer par le fait que les membres paient déjà pour leur abonnement, c’est comme s' ils avaient déjà payé pour leur jour de pluie, les casuals, eux, peuvent opter pour un moyen de transport différent les jours de pluie sans avoir à assumer le coût d'opportunité lié au fait de payer un abonnement.   
+</p>
+<p><b>Comparaison des groupes</b> : Les membres semblent plus sensibles aux changements de température, 
+ avec un effet plus marqué que les casuals. Cependant, les casuals sont plus sensibles aux précipitations.</p>
+<p>
+Dans l’analyse des données météorologiques, on remarque aussi que les mois de <b>Juillet Août</b> ont été plus <b>pluvieux</b> que le mois de Septembre ce qui peut venir donner une explication supplémentaire  pour le pic d’utilisation annuel en Septembre.
+</p></p>
+<div class = "subtitle_analysis"><p><b><u>HABITUDES QUOTIDIENNES ET HEBDOMADAIRES</u></b></p></div>
+<p>
+  Les <b>membres</b> ont une utilisation du service de partage de vélos <b>répartie sur toute la semaine</b> avec une petite <b>baisse le week end</b> 
+  tandis que les <b>casual</b> utilisent massivement les vélos les <b>samedi dimanche</b> et moins le reste de la semaine. 
+  Les <b>pics d’utilisation journaliers</b> pour les <b>membres</b> sont <b>entre 06h et 09h</b> et <b>entre 16 et 18h</b>, l'évolution de l’utilisation des vélos par les <b>casuals</b> est 
+  elle <b>plus constante</b> au cours de la journée. On peut en déduire que les <b>membres</b> utilisent 
+  plus le service de partage de vélos pour se rendre au <b>travail</b> tandis que les <b>casuals</b> semblent plus avoir une utilisation de type <b>“loisir”</b>. 
+</p>
+<div class = "subtitle_analysis"><p><b><u>TYPES DE VÉLOS UTILISÉS </u></b></p></div>
+<p>
+Les deux types d’utilisateurs préfèrent les <b>vélos électriques</b>. Toutefois les <b>casuals</b> utilisent plus les <b>scooters électriques</b> que les membres. 
+</p>
+<div class = "subtitle_analysis"><p><b><u>STATIONS LES PLUS UTILISÉES</u></b></p></div>
+<p>
+  Les <b>casuals</b> ont une nette <b>concentration</b> de leur utilisation du service <b>sur certaines stations</b> tandis que les <b>membres</b> ont une utilisation des stations 
+  plus <b>uniformément répartie</b>. Si les <b>membres</b> utilisent leur vélo majoritairement pour aller au <b>travail</b> cela peut expliquer cette meilleure répartition 
+  (car les membres ne travaillent pas tous au même endroit). En s'intéressant à la <b>carte géographique</b>, on se rend compte que <b>les stations</b> les plus utilisées 
+  par les <b>casuals</b> sont des stations situées au <b>bord de l’eau</b>, et les <b>membres</b> des stations situées plus <b>en ville</b> ou dans des <b>zones résidentielles</b>, les 2 
+  stations proches de la <b>gare</b> sont aussi des stations de choix pour les membres. Les <b>casuals</b> aiment particulièrement les stations du <b>port ou de Lincoln Park</b>
+  ainsi que toutes les stations proches du lac de manière générale. Encore un indice nous permettant d'affirmer que les membres utilisent en générale le 
+  service pour le travail et les casuals pour le loisir. 
+  C’est important pour savoir ou cibler les différents segments de clientèle. Nous reviendrons la dessus dans la partie “recommandations”.
+</p>
+<div class = "subtitle_analysis"><p><b><u>LES TEMPS DE TRAJET</u></b></p></div>
+<p>
+  Les <b>membres</b> utilisent le service pour effectuer des trajets en général <b>plus courts que les casuals</b>. 
+  Il y a une <b>grande majorité de casuals</b> sur les trajets de <b>plus d’une heure</b>.</p> 
+<p>Les trajets de <b>moins d'une seconde</b> sont surement des <b>erreurs système</b>.</p> 
+<p>Les trajets de <b>moins d’une minute</b> sont surement dus à un <b>vélo défectueux</b>, l’utilisateur s’en rend compte et rend le vélo directement 
+(ces informations peuvent s'avérer utile dans un cadre d’analyse qualité). </p>
+<p>Les trajets de <b>moins de 4min</b> peuvent être de <b>très courts trajets</b>, ou alors l’utilisateur a pris un vélo “classique” dans une station ou 
+aucun vélo électrique n'était disponible et s’est déplacé jusqu'à une autre station pour récupérer un vélo électrique, malheureusement nous sommes 
+limités par la confidentialite des donnees pour mener cette analyse supplémentaire (pas de customer_id et impossibilité d’utiliser les données de carte 
+de crédit).</p>
+<p>Les trajets de <b>moins de 15min</b> et de <b>moins d’une heure</b> sont des <b>trajets courts réguliers</b>, pour se rendre au travail par exemple ou se rendre d’un point A 
+à un point B.</p>
+<p>Les trajets de <b>plus d' une heure</b> peuvent être perçus comme des randonnées cyclistes pour le plaisir ou une sortie sur le bord du lac en vélo. 
+Encore une fois, notre hypothèse sur l’utilisation du service par les membres dans le cadre du travail est confirmée.</p>
+</p>
+<h2 class="paragraph_title">Recommandations</h2>
+<p>
+  Afin d’augmenter le pourcentage de membres parmi les utilisateurs de Cyclistic, 
+  plusieurs actions concrètes basées sur les données peuvent être envisagées. 
+</p>
+<div class = "subtitle_analysis"><p><b><u>DOUBLE TARIFICATION DES ABONNEMENTS.</u></b></p></div>
+<p>
+Premièrement afin de capturer le plus fort achalandage dans la période d’<b>Avril à Septembre</b>, il semble indispensable de proposer un <b>abonnement mensuel</b>. 
+</p><p><i>
+Mais attention, cette double tarification <b>doit toujours inciter à prendre l’abonnement annuel</b>. 
+Il y a un risque que certains membres qui avaient l’abonnement annuel et n’utilisaient les vélos que d’Avril à Septembre arrêtent de 
+payer l’abonnement annuel pour prendre des abonnements mensuels seulement d’Avril à Septembre. 
+Il faut donc être très vigilant sur la tarification pour pas que cette stratégie se retourne contre Cyclistic. 
+</i></p>
+<div class = "subtitle_analysis"><p><b><u>PARTENARIAT AVEC DES EMPLOYEURS</u></b></p></div>
+<p>
+  Pour inciter les casuals à <b>utiliser le service pour aller au travail</b>, 
+  des <b>partenariats avec des entreprises locales</b> pourraient être envisagés afin d’<b>inclure l’abonnement dans la rémunération de l'employé</b> ou 
+  proposer des <b>réductions aux employés de certaines entreprises</b>. Des <b>campagnes de prévention et de sensibilisation</b> sur les bienfaits d’une 
+  pratique cycliste régulière pourraient être diffusées par le biais des employeurs. 
+</p>
+<div class = "subtitle_analysis"><p><b><u>PARTENARIATS AVEC DES FESTIVALS OU DES ÉVÉNEMENTS SPORTIFS.</u></b></p></div>
+<p>
+Si les casuals préfèrent utiliser les vélos pour le loisir, des <b>partenariats avec des événements sportifs</b> ou des <b>festivals</b> par exemple pourraient être une bonne idée. 
+Proposer par exemple des <b>avantages dans les festivals pour les membres</b> comme par exemple un accès à un <b>salon privé Cyclistic</b> ou une consommation gratuite. 
+
+Les <b>partenariats avec des événements sportifs</b> peuvent aussi être une bonne opportunité de convertir des casuals en membres. Les randonnées de vélo, 
+triathlons ou diverses courses de vélos pourraient représenter un atout de choix. Les événements sportifs pourraient alors offrir des avantages aux 
+membres ou alors leur offrir la participation en échange de l’utilisation des vélos de Cyclistic dans le cadre de l'événement. 
+Cyclistic pourrait aussi <b>organiser son propre événement sportif</b> en utilisant ses vélos et offrir la participation aux membres ou leur offrir 
+une participation a prix réduit. 
+</p>
+<div class = "subtitle_analysis"><p><b><u>OFFRIR DES RÉDUCTIONS ÉTUDIANTES SUR LES ABONNEMENTS (ANNUELS SEULEMENT).</u></b></p></div>
+<p>
+  La <b>double tarification à destination des étudiants</b> semble être une bonne manière de tendre la main à un segment de clientèle avec des moyens généralement 
+<b>plus modestes</b>. C’est un bon moyen de <b>fidéliser la clientèle</b> a un moment où ils en ont vraiment besoin. Les étudiants pourront ainsi</b> développer de bonnes 
+  habitudes</b> de cyclistes pour plus tard au travail.
+</p>
+<div class = "subtitle_analysis"><p><b><u>STREET MARKETING ET PRÉSENCE DE RUE</u></b></p></div>
+<p>
+  Les <b>lieux proches du lac, le port ou Lincoln park</b> semblent représenter des cibles de choix pour des <b>opérations marketing sur le terrain</b>. 
+  Comme la concentration des casuals se fait en ces lieux et surtout pendant les beaux jours d'été, une présence dans ces zones d’achalandage dans le 
+  cadre de <b>campagnes de sensibilisation santé ou de marketing</b> peuvent représenter une opportunité significative de transformer des non membres en membres 
+  et de prospecter pour de nouveaux clients.
+</p>
+<div class = "subtitle_analysis"><p><b><u>CRÉATION D’UNE APPLICATION</u></b></p></div>
+<p>
+  La <b>création d’une application web et mobile</b> pourrait faciliter et rendre plus attractive l’utilisation du service. 
+  Il pourrait être envisagé d’obliger les casual à créer un compte membre même pour un trajet simple et ainsi <b>avoir plus de données</b> à 
+  intégrer dans nos futures analyses, et <b>mieux coller aux attentes de chaque segment de clientèle</b>. Une application peut aussi être un <b>bon vecteur 
+  pour proposer des enquêtes de satisfaction et de qualité du service</b>. Si la direction exécutive de Cyclistic ne souhaite pas imposer le téléchargement 
+  de l’application à ses utilisateurs, il est possible de naturellement les attirer dessus grâce à des offres promotionnelles ou à un interface attractif. 
+</p>
+<div class = "subtitle_analysis"><p><b><u>SCOOTER ÉLECTRIQUES</u></b></p></div>
+<p>
+  Il serait intéressant de connaître la <b>proportion de scooters électriques</b> dans la flotte de Cyclistic afin de la comparer 
+  avec celle de sa concurrence. Les données ont démontré que les <b>casuals utilisaient plus de scooters électriques</b> que les membres. 
+  Si la flotte de Cyclistic ne reflète pas cette préférence, cela peut expliquer que certains casuals rechignent à devenir membres 
+  (surtout si les entreprises concurrentes en proposent). Il faudrait alors probablement <b>augmenter la flotte de scooters électriques</b>.
+</p>
+<div class = "subtitle_analysis"><p><b><u>RÉDUCTIONS POUR LES MEMBRES SUR LES TRAJETS DE PLUS D’UNE HEURE.</u></b></p></div>
+<p>
+  Comme les casuals ont l’habitude de faire des trajets plus longs, il pourrait être intéressant <b>d'offrir des réductions aux membres sur les longs 
+  trajets</b> pour inciter les casuals à devenir membres. Un système de bonification des longues distances pourrait aussi très bien être envisagé par le biais 
+  de l’application et seulement pour les membres. Un système de compétition inter-membres pourrait être créé avec des défis sur les distances parcourues 
+  par exemple. Des défis “jour de pluie” pourrait aussi être envisagés pour booster l’utilisation du service pendant ces journées moins achalandées. 
+</p>
+        </div>
+    </main>
+  </body>
+</html>
+     
+
+
+   
