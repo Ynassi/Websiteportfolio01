@@ -914,7 +914,7 @@ WHERE ch.Intensity = 3
   <b>Tableau public</b> and there is no way I can directly link Tableau to Big Query. 
     I have no choice but to download the tables from BigQuery through Google Cloud Storage 
     as CSV files and upload it to Tableau. For security reasons i wont put the Query 
-    containing my google bucket name publicly on this website</p>
+    containing my google bucket name publicly on this website.</p>
     <p class = "subtitle_analysis"><b>INACTIVITY ANALYSIS</b></p>
     <div class='tableauPlaceholder' id='viz1739601624878' style='position: relative'>
         <noscript><a href='#'><img alt='INACTIVITY DASHBOARD ' 
@@ -957,6 +957,100 @@ WHERE ch.Intensity = 3
             var scriptElement = document.createElement('script');                    
             scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                
             </script>
+
+        <p>
+            This Dashboard as been created from the table "<b>Continuous_record</b>".
+            Several similarities and differences emerge among the users :
+            <p><ul class ="bullet-list">
+                <li>All the users had an inactivity period on <b>13th march at 01 Am</b> (61mn) except 2 users (4388161847 & 2891001357).</li>
+                <li><b>11 users</b> (31.4%) have periods of inactivity <b>beyond the 61 minutes on March 13th</b>.</li>
+                <li>Apart from the interruption on March 13th, the interruption periods mainly occur on <b>Tuesdays and Sundays</b>.</li>
+                <li>The distribution of interruption periods is very <b>random in terms of hours</b>.</li>
+                <li>5 users out of the total population (14%) spent </b>50 hours or more</b> not wearing the device (inactive).</li>
+                <li>One of the users had a really abnormal behaviour and didnt wear the device for 224 hours (maybe she/he lost it and found it back)</li>
+             </ul>
+             <p> <b>Data Inconsistency</b> : There should have been a recurrent inactivity period to charge the device for each user </p>
+            </p>
+        </p>
+        <p class = "subtitle_analysis"><b>SLEEP ANALYSIS</b></p>
+        <p> This analysis represented a challenge as there is <b>multiples sources of data</b> for sleeping periods. 
+            First, we have to figure out which table we want to use : "<b>Continuous_hours</b>" or "<b>SleepDay</b>" ? 
+        </p><p><b>Continuous hours</b> is a more complete table with more data so we'll start to analyse this table.
+        </p>
+        <div 
+        class='tableauPlaceholder' 
+        id='viz1739604016364' 
+        style='position: relative'><noscript>
+            <a href='#'>
+                <img alt='SLEEP (from Continuous) ' 
+        src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;SL&#47;SLEEPFromContinuousDASHBOARD&#47;SLEEPfromContinuous&#47;1_rss.png' 
+        style='border: none' /></a></noscript>
+        <object class='tableauViz'  style='display:none;'>
+            <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> 
+            <param name='embed_code_version' value='3' /> <param name='site_root' value='' />
+            <param name='name' value='SLEEPFromContinuousDASHBOARD&#47;SLEEPfromContinuous' />
+            <param name='tabs' value='no' /><param name='toolbar' value='yes' />
+            <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;SL&#47;SLEEPFromContinuousDASHBOARD&#47;SLEEPfromContinuous&#47;1.png' /> 
+            <param name='animate_transition' value='yes' />
+            <param name='display_static_image' value='yes' />
+            <param name='display_spinner' value='yes' />
+            <param name='display_overlay' value='yes' />
+            <param name='display_count' value='yes' />
+            <param name='language' value='fr-FR' /></object></div>                
+            <script type='text/javascript'>                   
+            var divElement = document.getElementById('viz1739604016364');                    
+            var vizElement = divElement.getElementsByTagName('object')[0];                    
+            if ( divElement.offsetWidth > 800 ) { vizElement.style.width='1000px';vizElement.style.height='827px';} 
+            else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='1000px';vizElement.style.height='827px';} 
+            else { vizElement.style.width='100%';vizElement.style.height='1227px';}                     
+            var scriptElement = document.createElement('script');                    
+            scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    
+            // vizElement.parentNode.insertBefore(scriptElement, vizElement);                
+            </script>
+            <p> There are big Inconsistencies in the table "<b>Continuous_hours</b>".
+                <p>First, according to the data, users appear to have spent more time asleep than awake, which does not align with normal human habits.
+                The average sleep time per day and per user is around <b>10 hours/day</b>. Additionally, 
+                the sleep hours are inconsistent, showing a <b>peak at 5:00 PM</b> for users. 
+                I have checked the data for duplicates or other issues, but nothing unusual was found. 
+                However, the results remain inconsistent. Ive lready noticed that there was a majority of "1" which means "Asleep" in the data
+                which made no sense, at first, there was only 1 for Awake, 2 for restless Sleep and 3 Awakening. I added the 0 for "awake" thinking 
+                awake and Asleep would balance the sleeping patterns in my data but it remains inconsistent.</p>  <p>So We'll analyse "<b>SleepDay</b>" table instead :</p>
+            </p>
+            <div 
+            class='tableauPlaceholder' 
+            id='viz1739604920610' 
+            style='position: relative'><noscript><a 
+                href='#'>
+                <img alt='SLEEP (from SleepDay) ' 
+                src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;SL&#47;SLEEPfromSleepDayDASHBOARD&#47;SLEEPfromSleepDay&#47;1_rss.png' 
+                style='border: none' /></a></noscript><object 
+                class='tableauViz'  
+                style='display:none;'>
+                <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> 
+                <param name='embed_code_version' value='3' /> <param name='site_root' value='' />
+                <param name='name' value='SLEEPfromSleepDayDASHBOARD&#47;SLEEPfromSleepDay' />
+                <param name='tabs' value='no' /><param name='toolbar' value='yes' />
+                <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;SL&#47;SLEEPfromSleepDayDASHBOARD&#47;SLEEPfromSleepDay&#47;1.png' /> 
+                <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='fr-FR' /></object></div>                
+                <script type='text/javascript'>                    var divElement = document.getElementById('viz1739604920610');                    
+                var vizElement = divElement.getElementsByTagName('object')[0];                    
+                if ( divElement.offsetWidth > 800 ) { vizElement.style.width='1000px';vizElement.style.height='827px';} 
+                else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='1000px';vizElement.style.height='827px';} 
+                else { vizElement.style.width='100%';vizElement.style.height='927px';}                     
+                var scriptElement = document.createElement('script');                    
+                scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';vizElement.parentNode.insertBefore(scriptElement, vizElement);                
+                </script>
+
+                <p>The data in the SleepDay table makes much more sense</p>
+                <ul class ="bullet-list">
+                    <li>Most users sleep around </b>7 hours per day.</b></li>
+                    <li><b>4 out of 24 users (16%)</b> have unusual sleep habits (either too much or too little sleep), but they are also the ones who recorded the least sleep data.</li>
+                    <li><b>3 users out of the 24 (12%)</b> sleep 2 hours or less by night on average</li>
+                    <li>On average, users spend <b>39 minutes awake while in bed</b></li>
+                    <li><b>2 out of 24 users (8%)</b> stay in bed for more than 2 hours per day. If these users are removed from the population, the average drops to 27 minutes per day</li>
+                    <li>On average, users sleep more on Sunday and less on thursday</li>
+                 </ul>
+
 
 
 
