@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yanis NASSI - Portfolio</title>
+    <link rel="stylesheet" href="../css/Skills.css">
+   
+    <!-- PRISM / CODE VIEWER -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-javascript.min.js"></script>
+
+</head>
+<style>@font-face {
+    font-family: 'Signatra';
+    src: url('../fonts/Signatra.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Helvetica';
+    src: url('../fonts/Helvetica.ttc') format('truetype');
+}
+@font-face {
+font-family: "Courier New";
+src: url("../fonts/cour.ttf");
+font-weight: 400;
+}
+/* Styles globaux */
+body {
+    background-color: #202020;  /* Gris foncé */
+    color: #ffffff;  /* Blanc */
+    font-family: 'Helvetica', sans-serif;
+    text-align: center;
+}
+
+/* HEADER */
+header {
+    background-color: #181818; /* Gris encore plus foncé */
+    padding: 10px 50px; /* Réduction plus douce */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #333;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+}
+
+/* Partie gauche du header */
+.header-left {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    height: 65px; /* Taille augmentée */
+    margin-right: 40px;
+}
+
+.name {
+    font-family: 'Signatra', sans-serif;  
+    font-size: 2.8rem; /* Taille légèrement plus grande pour l'équilibre */
+
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+    margin: 0;
+    padding: 0;
+    line-height: 1.1;
+}
+
+/* Liens du header */
+.header-right {
+    display: flex;
+    gap: 30px;
+    margin-right: 80px;
+}
+
+.header-right a {
+    font-size: 1.6rem;
+    color: #f0f0e6 !important;
+    text-decoration: none !important;
+    transition: color 0.3s;
+}
+
+.header-right a:hover {
+    color: #00bfff;
+}</style>
+<body>
+    <!-- HEADER -->
+    <header>
+        <div class="header-left">
+            <a href="../index.html" class="home-link">
+            <img src="../images/clipart.png" alt="Logo" class="logo img-sm">
+            <h1 class="name">Yanis NASSI</h1>
+         </a>
+        </div>
+        <nav class="header-right">
+            <a href="../pages/portfolio.html">Portfolio</a>
+            <a href="../pages/skills.html">Skills</a>
+            <a href="../pages/art.html">Art</a>
+            <a href="../pages/contact.html">Contact</a>
+        </nav>
+    </header>
+</body>
+    <!-- Main content -->
+<main>
+<h1 class="paragraph_title"> Skills</h1>
+   <h2 class = "paragraph_subtitle">The skills i had the chance to learn during my journey throught art and data.</h2>
+   <p><i><b>" Education is the most powerful weapon which you can use to change the world."</b></i></p>
+   <p> This quote from Nelson Mandela reflects how important is knowledge. 
+       Whatever field you're in, knowledge is key to express ourselves correctly, be understood by others and evolve in a more and more complex world. 
+       I've always been fascinated by the fact that learning possibilities are pretty infinite. From cooking to painting to sports, data analysis and programming. 
+       You just have to chose what makes you happier. There are more and more self learning sources and AI makes everything way more easy to understand for those who really want it, what an exciting period to be alive.  </p>
+   <div class ="skill-list">
+       <div class='carousel__item'>
+    <a href = "../pages/technical.html" class ="carousel__item-link">
+    <div class='carousel__item-body'>
+        <p class="text_title"><b><u>Technical & analytical skills</b></u></p>
+        <p class ="text">Here are some of the technical skills and tools I ve learned throught my carreer. Apps, softwares and coding languages that i can use with my levels of confidence using it.</p>
+    </div></a>
+    <div class='carousel__item'>
+        <a href = "../pages/creative.html" class ="carousel__item-link">
+        <div class='carousel__item-body'>
+            <p class="text_title"><b><u>Creative skills</u></b></p>
+            <p class ="text">Here are some of the creative skills and tools I ve learned throught my carrer. Apps softwares and tools to make great visuals and appealing marketing materials.</p>
+        </div>    
+    <div class='carousel__item'>
+        <a href = "../pages/managing.html" class ="carousel__item-link">
+        <div class='carousel__item-body'>
+            <p class="text_title"><b><u>Managing skills</u></b></p>
+            <p class ="text">Here are some of my managing skills I ve learned throught my carrer.</p>
+        </div>
+    </div>
+</main>
