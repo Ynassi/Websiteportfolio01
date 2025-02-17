@@ -60,7 +60,6 @@ header {
 .header-right {
     display: flex!important;
     gap: 30px !important;
-    margin-right: 80px !important;
 }
 
 .header-right a {
