@@ -166,12 +166,23 @@ main {
 
 .carousel__item-body {
     width: 100%;
-    background-color: #9a9a9a;
-    border-radius: 8px;
-    padding: 10px;
-    margin-top : 20px;
+    background: linear-gradient(145deg, #d4d4d4, #676767); /* Gradient léger pour la bannière */
+    border-radius: 8px; /* Garder les bords arrondis */
+    padding: 20px;
+    margin-top: 20px;
     margin-bottom: 20px;
-}
+    position: relative;
+    overflow: hidden; /* Assurer que le contenu reste à l'intérieur */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Ombre douce pour donner l'effet 3D */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animation fluide */
+  }
+  
+  /* Ajout d'un effet 3D au survol */
+  .carousel__item-body:hover {
+    transform: translateY(-10px); /* Déplacement léger vers le haut pour l'effet 3D */
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.3); /* Ombre plus marquée au survol */
+  }
+  
 .skill-list {
     margin-top: 60px;
 }

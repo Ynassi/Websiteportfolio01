@@ -12,6 +12,7 @@ font-family: "Courier New";
 src: url("../fonts/cour.ttf");
 font-weight: 400;
 }
+
 /* Styles globaux */
 body {
     background-color: #202020;  /* Gris foncé */
@@ -175,3 +176,58 @@ main {
 .skill-list {
     margin-top: 60px;
 }
+.progress-container {
+    display: flex; /* Flexbox pour aligner les éléments sur une ligne */
+    align-items: center; /* Centrer verticalement les éléments */
+    margin: 10px 0;
+}
+
+.category {
+    flex: 0 0 100px; /* Largeur fixe pour la catégorie */
+    font-size: 1rem;
+    font-weight: bold;
+    margin-right: 10px; /* Espacement entre la catégorie et la barre */
+    text-align: left;
+}
+
+.progress-bar {
+    flex: 1; /* La barre prend tout l'espace restant */
+    background: #2c2c2c;
+    border-radius: 10px;
+    height: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.progress-bar .fill {
+    height: 100%;
+    background: linear-gradient(90deg, #FFD700, #FFA500);
+    width: 0;
+    border-radius: 10px 0 0 10px;
+    transition: width 1.5s ease;
+}
+
+.progress-bar span {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    color: #202020;
+    opacity: 0;  /* Initialement invisible */
+    transition: opacity 1s ease-in-out;  /* Ajoute une transition de 1 seconde */
+}
+
+.progress-section {
+    margin-top: 70px; /* Augmente l'espace au-dessus de toutes les barres */
+    margin-bottom: 70px;
+}
+.stata-text {
+    color: #ffffff !important; 
+}
+
+.mathlab-text {
+    color: #ffffff !important; 
+}
+

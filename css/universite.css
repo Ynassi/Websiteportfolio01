@@ -177,6 +177,14 @@ ul li {
   grid-row: span 2;
   display: grid;
   grid-template-rows: min-content min-content min-content;
+  opacity: 0;
+  transform: translateY(20px); /* Effet de décalage pour faire glisser depuis le bas */
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+ul li.visible {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 /* date */
@@ -308,3 +316,4 @@ ul li .descr::before {
 .credits a {
   color: var(--color);
 }
+
