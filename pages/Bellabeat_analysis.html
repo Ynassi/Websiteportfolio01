@@ -976,37 +976,34 @@ WHERE ch.Intensity = 3
         <p> This analysis represented a challenge as there is <b>multiples sources of data</b> for sleeping periods. 
             First, we have to figure out which table we want to use : "<b>Continuous_hours</b>" or "<b>SleepDay</b>" ? 
         </p><p><b>Continuous hours</b> is a more complete table with more data so we'll start to analyse this table.
-        </p>
-        <div 
-        class='tableauPlaceholder' 
-        id='viz1739604016364' 
-        style='position: relative'><noscript>
-            <a href='#'>
-                <img alt='SLEEP (from Continuous) ' 
-        src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;SL&#47;SLEEPFromContinuousDASHBOARD&#47;SLEEPfromContinuous&#47;1_rss.png' 
-        style='border: none' /></a></noscript>
-        <object class='tableauViz'  style='display:none;'>
+        </p><div 
+        class='tableauPlaceholder'
+        id='viz1739917735746' 
+        style='position: relative'>
+        <noscript><a href='#'>
+            <img alt='SLEEP (from Continuous) ' 
+            src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;BE&#47;BELLABEATSLEEPfromContinuous_hours&#47;SLEEPfromContinuous&#47;1_rss.png' 
+            style='border: none' /></a></noscript><object 
+            class='tableauViz'  
+            style='display:none;'>
             <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> 
-            <param name='embed_code_version' value='3' /> <param name='site_root' value='' />
-            <param name='name' value='SLEEPFromContinuousDASHBOARD&#47;SLEEPfromContinuous' />
+            <param name='embed_code_version' value='3' /> 
+            <param name='site_root' value='' />
+            <param name='name' value='BELLABEATSLEEPfromContinuous_hours&#47;SLEEPfromContinuous' />
             <param name='tabs' value='no' /><param name='toolbar' value='yes' />
-            <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;SL&#47;SLEEPFromContinuousDASHBOARD&#47;SLEEPfromContinuous&#47;1.png' /> 
-            <param name='animate_transition' value='yes' />
-            <param name='display_static_image' value='yes' />
-            <param name='display_spinner' value='yes' />
-            <param name='display_overlay' value='yes' />
-            <param name='display_count' value='yes' />
+            <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;BE&#47;BELLABEATSLEEPfromContinuous_hours&#47;SLEEPfromContinuous&#47;1.png' /> 
+            <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' />
             <param name='language' value='fr-FR' /></object></div>                
-            <script type='text/javascript'>                   
-            var divElement = document.getElementById('viz1739604016364');                    
+            <script type='text/javascript'>                    
+            var divElement = document.getElementById('viz1739917735746');                    
             var vizElement = divElement.getElementsByTagName('object')[0];                    
             if ( divElement.offsetWidth > 800 ) { vizElement.style.width='1000px';vizElement.style.height='827px';} 
             else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='1000px';vizElement.style.height='827px';} 
             else { vizElement.style.width='100%';vizElement.style.height='1227px';}                     
             var scriptElement = document.createElement('script');                    
-            scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    
-            // vizElement.parentNode.insertBefore(scriptElement, vizElement);                
+            scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js'; vizElement.parentNode.insertBefore(scriptElement, vizElement);                
             </script>
+
             <p> There are big Inconsistencies in the table "<b>Continuous_hours</b>".
                 <p>First, according to the data, users appear to have spent more time asleep than awake, which does not align with normal human habits.
                 The average sleep time per day and per user is around <b>10 hours/day</b>. Additionally, 
@@ -1077,3 +1074,570 @@ WHERE ch.Intensity = 3
                     <li><b>2 out of 24 users (8%)</b> stay in bed for more than 2 hours per day. If these users are removed from the population, the average drops to 27 minutes per day</li>
                     <li>On average, users sleep more on Sunday and less on thursday</li>
                  </ul>
+                 <p class = "subtitle_analysis"><b>CALORIES BURNT</b></p>
+                 <p>The data from the "DailyActivity" and "Continuous_hours" tables show similar trends. 
+                    Users who burn the most calories per hour (from "Continuous_hours") also tend to burn the most calories per day(from "DailyActivity"). 
+                    The Weekdays count show differents trends but we will try to rationnally explain this difference.</p>
+
+                    <p> Calories burnt from "Continuous_hours" :</p>
+                    <div 
+                    class='tableauPlaceholder' 
+                    id='viz1739853914259' 
+                    style='position: relative'>
+                    <noscript><a href='#'><img alt='Calories (from Continuous) ' 
+                        src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Be&#47;BellabeatCaloriesBurntContinuous_hours&#47;CaloriesfromContinuous&#47;1_rss.png' 
+                        style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> 
+                            <param name='embed_code_version' value='3' /> 
+                            <param name='site_root' value='' />
+                            <param name='name' value='BellabeatCaloriesBurntContinuous_hours&#47;CaloriesfromContinuous' />
+                            <param name='tabs' value='no' />
+                            <param name='toolbar' value='yes' />
+                            <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Be&#47;BellabeatCaloriesBurntContinuous_hours&#47;CaloriesfromContinuous&#47;1.png' />
+                            <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' />
+                            <param name='display_count' value='yes' /><param name='language' value='fr-FR' /></object></div>                
+                            <script type='text/javascript'>                    
+                            var divElement = document.getElementById('viz1739853914259');                    
+                            var vizElement = divElement.getElementsByTagName('object')[0];                    
+                            if ( divElement.offsetWidth > 800 ) { vizElement.style.width='1000px';vizElement.style.height='827px';} 
+                            else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='1000px';vizElement.style.height='827px';} 
+                            else { vizElement.style.width='100%';vizElement.style.height='1177px';}                     
+                            var scriptElement = document.createElement('script');                    
+                            scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);               
+                            </script>
+                <p>Calories burnt from "DailyActivity" :</p>
+                <div 
+                class='tableauPlaceholder' 
+                id='viz1739854381492' 
+                style='position: relative'>
+                <noscript><a href='#'>
+                    <img alt='Calories burnt (from DailyActivity) ' 
+                    src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Be&#47;BellabeatCaloriesDailyActivity&#47;CaloriesburntfromDailyActivity&#47;1_rss.png' 
+                    style='border: none' /></a>
+                </noscript><object 
+                class='tableauViz'  
+                style='display:none;'>
+                <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+                <param name='embed_code_version' value='3' /> 
+                <param name='site_root' value='' />
+                <param name='name' value='BellabeatCaloriesDailyActivity&#47;CaloriesburntfromDailyActivity' />
+                <param name='tabs' value='no' /><param name='toolbar' value='yes' />
+                <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Be&#47;BellabeatCaloriesDailyActivity&#47;CaloriesburntfromDailyActivity&#47;1.png' /> 
+                <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' />
+                <param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='fr-FR' /></object></div>                
+                <script type='text/javascript'>                    var divElement = document.getElementById('viz1739854381492');
+                   var vizElement = divElement.getElementsByTagName('object')[0];                   
+                        if ( divElement.offsetWidth > 800 ) { vizElement.style.width='1000px';vizElement.style.height='827px';} 
+                        else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='1000px';vizElement.style.height='827px';} 
+                        else { vizElement.style.width='100%';vizElement.style.height='777px';}                     
+                        var scriptElement = document.createElement('script');                   
+                         scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js'; vizElement.parentNode.insertBefore(scriptElement, vizElement);                
+                         </script>
+                       <p>First, given the differences, it’s important to decide which variables (from “Continuous_hours” or “DailyActivity”) will be used to analyze calories burned by day of the week. 
+                        In “DailyActivity,” the total number of calories burned is highest on Wednesdays. However, the average calories burned per day show that Sunday is the day users burn the most 
+                        on average. If users log workouts through the app themselves for "DailyActivity", this could explain the difference. Wednesdays might be when users record the most activities, 
+                        leading to higher average calories burned per hour in “Continuous_hours". We will focus on total calories burnt by day (from "DailyActivity") 
+                        and average calories burnt by hour (from Continuous-hours) for this analysis.</p>
+                        <p>Here is what data on calories tells us :</p>
+                       <ul class ="bullet-list">
+                           <li><b>Calories burnt on average </b> : On average, Users burnt 2266 calories by day (DailyActivity) and 92.6 calories by hour (Continuous_hours)</li>
+                           <li><b>14 out of the 35 users (40%)</b> Burnt more than 2500 calories a day on average.</li>
+                           <li><b>2 users out of the 35 (6%)</b> Burnt less than 1500 calories a day.</li>
+                           <li><b>Calories burnt by day</b> : On average, users burnt more calories per hour and logged more activities on Wednesdays, Saturdays, and Sundays.</li>
+                           <li><b>Calories burnt by day</b> : Users tend to burn less calories on Mondays.</li>
+                           <li><b>Calories burnt by state of intensity </b> : On average, Users burnt 113 calories while doing "High intensity activities", 101 calories while doing "Medium intensity activities", 80 calories while doing "Low intensity activities" & 64 calories while being "Sedentary" </li>
+                           <li><b>Calories burnt by hour</b> : On average, users tend to burn more calories between <b>12 PM & 4PM</b></li>
+                        </ul>
+                <p class = "subtitle_analysis"><b>INTENSITY OF ACTIVITIES</b></p>
+                <p>This has been the most tricky part of the analysis considering that we have a lot of data that are not telling the same story in the differents tables, 
+                    also, the results of this analysis needs to match the results of the "CALORIES BURNT" category to really make sense.</p>
+                <p>Intensities from "Continuous-hours".</p>
+                <div 
+                class='tableauPlaceholder' 
+                id='viz1739917102344' 
+                style='position: relative'>
+                <noscript><a href='#'>
+                    <img alt='Intensity 1 (from Continuous) ' 
+                    src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;BE&#47;BELLABEATINTENSITIESfromContinuous_hours&#47;Intensity1fromContinuous&#47;1_rss.png' 
+                    style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'>
+                        <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> 
+                        <param name='embed_code_version' value='3' /> <param name='site_root' value='' />
+                        <param name='name' value='BELLABEATINTENSITIESfromContinuous_hours&#47;Intensity1fromContinuous' />
+                        <param name='tabs' value='no' /><param name='toolbar' value='yes' />
+                        <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;BE&#47;BELLABEATINTENSITIESfromContinuous_hours&#47;Intensity1fromContinuous&#47;1.png' />
+                        <param name='animate_transition' value='yes' />
+                        <param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' />
+                        <param name='language' value='fr-FR' /></object></div>                
+                        <script type='text/javascript'>                    
+                        var divElement = document.getElementById('viz1739917102344');                    
+                        var vizElement = divElement.getElementsByTagName('object')[0];                    
+                        if ( divElement.offsetWidth > 800 ) { vizElement.style.width='1000px';vizElement.style.height='827px';} 
+                        else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='1000px';vizElement.style.height='827px';} 
+                        else { vizElement.style.width='100%';vizElement.style.height='927px';}                     
+                        var scriptElement = document.createElement('script');                    
+                        scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js'; vizElement.parentNode.insertBefore(scriptElement, vizElement);               
+                         </script>
+                <p>Intensities from "Continuous-hours" : 2nd table.</p>
+                <div 
+                class='tableauPlaceholder' 
+                id='viz1739917281781' 
+                style='position: relative'>
+                <noscript><a href='#'>
+                    <img alt='Intensity 2 (from continuous) ' 
+                    src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;BE&#47;BELLABEATIntensities2fromcontinuous&#47;Intensity2fromcontinuous&#47;1_rss.png' 
+                    style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'>
+                        <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> 
+                        <param name='embed_code_version' value='3' /> 
+                        <param name='site_root' value='' /><param name='name' value='BELLABEATIntensities2fromcontinuous&#47;Intensity2fromcontinuous' />
+                        <param name='tabs' value='no' /><param name='toolbar' value='yes' />
+                        <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;BE&#47;BELLABEATIntensities2fromcontinuous&#47;Intensity2fromcontinuous&#47;1.png' />
+                        <param name='animate_transition' value='yes' />
+                        <param name='display_static_image' value='yes' />
+                        <param name='display_spinner' value='yes' />
+                        <param name='display_overlay' value='yes' />
+                        <param name='display_count' value='yes' />
+                        <param name='language' value='fr-FR' /></object></div>                
+                        <script type='text/javascript'>                    
+                        var divElement = document.getElementById('viz1739917281781'); var vizElement = divElement.getElementsByTagName('object')[0];                    
+                        if ( divElement.offsetWidth > 800 ) { vizElement.style.width='1000px';vizElement.style.height='827px';} 
+                        else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='1000px';vizElement.style.height='827px';} 
+                        else { vizElement.style.width='100%';vizElement.style.height='777px';} 
+                        var scriptElement = document.createElement('script');                    
+                        scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js'; vizElement.parentNode.insertBefore(scriptElement, vizElement);                
+                        </script>
+                <p>Intensities from "DailyActivity".</p>
+                <div 
+                class='tableauPlaceholder' 
+                id='viz1739918097196' 
+                style='position: relative'>
+                <noscript><a href='#'>
+                    <img alt='Activity intensity from daily activity ' 
+                    src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;BE&#47;BELLABEATIntensitiesfromDailyActivity&#47;Activityintensityfromdailyactivity&#47;1_rss.png' style='border: none' /></a></noscript><object 
+                    class='tableauViz'  
+                    style='display:none;'>
+                    <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> 
+                    <param name='embed_code_version' value='3' /> <param name='site_root' value='' />
+                    <param name='name' value='BELLABEATIntensitiesfromDailyActivity&#47;Activityintensityfromdailyactivity' />
+                    <param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;BE&#47;BELLABEATIntensitiesfromDailyActivity&#47;Activityintensityfromdailyactivity&#47;1.png' /> 
+                    <param name='animate_transition' value='yes' />
+                    <param name='display_static_image' value='yes' />
+                    <param name='display_spinner' value='yes' />
+                    <param name='display_overlay' value='yes' />
+                    <param name='display_count' value='yes' />
+                    <param name='language' value='fr-FR' />
+                </object></div>                
+                <script type='text/javascript'>                    
+                var divElement = document.getElementById('viz1739918097196');                    
+                var vizElement = divElement.getElementsByTagName('object')[0];                    
+                if ( divElement.offsetWidth > 800 ) { vizElement.style.width='1000px';vizElement.style.height='827px';} 
+                else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='1000px';vizElement.style.height='827px';} 
+                else { vizElement.style.width='100%';vizElement.style.height='1127px';}                     
+                var scriptElement = document.createElement('script');                    
+                scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js'; vizElement.parentNode.insertBefore(scriptElement, vizElement);                
+                </script>
+                <p>Now I made a few Dashboards to show differences</p>
+                <p>Differences : Time spent in the different intensity levels :</p>
+                <div 
+                class='tableauPlaceholder' 
+                id='viz1739918725635' 
+                style='position: relative'>
+                <noscript><a href='#'>
+                    <img alt='DIFFERENCES INTENSITY LEVELS (Cont &amp; Daily) ' 
+                    src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;DI&#47;DIFFERENCESIntensitylevels_&#47;DIFFERENCESINTENSITYLEVELSContDaily&#47;1_rss.png' 
+                    style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'>
+                        <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> 
+                        <param name='embed_code_version' value='3' /> 
+                        <param name='site_root' value='' />
+                        <param name='name' value='DIFFERENCESIntensitylevels_&#47;DIFFERENCESINTENSITYLEVELSContDaily' />
+                        <param name='tabs' value='no' />
+                        <param name='toolbar' value='yes' />
+                        <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;DI&#47;DIFFERENCESIntensitylevels_&#47;DIFFERENCESINTENSITYLEVELSContDaily&#47;1.png' /> 
+                        <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' />
+                        <param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='fr-FR' /></object></div>                
+                        <script type='text/javascript'>                    
+                        var divElement = document.getElementById('viz1739918725635');                    
+                        var vizElement = divElement.getElementsByTagName('object')[0];                    
+                        if ( divElement.offsetWidth > 800 ) { vizElement.style.width='1000px';vizElement.style.height='827px';} 
+                        else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='1000px';vizElement.style.height='827px';} 
+                        else { vizElement.style.width='100%';vizElement.style.height='727px';}                     
+                        var scriptElement = document.createElement('script');                    
+                        scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js'; vizElement.parentNode.insertBefore(scriptElement, vizElement);                
+                        </script>
+                <p>Differences : Time spent Very Active by user</p>
+                <div 
+                class='tableauPlaceholder' 
+                id='viz1739924501287' 
+                style='position: relative'>
+                <noscript>
+                    <a href='#'>
+                        <img alt='DIFFERENCES USER Highly Active ' 
+                        src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;DI&#47;DIFFERENCESTimespentVeryactive&#47;DIFFERENCESUSERHighlyActive&#47;1_rss.png' 
+                        style='border: none' /></a></noscript><object 
+                        class='tableauViz'  
+                        style='display:none;'>
+                        <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> 
+                        <param name='embed_code_version' value='3' /> <param name='site_root' value='' />
+                        <param name='name' value='DIFFERENCESTimespentVeryactive&#47;DIFFERENCESUSERHighlyActive' />
+                        <param name='tabs' value='no' /><param name='toolbar' value='yes' />
+                        <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;DI&#47;DIFFERENCESTimespentVeryactive&#47;DIFFERENCESUSERHighlyActive&#47;1.png' /> 
+                        <param name='animate_transition' value='yes' />
+                        <param name='display_static_image' value='yes' />
+                        <param name='display_spinner' value='yes' />
+                        <param name='display_overlay' value='yes' />
+                        <param name='display_count' value='yes' />
+                        <param name='language' value='fr-FR' />
+                    </object></div>                
+                    <script type='text/javascript'>                    
+                    var divElement = document.getElementById('viz1739924501287');                    
+                    var vizElement = divElement.getElementsByTagName('object')[0];                    
+                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='1000px';vizElement.style.height='827px';}
+                    else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='1000px';vizElement.style.height='827px';} 
+                    else { vizElement.style.width='100%';vizElement.style.height='727px';}                     
+                    var scriptElement = document.createElement('script');                    
+                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js'; vizElement.parentNode.insertBefore(scriptElement, vizElement);                
+                    </script>
+             
+                <p>Differences : Time Spent Sedentary</p>
+                <div 
+                class='tableauPlaceholder' 
+                id='viz1739919328066' 
+                style='position: relative'>
+                <noscript><a href='#'>
+                    <img alt='DIFFERENCES USER Sedentary ' 
+                    src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;BE&#47;BELLABEATIntensitiesdifferenciesSedentary&#47;DIFFERENCESUSERSedentary&#47;1_rss.png' 
+                    style='border: none' /></a></noscript><object 
+                    class='tableauViz'  
+                    style='display:none;'>
+                    <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> 
+                    <param name='embed_code_version' value='3' /> <param name='site_root' value='' />
+                    <param name='name' value='BELLABEATIntensitiesdifferenciesSedentary&#47;DIFFERENCESUSERSedentary' />
+                    <param name='tabs' value='no' /><param name='toolbar' value='yes' />
+                    <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;BE&#47;BELLABEATIntensitiesdifferenciesSedentary&#47;DIFFERENCESUSERSedentary&#47;1.png' /> 
+                    <param name='animate_transition' value='yes' />
+                    <param name='display_static_image' value='yes' />
+                    <param name='display_spinner' value='yes' />
+                    <param name='display_overlay' value='yes' />
+                    <param name='display_count' value='yes' />
+                    <param name='language' value='fr-FR' />
+                </object></div>                
+                <script type='text/javascript'>                    
+                var divElement = document.getElementById('viz1739919328066');                    
+                var vizElement = divElement.getElementsByTagName('object')[0];                    
+                if ( divElement.offsetWidth > 800 ) { vizElement.style.width='1000px';vizElement.style.height='827px';} 
+                else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='1000px';vizElement.style.height='827px';} 
+                else { vizElement.style.width='100%';vizElement.style.height='727px';}                     
+                var scriptElement = document.createElement('script');                    
+                scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js'; vizElement.parentNode.insertBefore(scriptElement, vizElement);                
+                </script>
+                <p>Differencies : Weekday</p>
+                <div 
+                class='tableauPlaceholder' 
+                id='viz1739919460744' 
+                style='position: relative'>
+                <noscript>
+                    <a href='#'>
+                        <img alt='DIFFERENCES WEEKDAY ' 
+                        src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;BE&#47;BELLABEATIntensitiesdifferencesWEEKDAY&#47;DIFFERENCESWEEKDAY&#47;1_rss.png' 
+                        style='border: none' /></a></noscript><object 
+                        class='tableauViz'  
+                        style='display:none;'>
+                        <param name='host_url' 
+                        value='https%3A%2F%2Fpublic.tableau.com%2F' /> 
+                        <param name='embed_code_version' value='3' /> 
+                        <param name='site_root' value='' />
+                        <param name='name' value='BELLABEATIntensitiesdifferencesWEEKDAY&#47;DIFFERENCESWEEKDAY' />
+                        <param name='tabs' value='no' /><param name='toolbar' value='yes' />
+                        <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;BE&#47;BELLABEATIntensitiesdifferencesWEEKDAY&#47;DIFFERENCESWEEKDAY&#47;1.png' /> <param name='animate_transition' value='yes' />
+                        <param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' />
+                        <param name='display_overlay' value='yes' /><param name='display_count' value='yes' />
+                        <param name='language' value='fr-FR' /></object></div>                
+                        <script type='text/javascript'>                    
+                        var divElement = document.getElementById('viz1739919460744');                    
+                        var vizElement = divElement.getElementsByTagName('object')[0];                    
+                        if ( divElement.offsetWidth > 800 ) { vizElement.style.width='1000px';vizElement.style.height='827px';} 
+                        else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='1000px';vizElement.style.height='827px';} 
+                        else { vizElement.style.width='100%';vizElement.style.height='727px';}                     
+                        var scriptElement = document.createElement('script');                    
+                        scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js'; vizElement.parentNode.insertBefore(scriptElement, vizElement);                
+                        </script>
+                <p>It seems like in DailyActivity each time there is a record, the record is also made during night (when people are asleep) so I ll try to explain the differencies in intensity levels using "Sedentary_NotAsleep" instead of "Sedentary"</p>
+                <div 
+                class='tableauPlaceholder' 
+                id='viz1739920252490' 
+                style='position: relative'>
+                <noscript>
+                    <a href='#'>
+                        <img alt='ADJUSTMENT SEDNOTASLEEP ' 
+                        src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;BE&#47;BELLABEATIntensitiesAdjustmentSedentarynotAsleep&#47;ADJUSTMENTSEDNOTASLEEP&#47;1_rss.png' 
+                        style='border: none' />
+                    </a>
+                </noscript>
+                <object 
+                class='tableauViz'  
+                style='display:none;'>
+                <param name='host_url' 
+                value='https%3A%2F%2Fpublic.tableau.com%2F' /> 
+                <param name='embed_code_version' value='3' /> 
+                <param name='site_root' value='' />
+                <param name='name' value='BELLABEATIntensitiesAdjustmentSedentarynotAsleep&#47;ADJUSTMENTSEDNOTASLEEP' />
+                <param name='tabs' value='no' />
+                <param name='toolbar' value='yes' />
+                <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;BE&#47;BELLABEATIntensitiesAdjustmentSedentarynotAsleep&#47;ADJUSTMENTSEDNOTASLEEP&#47;1.png' /> 
+                <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' />
+                <param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' />
+                <param name='display_count' value='yes' /><param name='language' value='fr-FR' />
+                </object></div>                
+                <script type='text/javascript'>                    
+                var divElement = document.getElementById('viz1739920252490');                    
+                var vizElement = divElement.getElementsByTagName('object')[0];                    
+                if ( divElement.offsetWidth > 800 ) { vizElement.style.width='1000px';vizElement.style.height='827px';} 
+                else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='1000px';vizElement.style.height='827px';} 
+                else { vizElement.style.width='100%';vizElement.style.height='877px';}                     
+                var scriptElement = document.createElement('script');                    
+                scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js'; vizElement.parentNode.insertBefore(scriptElement, vizElement);                
+                </script>
+                <p class = "subtitle_analysis"><b>Intensities conclusions</b> :</p>
+                <p class ="subtitle_analysis"><u>Inconsistencies in "Continuous_hours"</u> :</p>
+                <ul class="bullet-list">
+                    <li><p> Users spent more hours doing "high intensity and medium intensity" activities than being sedentary or in low intensity activities. 
+                        As "Continuous_hours" is continuoulsy recording the data, it should show that users spent more time sedentary or in light intensity activities because of the sleeping periods.</p></li>
+                    <li><p> Data shows that on average, users spent most of the high and medium intensity hours at night.</p></li>
+                    <li><p>Users "Sedentary" and "Highly active" periods show too much similarities among users.</p></li>
+                   </ul>
+                   <p class ="subtitle_analysis"><u>We have no choice but to focus our analysis on the "DailyActivity" table, here is what data tells us</u> :</p>
+                   <ul class="bullet-list">
+                    <li><p><b>Most of the time a day is spent "Sedentary"</b> : Users spent an average of 972 minutes (16h) being "Sedentary" and 541 minutes (9h) "Sedetary not Asleep".</p></li>
+                    <li><p><b>7 out of the 35 total users (20%)</b> spent more than 1200 minutes a day "Sedentary" (20%)</p></li>
+                    <li><p>Users spent an average of 27 minutes a day "Very Active".</p></li>
+                    <li>Tuesday is the day most people are "Very Active" and also the day most people are Sedentary.</li>
+                    <li><p><b>7 out of the 35 total users (20%)</b> spent more than 40 minutes a day "Very Active"</p></li>
+                   </ul>
+                   <p>Considering the inconsistencies in the "Continuous_hours" table, we won't use the table "high Intensity not recorded" to track high intensity activities not recorded in Daily-Activity.
+                    We can still use a query to check which users have a record in "DailyActivity" each time an high intensity level is recorded in "Continuous_hours" :
+                   </p>
+                <div class="language-r">
+<pre><code class="language-r">WITH AverageTimeInBed AS (
+SELECT 
+    Id, 
+    AVG(TotalTimeInBed) AS AvgTimeInBed
+FROM 
+    nimble-mode-447321-p1.bellabeat.SleepDay
+GROUP BY 
+    Id
+)
+SELECT 
+    da.*, -- Sélectionne toutes les colonnes de DailyActivity
+    COALESCE(atb.AvgTimeInBed, 0) AS AvgTimeInBed, 
+    da.SedentaryMinutes - COALESCE(atb.AvgTimeInBed, 0) AS Sedentary_notinbed 
+FROM 
+    nimble-mode-447321-p1.bellabeat.DailyActivity da
+LEFT JOIN 
+    AverageTimeInBed atb
+    ON da.Id = atb.Id;
+</code></pre></div>
+<p>Here are the users that have a record in "DailyActivity" each time they have an high intensity activity recorded in "Continuous_hours" :</p>
+<p>4020332650</p>
+<p>4057192912</p>
+<p>4388161847</p>
+<p>2891001357</p>
+<p>There is 11% of diligent users that record their activity each time they do sport.</p>
+
+<p class = "subtitle_analysis"><b>STEP COUNT ANALYSIS</b></p>
+<p>There is a step count only in the table "DailyActivity" which makes the data source choice easier for this variable.</p>
+<div 
+class='tableauPlaceholder' 
+id='viz1739995573107' 
+style='position: relative'>
+<noscript>
+    <a href='#'>
+        <img alt='Steps ' 
+        src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;BE&#47;BELLABEATSteps&#47;Steps&#47;1_rss.png' 
+        style='border: none' /></a></noscript><object 
+        class='tableauViz'  
+        style='display:none;'>
+        <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> 
+        <param name='embed_code_version' value='3' /> 
+        <param name='site_root' value='' />
+        <param name='name' value='BELLABEATSteps&#47;Steps' />
+        <param name='tabs' value='no' />
+        <param name='toolbar' value='yes' />
+        <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;BE&#47;BELLABEATSteps&#47;Steps&#47;1.png' /> 
+        <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' />
+        <param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='fr-FR' />
+    </object></div>                
+    <script type='text/javascript'>                    
+    var divElement = document.getElementById('viz1739995573107');                    
+    var vizElement = divElement.getElementsByTagName('object')[0];                    
+    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='1000px';vizElement.style.height='827px';} 
+    else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='1000px';vizElement.style.height='827px';} 
+    else { vizElement.style.width='100%';vizElement.style.height='777px';}                     
+    var scriptElement = document.createElement('script');                    
+    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js'; vizElement.parentNode.insertBefore(scriptElement, vizElement);                
+    </script>
+<p>
+  Here is what data tells us about users walking habits : 
+</p>
+<ul class="bullet-list">
+    <li><p>On average, users walked <b>7280 steps</b> a day (5.20km)</p></li>
+    <li><p><b>9 out of the 35 total users (26%)</b> Walked more than 10000 steps a day on average.</p></li>
+    <li><p><b>10 out of the 35 total users (28%)</b> Walked less than 5000 steps a day on average.</p></li>
+    <li><p>On average, Users walk more on thursdays and less on wednesday.</p></li>
+   </ul>
+<p class = "subtitle_analysis"><b>WEIGHT ANALYSIS</b></p>
+<p>Table used here is "WeightLogInfo" (Reminder that this table counts only 13 users):</p>
+<div 
+class='tableauPlaceholder' 
+id='viz1739998578482' 
+style='position: relative'>
+<noscript>
+    <a href='#'>
+        <img alt='WeightLogInfo ' 
+        src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;BE&#47;BELLABEATWeightLogInfo&#47;WeightLogInfo&#47;1_rss.png' 
+        style='border: none' />
+    </a>
+</noscript>
+<object 
+class='tableauViz'  
+style='display:none;'>
+<param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> 
+<param name='embed_code_version' value='3' /> 
+<param name='site_root' value='' />
+<param name='name' value='BELLABEATWeightLogInfo&#47;WeightLogInfo' />
+<param name='tabs' value='no' /><param name='toolbar' value='yes' />
+<param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;BE&#47;BELLABEATWeightLogInfo&#47;WeightLogInfo&#47;1.png' /> 
+<param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' />
+<param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='fr-FR' />
+</object>
+</div>                
+<script type='text/javascript'>                    
+var divElement = document.getElementById('viz1739998578482');                    
+var vizElement = divElement.getElementsByTagName('object')[0];                    
+if ( divElement.offsetWidth > 800 ) { vizElement.style.width='1000px';vizElement.style.height='827px';} 
+else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='1000px';vizElement.style.height='827px';} 
+else { vizElement.style.width='100%';vizElement.style.height='927px';}                     
+var scriptElement = document.createElement('script');                    
+scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js'; vizElement.parentNode.insertBefore(scriptElement, vizElement);                
+</script>
+<p>
+    Here is what data tells us about users weight : 
+</p>
+<ul class="bullet-list">
+    <li><p><b>Weight variation</b> : There is no big weight variation, most users remained at the same weight during the 2 monthes of the study. 
+        One of the users (8877689391) lost 1.5kg which is the biggest weight loss recorded these 2 monthes. Also one user (1927972279) which is also the heavier gained 4.5 kilograms in 2 days this is the most significant weight gain.</p></li>
+    <li><p><b>BMI analysis</b> : no user is considered underweight (BMI under 19), 4 users (30%) are considered to have a "normal weight" (BMI between 19 and 25), 7 users (53%) are considered overweight (BMI between 25 and 30), 2 users (15%) are cinsidered obese (BMI over 30).</p></li>
+    <li><p><b>Manual entry</b> : Most of the people have their weight data <b>automatically tracked by the app</b>. One user (6962181067) seem to track manually his/her weight data on a regular basis.</p></li>
+   </ul>
+   <p class = "subtitle_analysis"><b><u>Weightlog info activity</u></b></p>
+   <p>We'll also analyse number of times users recorded their weight and when.</p>
+   <div 
+   class='tableauPlaceholder' 
+   id='viz1740002478322' 
+   style='position: relative'>
+   <noscript>
+    <a href='#'>
+        <img 
+        alt='WeightLogInfo Records ' 
+        src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;BE&#47;BELLABEATWeightlogInforecordanalysis_&#47;WeightLogInfoRecords&#47;1_rss.png' 
+        style='border: none' />
+    </a>
+</noscript>
+<object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> 
+    <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='BELLABEATWeightlogInforecordanalysis_&#47;WeightLogInfoRecords' />
+    <param name='tabs' value='no' /><param name='toolbar' value='yes' />
+    <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;BE&#47;BELLABEATWeightlogInforecordanalysis_&#47;WeightLogInfoRecords&#47;1.png' />
+    <param name='animate_transition' value='yes' />
+    <param name='display_static_image' value='yes' />
+    <param name='display_spinner' value='yes' />
+    <param name='display_overlay' value='yes' />
+    <param name='display_count' value='yes' />
+    <param name='language' value='fr-FR' />
+</object>
+</div>                
+<script type='text/javascript'>                    
+var divElement = document.getElementById('viz1740002478322');                    
+var vizElement = divElement.getElementsByTagName('object')[0];                    
+if ( divElement.offsetWidth > 800 ) { vizElement.style.width='1000px';vizElement.style.height='827px';} 
+else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='1000px';vizElement.style.height='827px';} 
+else { vizElement.style.width='100%';vizElement.style.height='727px';}                     
+var scriptElement = document.createElement('script');                    
+scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js'; vizElement.parentNode.insertBefore(scriptElement, vizElement);                
+</script>
+<ul class="bullet-list">
+    <li><p>On average, users recorded their weight <b>7 times on 2 monthes by user</b>. 
+        If we exclude users <b>6962181067 & 8877689391</b> that are the most consistent entering their weight data (respectively 43 & 32 times each), 
+        the average drops to <b>2 times on 2  monthes by user</b>(roughly one time a month).</b></p></li>
+    <li><p><b>Day of the record</b> : Most of the records are made on tuesday (17 times in 2 monthes) followed by thrusday and friday (16 times each), the main contributors record seem to record their weight everyday almost equally.</p></li>
+   </ul>
+<p class = "subtitle_analysis"><b><u>COMPARISONS</u></b></p>
+<p class = "subtitle_analysis">Calories burnt & Weight : </p>
+<div 
+class='tableauPlaceholder' 
+id='viz1740007317931' 
+style='position: relative'><noscript>
+    <a href='#'>
+        <img 
+        alt='Tableau de bord 21 ' 
+        src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;BE&#47;BELLABEATCALORIESWeightLogInfo&#47;Tableaudebord21&#47;1_rss.png' 
+        style='border: none' /></a></noscript>
+        <object class='tableauViz'  style='display:none;'>
+            <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> 
+            <param name='embed_code_version' value='3' /> 
+            <param name='site_root' value='' /><param name='name' value='BELLABEATCALORIESWeightLogInfo&#47;Tableaudebord21' />
+            <param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;BE&#47;BELLABEATCALORIESWeightLogInfo&#47;Tableaudebord21&#47;1.png' /> 
+            <param name='animate_transition' value='yes' />
+            <param name='display_static_image' value='yes' />
+            <param name='display_spinner' value='yes' />
+            <param name='display_overlay' value='yes' />
+            <param name='display_count' value='yes' />
+            <param name='language' value='fr-FR' />
+        </object>
+    </div>                
+    <script type='text/javascript'>                    
+    var divElement = document.getElementById('viz1740007317931');                    
+    var vizElement = divElement.getElementsByTagName('object')[0];                    
+    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='1000px';vizElement.style.height='827px';} 
+    else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='1000px';vizElement.style.height='827px';} 
+    else { vizElement.style.width='100%';vizElement.style.height='1077px';}                     
+    var scriptElement = document.createElement('script');                    
+    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js'; vizElement.parentNode.insertBefore(scriptElement, vizElement);                
+    </script>
+    <p class = "subtitle_analysis">"Very Active" & Weight :</p>
+    <div 
+    class='tableauPlaceholder' 
+    id='viz1740008092833' 
+    style='position: relative'>
+    <noscript><a href='#'>
+        <img alt='BMI &#47;&#47; Activity ' 
+        src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;BE&#47;BELLABEATBMITimespentVeryActive&#47;BMIActivity&#47;1_rss.png' 
+        style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> 
+            <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='BELLABEATBMITimespentVeryActive&#47;BMIActivity' />
+            <param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;BE&#47;BELLABEATBMITimespentVeryActive&#47;BMIActivity&#47;1.png' /> 
+            <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' />
+            <param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' />
+            <param name='display_count' value='yes' /><param name='language' value='fr-FR' />
+        </object>
+    </div>                
+    <script type='text/javascript'>                    
+    var divElement = document.getElementById('viz1740008092833');                    
+    var vizElement = divElement.getElementsByTagName('object')[0];                    
+    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='1000px';vizElement.style.height='827px';} 
+    else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='1000px';vizElement.style.height='827px';} 
+    else { vizElement.style.width='100%';vizElement.style.height='727px';}                     
+    var scriptElement = document.createElement('script');                    
+    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js'; vizElement.parentNode.insertBefore(scriptElement, vizElement);                
+</script>
+
+<ul class="bullet-list">
+    <li><p><b>BMI / Activity </b> : The user that spent the most time "VeryActive" is overweight (BMI = 28, 92 minutes a day "very active" on average). 
+        The 2 most overweight are not really active (less than 10 minutes a day on average). the most active are those who lose the most calories.</p></li>
+    <li><p><b>Activity / Weight record </b> : The 2 users that record the most tehir weight are pretty active : (6962181067: 31 minutes a day, 8877689391: 66 minutes a day)</p></li>
+   </ul>
+
+
+
+
+
+
+
+
+
+ 

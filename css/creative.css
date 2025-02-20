@@ -1,0 +1,424 @@
+@font-face {
+    font-family: 'Signatra';
+    src: url('../fonts/Signatra.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Helvetica';
+    src: url('../fonts/Helvetica.ttc') format('truetype');
+}
+@font-face {
+font-family: "Courier New";
+src: url("../fonts/cour.ttf");
+font-weight: 400;
+}
+@font-face {
+font-family: "Signpainter";
+src: url("../fonts/SignPainter.ttc");
+font-weight: 400;
+}
+@font-face {
+    font-family: "Sketch";
+    src: url("../fonts/Sketch_Gothic_School.ttf") format("truetype");
+}
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px); /* Légère montée pendant l'apparition */
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+/* Styles globaux */
+body {
+    background-color: #202020;  /* Gris foncé */
+    color: #ffffff;  /* Blanc */
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+/* HEADER */
+header {
+    background-color: #181818; /* Gris encore plus foncé */
+    padding: 10px 50px; /* Réduction plus douce */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #333;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+}
+
+/* Partie gauche du header */
+.header-left {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    height: 65px; /* Taille augmentée */
+    margin-right: 40px;
+}
+
+.name {
+    font-family: 'Signatra', sans-serif;  
+    font-size: 2.8rem; /* Taille légèrement plus grande pour l'équilibre */
+
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+    margin: 0;
+    padding: 0;
+    line-height: 1.1;
+}
+
+/* Liens du header */
+.header-right {
+    display: flex;
+    gap: 30px;
+    margin-right: 80px;
+}
+
+.header-right a {
+    font-size: 1.6rem;
+    color: #f0f0e6 !important;
+    text-decoration: none !important;
+    transition: color 0.3s;
+}
+
+.header-right a:hover {
+    color: #00bfff;
+}
+.home-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: inherit; /* Garde la couleur du texte par défaut */
+}
+
+.home-link:hover {
+    opacity: 1 !important; /* Empêche l'effet de transparence */
+    color: inherit !important; /* Évite tout changement de couleur */
+}
+
+.home-link img {
+    transition: none; /* Supprime toute animation */
+}
+
+.home-link h1 {
+    transition: none; /* Empêche toute transition sur le texte */
+}
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    text-align: justify;
+    line-height: 1.7rem;
+    font-size: 1.2rem ;
+}
+
+b {
+    font-weight: bold;
+}
+
+g { 
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    text-align: justify;
+    line-height: 1.7rem;
+    font-size: 1.2rem ;}
+
+main {
+    max-width: 1000px;
+    margin: auto;
+    margin-top: 150px;
+    margin-bottom: 150px;
+}
+.paragraph_title {
+    padding-top: 20px;
+    text-align: left;
+    font-size: 35px;
+}
+.paragraph_subtitle {
+
+    text-align: left;
+    font-size: 24px;
+    color: #bdbdbd;
+    margin-top: -15px;
+    margin-bottom: 40px;
+}
+.text {
+    color: #202020;
+    line-height: 1.2rem;
+    margin-left: 40px;
+    margin-right: 40px ;
+    
+}
+.text_title {
+    color: #202020;
+    font-size: 24px;
+    margin-left: 25px ;
+    
+}
+.carousel__item-link {
+    text-decoration: none; /* Supprimer le soulignement du lien */
+    color: inherit; /* Garder la couleur d'origine du texte */
+    display: block; /* S'assure que le lien prend tout l'espace de l'élément */
+}
+
+.banniere {
+    width: 100%;  /* L'image occupe toute la largeur du conteneur */
+    height: auto;  /* Laisse l'image ajuster sa hauteur en fonction de la largeur */
+    object-fit: contain;  /* Ajuste l'image pour qu'elle tienne dans le conteneur sans être rognée */
+    border-radius: 8px;  /* Optionnel, pour garder les coins arrondis */
+    margin-bottom: 50px ;
+}
+
+.carousel__item {
+    display: block; /* Modification ici pour empiler verticalement */
+    width: 100%; /* Optionnel, ajuster la largeur */
+    margin-bottom: 50px; /* Ajoute un espacement entre les items */
+    gap: 25px;
+}
+
+.carousel__item-body {
+    width: 100%;
+    background: linear-gradient(145deg, #d6d6d6, #7f7f7f);
+    border-radius: 8px;
+    padding: 10px;
+    margin-top : 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    position: relative;
+    overflow: hidden;
+    opacity: 0; /* Initialement invisible */
+    animation: fadeIn 3s ease forwards; /* Animation sur 1 seconde */
+ }
+.skill-list {
+    margin-top: 60px;
+}
+.progress-container {
+    display: flex; /* Flexbox pour aligner les éléments sur une ligne */
+    align-items: center; /* Centrer verticalement les éléments */
+    margin: 10px 0;
+}
+
+.category {
+    flex: 0 0 100px; /* Largeur fixe pour la catégorie */
+    font-size: 1rem;
+    font-weight: bold;
+    margin-right: 10px; /* Espacement entre la catégorie et la barre */
+    text-align: left;
+}
+
+.progress-bar {
+    flex: 1; /* La barre prend tout l'espace restant */
+    background: #2c2c2c;
+    border-radius: 10px;
+    height: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.progress-bar .fill {
+    height: 100%;
+    background: linear-gradient(90deg, #FFD700, #FFA500);
+    width: 0;
+    border-radius: 10px 0 0 10px;
+    transition: width 1.5s ease;
+}
+
+.progress-bar span {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    color: #202020;
+    opacity: 0;  /* Initialement invisible */
+    transition: opacity 1s ease-in-out;  /* Ajoute une transition de 1 seconde */
+}
+
+.progress-section {
+    margin-top: 70px; /* Augmente l'espace au-dessus de toutes les barres */
+    margin-bottom: 70px;
+}
+.stata-text {
+    color: #ffffff !important; 
+}
+
+.mathlab-text {
+    color: #ffffff !important; 
+}
+.signpainter_demo {
+    margin: 25px;
+    text-align: center;
+    font-size: 4.0rem;
+    font-family: "Signpainter" !important ;
+}
+.sketch_demo {
+    margin: 25px;
+    display: block;
+    text-align: center !important;
+    font-size: 4.0rem !important;
+    font-family: "Sketch"!important;
+}
+.germanica_demo {
+    margin: 25px;
+    display: block;
+    text-align: center !important;
+    font-size: 5.0rem !important;
+    font-family: "Goth"!important;
+}
+.germanica_demo:hover {
+    transform: scale(1.1);  /* Agrandit légèrement le texte */
+    color: #4751ac; /* Change la couleur au survol */
+}
+
+.body_photos {
+        display: grid;
+        place-items: center;
+        background: #202020;
+        font-weight: 400;
+        box-sizing: border-box;
+      }
+
+.container {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: 500px;
+    gap: 10px;
+  
+    > div {
+      flex: 0 0 120px;
+      border-radius: 0.5rem;
+      transition: 0.5s ease-in-out;
+      cursor: pointer;
+      box-shadow: 1px 5px 15px #6e5555;
+      position: relative;
+      overflow: hidden;
+  
+      &:nth-of-type(1) {
+        background: url("../images/Visuals_examples_creative/IMG_5831.HEIC")
+          no-repeat 50% / cover;
+      }
+      &:nth-of-type(2) {
+        background: url("../images/Visuals_examples_creative/IMG_5040\ 2.heic")
+          no-repeat 50% / cover;
+      }
+      &:nth-of-type(3) {
+        background: url("../images/Visuals_examples_creative/IMG_5042.HEIC")
+          no-repeat 50% / cover;
+      }
+      &:nth-of-type(4) {
+        background: url("..//images/Visuals_examples_creative/IMG_5048.HEIC")
+          no-repeat 50% / cover;
+      }
+      &:nth-of-type(5) {
+        background: url("../images/Visuals_examples_creative/IMG_5041.heic")
+          no-repeat 50% / cover;
+      }
+      &:nth-of-type(6) {
+        background: url("../images/Visuals_examples_creative/IMG_5833.HEIC")
+          no-repeat 50% / cover;
+      }
+  
+      .content {
+        height: 100%;
+        justify-content: flex-end;
+        transform: translatey(100%);
+        transition: transform 0.5s 0.2s;
+        visibility: hidden;
+  
+        span {
+          display: block;
+          margin-top: 5px;
+          font-size: 1.2rem;
+        }
+      }
+  
+      &:hover {
+        flex: 0 0 250px;
+        transform: translatey(-30px);
+      }
+  
+      &:hover .content {
+        opacity: 1;
+        visibility: visible;
+      }
+    }
+  }
+
+.container2 {
+margin-top: 50px;
+margin-bottom: 50px;
+width: 100%;
+display: flex;
+justify-content: center;
+height: 500px;
+gap: 10px;
+
+> div {
+  flex: 0 0 120px;
+  border-radius: 0.5rem;
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+  box-shadow: 1px 5px 15px #6e5555;
+  position: relative;
+  overflow: hidden;
+
+  &:nth-of-type(1) {
+    background: url("../images/Visuals_examples_creative/template.png")
+      no-repeat 50% / cover;
+  }
+  &:nth-of-type(2) {
+    background: url("../images/Visuals_examples_creative/rouge.png")
+      no-repeat 50% / cover;
+  }
+  &:nth-of-type(3) {
+    background: url("../images/Visuals_examples_creative/jaune.png")
+      no-repeat 50% / cover;
+  }
+  &:nth-of-type(4) {
+    background: url("..//images/Visuals_examples_creative/bleu.png")
+      no-repeat 50% / cover;
+  }
+  &:nth-of-type(5) {
+    background: url("../images/Visuals_examples_creative/line_up.png")
+      no-repeat 50% / cover;
+  }
+
+  .content2 {
+    height: 100%;
+    justify-content: flex-end;
+    transform: translatey(100%);
+    transition: transform 0.5s 0.2s;
+    visibility: hidden;
+
+    span {
+      display: block;
+      margin-top: 5px;
+      font-size: 1.2rem;
+    }
+  }
+
+  &:hover {
+    flex: 0 0 250px;
+    transform: translatey(-30px);
+  }
+
+  &:hover .content {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+}
+  
+  

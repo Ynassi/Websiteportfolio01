@@ -1,4 +1,61 @@
 @font-face {
+    font-family: 'Helvetica';
+    src: url('../fonts/Helvetica.ttc') format('truetype');
+}
+
+.home-link:hover {
+    opacity: 1 !important; /* Empêche l'effet de transparence */
+    color: inherit !important; /* Évite tout changement de couleur */
+}
+
+.home-link img {
+    transition: none; /* Supprime toute animation */
+}
+
+.home-link h1 {
+    transition: none; /* Empêche toute transition sur le texte */
+}
+/* Styles spécifiques à la page Portfolio */
+body {
+    font-family: 'Helvetica', sans-serif;
+}
+
+.portfolio-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.portfolio-title {
+    text-align: left;
+    margin-left: 0;
+}
+
+.portfolio-intro, 
+.portfolio-description {
+    text-align: center;
+    line-height: 1.8; /* Meilleur espacement du texte */
+}
+
+.portfolio-categories {
+    display: flex;
+    justify-content: center;
+}
+
+.category-img {
+    width: 130px;
+    border-radius: 15px;
+    transition: transform 0.3s ease;
+}
+
+.category-img:hover {
+    transform: scale(1.05);
+}
+.portfolio-container {
+    text-align: left;
+}
+@font-face {
     font-family: 'Signatra';
     src: url('../fonts/Signatra.ttf') format('truetype');
 }
@@ -91,46 +148,4 @@ header {
 
 .home-link h1 {
     transition: none; /* Empêche toute transition sur le texte */
-}
-/* Styles spécifiques à la page Portfolio */
-body {
-    font-family: 'Helvetica', sans-serif;
-}
-
-.portfolio-container {
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 20px;
-}
-
-.portfolio-title {
-    text-align: left;
-    margin-left: 0;
-}
-
-.portfolio-intro, 
-.portfolio-description {
-    text-align: center;
-    margin: 20px auto;
-    line-height: 1.8; /* Meilleur espacement du texte */
-}
-
-.portfolio-categories {
-    display: flex;
-    justify-content: center;
-    gap: 50px;
-    margin-top: 20px;
-}
-
-.category-img {
-    width: 130px;
-    border-radius: 15px;
-    transition: transform 0.3s ease;
-}
-
-.category-img:hover {
-    transform: scale(1.05);
-}
-.portfolio-container {
-    text-align: left;
 }

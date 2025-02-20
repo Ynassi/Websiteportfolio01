@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yanis NASSI - Portfolio</title>
+    <link rel="stylesheet" href="../css/creative.css">
+    <script src="../JS/technical.js" defer></script>
+
+   
+    <!-- PRISM / CODE VIEWER -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-javascript.min.js"></script>
+
+</head>
+<style>@font-face {
+    font-family: 'Signatra';
+    src: url('../fonts/Signatra.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Helvetica';
+    src: url('../fonts/Helvetica.ttc') format('truetype');
+}
+@font-face {
+font-family: "Courier New";
+src: url("../fonts/cour.ttf");
+font-weight: 400;
+}
+@font-face {
+font-family: "Signpainter";
+src: url("../fonts/SignPainter.ttc");
+font-weight: 400;
+}
+@font-face {
+    font-family: "Sketch";
+    src: url("../fonts/Sketch_Gothic_School.ttf") format("truetype");
+}
+@font-face {
+    font-family: "Goth";
+    src: url("../fonts/Seagram.ttf");
+}
+/* Styles globaux */
+body {
+    background-color: #202020;  /* Gris foncé */
+    color: #ffffff;  /* Blanc */
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+.signpainter_demo {
+    margin: 25px;
+    text-align: center;
+    font-size: 6.0rem;
+    font-family: "Signpainter" !important;
+    transition: transform 0.3s ease, color 0.3s ease;
+    line-height:1.4;
+}
+
+.signpainter_demo:hover {
+    transform: scale(1.1); /* Effet de zoom */
+    color: #FF6347; /* Changement de couleur au survol */
+}
+
+.sketch_demo {
+    margin: 25px;
+    display: block;
+    text-align: center !important;
+    font-size: 6.0rem !important;
+    font-family: "Sketch"!important;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.sketch_demo:hover {
+    transform: scale(1.1);  /* Agrandit légèrement le texte */
+    color: #FFD700; /* Change la couleur au survol */
+}
+
+.helvetica_demo {
+    margin: 25px;
+    display: block;
+    text-align: center !important;
+    font-size: 4.0rem !important;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.helvetica_demo:hover {
+    transform: scale(1.1);  /* Agrandit légèrement le texte */
+    color: #9bbae9; /* Change la couleur au survol */
+}
+
+/* HEADER */
+header {
+    background-color: #181818; /* Gris encore plus foncé */
+    padding: 10px 50px; /* Réduction plus douce */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #333;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+}
+
+/* Partie gauche du header */
+.header-left {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    height: 65px; /* Taille augmentée */
+    margin-right: 40px;
+}
+
+.name {
+    font-family: 'Signatra', sans-serif;  
+    font-size: 2.8rem; /* Taille légèrement plus grande pour l'équilibre */
+
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+    margin: 0;
+    padding: 0;
+    line-height: 1.1;
+}
+
+/* Liens du header */
+.header-right {
+    display: flex;
+    gap: 30px;
+    margin-right: 80px;
+}
+
+.header-right a {
+    font-size: 1.6rem;
+    color: #f0f0e6 !important;
+    text-decoration: none !important;
+    transition: color 0.3s;
+}
+
+.header-right a:hover {
+    color: #00bfff;
+}
+.banniere {
+    width: 100%;  /* L'image occupe toute la largeur du conteneur */
+    height: auto;  /* Laisse l'image ajuster sa hauteur en fonction de la largeur */
+    object-fit: contain;  /* Ajuste l'image pour qu'elle tienne dans le conteneur sans être rognée */
+    border-radius: 8px;  /* Optionnel, pour garder les coins arrondis */
+    margin-bottom: 25px ;
+}
+
+</style>
+<body>
+    <!-- HEADER -->
+    <header>
+        <div class="header-left">
+            <a href="../index.html" class="home-link">
+            <img src="../images/clipart.png" alt="Logo" class="logo img-sm">
+            <h1 class="name">Yanis NASSI</h1>
+         </a>
+        </div>
+        <nav class="header-right">
+            <a href="../pages/portfolio.html">Portfolio</a>
+            <a href="../pages/skills.html">Skills</a>
+            <a href="../pages/art.html">Art</a>
+            <a href="../pages/contact.html">Contact</a>
+        </nav>
+    </header>
+</body>
+<main>
+    <h1 class="paragraph_title"> Creative skills</h1>
+       <h2 class = "paragraph_subtitle">Creation oriented skills to create appealing visuals, marketing materials and vibrant art.</h2>
+       <div class ="progress-section">
+       <div class="progress-container">
+        <div class="category">GIMP</div>
+        <div class="progress-bar" data-progress="90">
+            <span class = "inside"><b>ADVANCED</b></span>
+        </div>
+    </div>
+    <div class="progress-container">
+        <div class="category">Photoshop</div>
+        <div class="progress-bar" data-progress="60">
+            <span><b>FLUENT</b></span> 
+        </div>
+    </div>
+    <div class="progress-container">
+        <div class="category">Illustrator</div>
+        <div class="progress-bar" data-progress="40">
+            <span class = "mathlab-text"><b>INTERMEDIARY</b></span>  
+        </div>
+    </div>
+    <div class="progress-container">
+        <div class="category">Canvas</div>
+        <div class="progress-bar" data-progress="70">
+            <span><b>FLUENT</b></span>
+        </div>
+    </div>
+    
+    <div class="progress-container">
+        <div class="category">Procreate</div>
+        <div class="progress-bar" data-progress="80">
+            <span><b>ADVANCED</b></span>
+        </div>
+    </div>
+    <div class="progress-container">
+        <div class="category">Spraypaint</div>
+        <div class="progress-bar" data-progress="60">
+            <span><b>FLUENT</b></span> 
+        </div>
+    </div>
+    <div class="progress-container">
+        <div class="category">Stencils</div>
+        <div class="progress-bar" data-progress="80">
+            <span><b>ADVANCED</b></span>  
+        </div>
+    </div>
+    <div ><p class = "paragraph_title"><b>Current focus</b></p></div>
+<p> My main current focus remains data science, analysis and learning of Python. But i'd love to learn more about front end developpement, frameworks and UX/UI design. 
+    I discover new things to learn everyday as I dive into the web, it is really exciting but it is also important to stay focus on my main goal : Data science. 
+    It might be a good fit for me to work in a company that offers both services for their clients (website or app creation combined with data analysis) to continue learning in both fields.
+    </p>
+    <div ><p class = "paragraph_title"><b>Visuals examples</b></p></div>
+<p> Most of the designs I've made were for events i've produced. I've learned all by myself and i'd love to know more about professionnal tools and techniques.
+    </p>
+
+    <div><p><b><u>100 FACES SOLO EXHIBITION MARKETING MATERIALS :</u></p></b></p></div>
+    <ul>
+        <li> <p>a) <u>Defining color palette</u></p>
+            <div>
+                <script src="https://coolors.co/palette-widget/widget.js"></script>
+                <script data-id="002844919069480112">new CoolorsPaletteWidget("002844919069480112", ["fff7f7","d8b846","ca4b50","9bbae9","151a44"]); </script></div>
+                <p>Each color palette needs to be adapted to the event or website. This color palette for example has been made for a painting exhibition. So i thought it would be important to have the 3 primary colors in the color palette.</p>
+            </li>
+        <li> <p>b) <u>Defining fonts</u></p>
+             <div class = "sketch_demo">Sketch Gothic School</div>
+             <div class = "signpainter_demo">Sign Painter</div>
+             <div class = "helvetica_demo">Helvetica</div>
+             <div class = "germanica_demo">Seagram</div>
+             <p>Again, fonts have to match artistic direction, here i've used fonts that remind art and handwriting.</p>
+             <img src="../images/Visuals_examples_creative/LOGO SITE.jpg" class="banniere">
+        </li>
+        <li> 
+            <p>c) <u>Selecting and adding pictures</u></p>
+            <div class = "body-photos"> 
+            <div class="container">
+                <div>
+                  <div class="content">
+                  </div>
+                </div>
+                <div>
+                  <div class="content">
+                  </div>
+                </div>
+                <div>
+                  <div class="content">
+                  </div>
+                </div>
+                <div>
+                  <div class="content">
+                  </div>
+                </div>
+                <div>
+                    <div class="content">
+                    </div>
+                  </div>
+                <div>
+                    <div class="content">
+                   </div>
+                </div>
+              </div>
+            </div>
+            <p>These are the pictures I've selected to emphasize on the art image of the event and give a "Workshop" vibe to marketing materials. 
+                The pictures will be used as backgrounds.</p>
+        </li>
+        <li>
+            <p>d) <u>Adapting pictures to branding and styles</u></p>
+            <div class = "body-photos"> 
+            <div class="container2">
+                <div>
+                    <div class="content2">
+                    </div>
+                </div>
+                <div>
+                    <div class="content2">
+                    </div>
+                </div>
+                <div>
+                    <div class="content2">
+                    </div>
+                </div>
+                <div>
+                    <div class="content2">
+                    </div>
+                </div>
+                <div>
+                    <div class="content2">
+                    </div>
+                    </div>
+            </div>
+        </li>
+        <li><p>e) <u>Adapting pictures to differents formats</u></p>
+        </li>
+    </ul>
+    

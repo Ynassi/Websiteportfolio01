@@ -12,6 +12,16 @@ font-family: "Courier New";
 src: url("../fonts/cour.ttf");
 font-weight: 400;
 }
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px); /* Légère montée pendant l'apparition */
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
 
 /* Styles globaux */
 body {
@@ -167,12 +177,17 @@ main {
 
 .carousel__item-body {
     width: 100%;
-    background-color: #9a9a9a;
+    background: linear-gradient(145deg, #d6d6d6, #7f7f7f);
     border-radius: 8px;
     padding: 10px;
-    margin-top : 20px;
+    margin-top : 70px;
     margin-bottom: 20px;
-}
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    position: relative;
+    overflow: hidden;
+    opacity: 0; /* Initialement invisible */
+    animation: fadeIn 3s ease forwards; /* Animation sur 1 seconde */
+ }
 .skill-list {
     margin-top: 60px;
 }
