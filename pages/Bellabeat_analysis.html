@@ -967,7 +967,7 @@ WHERE ch.Intensity = 3
                 <li>Apart from the interruption on March 13th, the interruption periods mainly occur on <b>Tuesdays and Sundays</b>.</li>
                 <li>The distribution of interruption periods is very <b>random in terms of hours</b>.</li>
                 <li>5 users out of the total population (14%) spent </b>50 hours or more</b> not wearing the device (inactive).</li>
-                <li>One of the users had a really abnormal behaviour and didnt wear the device for 224 hours (maybe she/he lost it and found it back)</li>
+                <li>One of the users had a really abnormal behaviour and didnt wear the device for 224 hours (maybe he/she lost it and found it back)</li>
              </ul>
              <p> <b>Data Inconsistency</b> : There should have been a recurrent inactivity period to charge the device for each user </p>
             </p>
@@ -1066,6 +1066,7 @@ WHERE ch.Intensity = 3
                 <p>The data in the SleepDay table makes much more sense</p>
                 <ul class ="bullet-list">
                     <li>Only <b>24 users</b> recorded their sleep in "<b>SleepDay</b>" table </li>
+                    <li>Among these 24 users, <b>only 7</b> recorded their sleep <b>More than 30 times</b> (roughly each 2 days).
                     <li><b>9 Out of 24 users (37.5%)</b> recorded their sleep less than 10 times in 2 monthes</li>
                     <li>Most users sleep around </b>7 hours per day.</b></li>
                     <li><b>4 out of 24 users (16%)</b> have unusual sleep habits (either too much or too little sleep), but they are also the ones who recorded the least sleep data.</li>
@@ -1142,13 +1143,13 @@ WHERE ch.Intensity = 3
                            <li><b>Calories burnt on average </b> : On average, Users burnt 2266 calories by day (DailyActivity) and 92.6 calories by hour (Continuous_hours)</li>
                            <li><b>14 out of the 35 users (40%)</b> Burnt more than 2500 calories a day on average.</li>
                            <li><b>2 users out of the 35 (6%)</b> Burnt less than 1500 calories a day.</li>
-                           <li><b>Calories burnt by day</b> : On average, users burnt more calories per hour and logged more activities on Wednesdays, Saturdays, and Sundays.</li>
+                           <li><b>Calories burnt by day</b> : On average, users burnt more calories per hour and logged more activities on Wednesdays, Tuesday, Saturdays, and Sundays.</li>
                            <li><b>Calories burnt by day</b> : Users tend to burn less calories on Mondays.</li>
                            <li><b>Calories burnt by state of intensity </b> : On average, Users burnt 113 calories while doing "High intensity activities", 101 calories while doing "Medium intensity activities", 80 calories while doing "Low intensity activities" & 64 calories while being "Sedentary" </li>
                            <li><b>Calories burnt by hour</b> : On average, users tend to burn more calories between <b>12 PM & 4PM</b></li>
                         </ul>
                 <p class = "subtitle_analysis"><b>INTENSITY OF ACTIVITIES</b></p>
-                <p>This has been the most tricky part of the analysis considering that we have a lot of data that are not telling the same story in the differents tables, 
+                <p>This has been the trickiest part of the analysis considering that we have a lot of data that are not telling the same story in the differents tables, 
                     also, the results of this analysis needs to match the results of the "CALORIES BURNT" category to really make sense.</p>
                 <p>Intensities from "Continuous-hours".</p>
                 <div 
@@ -1477,7 +1478,7 @@ style='position: relative'>
   Here is what data tells us about users walking habits : 
 </p>
 <ul class="bullet-list">
-    <li><p>On average, users walked <b>7280 steps</b> a day (5.20km)</p></li>
+    <li><p>On average, users walked <b>7280 steps</b> a day (5.20km).</p></li>
     <li><p><b>9 out of the 35 total users (26%)</b> Walked more than 10000 steps a day on average.</p></li>
     <li><p><b>10 out of the 35 total users (28%)</b> Walked less than 5000 steps a day on average.</p></li>
     <li><p>On average, Users walk more on thursdays and less on wednesday.</p></li>
@@ -1629,9 +1630,191 @@ style='position: relative'><noscript>
 <ul class="bullet-list">
     <li><p><b>BMI / Activity </b> : The user that spent the most time "VeryActive" is overweight (BMI = 28, 92 minutes a day "very active" on average). 
         The 2 most overweight are not really active (less than 10 minutes a day on average). the most active are those who lose the most calories.</p></li>
-    <li><p><b>Activity / Weight record </b> : The 2 users that record the most tehir weight are pretty active : (6962181067: 31 minutes a day, 8877689391: 66 minutes a day)</p></li>
+    <li><p><b>BMI / Activity Correlation</b> : There is a light correltion between BMI and Activity. The more active people are, teh less BMI they have.</p></li>
+    <li><p><b>Activity / Weight record </b> : The 2 users that record the most their weight are pretty active : (6962181067: 31 minutes a day, 8877689391: 66 minutes a day)</p></li>
    </ul>
+   <p class = "subtitle_analysis">Steps & Weight :</p>
+   <div 
+   class='tableauPlaceholder' 
+   id='viz1740089274659' 
+   style='position: relative'>
+   <noscript><a href='#'>
+    <img alt='Tableau de bord 23 ' 
+    src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;BE&#47;BELLABEATWeightSteps&#47;Tableaudebord23&#47;1_rss.png' style='border: none' />
+</a>
+</noscript>
+<object 
+class='tableauViz'  
+style='display:none;'>
+<param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> 
+<param name='embed_code_version' value='3' /> 
+<param name='site_root' value='' />
+<param name='name' value='BELLABEATWeightSteps&#47;Tableaudebord23' />
+<param name='tabs' value='no' /><param name='toolbar' value='yes' />
+<param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;BE&#47;BELLABEATWeightSteps&#47;Tableaudebord23&#47;1.png' /> 
+<param name='animate_transition' value='yes' />
+<param name='display_static_image' value='yes' />
+<param name='display_spinner' value='yes' />
+<param name='display_overlay' value='yes' />
+<param name='display_count' value='yes' />
+<param name='language' value='fr-FR' />
+</object>
+</div>                
+<script type='text/javascript'> 
+var divElement = document.getElementById('viz1740089274659'); 
+var vizElement = divElement.getElementsByTagName('object')[0];                    
+if ( divElement.offsetWidth > 800 ) { vizElement.style.width='1000px';vizElement.style.height='827px';} 
+else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='1000px';vizElement.style.height='827px';} 
+else { vizElement.style.width='100%';vizElement.style.height='877px';}                     
+var scriptElement = document.createElement('script');                    
+scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js'; vizElement.parentNode.insertBefore(scriptElement, vizElement);                
+</script>
+<ul class="bullet-list">
+    <li><p><b>Steps / BMI</b> : All the users that did more than 10 000 steps a day (4 out of the 13 users, 30%) are in good shape (BMI less than 25).</p></li>
+    <li><p><b>Steps / BMI</b> : The 2 overweighted users walked less than 5000 a day</p></li>
+    <li><p><b>Steps / BMI Correlation</b> : There is a strong correlation between the average of steps walked a day and the Body Mass Index. The more people walk the healthier they are (BMI under 25).</p></li>
+</ul>
 
+   <p class = "subtitle_analysis">Sleep & Weight :</p>
+   <div 
+   class='tableauPlaceholder' 
+   id='viz1740087259881' 
+   style='position: relative'>
+   <noscript>
+    <a href='#'>
+        <img alt='Tableau de bord 23 ' 
+        src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;BE&#47;BELLABEATSleepWeight&#47;Tableaudebord23&#47;1_rss.png' 
+        style='border: none' />
+    </a>
+    </noscript>
+    <object class='tableauViz'  style='display:none;'>
+        <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> 
+        <param name='embed_code_version' value='3' /> 
+        <param name='site_root' value='' />
+        <param name='name' value='BELLABEATSleepWeight&#47;Tableaudebord23' />
+        <param name='tabs' value='no' />
+        <param name='toolbar' value='yes' />
+        <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;BE&#47;BELLABEATSleepWeight&#47;Tableaudebord23&#47;1.png' /> 
+        <param name='animate_transition' value='yes' />
+        <param name='display_static_image' value='yes' />
+        <param name='display_spinner' value='yes' />
+        <param name='display_overlay' value='yes' />
+        <param name='display_count' value='yes' />
+        <param name='language' value='fr-FR' />
+    </object>
+</div>                
+<script type='text/javascript'>                    
+var divElement = document.getElementById('viz1740087259881');                    
+var vizElement = divElement.getElementsByTagName('object')[0];                    
+if ( divElement.offsetWidth > 800 ) { vizElement.style.width='1000px';vizElement.style.height='827px';} 
+else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='1000px';vizElement.style.height='827px';} 
+else { vizElement.style.width='100%';vizElement.style.height='777px';}                     
+var scriptElement = document.createElement('script');                    
+scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js'; vizElement.parentNode.insertBefore(scriptElement, vizElement);                
+</script>
+<p>There is no correlation between Sleep and Weight or the correlation is not really significant.</p>
+<p class = "subtitle_analysis">Records analysis :</p>
+<div 
+class='tableauPlaceholder' 
+id='viz1740093664769' 
+style='position: relative'>
+<noscript>
+    <a href='#'>
+        <img alt='Tableau de bord 22 ' 
+        src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;BE&#47;BELLABEATRECORDSANALYSISLASTD&#47;Tableaudebord22&#47;1_rss.png' 
+        style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' 
+            value='https%3A%2F%2Fpublic.tableau.com%2F' /> 
+            <param name='embed_code_version' value='3' /> 
+            <param name='site_root' value='' />
+            <param name='name' value='BELLABEATRECORDSANALYSISLASTD&#47;Tableaudebord22' />
+            <param name='tabs' value='no' /><param name='toolbar' value='yes' />
+            <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;BE&#47;BELLABEATRECORDSANALYSISLASTD&#47;Tableaudebord22&#47;1.png' /> 
+            <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' />
+            <param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='fr-FR' />
+        </object>
+    </div>                
+    <script type='text/javascript'>                    
+    var divElement = document.getElementById('viz1740093664769'); 
+    var vizElement = divElement.getElementsByTagName('object')[0];                    
+    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='1000px';vizElement.style.height='827px';} 
+    else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='1000px';vizElement.style.height='827px';} 
+    else { vizElement.style.width='100%';vizElement.style.height='1027px';}                     
+    var scriptElement = document.createElement('script');                    
+    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js'; vizElement.parentNode.insertBefore(scriptElement, vizElement);                
+    </script>
+<p>
+    First, lets remember how many users there is in each table. 
+</p>
+<ul class="bullet-list">
+    <li><b>Continuous_hours</b> : 35 Users.</li>
+    <li><b>DailyActivity</b> : 35 Users.</li>
+    <li><b>SleepDay</b> : 24 users (68%).</li>
+    <li><b>WeightLogInfo</b> : 13 users (37%).</li>
+</ul>
+<p>
+    Now lets analyse recordings in these tables :
+</p>
+<ul class="bullet-list">
+    <li><b>4 out of the 13 users from Weightloginfo</b> didnt record their Sleep in Sleepday.</li>
+    <li><b>14 out of the 24 users from SleepDay</b> didnt record their Weight in WeightLogInfo.</li>
+    <li><b>7 out of the total 35 users</b> recorded neither their sleep nor their weight.</li>
+</ul>
+<h2 class="paragraph_title">INTERPRETATIONS</h2>
+<p class = "subtitle_analysis">INACTIVITY :</p>
+<ul class="bullet-list">
+    <li><p>Inactivity period on march 13th at 01 Am might be a software update, 
+        some users might not have selected "auto update" in their preferences so they had no interuption for this period.</p></li>
+    <li><p>69 % of users wear their device all the time.</p></li>
+    <li><p>Inconsistency : No recurrent interruption for charging device.</p></li>
+</ul>
+<p class = "subtitle_analysis">SLEEP :</p>
+<ul class="bullet-list">
+<li><p>Only <b>24 users</b> recorded their sleep in "<b>SleepDay</b>" table.</p></li>
+<li><p>Among these 24 users, <b>only 7</b> recorded their sleep <b>More than 30 times</b>" (roughly each 2 days). 
+    This shows that on average, users are not really diligent recording their sleep.</p></li>
+<li><p>Most of the users have usual sleeping habits.</p></li>
+<li><p>Inconsistency : Continuous_hours & Sleepday do not match.</p></li>
+</ul>
+<p class = "subtitle_analysis">CALORIES BURNT :</p>
+<ul class="bullet-list">
+    <li><p>On average, Users burnt 2266 calories by day. According to <b>Health Canada</b>, a person might burn between 1,600 and 2,400 calories per day, with men typically burning slightly more than women. 
+        The results remains on the average but suggests that majority of users in this study might be mens (doesnt match Bellabeat needs).</p></li>
+    <li><p><b>Wednesday, Tuesday Saturday & Sunday</b> are the days users burnt the most calories. But this could be related to a long workday. 
+        We need data about intensity of activities to really figure out which day is the day users prefer to do sports.</p></li>
+    <li><p>Most of the calories are burnt between 12 and 4PM. Which can fit with busniess hours (Then the most calories might be burnt during work not sport).</p></li>
+    </ul>
+<p class = "subtitle_analysis">INTENSITY LEVELS :</p>
+<ul class="bullet-list">
+    <li><p>On average, the users in this study spent 27 minutes "very active" (doing sport), 189 minutes a week (3.15 hours). 
+        Accoprding to most health guidelines, it is recommended to do between 2.5 and 5 hours of sport a week. 
+        This remains on the average but we could expect from fitbit users to be a bit higher than average.</p></li>
+    <li><p>Tuesday is the day where most people are "Very Active". 
+        This confirms our hypothesis from "calories burnt" interpretations category that users burnt more calories during long days of work (like wednesday) than during days with intense but short periods of sport (like tuesday).</p></li>
+    <li><p>Population is well distributed among intensity levels : there are as many mostly sportive people as mostly sedentary people (20% each).</p></li>
+    <li><p>On average, users spent 9 hours sedentary but not asleep. This might be improved spending less time sedentary.</p></li>
+</ul>
+
+<p class = "subtitle_analysis">STEP COUNT ANALYSIS :</p>
+<ul class="bullet-list">
+    <li><p>On average, users in this study walk 7280 steps a day. According to most health guidelines, adults should aim for 8000 to 10000 steps a day to remain healthy. Walking might be neglected in many cases, users might think that sport is enough to remain in good shape, but good walking habits seem to be a key factor too.</p></li>
+    <li><p>28% of the users walked less than 5000 steps a day on average. This might be improved encouraging people to walk more.</p></li>
+</ul>
+
+<p class = "subtitle_analysis">WEIGHT ANALYSIS :</p>
+<ul class="bullet-list">
+    <li><p>On the 13 users of Weight table, only 2 recorded their weight more than 10 times. This shows that users are even less diligent recording their weight than their sleep.</p></li>
+    <li><p>Most of the users in this study are overweight, maybe most of the users that are worried about their weight are overweight (and choose to track it on the app) other people might not be willing to track their weight because they are not worried about it.</p></li>
+    <li><p>Most of the users track their weight on tuesday, which fits to the day users do more sport.</p></li>
+    <li><p>All the people that walked more than 10000 steps have a Body Mass Index under 25 which means walking is very important to remain healthy.</p></li>
+    <li><p>Sport is also a key factor to remain in good shape.</p></li>
+</ul>
+
+<p class = "subtitle_analysis">RECORDS ANALYSIS :</p>
+<ul class="bullet-list">
+    <li><p>For 4 people out of the total, it is more important to track weight than sleep (11%).</p></li>
+    <li><p>For 14 people out of the total, it is more important to track sleep than weight (40%).</p></li>
+    <li><p>For 7 people out of the total, it is not important to record more than sport data (20%).</p></li>
+</ul>
 
 
 
