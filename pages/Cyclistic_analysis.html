@@ -103,14 +103,65 @@ header {
             <a href="../pages/contact.html">Contact</a>
         </nav>
     </header>
-    
+        <!-- Bouton pour ouvrir la sidebar en mode mobile -->
+<button class="toggle-btn" onclick="toggleSidebar()">☰ Menu</button>
+
+<!-- Sidebar (menu latéral gauche) -->
+<div class="sidebar">
+    <ul>
+        <li><a href="#scenario">SCENARIO</a></li>
+        <li><a href="#ask">ASK</a></li>
+        <li><a href="#get_data_ready">PRÉPARER</a></li>
+        <li><a href="#process">PROCESS</a></li>
+        <li><a href="#cleaning">NETTOYER</a></li>
+            <a class="toggle">ANALYSE ▼</a>
+            <ul class="hidden"> 
+                <li><a href="#analyse">Analyse </a></li>
+                <li><a href="#general_analysis">Analyse Générale</a></li>
+                <li><a href="#annual_growth">Évolution Annuelle</a></li>
+                <li><a href="#meteo">Analyse Conditions Météo</a></li>
+                <li><a href="#day_hour">Habitudes Hebdo / Quotidiennes</a></li>
+                <li><a href="#bike_pref">Préférences Vélo</a></li>
+                <li><a href="#stations">Stations</a></li>
+                <li><a href="#trip">Trajets</a></li>
+            </ul>
+        </li>
+        <li>
+            <a class="toggle">INTERPRETATIONS ▼</a>
+            <ul class="hidden">
+                <li><a href="#interpret">Interprétations</a></li>
+                <li><a href="#usage_max">Utilisation annuelle</a></li>
+                <li><a href="#condi">Conditions Météo</a></li>
+                <li><a href="#quot">Habitudes Hebdo / Quotidiennes</a></li>
+                <li><a href="#velo">Préférences Vélo</a></li>
+                <li><a href="#stat">Stations</a></li>
+                <li><a href="#tripduration">Trajets</a></li>
+            </ul>
+        </li>
+        <li>
+            <a class="toggle">RECOMMANDATIONS ▼</a>
+            <ul class="hidden">
+                <li><a href="#reco">Recommandations</a></li>
+                <li><a href="#double_p">Double Tarification</a></li>
+                <li><a href="#employeurs">Employeurs</a></li>
+                <li><a href="#sports">Sports</a></li>
+                <li><a href="#students">Étudiants</a></li>
+                <li><a href="#street">Street Marketing</a></li>
+                <li><a href="#app">Application</a></li>
+                <li><a href="#scotter">Scooter</a></li>
+                <li><a href="#tripss">Réduction Longs Voyages</a></li>
+            </ul>
+        </li>
+    </ul>
+</div> 
+
     <!-- CONTENU PRINCIPAL -->
     <main>
         
         <img style="width: 100%;" loading="lazy" alt="" src="../images/images_cyclistic/image35.png" />
         <h1 class="title_cyclistic"> ÉTUDE DE CAS : CYCLISTIC BIKE SHARE</h1>
         <div>
-            <h2 class="paragraph_title">Scénario</h2>
+            <h2 id = "#scenario" class="paragraph_title">Scénario</h2>
             <p>
                 <span>Cyclistic Bike Share est une entreprise qui propose un </span><b>programme de partage de vélo</b>
                 <span>à Chicago depuis 2016. Leur but est de proposer une alternative de </span><b>transport pratique, inclusive
@@ -130,7 +181,7 @@ header {
                 sur les données pour l'aider a augmenter le nombre de ses “membres”.</span>
 
             </p>
-            <h2 class="paragraph_title">“Ask” Demander :</h2>
+            <h2 id = "#ask" class="paragraph_title">“Ask” Demander :</h2>
             <p>
               <span>Nous analysons les besoins de Cyclistic avec les différentes parties prenantes du projet : L'équipe exécutive et Lily Moreno,
                  La directrice du département Marketing dont je dépend dans le cadre de cette étude. Nous définissons ensemble le problème : </span>
@@ -141,7 +192,7 @@ header {
                </ul></p>
              <p><span> Dans le cadre de ce cas d'études, Mme Moreno la directrice marketing de Cyclistic nous a assigné la première tâche [a)], celle de comparer les comportements des membres et des casual.</span></p>
             </p>
-            <h2 class="paragraph_title">Préparer les données :</h2>
+            <h2 id = "#get_data_ready" class="paragraph_title">Préparer les données :</h2>
             <p><span><span>Nous aurons accès aux données historiques de Cyclistic pour l'année 2024, ces données sont des
               données privées de l’entreprise. Les données pour 2024 sont divisées en</span>
             <b class="i"> 12 fichiers mensuels </b><span>organisés selon les colonnes suivante:</span>
@@ -183,7 +234,7 @@ header {
           <li>Les données sont <b>actuelles</b> : nous utilisons les données pour l'année 2024 en janvier 2025.</li>
           <li>Les données sont <b>citées</b> : elles proviennent d'une source vérifiée et crédible.</li>
          </ul>
-      <h2 class="paragraph_title">Nettoyer et organiser les données en vue de l’analyse: </h2>
+      <h2 id = "cleaning" class="paragraph_title">Nettoyer et organiser les données en vue de l’analyse: </h2>
       <p>
         Premièrement, J’ai téléchargé les <b>12 fichiers mensuels</b> correspondant aux données de l'année 2024 a partir du dossier source suivant :
       </p>
@@ -364,9 +415,9 @@ between_1and2hour <- list_cleaned[[6]]
 between_2and6hour <- list_cleaned[[7]]
 between_6and10hour <- list_cleaned[[8]]
 more_than_10hour <- list_cleaned[[9]]</code></pre></div>
-<h2 class="paragraph_title">Analyse des données.</h2>
+<h2 id= "analyse" class="paragraph_title">Analyse des données.</h2>
 <p>Nous arrivons maintenant à la partie la plus excitante de cette étude de cas : <b>L’analyse.</b></p>
-<div class = "subtitle_analysis"><p><b><u>ANALYSE GENERALE</u></b></p></div>
+<div id = "general_analysis" class = "subtitle_analysis"><p><b><u>ANALYSE GENERALE</u></b></p></div>
 <p> Nous allons commencer par analyser les variables individuellement avant de les mettre en relation. Premièrement, 
   quel est le pourcentage de membres par rapport au total d’utilisateurs en 2024 ?</p>
 <p>  member_casual   count percentage
@@ -492,7 +543,7 @@ more_than_10hour <- list_cleaned[[9]]</code></pre></div>
   # Utilisation de la fonction
   least_frequent_month_percentage(bike_data)
 </code></pre></div>
-<div class = "subtitle_analysis"><p><b><u> ANALYSE DE L'ÉVOLUTION ANNUELLE PAR TYPE D’UTILISATEUR </u></b></p></div>
+<div id = "annual_growth" class = "subtitle_analysis"><p><b><u> ANALYSE DE L'ÉVOLUTION ANNUELLE PAR TYPE D’UTILISATEUR </u></b></p></div>
 <p>Intéressons nous maintenant à l'évolution de la tendance continue sur l'année 2024</p>
 <img class = "graphs_charts" src ="../images/images_cyclistic/image16.png" alt="Prcnt_members"></div>
 <div class = "language-r"><pre><code>
@@ -517,7 +568,7 @@ more_than_10hour <- list_cleaned[[9]]</code></pre></div>
    il y a une grosse <b>augmentation</b> du nombre d’utilisateurs <b>au cours du mois d’avril</b> probablement expliquée par le retour des beaux jours.
     <b>Le pic de l'activité</b> pour l'année 2024 a été en <b>Septembre</b>.  
 </p>
-<div class = "subtitle_analysis"><p><b><u> ANALYSE DES CONDITIONS MÉTÉOROLOGIQUES </u></b></p></div>
+<div id = "meteo" class = "subtitle_analysis"><p><b><u> ANALYSE DES CONDITIONS MÉTÉOROLOGIQUES </u></b></p></div>
 <p>Nous allons maintenant intégrer des données de <b>température</b> et de <b>précipitations</b> pour <b>Chicago</b> en 2024 grâce à un jeu de données trouvé sur <b>Weatherstack</b>. 
   Le fichier csv “export.csv” contient les données météorologiques pour <b>chaque journée de l'année 2024</b>, 
   il est organisé selon les colonnes suivantes :
@@ -753,7 +804,7 @@ ggplot(casual_data, aes(x = precipitation, y = n_trips)) +
   geom_smooth(method = "lm", se = FALSE, color = "#f4776b") +  # Rouge saumon pour les casuals
       x = "Précipitations (mm)", y = "Nombre de Trajets")
 </code></pre></div>
-<div class = "subtitle_analysis"><p><b><u>ANALYSE DES HABITUDES D'UTILISATION HEBDOMADAIRES ET QUOTIDIENNES PAR TYPE D’UTILISATEUR.</u></b></p></div>
+<div id = "day_hour" class = "subtitle_analysis"><p><b><u>ANALYSE DES HABITUDES D'UTILISATION HEBDOMADAIRES ET QUOTIDIENNES PAR TYPE D’UTILISATEUR.</u></b></p></div>
 <p>
   Pour continuer notre analyse, nous allons maintenant nous intéresser aux <b>préférences des utilisateurs</b> et identifier des 
 <b>tendances</b> dans les habitudes de chaque type de consommateur. 
@@ -794,7 +845,7 @@ ggplot(bike_data_weekday, aes(x = day_of_week, y = count, fill = member_casual))
   Ici on voit bien qu’il y a 2 pics d’utilisation pour les <b>membres entre 06h00 et 09h00</b> et <b>entre 16h et 18h</b> ce qui peut correspondre à des horaires de bureaux. 
   L'évolution de l’utilisation des <b>casuals</b> est elle plus <b>constante</b> au cours de la journée avec un <b>pic d’utilisation à 17h</b>.
 </p>
-<div class = "subtitle_analysis"><p><b><u>ANALYSE DES PRÉFÉRENCES EN TERME DE TYPE DE VÉLO PAR TYPE D’UTILISATEUR.</u></b></p></div>
+<div id= "bike_pref" class = "subtitle_analysis"><p><b><u>ANALYSE DES PRÉFÉRENCES EN TERME DE TYPE DE VÉLO PAR TYPE D’UTILISATEUR.</u></b></p></div>
 <div class="image-container">
   <img src="../images/images_cyclistic/image6.png" alt="Reg_lin_members">
   <img src="../images/images_cyclistic/image9.png" alt="Reg_lin_members">
@@ -841,7 +892,7 @@ ggplot(bike_data_casual, aes(x = "", y = n, fill = rideable_type)) +
 <p>Ici on peut voir que les <b>casual</b> ont un plus recours aux <b>scooters électriques</b> que les membres. Peut-être y a t il ici une information 
   importante qui demanderait une analyse de marché plus approfondie, 
   nous reviendrons la dessus dans la partie “recommandations”.</p>
-<div class = "subtitle_analysis"><p><b><u>ANALYSE DES STATIONS </u></b></p></div>
+<div id = "stations" class = "subtitle_analysis"><p><b><u>ANALYSE DES STATIONS </u></b></p></div>
 <p>
   Nous allons maintenant nous intéresser aux préférences des utilisateurs concernant les <b>types de stations</b>. Pour cela nous ferons un graphique des <b>5 stations 
   les plus utilisées</b> et une <b>carte interactive de Chicago</b> pour situer les stations géographiquement. 
@@ -868,7 +919,7 @@ ggplot(bike_data_casual, aes(x = "", y = n, fill = rideable_type)) +
   Nous pouvons aussi remarquer que les <b>stations utilisées par les casuals</b> sont globalement plus situées sur le <b>bord du lac </b>
   (est) alors que les <b>membres</b> utilisent des stations plus dans le <b>centre ville (west)</b>. 
 </p>
-<div class = "subtitle_analysis"><p><b><u>ANALYSE DES DURÉES DE TRAJETS PAR TYPE D’UTILISATEUR</u></b></p></div>
+<div id= "trip" class = "subtitle_analysis"><p><b><u>ANALYSE DES DURÉES DE TRAJETS PAR TYPE D’UTILISATEUR</u></b></p></div>
 <p>
   Pour finir, nous allons analyser et comparer les temps de trajets pour les utilisateurs par type d’utilisateurs. 
   Pour cela nous allons utiliser les tables créées par intervalles de durée :
@@ -926,8 +977,8 @@ ggplot(bike_data_casual, aes(x = "", y = n, fill = rideable_type)) +
     theme_minimal() +
     theme(axis.text.x = element_text(angle = 45, hjust = 1))
   </code></pre></div>
-  <h2 class="paragraph_title">Interprétations</h2>
-  <div class = "subtitle_analysis"><p><b><u>PIC DE L'UTILISATION EN SEPTEMBRE : </u></b></p></div>
+  <h2 id = "interpret" class="paragraph_title">Interprétations</h2>
+  <div id= "usage_max" class = "subtitle_analysis"><p><b><u>PIC DE L'UTILISATION EN SEPTEMBRE : </u></b></p></div>
   <p>
     Plusieurs facteurs peuvent expliquer ce pic : <b>le retour à l'école des étudiants</b> (il serait intéressant dans ce cas de cibler cette clientèle dans notre campagne marketing afin d'inciter les étudiants “casual” à devenir “membres”). 
     Des pistes de ciblage de cette clientèle seront évoquées dans la partie “recommandations”. 
@@ -1076,7 +1127,7 @@ top_stations_sept21 <- function(data) {
 # Utilisation de la fonction
 top_stations_sept21(bike_data)
 </code></pre></div>
-<div class = "subtitle_analysis"><p><b><u>CONDITIONS MÉTÉOROLOGIQUES</u></b></p></div>
+<div id = "condi" class = "subtitle_analysis"><p><b><u>CONDITIONS MÉTÉOROLOGIQUES</u></b></p></div>
 <p>
   <p><b>Température </b>: La température a un effet positif sur le nombre de trajets, à la fois pour les membres et les casuals, 
   bien que l'effet soit légèrement plus marqué chez les membres (399.82 trajets par °C contre 371.51 trajets par °C pour les casuals). 
@@ -1094,7 +1145,7 @@ top_stations_sept21(bike_data)
 <p>
 Dans l’analyse des données météorologiques, on remarque aussi que les mois de <b>Juillet Août</b> ont été plus <b>pluvieux</b> que le mois de Septembre ce qui peut venir donner une explication supplémentaire  pour le pic d’utilisation annuel en Septembre.
 </p></p>
-<div class = "subtitle_analysis"><p><b><u>HABITUDES QUOTIDIENNES ET HEBDOMADAIRES</u></b></p></div>
+<div id = "quot" class = "subtitle_analysis"><p><b><u>HABITUDES QUOTIDIENNES ET HEBDOMADAIRES</u></b></p></div>
 <p>
   Les <b>membres</b> ont une utilisation du service de partage de vélos <b>répartie sur toute la semaine</b> avec une petite <b>baisse le week end</b> 
   tandis que les <b>casual</b> utilisent massivement les vélos les <b>samedi dimanche</b> et moins le reste de la semaine. 
@@ -1102,11 +1153,11 @@ Dans l’analyse des données météorologiques, on remarque aussi que les mois 
   elle <b>plus constante</b> au cours de la journée. On peut en déduire que les <b>membres</b> utilisent 
   plus le service de partage de vélos pour se rendre au <b>travail</b> tandis que les <b>casuals</b> semblent plus avoir une utilisation de type <b>“loisir”</b>. 
 </p>
-<div class = "subtitle_analysis"><p><b><u>TYPES DE VÉLOS UTILISÉS </u></b></p></div>
+<div id = "velo" class = "subtitle_analysis"><p><b><u>TYPES DE VÉLOS UTILISÉS </u></b></p></div>
 <p>
 Les deux types d’utilisateurs préfèrent les <b>vélos électriques</b>. Toutefois les <b>casuals</b> utilisent plus les <b>scooters électriques</b> que les membres. 
 </p>
-<div class = "subtitle_analysis"><p><b><u>STATIONS LES PLUS UTILISÉES</u></b></p></div>
+<div id = "stat" class = "subtitle_analysis"><p><b><u>STATIONS LES PLUS UTILISÉES</u></b></p></div>
 <p>
   Les <b>casuals</b> ont une nette <b>concentration</b> de leur utilisation du service <b>sur certaines stations</b> tandis que les <b>membres</b> ont une utilisation des stations 
   plus <b>uniformément répartie</b>. Si les <b>membres</b> utilisent leur vélo majoritairement pour aller au <b>travail</b> cela peut expliquer cette meilleure répartition 
@@ -1117,7 +1168,7 @@ Les deux types d’utilisateurs préfèrent les <b>vélos électriques</b>. Tout
   service pour le travail et les casuals pour le loisir. 
   C’est important pour savoir ou cibler les différents segments de clientèle. Nous reviendrons la dessus dans la partie “recommandations”.
 </p>
-<div class = "subtitle_analysis"><p><b><u>LES TEMPS DE TRAJET</u></b></p></div>
+<div id= "tripduration" class = "subtitle_analysis"><p><b><u>LES TEMPS DE TRAJET</u></b></p></div>
 <p>
   Les <b>membres</b> utilisent le service pour effectuer des trajets en général <b>plus courts que les casuals</b>. 
   Il y a une <b>grande majorité de casuals</b> sur les trajets de <b>plus d’une heure</b>.</p> 
@@ -1133,12 +1184,12 @@ de crédit).</p>
 <p>Les trajets de <b>plus d' une heure</b> peuvent être perçus comme des randonnées cyclistes pour le plaisir ou une sortie sur le bord du lac en vélo. 
 Encore une fois, notre hypothèse sur l’utilisation du service par les membres dans le cadre du travail est confirmée.</p>
 </p>
-<h2 class="paragraph_title">Recommandations</h2>
+<h2 id = "Reco" class="paragraph_title">Recommandations</h2>
 <p>
   Afin d’augmenter le pourcentage de membres parmi les utilisateurs de Cyclistic, 
   plusieurs actions concrètes basées sur les données peuvent être envisagées. 
 </p>
-<div class = "subtitle_analysis"><p><b><u>DOUBLE TARIFICATION DES ABONNEMENTS.</u></b></p></div>
+<div id = "double_p" class = "subtitle_analysis"><p><b><u>DOUBLE TARIFICATION DES ABONNEMENTS.</u></b></p></div>
 <p>
 Premièrement afin de capturer le plus fort achalandage dans la période d’<b>Avril à Septembre</b>, il semble indispensable de proposer un <b>abonnement mensuel</b>. 
 </p><p><i>
@@ -1147,14 +1198,14 @@ Il y a un risque que certains membres qui avaient l’abonnement annuel et n’u
 payer l’abonnement annuel pour prendre des abonnements mensuels seulement d’Avril à Septembre. 
 Il faut donc être très vigilant sur la tarification pour pas que cette stratégie se retourne contre Cyclistic. 
 </i></p>
-<div class = "subtitle_analysis"><p><b><u>PARTENARIAT AVEC DES EMPLOYEURS</u></b></p></div>
+<div id = "employeur" class = "subtitle_analysis"><p><b><u>PARTENARIAT AVEC DES EMPLOYEURS</u></b></p></div>
 <p>
   Pour inciter les casuals à <b>utiliser le service pour aller au travail</b>, 
   des <b>partenariats avec des entreprises locales</b> pourraient être envisagés afin d’<b>inclure l’abonnement dans la rémunération de l'employé</b> ou 
   proposer des <b>réductions aux employés de certaines entreprises</b>. Des <b>campagnes de prévention et de sensibilisation</b> sur les bienfaits d’une 
   pratique cycliste régulière pourraient être diffusées par le biais des employeurs. 
 </p>
-<div class = "subtitle_analysis"><p><b><u>PARTENARIATS AVEC DES FESTIVALS OU DES ÉVÉNEMENTS SPORTIFS.</u></b></p></div>
+<div id = "sports" class = "subtitle_analysis"><p><b><u>PARTENARIATS AVEC DES FESTIVALS OU DES ÉVÉNEMENTS SPORTIFS.</u></b></p></div>
 <p>
 Si les casuals préfèrent utiliser les vélos pour le loisir, des <b>partenariats avec des événements sportifs</b> ou des <b>festivals</b> par exemple pourraient être une bonne idée. 
 Proposer par exemple des <b>avantages dans les festivals pour les membres</b> comme par exemple un accès à un <b>salon privé Cyclistic</b> ou une consommation gratuite. 
@@ -1165,20 +1216,20 @@ membres ou alors leur offrir la participation en échange de l’utilisation des
 Cyclistic pourrait aussi <b>organiser son propre événement sportif</b> en utilisant ses vélos et offrir la participation aux membres ou leur offrir 
 une participation a prix réduit. 
 </p>
-<div class = "subtitle_analysis"><p><b><u>OFFRIR DES RÉDUCTIONS ÉTUDIANTES SUR LES ABONNEMENTS (ANNUELS SEULEMENT).</u></b></p></div>
+<div id = "students" class = "subtitle_analysis"><p><b><u>OFFRIR DES RÉDUCTIONS ÉTUDIANTES SUR LES ABONNEMENTS (ANNUELS SEULEMENT).</u></b></p></div>
 <p>
   La <b>double tarification à destination des étudiants</b> semble être une bonne manière de tendre la main à un segment de clientèle avec des moyens généralement 
 <b>plus modestes</b>. C’est un bon moyen de <b>fidéliser la clientèle</b> a un moment où ils en ont vraiment besoin. Les étudiants pourront ainsi</b> développer de bonnes 
   habitudes</b> de cyclistes pour plus tard au travail.
 </p>
-<div class = "subtitle_analysis"><p><b><u>STREET MARKETING ET PRÉSENCE DE RUE</u></b></p></div>
+<div id = "street" class = "subtitle_analysis"><p><b><u>STREET MARKETING ET PRÉSENCE DE RUE</u></b></p></div>
 <p>
   Les <b>lieux proches du lac, le port ou Lincoln park</b> semblent représenter des cibles de choix pour des <b>opérations marketing sur le terrain</b>. 
   Comme la concentration des casuals se fait en ces lieux et surtout pendant les beaux jours d'été, une présence dans ces zones d’achalandage dans le 
   cadre de <b>campagnes de sensibilisation santé ou de marketing</b> peuvent représenter une opportunité significative de transformer des non membres en membres 
   et de prospecter pour de nouveaux clients.
 </p>
-<div class = "subtitle_analysis"><p><b><u>CRÉATION D’UNE APPLICATION</u></b></p></div>
+<div id = "app" class = "subtitle_analysis"><p><b><u>CRÉATION D’UNE APPLICATION</u></b></p></div>
 <p>
   La <b>création d’une application web et mobile</b> pourrait faciliter et rendre plus attractive l’utilisation du service. 
   Il pourrait être envisagé d’obliger les casual à créer un compte membre même pour un trajet simple et ainsi <b>avoir plus de données</b> à 
@@ -1186,14 +1237,14 @@ une participation a prix réduit.
   pour proposer des enquêtes de satisfaction et de qualité du service</b>. Si la direction exécutive de Cyclistic ne souhaite pas imposer le téléchargement 
   de l’application à ses utilisateurs, il est possible de naturellement les attirer dessus grâce à des offres promotionnelles ou à un interface attractif. 
 </p>
-<div class = "subtitle_analysis"><p><b><u>SCOOTER ÉLECTRIQUES</u></b></p></div>
+<div id= "Scooter" class = "subtitle_analysis"><p><b><u>SCOOTER ÉLECTRIQUES</u></b></p></div>
 <p>
   Il serait intéressant de connaître la <b>proportion de scooters électriques</b> dans la flotte de Cyclistic afin de la comparer 
   avec celle de sa concurrence. Les données ont démontré que les <b>casuals utilisaient plus de scooters électriques</b> que les membres. 
   Si la flotte de Cyclistic ne reflète pas cette préférence, cela peut expliquer que certains casuals rechignent à devenir membres 
   (surtout si les entreprises concurrentes en proposent). Il faudrait alors probablement <b>augmenter la flotte de scooters électriques</b>.
 </p>
-<div class = "subtitle_analysis"><p><b><u>RÉDUCTIONS POUR LES MEMBRES SUR LES TRAJETS DE PLUS D’UNE HEURE.</u></b></p></div>
+<div id= "tripss" class = "subtitle_analysis"><p><b><u>RÉDUCTIONS POUR LES MEMBRES SUR LES TRAJETS DE PLUS D’UNE HEURE.</u></b></p></div>
 <p>
   Comme les casuals ont l’habitude de faire des trajets plus longs, il pourrait être intéressant <b>d'offrir des réductions aux membres sur les longs 
   trajets</b> pour inciter les casuals à devenir membres. Un système de bonification des longues distances pourrait aussi très bien être envisagé par le biais 
@@ -1201,6 +1252,21 @@ une participation a prix réduit.
   par exemple. Des défis “jour de pluie” pourrait aussi être envisagés pour booster l’utilisation du service pendant ces journées moins achalandées. 
 </p>
         </div>
+        <script>
+          document.addEventListener("DOMContentLoaded", function () {
+              document.querySelectorAll(".sidebar .toggle").forEach((toggle) => {
+                  toggle.addEventListener("click", function () {
+                      const sublist = this.nextElementSibling;
+                      sublist.style.display = sublist.style.display === "none" ? "block" : "none";
+                  });
+              });
+          });
+          
+          // Pour le mode responsive (mobile)
+          function toggleSidebar() {
+              document.querySelector(".sidebar").classList.toggle("active");
+          }
+      </script>
     </main>
   </body>
 </html>

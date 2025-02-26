@@ -103,14 +103,66 @@ header {
             <a href="../pages/contact.html">Contact</a>
         </nav>
     </header>
-    
+<script>
+        function toggleSidebar() {
+            document.querySelector(".sidebar").classList.toggle("active");
+        }
+</script>
+    <!-- Bouton pour ouvrir la sidebar en mode mobile -->
+<button class="toggle-btn" onclick="toggleSidebar()">☰ Menu</button>
+
+<!-- Sidebar (menu latéral gauche) -->
+<div class="sidebar">
+    <ul>
+        <li><a href="#scenario">SCENARIO</a></li>
+        <li><a href="#business_task">BUSINESS TASK</a></li>
+        <li><a href="#ask">ASK</a></li>
+        <li><a href="#get_data_ready">GET THE DATA READY</a></li>
+        <li><a href="#process">PROCESS</a></li>
+        <li><a href="#cleaning">DATA CLEANING</a></li>
+        <li>
+            <a class="toggle">ANALYSIS ▼</a>
+            <ul class="hidden">
+                <li><a href="#inactivity_analysis">Inactivity analysis</a></li>
+                <li><a href="#sleep_analysis">Sleep analysis</a></li>
+                <li><a href="#calories_burnt">Calories burnt</a></li>
+                <li><a href="#intensity_analysis">Activities intensity</a></li>
+                <li><a href="#step_count_analysis">Step count</a></li>
+                <li><a href="#weight_analysis">Weight</a></li>
+                <li><a href="#comparisons">Comparisons</a></li>
+                <li><a href="#record_">Records</a></li>
+            </ul>
+        </li>
+        <li>
+            <a class="toggle">INTERPRETATIONS ▼</a>
+            <ul class="hidden">
+                <li><a href="#interpret_inactivity">Inactivity</a></li>
+                <li><a href="#interpret_sleep">Sleep</a></li>
+                <li><a href="#interpret_calories">Calories</a></li>
+                <li><a href="#interpret_intensity">Intensity</a></li>
+                <li><a href="#interpret_steps">Step Count</a></li>
+                <li><a href="#interpret_weight">Weight</a></li>
+                <li><a href="#interpret_records">Records</a></li>
+            </ul>
+        </li>
+        <li>
+            <a class="toggle">RECOMMENDATIONS ▼</a>
+            <ul class="hidden">
+                <li><a href="#reco_inactivity">Inactivity</a></li>
+                <li><a href="#reco_sleep">Sleep</a></li>
+                <li><a href="#reco_calories">Calories</a></li>
+                <li><a href="#reco_intensity">Intensity</a></li>
+                <li><a href="#reco_steps">Steps</a></li>
+                <li><a href="#reco_weight">Weight</a></li>
+            </ul>
+        </li>
+    </ul>
+</div> 
     <!-- CONTENU PRINCIPAL -->
-    <main>
-        
-        <img style="width: 100%;" loading="lazy" alt="" src="../images/images_bellabeat/Bellabeat banniere.JPG" />
+    <main>  
+     <img style="width: 100%;" loading="lazy" alt="" src="../images/images_bellabeat/Bellabeat banniere.JPG" />
         <h1 class="title_cyclistic"> BELLABEAT CASE STUDY</h1>
-        <div>
-            <h2 class="paragraph_title">SCENARIO</h2>
+            <h2 id="scenario" class="paragraph_title">SCENARIO</h2>
 
             <p>As a junior data analyst, I'm recently working for a company named <b>Bellabeat</b>. Bellabeat is an high-tech manufacturer of <b>health-focused smart devices for women</b> founded in 2013 
                 by <b>Urška Sršen & Sando Mur</b>. Here are some examples of bellabeat products :</p>
@@ -128,14 +180,14 @@ header {
                 and mindfulness based on their lifestyle and goals.</p></li>
              </ul>
        
-            <h2 class="paragraph_title">BUSINESS TASK</h2>
+            <h2 id="business_task" class="paragraph_title">BUSINESS TASK</h2>
             <p>
                 To better understand their <b>customer needs and the smart devices market</b>, Urška Sršen asked me to conduct an analysis. 
                 We want to identify the <b>trends in smart device usage</b>, see how these trends can apply to Bellabeat customers and <b>help Bellabeat build a data driven marketing strategy</b>. 
                 I'll have <b>a week</b> to conduct the analysis and share it with the Bella beat marketing analytics team. But I'll force myself to do it in <b>3 days</b> without having to lower the 
                 quality of my study just to see how I would react to tight deadlines.
             </p>
-            <h2 class="paragraph_title"> ASK</h2>
+            <h2 id="ask" class="paragraph_title"> ASK</h2>
             <p>
                 To define what kind of trend we want to identify in smart devices usage, we will try to answer a few questions :
             </p>
@@ -152,7 +204,7 @@ header {
             <p>Id love to ask more question to Urška on the data she provided me to clarify some points. 
                 In a real life situation I would reach out to my supervisors to be sure I'm heading the good way with my analysis.</p>
 
-            <h2 class="paragraph_title">GET THE DATA READY</h2>
+            <h2 id="get_data_ready" class="paragraph_title">GET THE DATA READY</h2>
             <p> In the case study, a <b>Kaggle</b> Dataset is provided containing data from 2016 on <b>30 random Fitbit Users</b>.  
                 First, we will perform The <b>ROCC test</b> to see if we can trust the dataset :
             </p>
@@ -223,7 +275,7 @@ header {
                 <li><b>Sleep :</b> there is data only if the user is asleep so we can track sleeping habits of users and maybe link it to other habits they have.</li>
              </ul>
             </p>
-            <h2 class="paragraph_title">PROCESS</h2>
+            <h2 id="process" class="paragraph_title">PROCESS</h2>
             <p>We will use <b>BigQuery and Tableau</b> to perform this analysis.</p>
             <p>
                 As I was trying to import data to BigQuery I noticed there was some <b>invalid format in the dates</b>. 
@@ -364,7 +416,7 @@ header {
             <div><b>TotalMinutesAsleep :</b><span>Total minutes being Asleep</span></div>
             <div><b>TotalMintesInBed :</b><span>Total minutes being in Bed</span></div>
           </div>
-        <h2 class="paragraph_title"> DATA CLEANING</h2>
+        <h2 id = "cleaning" class="paragraph_title"> DATA CLEANING</h2>
         <p><b><u>DATA MERGING</u></b> :</p>
         <p> First it is important to merge the data from both monthes to have all the data in the same table</p>
 
@@ -907,7 +959,7 @@ LEFT JOIN nimble-mode-447321-p1.bellabeat.DailyActivity da
     ON ch.Id = da.Id AND ch.Date = da.ActivityDate
 WHERE ch.Intensity = 3
   AND da.Id IS NULL;</code></pre></div>
-  <h2 class="paragraph_title">ANALYSIS</h2>
+  <h2 id="analysis"class="paragraph_title">ANALYSIS</h2>
   <p>Now we can enter the most exciting part of this study : <b>the Analysis</b>. 
     To better understand our data, we’ll use <b>Tableau</b> to make visualizations. 
     Data patterns and trends will be more accessible that way. Unfortunately I'm using 
@@ -915,7 +967,7 @@ WHERE ch.Intensity = 3
     I have no choice but to download the tables from BigQuery through Google Cloud Storage 
     as CSV files and upload it to Tableau. For security reasons i wont put the Query 
     containing my google bucket name publicly on this website.</p>
-    <p class = "subtitle_analysis"><b>INACTIVITY ANALYSIS</b></p>
+    <p id="inactivity_analysis" class = "subtitle_analysis"><b>INACTIVITY ANALYSIS</b></p>
     <div class='tableauPlaceholder' id='viz1739601624878' style='position: relative'>
         <noscript><a href='#'><img alt='INACTIVITY DASHBOARD ' 
             src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;BE&#47;BELLABEATINACTIVEDASHBOARD&#47;INACTIVITYDASHBOARD&#47;1_rss.png' 
@@ -972,7 +1024,7 @@ WHERE ch.Intensity = 3
              <p> <b>Data Inconsistency</b> : There should have been a recurrent inactivity period to charge the device for each user </p>
             </p>
         </p>
-        <p class = "subtitle_analysis"><b>SLEEP ANALYSIS</b></p>
+        <p id="sleep_analysis" class = "subtitle_analysis"><b>SLEEP ANALYSIS</b></p>
         <p> This analysis represented a challenge as there is <b>multiples sources of data</b> for sleeping periods. 
             First, we have to figure out which table we want to use : "<b>Continuous_hours</b>" or "<b>SleepDay</b>" ? 
         </p><p><b>Continuous hours</b> is a more complete table with more data so we'll start to analyse this table.
@@ -1075,7 +1127,7 @@ WHERE ch.Intensity = 3
                     <li><b>2 out of 24 users (8%)</b> stay in bed for more than 2 hours per day. If these users are removed from the population, the average drops to 27 minutes per day</li>
                     <li>On average, users sleep more on Sunday and less on thursday</li>
                  </ul>
-                 <p class = "subtitle_analysis"><b>CALORIES BURNT</b></p>
+                 <p id="calories_burnt" class = "subtitle_analysis"><b>CALORIES BURNT</b></p>
                  <p>The data from the "DailyActivity" and "Continuous_hours" tables show similar trends. 
                     Users who burn the most calories per hour (from "Continuous_hours") also tend to burn the most calories per day(from "DailyActivity"). 
                     The Weekdays count show differents trends but we will try to rationnally explain this difference.</p>
@@ -1148,7 +1200,7 @@ WHERE ch.Intensity = 3
                            <li><b>Calories burnt by state of intensity </b> : On average, Users burnt 113 calories while doing "High intensity activities", 101 calories while doing "Medium intensity activities", 80 calories while doing "Low intensity activities" & 64 calories while being "Sedentary" </li>
                            <li><b>Calories burnt by hour</b> : On average, users tend to burn more calories between <b>12 PM & 4PM</b></li>
                         </ul>
-                <p class = "subtitle_analysis"><b>INTENSITY OF ACTIVITIES</b></p>
+                <p  id="intensity_analysis" class = "subtitle_analysis"><b>INTENSITY OF ACTIVITIES</b></p>
                 <p>This has been the trickiest part of the analysis considering that we have a lot of data that are not telling the same story in the differents tables, 
                     also, the results of this analysis needs to match the results of the "CALORIES BURNT" category to really make sense.</p>
                 <p>Intensities from "Continuous-hours".</p>
@@ -1442,7 +1494,7 @@ LEFT JOIN
 <p>2891001357</p>
 <p>There is 11% of diligent users that record their activity each time they do sport.</p>
 
-<p class = "subtitle_analysis"><b>STEP COUNT ANALYSIS</b></p>
+<p id="step_count_analysis" class = "subtitle_analysis"><b>STEP COUNT ANALYSIS</b></p>
 <p>There is a step count only in the table "DailyActivity" which makes the data source choice easier for this variable.</p>
 <div 
 class='tableauPlaceholder' 
@@ -1483,7 +1535,7 @@ style='position: relative'>
     <li><p><b>10 out of the 35 total users (28%)</b> Walked less than 5000 steps a day on average.</p></li>
     <li><p>On average, Users walk more on thursdays and less on wednesday.</p></li>
    </ul>
-<p class = "subtitle_analysis"><b>WEIGHT ANALYSIS</b></p>
+<p id="weight_analysis" class = "subtitle_analysis"><b>WEIGHT ANALYSIS</b></p>
 <p>Table used here is "WeightLogInfo" (Reminder that this table counts only 13 users):</p>
 <div 
 class='tableauPlaceholder' 
@@ -1568,7 +1620,7 @@ scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js'; vizE
         the average drops to <b>2 times on 2  monthes by user</b>(roughly one time a month).</b></p></li>
     <li><p><b>Day of the record</b> : Most of the records are made on tuesday (17 times in 2 monthes) followed by thrusday and friday (16 times each), the main contributors record seem to record their weight everyday almost equally.</p></li>
    </ul>
-<p class = "subtitle_analysis"><b><u>COMPARISONS</u></b></p>
+<p id="comparisons" class = "subtitle_analysis"><b><u>COMPARISONS</u></b></p>
 <p class = "subtitle_analysis">Calories burnt & Weight : </p>
 <div 
 class='tableauPlaceholder' 
@@ -1713,7 +1765,7 @@ var scriptElement = document.createElement('script');
 scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js'; vizElement.parentNode.insertBefore(scriptElement, vizElement);                
 </script>
 <p>There is no correlation between Sleep and Weight or the correlation is not really significant.</p>
-<p class = "subtitle_analysis">Records analysis :</p>
+<p id="Record_" class = "subtitle_analysis">Records analysis :</p>
 <div 
 class='tableauPlaceholder' 
 id='viz1740093664769' 
@@ -1759,15 +1811,15 @@ style='position: relative'>
     <li><b>14 out of the 24 users from SleepDay</b> didnt record their Weight in WeightLogInfo.</li>
     <li><b>7 out of the total 35 users</b> recorded neither their sleep nor their weight.</li>
 </ul>
-<h2 class="paragraph_title">INTERPRETATIONS</h2>
-<p class = "subtitle_analysis">INACTIVITY :</p>
+<h2 id="interpretations" class="paragraph_title">INTERPRETATIONS</h2>
+<p id="interpret_inactivity"class = "subtitle_analysis"><b>INACTIVITY :</b></p>
 <ul class="bullet-list">
     <li><p>Inactivity period on march 13th at 01 Am might be a software update, 
         some users might not have selected "auto update" in their preferences so they had no interuption for this period.</p></li>
     <li><p>69 % of users wear their device all the time.</p></li>
     <li><p>Inconsistency : No recurrent interruption for charging device.</p></li>
 </ul>
-<p class = "subtitle_analysis">SLEEP :</p>
+<p id="interpret_sleep" class = "subtitle_analysis"><b>SLEEP :</b></p>
 <ul class="bullet-list">
 <li><p>Only <b>24 users</b> recorded their sleep in "<b>SleepDay</b>" table.</p></li>
 <li><p>Among these 24 users, <b>only 7</b> recorded their sleep <b>More than 30 times</b>" (roughly each 2 days). 
@@ -1775,7 +1827,7 @@ style='position: relative'>
 <li><p>Most of the users have usual sleeping habits.</p></li>
 <li><p>Inconsistency : Continuous_hours & Sleepday do not match.</p></li>
 </ul>
-<p class = "subtitle_analysis">CALORIES BURNT :</p>
+<p id="interpret_calories" class = "subtitle_analysis"><b>CALORIES BURNT :</b></p>
 <ul class="bullet-list">
     <li><p>On average, Users burnt 2266 calories by day. According to <b>Health Canada</b>, a person might burn between 1,600 and 2,400 calories per day, with men typically burning slightly more than women. 
         The results remains on the average but suggests that majority of users in this study might be mens (doesnt match Bellabeat needs).</p></li>
@@ -1783,7 +1835,7 @@ style='position: relative'>
         We need data about intensity of activities to really figure out which day is the day users prefer to do sports.</p></li>
     <li><p>Most of the calories are burnt between 12 and 4PM. Which can fit with busniess hours (Then the most calories might be burnt during work not sport).</p></li>
     </ul>
-<p class = "subtitle_analysis">INTENSITY LEVELS :</p>
+<p id="interpret_intensity" class = "subtitle_analysis"><b>INTENSITY LEVELS :</b></p>
 <ul class="bullet-list">
     <li><p>On average, the users in this study spent 27 minutes "very active" (doing sport), 189 minutes a week (3.15 hours). 
         Accoprding to most health guidelines, it is recommended to do between 2.5 and 5 hours of sport a week. 
@@ -1794,13 +1846,13 @@ style='position: relative'>
     <li><p>On average, users spent 9 hours sedentary but not asleep. This might be improved spending less time sedentary.</p></li>
 </ul>
 
-<p class = "subtitle_analysis">STEP COUNT ANALYSIS :</p>
+<p id="interpret_steps" class = "subtitle_analysis"><b>STEP COUNT :</b></p>
 <ul class="bullet-list">
     <li><p>On average, users in this study walk 7280 steps a day. According to most health guidelines, adults should aim for 8000 to 10000 steps a day to remain healthy. Walking might be neglected in many cases, users might think that sport is enough to remain in good shape, but good walking habits seem to be a key factor too.</p></li>
     <li><p>28% of the users walked less than 5000 steps a day on average. This might be improved encouraging people to walk more.</p></li>
 </ul>
 
-<p class = "subtitle_analysis">WEIGHT ANALYSIS :</p>
+<p id="interpret_weight" class = "subtitle_analysis"><b>WEIGHT :</b></p>
 <ul class="bullet-list">
     <li><p>On the 13 users of Weight table, only 2 recorded their weight more than 10 times. This shows that users are even less diligent recording their weight than their sleep.</p></li>
     <li><p>Most of the users in this study are overweight, maybe most of the users that are worried about their weight are overweight (and choose to track it on the app) other people might not be willing to track their weight because they are not worried about it.</p></li>
@@ -1809,12 +1861,80 @@ style='position: relative'>
     <li><p>Sport is also a key factor to remain in good shape.</p></li>
 </ul>
 
-<p class = "subtitle_analysis">RECORDS ANALYSIS :</p>
+<p id="interpret_records" class = "subtitle_analysis"><b>RECORDS :</b></p>
 <ul class="bullet-list">
     <li><p>For 4 people out of the total, it is more important to track weight than sleep (11%).</p></li>
     <li><p>For 14 people out of the total, it is more important to track sleep than weight (40%).</p></li>
     <li><p>For 7 people out of the total, it is not important to record more than sport data (20%).</p></li>
 </ul>
+
+<h2 id="recommendations" class="paragraph_title">RECOMMANDATIONS</h2>
+
+<p><i>It is important to remind that this dataset didn't passed our ROCCC test, the recommandations i will make here are based on this unreliable dataset. 
+    In my point of view this case study is not really about the outcome (making a real data based strategy for Bellabeat), but more a way to show our analytical thinking process.
+    We will still make recommandation based on this dataset but it is risky to use them in a real life scenario.
+    I tried to explore all the data that was available in this dataset trying to make sense out of it.
+    I might have lost a bit of time analysing "Continuous_hours" but in my point of view i had to check for inconsistencies to make sure i wont use this data.
+    This was also an interesting study to spot inconsistencies in data. I wasn't expecting a dataset from Google analytics to be so messy at the beginning. 
+    It have been a bit frustrating but i think that being able to spot inconsistency are even more important in data analysis than the analysis itself (because if analysis is made with unreliable data and that a strategy is based on this analysis, it can lead to huge loss for a company.)
+    In a real life scenario i would have asked my supervisor for budget to acces more data, I would have pushed my analysis further asking "why" to each result and maybe use some more quantitative analysis tools.
+</i></p>
+<p id="reco_inactivity" class = "subtitle_analysis"><b>INACTIVITY :</b></p>
+<ul class="bullet-list">
+    <li><p><b>Enhancing quality</b> : Conduct a quality analysis on continuous records to check if everything works well and find why charging time doesnt appear.</p></li>
+    <li><p><b>Push the analysis further</b> : To better know about reasons why users remove their device several actions can be considered : Make a classic survey adressed to the users or add a function on the app that asks why the user removes his/her device once device tracks interruption.</p></li>
+    <li><p><b>Enhancing quality</b> : If it is not already the case, add geolocalisation to devices even when they have no battery to avoid loss.</p></li>
+    <li><p><b>Encourage users to wear device</b> : Alert on the app when device is ready to use but not worn.</p></li>
+</ul>
+<p id="reco_sleep" class = "subtitle_analysis"><b>SLEEP :</b></p>
+<ul class="bullet-list">
+<li><b>Enhancing quality</b> : First, it seems essential to make sure automatic record of the sleeping periods works well. We must assume user lazyness and minimize reliance on their personal engagement to collect sleep data. </li>
+<li><p><b>Enhancing sleeping habits </b> : Notifications throught the app to warn users with bad sleeping habits. Sensibilisation on good sleeping habits benefits.</p></li>
+<li><p><b>Push the analysis further</b> : Send a quick survey to customer on their sleep when device track they woke up. Asking them how they would rate their night, if they feel they had enough sleep or if they feel well-rested.</p></li>
+</ul>
+<p id="reco_calories" class = "subtitle_analysis"><b>CALORIES :</b></p>
+<ul class="bullet-list">
+<li><p><b>Encouraging users to burn more calories </b> : Notifications throught the app to warn users that burnt less calories than average.</p></li>
+</ul>
+<p id="reco_intensity" class = "subtitle_analysis"><b>INTENSITY :</b></p>
+<ul class="bullet-list">
+<li><p><b>Enhancing quality</b> : Same as sleeping records everything must be quality checked to make sure recording of intensity works well. </p></li>
+<li><p><b>Make sure users track their high intensity activities</b> : Notification on the device asking if user want to record his activity when high intensity activity is tracked. </p></li>
+<li><p><b>Enhancing habits</b> : Warn users throught the app when they spend too much time sedentary for several days. </p></li>
+</ul>
+<p id="reco_steps" class = "subtitle_analysis"><b>STEPS :</b></p>
+<ul class="bullet-list">
+<li><p><b>Enhancing quality</b> : Recording of steps must be automatized without needing action from user. </p></li>
+<li><p><b>Enhancing habits</b> : Make a sensibilisation campain on the app on good walkings habits benefits.</p></li>
+<li><p><b>Enhancing habits</b> : Alert when users dont walk enough for several days.</p></li>
+<li><p><b>Enhancing habits</b> : Track if user is driving and suggest going too work another way if their drive to work too much.</p></li>
+</ul>
+<p id="reco_weight" class = "subtitle_analysis"><b>WEIGHT :</b></p>
+<ul class="bullet-list">
+<li><p><b>Enhancing quality</b> : Suggest exercices on the app to encourage weight loss.</p></li>
+<li><p><b>Enhancing quality</b> : See if there are way to track BMI or other health related metrics automatically.</p></li>
+<li><p><b>Enhancing quality</b> : To encourage people record their weight, send notification after a period of sport(people might be at the gym and have acces to a scale).</p></li>
+<li><p><b>Enhancing habits</b> : Remind people that they shouldnt wait to be overweight to track their weight.</p></li>
+</ul>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        document.querySelectorAll(".sidebar .toggle").forEach((toggle) => {
+            toggle.addEventListener("click", function () {
+                const sublist = this.nextElementSibling;
+                sublist.style.display = sublist.style.display === "none" ? "block" : "none";
+            });
+        });
+    });
+    
+    // Pour le mode responsive (mobile)
+    function toggleSidebar() {
+        document.querySelector(".sidebar").classList.toggle("active");
+    }
+</script>
+</main>
+</html>
+
+
 
 
 
