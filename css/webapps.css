@@ -1,0 +1,73 @@
+/* ========================================
+   🎨 STYLES GÉNÉRAUX
+======================================== */
+body {
+    background-color: #202020;
+    color: white;
+    font-family: 'Helvetica', sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+  
+  .gpt_section {
+    padding: 80px 20px 60px;
+  }
+  
+  .gpt_section_title {
+    font-size: 2.4rem;
+    color: #ffffff;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+  }
+  
+  .gpt_intro {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #dfdfdf;
+    max-width: 800px;
+    margin: 0 auto 80px;
+    text-align: center;
+    margin-top: 80px;
+    text-align: justify
+  }
+  
+/* Lien de l'application */
+.app_link {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    transition: transform 0.2s ease;
+  }
+  
+  .app_link:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Icône */
+  .app_icon {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    filter: grayscale(100%);
+    transition: filter 0.3s ease;
+  }
+  
+  .app_link:hover .app_icon {
+    filter: grayscale(0%);
+  }
+  
+  /* Texte dessous */
+  .app_label {
+    margin-top: 10px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #f4a261;
+    text-align: center;
+    letter-spacing: 0.5px;
+  }
+  
+  

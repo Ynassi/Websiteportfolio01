@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yanis NASSI - Portfolio</title>
+    <link rel="stylesheet" href="../css/gpt_app.css">
+   
+    <!-- PRISM / CODE VIEWER -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-javascript.min.js"></script>
+
+</head>
+<style>@font-face {
+    font-family: 'Signatra';
+    src: url('../fonts/Signatra.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Helvetica';
+    src: url('../fonts/Helvetica.ttc') format('truetype');
+}
+@font-face {
+font-family: "Courier New";
+src: url("../fonts/cour.ttf");
+font-weight: 400;
+}
+/* Styles globaux */
+body {
+    background-color: #202020;  /* Gris foncé */
+    color: #ffffff;  /* Blanc */
+    font-family: 'Helvetica', sans-serif;
+    text-align: center;
+}
+
+/* HEADER */
+header {
+    background-color: #181818; /* Gris encore plus foncé */
+    padding: 10px 50px; /* Réduction plus douce */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #333;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+}
+
+/* Partie gauche du header */
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  text-decoration: none;
+}
+
+.header-left a {
+  display: flex;
+  align-items: center;
+  text-decoration: none !important;
+  color: inherit;
+}
+
+.name {
+    font-family: 'Signatra', sans-serif;  
+    font-size: 2.8rem;
+    color: #ffffff; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+    margin: 0;
+    padding: 0;
+    line-height: 1.1;
+}
+
+.logo {
+    height: 65px; /* Taille augmentée */
+    margin-right: 40px;
+}
+
+/* Liens du header */
+.header-right {
+    display: flex;
+    gap: 30px;
+    margin-right: 80px;
+}
+
+.header-right a {
+    font-size: 1.6rem;
+    color: #f0f0e6 !important;
+    text-decoration: none !important;
+    transition: color 0.3s;
+}
+
+.header-right a:hover {
+    color: #00bfff;
+}</style>
+<body>
+    <!-- HEADER -->
+    <header>
+        <div class="header-left">
+            <a href="../index.html" class="home-link">
+            <img src="../images/clipart.png" alt="Logo" class="logo img-sm">
+            <h1 class="name">Yanis NASSI</h1>
+         </a>
+        </div>
+        <nav class="header-right">
+            <a href="../pages/abtme.html">Bio</a>
+            <a href="../pages/portfolio.html">Portfolio</a>
+            <a href="../pages/skills.html">Skills</a>
+            <a href="../pages/art.html">Art</a>
+            <a href="../pages/contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="gpt_hero">
+            <h1 class="gpt_title">GPT-3.5 PDF Assistant</h1>
+            <h2 class="gpt_subtitle">Ask questions from any PDF and get AI-powered voice answers.</h2>
+            <div class="gpt_buttons">
+                <a href="https://gpt3-5-rag-pdf.onrender.com/" target="_blank" class="gpt_btn">Launch App</a>
+                <a href="https://github.com/Ynassi/GPT3.5-RAG-PDF" target="_blank" class="gpt_btn">View GitHub</a>
+            </div>
+        </section>
+        <div class="gpt_notice">
+            <p><strong>Note:</strong> This application is currently available in French.</p>
+            <p>It is still under improvement : large PDF files may take time to process, and a loading indicator will be added soon for better UX.</p>
+            <p>The app is hosted on Render's free tier, which can result in longer cold start times when launching the service.</p>
+          </div>
+        <div class="gpt_content_wrapper">
+        <section class="gpt_section">
+            <h2 class="gpt_section_title">Key Features</h2>
+            <div class="gpt_features_table_container">
+              <table class="gpt_features_table">
+                <thead>
+                  <tr>
+                    <th>Feature</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>PDF Indexing</td>
+                    <td>Extract and split PDF content, generate OpenAI embeddings, and store them in a FAISS index.</td>
+                  </tr>
+                  <tr>
+                    <td>AI-Powered Q&A</td>
+                    <td>Use semantic search to find relevant document content and generate contextual answers using GPT-3.5.</td>
+                  </tr>
+                  <tr>
+                    <td>Text-to-Speech</td>
+                    <td>Convert generated answers into French audio using IBM Watson Text-to-Speech, downloadable by users.</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            </div>
+          </section>
+
+          <section class="gpt_section">
+            <h2 class="gpt_section_title">Tech Stack</h2>
+            <div class="gpt_tech_grid">
+          
+              <div class="gpt_tool_card" onclick="toggleDescription(this)">
+                <button class="gpt_tool_btn">OpenAI API</button>
+                <p class="gpt_tool_description">
+                  Integration of GPT-3.5 language model to understand user queries and generate contextual answers.
+                </p>
+              </div>
+          
+              <div class="gpt_tool_card" onclick="toggleDescription(this)">
+                <button class="gpt_tool_btn">FAISS</button>
+                <p class="gpt_tool_description">
+                  Efficient similarity search library used to index and retrieve the most relevant document chunks.
+                </p>
+              </div>
+          
+              <div class="gpt_tool_card" onclick="toggleDescription(this)">
+                <button class="gpt_tool_btn">Flask (Python)</button>
+                <p class="gpt_tool_description">
+                  Lightweight backend framework used to handle API routes and application logic.
+                </p>
+              </div>
+          
+              <div class="gpt_tool_card" onclick="toggleDescription(this)">
+                <button class="gpt_tool_btn">IBM Watson TTS</button>
+                <p class="gpt_tool_description">
+                  Converts the generated text answers into natural French speech, downloadable as audio files.
+                </p>
+              </div>
+          
+              <div class="gpt_tool_card" onclick="toggleDescription(this)">
+                <button class="gpt_tool_btn">PyPDF2</button>
+                <p class="gpt_tool_description">
+                  Python library used to extract raw text from PDF documents before indexing.
+                </p>
+              </div>
+          
+              <div class="gpt_tool_card" onclick="toggleDescription(this)">
+                <button class="gpt_tool_btn">Render</button>
+                <p class="gpt_tool_description">
+                  Cloud deployment platform used to host the app and manage serverless execution.
+                </p>
+              </div>
+          
+            </div>
+          </section>
+          
+          <script>
+            function toggleDescription(card) {
+              const desc = card.querySelector(".gpt_tool_description");
+              const allDescriptions = document.querySelectorAll(".gpt_tool_description");
+          
+              // Close all other descriptions
+              allDescriptions.forEach(p => {
+                if (p !== desc) p.style.display = "none";
+              });
+          
+              // Toggle current one
+              desc.style.display = (desc.style.display === "block") ? "none" : "block";
+            }
+          </script>
+                    
+          
+        
+                                
+    

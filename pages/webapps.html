@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yanis NASSI - Portfolio</title>
+    <link rel="stylesheet" href="../css/webapps.css">
+   
+    <!-- PRISM / CODE VIEWER -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-javascript.min.js"></script>
+
+</head>
+<style>@font-face {
+    font-family: 'Signatra';
+    src: url('../fonts/Signatra.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Helvetica';
+    src: url('../fonts/Helvetica.ttc') format('truetype');
+}
+@font-face {
+font-family: "Courier New";
+src: url("../fonts/cour.ttf");
+font-weight: 400;
+}
+/* Styles globaux */
+body {
+    background-color: #202020;  /* Gris foncé */
+    color: #ffffff;  /* Blanc */
+    font-family: 'Helvetica', sans-serif;
+    text-align: center;
+}
+
+/* HEADER */
+header {
+    background-color: #181818; /* Gris encore plus foncé */
+    padding: 10px 50px; /* Réduction plus douce */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #333;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+}
+
+/* Partie gauche du header */
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  text-decoration: none;
+}
+
+.header-left a {
+  display: flex;
+  align-items: center;
+  text-decoration: none !important;
+  color: inherit;
+}
+
+.name {
+    font-family: 'Signatra', sans-serif;  
+    font-size: 2.8rem;
+    color: #ffffff; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+    margin: 0;
+    padding: 0;
+    line-height: 1.1;
+}
+
+.logo {
+    height: 65px; /* Taille augmentée */
+    margin-right: 40px;
+}
+
+/* Liens du header */
+.header-right {
+    display: flex;
+    gap: 30px;
+    margin-right: 80px;
+}
+
+.header-right a {
+    font-size: 1.6rem;
+    color: #f0f0e6 !important;
+    text-decoration: none !important;
+    transition: color 0.3s;
+}
+
+.header-right a:hover {
+    color: #00bfff;
+}</style>
+<body>
+    <!-- HEADER -->
+    <header>
+        <div class="header-left">
+            <a href="../index.html" class="home-link">
+            <img src="../images/clipart.png" alt="Logo" class="logo img-sm">
+            <h1 class="name">Yanis NASSI</h1>
+         </a>
+        </div>
+        <nav class="header-right">
+            <a href="../pages/abtme.html">Bio</a>
+            <a href="../pages/portfolio.html">Portfolio</a>
+            <a href="../pages/skills.html">Skills</a>
+            <a href="../pages/art.html">Art</a>
+            <a href="../pages/contact.html">Contact</a>
+        </nav>
+    </header>
+    <main class="gpt_content_wrapper">
+
+        <!-- INTRO -->
+        <section class="gpt_section">
+          <h1 class="gpt_section_title">My Websites & Apps</h1>
+          <p class="gpt_intro">
+            This portfolio website is the first site I’ve ever built entirely by myself (from design to deployment).
+            This website was designed as a personal portfolio to showcase my technical skills and projects to a knowledgeable audience.
+            It is not intended as a commercial platform or a public-facing product.
+            As such, UI/UX design was considered secondary to the core objective of demonstrating development capabilities and project substance.
+            In the future, I plan to create a professional e-commerce platform for my art focusing more on UX/UI design, and build more backend-powered applications to grow my full-stack skills.
+            This page displays the relevant websites and apps projects i've worked on (those who can really help in a working environnement). 
+            I will add more projects as my journey throught web and data continues. 
+          </p>
+        </section>
+      
+        <section>
+            <a href="../pages/gpt_app.html" class="app_link">
+              <img src="../images/6492708.png" alt="GPT App Icon" class="app_icon">
+              <p class="app_label">GPT-3.5 PDF ASSISTANT</p>
+            </a>
+          </section>     
+      
+      </main>
+      

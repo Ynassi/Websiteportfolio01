@@ -1,0 +1,105 @@
+/* TITRE & SOUS-TITRE – même structure que les autres pages */
+.paragraph_title {
+    padding-top: 20px;
+    text-align: left;
+    font-size: 35px;
+}
+
+.paragraph_subtitle {
+    text-align: left;
+    font-size: 24px;
+    color: #bdbdbd;
+    margin-top: -15px;
+    margin-bottom: 40px;
+}
+
+/* MAIN WRAPPER */
+.contact-main {
+    padding-top: 120px;
+}
+
+/* CONTAINER GLOBAL */
+.contact-container {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 2rem;
+    text-align: left;
+}
+
+/* FORMULAIRE */
+.contact-form .form-group {
+    margin-bottom: 1.8rem;
+}
+
+.form-status {
+    text-align: center;
+    margin-top: 1.5rem;
+    font-size: 1.1rem;
+    font-style: italic;
+  }  
+
+.contact-form label {
+    display: block;
+    font-weight: 500;
+    color: #ffb366;
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    border: 1px solid #444;
+    border-radius: 6px;
+    background-color: #202020;
+    color: #ffffff;
+    font-size: 1rem;
+    outline: none;
+    transition: border 0.3s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #ffb366;
+}
+
+/* BOUTON */
+.submit-button {
+    background-color: #ffb366;
+    color: #202020;
+    padding: 0.8rem 2rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: block;
+    margin: 2rem auto 0 auto;
+}
+
+.submit-button:hover {
+    background-color: #ffaa33;
+}
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+    .contact-container {
+        padding: 1rem;
+    }
+
+    .paragraph_title {
+        font-size: 28px;
+        text-align: center;
+    }
+
+    .paragraph_subtitle {
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .submit-button {
+        width: 100%;
+    }
+}

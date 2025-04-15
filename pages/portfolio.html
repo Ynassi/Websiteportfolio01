@@ -15,29 +15,31 @@
             text-align: center;
         }
         .portfolio-container {
-            max-width: 800px;
+            max-width: 1000px;
             margin: 0 auto;
             padding: 100px;
-            padding-top: 100px; /* Ajout d'un padding pour éviter que le titre soit coupé */
+            padding-top: 50px; 
         }
         .portfolio-title {
             text-align: left;
-            margin-left: 0;
-            margin-top: 100px; /* Ajustement de l'espace sous le header */
-            font-size: 3rem; /* Augmentation de la taille du titre */
-            color: white; /* Garde le titre en blanc */
+            margin-top: 100px;
+            font-size: 35px;
+            color: white; 
         }
-        .portfolio-intro, .portfolio-description { 
-            margin: 40px auto;
-            font-size: 1.2rem; /* Augmentation de la taille du texte */
-            text-align: justify; /* Justification du texte */
-            color: #d3d3d3; /* Gris clair */
-        }
+        .paragraph_subtitle {
+            text-align: left;
+            font-size: 24px;
+            color: #bdbdbd;
+            margin-top: -15px;
+            margin-bottom: 40px;
+            line-height: 1.9rem;
+            font-weight: bold;
+}
         .portfolio-categories {
             display: flex;
             justify-content: center;
             gap: 50px; /* Doublement de l'espace entre les images */
-            margin-top: 20px; /* Augmentation de l'espacement au-dessus */
+            margin-top: 100px; /* Augmentation de l'espacement au-dessus */
         }
         .category-img {
             width: 200px; /* Réduction encore plus importante de la taille */
@@ -61,6 +63,7 @@
             </a>
         </div>
         <nav class="header-right">
+            <a href="../pages/abtme.html">Bio</a>
             <a href="portfolio.html">Portfolio</a>
             <a href="skills.html">Skills</a>
             <a href="art.html">Art</a>
@@ -71,25 +74,22 @@
     <!-- CONTENU PRINCIPAL -->
     <main class="portfolio-container">
         <h1 class="portfolio-title">Portfolio</h1>
-        <p class="portfolio-description">
-            Here are some projects I had the chance to work on, classified according to the type of project: Data Analysis, Websites, and Event Planning.
+        <p class="paragraph_subtitle">
+            Here are some projects I had the chance to work on, classified according to the type of project ( Data Analysis, Websites, and Event Planning ).
         </p>
         
         <div class="portfolio-categories">
             <a href="data_analysis.html" class="category-link">
                 <img src="../images/data_analysis_bw.png" alt="Data Analysis Illustration" class="category-img">
             </a>            
-            <a href="websites.html" class="category-link">
+            <a href="webapps.html" class="category-link">
                 <img src="../images/websites_bw.png" alt="Websites Illustration" class="category-img">
             </a>
             <a href="event_planning.html" class="category-link">
                 <img src="../images/event_planning_bw.png" alt="Event Planning Illustration" class="category-img">
             </a>
         </div>
-        
-        <p class="portfolio-description">
-            During the past few years, I had a very eclectic path that made me connect with a lot of different people through my passion for Art and Data. At the end of the day, I managed to connect all the different parts of my life to make it work together, and it has been a very fun adventure.
-        </p>
+    
     </main>
 </body>
 </html>
