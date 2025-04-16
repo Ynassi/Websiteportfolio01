@@ -119,3 +119,39 @@ main {
 .social-links img:hover {
     transform: scale(1.1);
 }
+    #mobile-warning {
+      display: none;
+      background-color: #202020;
+      color: #ffffff;
+      font-family: 'Helvetica', sans-serif;
+      text-align: center;
+      height: 100vh;
+      padding: 2rem;
+      box-sizing: border-box;
+    }
+
+    #mobile-warning header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px;
+      border-bottom: 2px solid #333;
+    }
+
+    #mobile-warning img.logo {
+      height: 60px;
+    }
+
+    #mobile-warning h1.name {
+      font-size: 2rem;
+      margin: 0;
+    }
+
+    #mobile-warning p {
+      font-size: 1.2rem;
+      margin-top: 3rem;
+      line-height: 1.6;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+    }
