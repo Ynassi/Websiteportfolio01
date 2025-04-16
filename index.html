@@ -1,30 +1,17 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Yanis NASSI - Portfolio</title>
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Yanis NASSI - Portfolio</title>
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-    <!-- HEADER -->
-    <header>
-        <div class="header-left">
-            <img src="images/clipart.png" alt="Logo" class="logo">
-            <h1 class="name">Yanis NASSI</h1>
-        </div>
-        <nav class="header-right">
-            <a href="pages/abtme.html">Bio</a>
-            <a href="pages/portfolio.html">Portfolio</a>
-            <a href="pages/skills.html">Skills</a>
-            <a href="pages/art.html">Art</a>
-            <a href="pages/contact.html">Contact</a>
-        </nav>
-    </header>
-    
+
+  <!-- ✅ SECTION MOBILE -->
   <div id="mobile-warning">
     <header>
-      <img src="images/clipart.png" alt="Logo" class="logo">
+      <img src="images/clipart.png" alt="Logo" class="logo" />
       <h1 class="name">Yanis NASSI</h1>
     </header>
     <p>
@@ -32,30 +19,49 @@
       Please reload this page from a computer for the best experience.
     </p>
   </div>
-    
+
+  <!-- ✅ CONTENU NORMAL (desktop uniquement) -->
+  <div id="site-content">
+    <!-- HEADER -->
+    <header>
+      <div class="header-left">
+        <img src="images/clipart.png" alt="Logo" class="logo" />
+        <h1 class="name">Yanis NASSI</h1>
+      </div>
+      <nav class="header-right">
+        <a href="pages/abtme.html">Bio</a>
+        <a href="pages/portfolio.html">Portfolio</a>
+        <a href="pages/skills.html">Skills</a>
+        <a href="pages/art.html">Art</a>
+        <a href="pages/contact.html">Contact</a>
+      </nav>
+    </header>
+
     <!-- CONTENU PRINCIPAL -->
     <main>
-        <img src="images/websitepicture.jpg" alt="Yanis NASSI" class="profile-picture">
-        <h2 class="main-name">Yanis NASSI</h2>
-        <p class="subtitle">Data Scientist, Quant Analyst and Artist</p>
-        <div class="social-links">
-            <a href="https://public.tableau.com/app/profile/yanis.nassi/vizzes" target="_blank">
-                <img src="images/Tableau.png" alt="Tableau">
-            </a>
-            <a href="https://github.com/Ynassi" target="_blank">
-                <img src="images/Github.png" alt="GitHub">
-            </a>
-            <a href="https://www.linkedin.com/in/yanis-nassi-3331b1102/" target="_blank">
-                <img src="images/Linked_in.webp" alt="LinkedIn">
-            </a>
-        </div>
+      <img src="images/websitepicture.jpg" alt="Yanis NASSI" class="profile-picture" />
+      <h2 class="main-name">Yanis NASSI</h2>
+      <p class="subtitle">Data Scientist, Quant Analyst and Artist</p>
+      <div class="social-links">
+        <a href="https://public.tableau.com/app/profile/yanis.nassi/vizzes" target="_blank">
+          <img src="images/Tableau.png" alt="Tableau" />
+        </a>
+        <a href="https://github.com/Ynassi" target="_blank">
+          <img src="images/Github.png" alt="GitHub" />
+        </a>
+        <a href="https://www.linkedin.com/in/yanis-nassi-3331b1102/" target="_blank">
+          <img src="images/Linked_in.webp" alt="LinkedIn" />
+        </a>
+      </div>
     </main>
-</body>
-      <script>
-    // ✅ Masquer le contenu si écran < 768px
+  </div>
+
+  <script>
+    // ✅ Masquer le site complet sur mobile
     if (window.innerWidth < 768) {
-      document.getElementById('site-content').style.display = 'none';
-      document.getElementById('mobile-warning').style.display = 'block';
+      document.getElementById("site-content").style.display = "none";
+      document.getElementById("mobile-warning").style.display = "block";
     }
   </script>
+</body>
 </html>
