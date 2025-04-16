@@ -141,13 +141,12 @@ main {
 
 #mobile-warning .name {
   font-size: 2rem;
-  margin-right: 100px;
+  margin-right: 40px;
 }
 
 #mobile-warning p {
   margin-top: 350px;
   font-size: 1.2rem;
-  margin-top: 3rem;
   line-height: 1.6;
   max-width: 600px;
   margin-left: auto;
