@@ -48,7 +48,6 @@ header {
   margin: 0;
   padding: 0;
   line-height: 1.1;
-  margin-right: 40px;
 }
 
 .header-right {
@@ -117,7 +116,6 @@ main {
 
 /* ✅ SECTION MOBILE */
 #mobile-warning {
-  margin-top: 150px;
   display: none;
   background-color: #202020;
   color: #ffffff;
@@ -143,10 +141,11 @@ main {
 
 #mobile-warning .name {
   font-size: 2rem;
-  margin: 0;
+  margin-right: 40px;
 }
 
 #mobile-warning p {
+  margin-top: 150px;
   font-size: 1.2rem;
   margin-top: 3rem;
   line-height: 1.6;
