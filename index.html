@@ -21,7 +21,18 @@
             <a href="pages/contact.html">Contact</a>
         </nav>
     </header>
-
+    
+  <div id="mobile-warning">
+    <header>
+      <img src="images/clipart.png" alt="Logo" class="logo">
+      <h1 class="name">Yanis NASSI</h1>
+    </header>
+    <p>
+      This website is not yet optimized for mobile.  
+      Please reload this page from a computer for the best experience.
+    </p>
+  </div>
+    
     <!-- CONTENU PRINCIPAL -->
     <main>
         <img src="images/websitepicture.jpg" alt="Yanis NASSI" class="profile-picture">
@@ -40,4 +51,11 @@
         </div>
     </main>
 </body>
+      <script>
+    // ✅ Masquer le contenu si écran < 768px
+    if (window.innerWidth < 768) {
+      document.getElementById('site-content').style.display = 'none';
+      document.getElementById('mobile-warning').style.display = 'block';
+    }
+  </script>
 </html>
