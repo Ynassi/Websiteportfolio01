@@ -1,157 +1,160 @@
 @font-face {
-    font-family: 'Signatra';
-    src: url('../fonts/Signatra.ttf') format('truetype');
+  font-family: 'Signatra';
+  src: url('../fonts/Signatra.ttf') format('truetype');
 }
 
 @font-face {
-    font-family: 'Helvetica';
-    src: url('../fonts/Helvetica.ttc') format('truetype');
+  font-family: 'Helvetica';
+  src: url('../fonts/Helvetica.ttc') format('truetype');
 }
 
-/* Styles globaux */
 body {
-    background-color: #202020;  /* Gris foncé */
-    color: #ffffff;  /* Blanc */
-    font-family: 'Helvetica', sans-serif;
-    margin: 0;
-    padding: 0;
-    text-align: center;
+  background-color: #202020;
+  color: #ffffff;
+  font-family: 'Helvetica', sans-serif;
+  margin: 0;
+  padding: 0;
+  text-align: center;
 }
 
 /* HEADER */
 header {
-    background-color: #181818; /* Gris encore plus foncé */
-    padding: 10px 50px; /* Réduction plus douce */
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-bottom: 2px solid #333;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 10;
+  background-color: #181818;
+  padding: 10px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid #333;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
 }
 
-/* Partie gauche du header */
 .header-left {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .logo {
-    height: 65px; /* Taille augmentée */
-    margin-right: 40px;
+  height: 65px;
+  margin-right: 40px;
 }
 
 .name {
-    font-family: 'Signatra', sans-serif;  
-    font-size: 2.8rem; /* Taille légèrement plus grande pour l'équilibre */
-
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
-    margin: 0;
-    padding: 0;
-    line-height: 1.1;
+  font-family: 'Signatra', sans-serif;
+  font-size: 2.8rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+  margin: 0;
+  padding: 0;
+  line-height: 1.1;
 }
 
-/* Liens du header */
 .header-right {
-    display: flex;
-    gap: 30px;
-    margin-right: 80px;
+  display: flex;
+  gap: 30px;
+  margin-right: 80px;
 }
 
 .header-right a {
-    font-size: 1.6rem;
-    color: #f0f0e6 !important;
-    text-decoration: none !important;
-    transition: color 0.3s;
+  font-size: 1.6rem;
+  color: #f0f0e6 !important;
+  text-decoration: none !important;
+  transition: color 0.3s;
 }
 
 .header-right a:hover {
-    color: #00bfff;
+  color: #00bfff;
 }
 
 /* CONTENU PRINCIPAL */
 main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: calc(100vh - 120px);
-    margin-top: 70px; /* Ajustement doux pour coller un peu plus au header */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: calc(100vh - 120px);
+  margin-top: 70px;
 }
 
 .profile-picture {
-    width: 180px;
-    border-radius: 50%;
-    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.2);
-    margin-bottom: 5px;
+  width: 180px;
+  border-radius: 50%;
+  box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.2);
+  margin-bottom: 5px;
 }
 
 .main-name {
-    font-size: 2rem;
-    margin-bottom: 2px;
-    color: #f0f0e6;
+  font-size: 2rem;
+  margin-bottom: 2px;
+  color: #f0f0e6;
 }
 
 .subtitle {
-    font-size: 1.2rem;
-    color: #b0b0b0;
-    margin-bottom: 20px;
+  font-size: 1.2rem;
+  color: #b0b0b0;
+  margin-bottom: 20px;
 }
 
-/* ICONES SOCIAUX */
 .social-links {
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 30px;
 }
 
 .social-links img {
-    width: 40px;
-    height: 40px;
-    filter: invert(1);
-    transition: transform 0.3s;
+  width: 40px;
+  height: 40px;
+  filter: invert(1);
+  transition: transform 0.3s;
 }
 
 .social-links img:hover {
-    transform: scale(1.1);
+  transform: scale(1.1);
 }
-    #mobile-warning {
-      display: none;
-      background-color: #202020;
-      color: #ffffff;
-      font-family: 'Helvetica', sans-serif;
-      text-align: center;
-      height: 100vh;
-      padding: 2rem;
-      box-sizing: border-box;
-    }
 
-    #mobile-warning header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 20px;
-      border-bottom: 2px solid #333;
-    }
+/* ✅ SECTION MOBILE */
+#mobile-warning {
+  display: none;
+  background-color: #202020;
+  color: #ffffff;
+  font-family: 'Helvetica', sans-serif;
+  text-align: center;
+  height: 100vh;
+  padding: 2rem;
+  box-sizing: border-box;
+  animation: fadeIn 0.4s ease forwards;
+}
 
-    #mobile-warning img.logo {
-      height: 60px;
-    }
+#mobile-warning header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  border-bottom: 2px solid #333;
+}
 
-    #mobile-warning h1.name {
-      font-size: 2rem;
-      margin: 0;
-    }
+#mobile-warning .logo {
+  height: 60px;
+}
 
-    #mobile-warning p {
-      font-size: 1.2rem;
-      margin-top: 3rem;
-      line-height: 1.6;
-      max-width: 600px;
-      margin-left: auto;
-      margin-right: auto;
-    }
+#mobile-warning .name {
+  font-size: 2rem;
+  margin: 0;
+}
+
+#mobile-warning p {
+  font-size: 1.2rem;
+  margin-top: 3rem;
+  line-height: 1.6;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
