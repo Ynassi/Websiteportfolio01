@@ -116,6 +116,7 @@ main {
 
 /* ✅ SECTION MOBILE */
 #mobile-warning {
+  margin-top: 150px;
   display: none;
   background-color: #202020;
   color: #ffffff;
