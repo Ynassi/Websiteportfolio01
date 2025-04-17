@@ -100,12 +100,18 @@ main {
     margin: 25px;
 }
 
+main.sidebar-open {
+  margin-left: 260px; /* Décale le contenu à droite */
+  transition: margin-left 0.3s ease;
+}
+
 /* --- Mode responsive (mobile) --- */
 @media (max-width: 768px) {
-    .sidebar {
-        left: -260px; /* Caché par défaut */
-        transition: 0.3s;
-    }
+  main.sidebar-open {
+    margin-left: 0;
+    padding-left: 260px;
+  }
+}
 
     .sidebar.active {
         left: 0;
