@@ -1,39 +1,78 @@
+/* ========== POLICES ========== */
+@font-face {
+    font-family: 'Signatra';
+    src: url('../fonts/Signatra.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Helvetica';
+    src: url('../fonts/Helvetica.ttc') format('truetype');
+}
+@font-face {
+    font-family: "Courier New";
+    src: url("../fonts/cour.ttf");
+    font-weight: 400;
+}
+
+/* ========== BASE ========== */
+body {
+    background-color: #202020;
+    color: #ffffff;
+    font-family: 'Helvetica', sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
 p {
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 400;
     text-align: justify;
     line-height: 1.7rem;
-    font-size: 1.2rem ;
+    font-size: 1.2rem;
 }
 
 b {
     font-weight: bold;
 }
 
+/* ========== MAIN ========== */
 main {
     max-width: 1000px;
     margin: auto;
     margin-top: 85px;
+    padding: 0 20px;
 }
+
+/* Décalage du main si sidebar visible */
+@media (min-width: 768px) {
+    main {
+        margin-left: 270px;
+        max-width: calc(100% - 270px);
+    }
+}
+
+/* ========== TITRES ========== */
 .paragraph_title {
     margin: 50px;
     padding-top: 20px;
     text-align: left;
     font-size: 35px;
 }
+
 .title1 {
     margin-top: 50px;
     font-size: 45px;
 }
 
+/* ========== LISTES ========== */
 .arabic_list {
-    list-style-type: decimal; 
+    list-style-type: decimal;
     line-height: 1.6;
     color: #ffffff;
-    text-align: left;           
-    font-family: inherit;       
-    font-size: 1.2rem;         
-    margin: 1em auto;                  
+    text-align: left;
+    font-family: inherit;
+    font-size: 1.2rem;
+    margin: 1em auto;
 }
 
 .bullet_list {
@@ -42,26 +81,27 @@ main {
     margin-bottom: 2em;
     text-align: left;
     font-size: 1.2rem;
-    line-height: 1.7rem
+    line-height: 1.7rem;
 }
-  
+
 .bullet_list li {
     margin-bottom: 1em;
 }
-  
-/* --- SIDEBAR (MENU LATERAL) --- */
+
+/* ========== SIDEBAR ========== */
 .sidebar {
     position: fixed;
     left: 0;
-    top: 80px; /* Ajusté sous le header */
+    top: 80px;
     width: 250px;
-    height: calc(100vh - 80px); /* Pleine hauteur, en dessous du header */
+    height: calc(100vh - 80px);
     background: #181818;
     color: white;
     padding: 20px;
     overflow-y: auto;
     border-right: 2px solid #333;
     text-align: left;
+    z-index: 100;
 }
 
 .sidebar ul {
@@ -85,11 +125,10 @@ main {
 }
 
 .sidebar a:hover {
-    background:#8765f8;
+    background: #8765f8;
     color: #181818;
 }
 
-/* --- Styles pour les sous-listes (toggle) --- */
 .sidebar .toggle {
     cursor: pointer;
 }
@@ -100,24 +139,23 @@ main {
     margin: 25px;
 }
 
-main.sidebar-open {
-  margin-left: 260px; /* Décale le contenu à droite */
-  transition: margin-left 0.3s ease;
+/* ========== TOGGLE BOUTON POUR MOBILE ========== */
+.toggle-btn {
+    display: none;
 }
 
-/* --- Mode responsive (mobile) --- */
-@media (max-width: 768px) {
-  main.sidebar-open {
-    margin-left: 0;
-    padding-left: 260px;
-  }
-}
+@media (max-width: 767px) {
+    .sidebar {
+        left: -260px;
+        transition: left 0.3s ease;
+    }
 
     .sidebar.active {
         left: 0;
     }
 
     .toggle-btn {
+        display: block;
         position: fixed;
         left: 10px;
         top: 90px;
@@ -127,17 +165,25 @@ main.sidebar-open {
         padding: 10px 15px;
         cursor: pointer;
         border-radius: 5px;
-        z-index: 1000;
+        z-index: 999;
+    }
+
+    main {
+        margin-left: 0 !important;
+        padding-left: 20px;
+        padding-right: 20px;
     }
 }
+
+/* ========== TABLES ET ÉLÉMENTS DE STYLE ========== */
 .table_wrapper {
     border-radius: 8px;
     overflow: hidden;
 }
 
 .subtitle_analysis {
-    padding : 25px 
- }
+    padding: 25px;
+}
 
 .data_table {
     width: 100%;
@@ -150,78 +196,80 @@ main.sidebar-open {
     border-radius: 8px;
     overflow: hidden;
     box-shadow: 0 0 12px rgba(135, 101, 248, 0.1);
-  }
-  
-  .data_table caption {
+}
+
+.data_table caption {
     font-size: 1.5rem;
     font-weight: 600;
     color: #ffffff;
     margin-bottom: 1em;
     text-align: left;
-  }
-  
-  .data_table thead {
-    background-color: #3b3550; /* violet-gris foncé pastel */
-  }
-  
-  .data_table th {
+}
+
+.data_table thead {
+    background-color: #3b3550;
+}
+
+.data_table th {
     padding: 12px 16px;
     text-align: left;
     background-color: #3b3550;
-    color: #ffffff; /* blanc pur */
+    color: #ffffff;
     font-weight: 600;
     border-bottom: 1px solid #4a4268;
-  }
-  
-  .data_table td {
+}
+
+.data_table td {
     padding: 12px 16px;
     text-align: left;
     border-bottom: 1px solid #2c2c2c;
     color: #d0d0d0;
-  }
-  
-  .data_table tbody tr:nth-child(even) {
+}
+
+.data_table tbody tr:nth-child(even) {
     background-color: #1f1f1f;
-  }
-  
-  .data_table tbody tr:hover {
+}
+
+.data_table tbody tr:hover {
     background-color: #2d2347;
     transition: background-color 0.2s ease;
-  }
-  
-  /* Lien Google Colab stylisé */
-  .colab_link {
+}
+
+/* ========== LIENS ET BLOCS CODE ========== */
+.colab_link {
     margin-top: 2em;
     text-align: left;
-  }
-  
-  .colab_link a {
+}
+
+.colab_link a {
     display: inline-flex;
     align-items: center;
     text-decoration: none;
     color: #00c6ff;
     font-weight: bold;
     font-size: 1.1rem;
-  }
-  
-  .colab_logo {
+}
+
+.colab_logo {
     height: 24px;
     margin-right: 10px;
-  }
-  .regression_img {
+}
+
+.regression_img {
     text-align: center;
     margin: 2rem 0;
-  }
-  
-  .regression_img img {
+}
+
+.regression_img img {
     width: 800px;
     height: auto;
     max-width: 100%;
     object-fit: contain;
     box-shadow: 0 0 12px rgba(135, 101, 248, 0.15);
     border-radius: 6px;
-  }
-  .code_block {
+}
+
+.code_block {
     background-color: #1e1e1e;
     color: #f8f8f2;
     font-family: 'Courier New', Courier, monospace;
@@ -234,81 +282,80 @@ main.sidebar-open {
     overflow-x: auto;
     line-height: 1.5;
     border: 1px solid #2c2c2c;
-  }
-  
-  .code_block .keyword {
+}
+
+.code_block .keyword {
     color: #ffb86c;
     font-weight: bold;
-  }
-  
-  .code_block .function {
+}
+.code_block .function {
     color: #8be9fd;
-  }
-  
-  .code_block .string {
+}
+.code_block .string {
     color: #f1fa8c;
-  }
-  
-  .code_block .comment {
+}
+.code_block .comment {
     color: #6272a4;
     font-style: italic;
-  }
-  
-/* ===================== PYTHON CODE LINK ===================== */
+}
+
+/* ========== PYTHON CODE LINK ========== */
 .python_code_link_wrapper {
     display: inline-flex;
     align-items: center;
     gap: 10px;
     margin-top: 2em;
     text-decoration: none;
-  }
-  
-  .python_code_link_wrapper img {
-    height: 25px;  
+}
+
+.python_code_link_wrapper img {
+    height: 25px;
     width: auto;
     object-fit: contain;
     vertical-align: middle;
-  }
-  
-  .python_code_link_wrapper a {
+}
+
+.python_code_link_wrapper a {
     font-size: 1.1rem;
     color: #00c6ff;
     font-weight: bold;
     text-decoration: underline;
     cursor: pointer;
-  }
-  
-  .robust_img {
+}
+
+/* ========== IMAGES & CONCLUSION ========== */
+.robust_img {
     display: flex;
     justify-content: center;
     margin: 2em 0;
-  }
-  
-  .robust_img img {
+}
+
+.robust_img img {
     width: 100%;
     max-width: 1000px;
     border-radius: 12px;
     box-shadow: 0 0 15px rgba(0, 198, 255, 0.3);
-  }
+}
 
-  .small_subtitle {
+.small_subtitle {
     font-size: 1.2rem;
     font-weight: 600;
     margin-top: 2em;
     margin-bottom: 0.7em;
     text-align: left;
-  }
-  .source_note {
+}
+
+.source_note {
     font-size: 0.95rem;
     font-style: italic;
     color: #b0b0b0;
     margin-top: 1rem;
     margin-bottom: 1.5rem;
     text-align: left;
-  }
-  .source_note a {
+}
+
+.source_note a {
     color: #00c6ff;
     text-decoration: underline;
     font-weight: bold;
-  }
-  
+}
