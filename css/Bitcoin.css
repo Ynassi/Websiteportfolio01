@@ -37,31 +37,46 @@ b {
 
 /* ========== MAIN ========== */
 main {
-    max-width: 1000px;
-    margin: auto;
     margin-top: 85px;
     padding: 0 20px;
 }
 
-/* Décalage du main si sidebar visible */
-@media (min-width: 768px) {
+/* Sidebar active → espace réservé sur desktop */
+@media (min-width: 1024px) {
     main {
         margin-left: 270px;
         max-width: calc(100% - 270px);
     }
 }
 
+/* Taille dynamique pour les écrans entre 768px et 1024px */
+@media (min-width: 768px) and (max-width: 1023px) {
+    main {
+        margin-left: 260px;
+        max-width: calc(100% - 260px);
+    }
+}
+
+/* Sur mobile : pas de décalage */
+@media (max-width: 767px) {
+    main {
+        margin-left: 0;
+        padding: 0 20px;
+        max-width: 100%;
+    }
+}
+
 /* ========== TITRES ========== */
 .paragraph_title {
-    margin: 50px;
+    margin: 50px 0 20px;
     padding-top: 20px;
     text-align: left;
-    font-size: 35px;
+    font-size: 2.2rem;
 }
 
 .title1 {
     margin-top: 50px;
-    font-size: 45px;
+    font-size: 2.6rem;
 }
 
 /* ========== LISTES ========== */
@@ -136,7 +151,7 @@ main {
 .sidebar .hidden {
     display: none;
     padding-left: 15px;
-    margin: 25px;
+    margin: 25px 0;
 }
 
 /* ========== TOGGLE BOUTON POUR MOBILE ========== */
@@ -167,15 +182,9 @@ main {
         border-radius: 5px;
         z-index: 999;
     }
-
-    main {
-        margin-left: 0 !important;
-        padding-left: 20px;
-        padding-right: 20px;
-    }
 }
 
-/* ========== TABLES ET ÉLÉMENTS DE STYLE ========== */
+/* ========== TABLES ========== */
 .table_wrapper {
     border-radius: 8px;
     overflow: hidden;
@@ -194,7 +203,6 @@ main {
     background-color: #1a1a1a;
     border: 1px solid #2c2c2c;
     border-radius: 8px;
-    overflow: hidden;
     box-shadow: 0 0 12px rgba(135, 101, 248, 0.1);
 }
 
@@ -210,18 +218,19 @@ main {
     background-color: #3b3550;
 }
 
-.data_table th {
+.data_table th,
+.data_table td {
     padding: 12px 16px;
     text-align: left;
-    background-color: #3b3550;
+}
+
+.data_table th {
     color: #ffffff;
     font-weight: 600;
     border-bottom: 1px solid #4a4268;
 }
 
 .data_table td {
-    padding: 12px 16px;
-    text-align: left;
     border-bottom: 1px solid #2c2c2c;
     color: #d0d0d0;
 }
@@ -235,7 +244,7 @@ main {
     transition: background-color 0.2s ease;
 }
 
-/* ========== LIENS ET BLOCS CODE ========== */
+/* ========== LIENS, IMAGES, CODE ========== */
 .colab_link {
     margin-top: 2em;
     text-align: left;
@@ -323,7 +332,7 @@ main {
     cursor: pointer;
 }
 
-/* ========== IMAGES & CONCLUSION ========== */
+/* ========== IMAGES ET CONCLUSION ========== */
 .robust_img {
     display: flex;
     justify-content: center;
@@ -359,3 +368,4 @@ main {
     text-decoration: underline;
     font-weight: bold;
 }
+
