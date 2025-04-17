@@ -4703,29 +4703,24 @@ In the next step, we will test a refined stacking system based on XGBoost for bu
 
 <script>
   document.addEventListener("DOMContentLoaded", function () {
-    // Gère les sous-menus de la sidebar
     document.querySelectorAll(".sidebar .toggle").forEach((toggle) => {
       toggle.addEventListener("click", function () {
         const sublist = this.nextElementSibling;
-        sublist.style.display = sublist.style.display === "block" ? "none" : "block";
+        if (sublist && sublist.classList.contains("hidden")) {
+          sublist.classList.toggle("hidden");
+        }
       });
     });
-  });
 
-  function toggleSidebar() {
+    const toggleBtn = document.querySelector(".toggle-btn");
     const sidebar = document.querySelector(".sidebar");
-    const main = document.querySelector("main");
 
-    // Toggle la classe 'active' sur la sidebar
-    sidebar.classList.toggle("active");
-
-    // Toggle la classe 'sidebar-open' sur le main
-    if (sidebar.classList.contains("active")) {
-      main.classList.add("sidebar-open");
-    } else {
-      main.classList.remove("sidebar-open");
+    if (toggleBtn) {
+      toggleBtn.addEventListener("click", function () {
+        sidebar.classList.toggle("active");
+      });
     }
-  }
+  });
 </script>
 
 </body>
