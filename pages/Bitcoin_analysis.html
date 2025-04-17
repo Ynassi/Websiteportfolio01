@@ -9,6 +9,154 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-javascript.min.js"></script>
+  <style>
+    body {
+      background-color: #202020;
+      color: #ffffff;
+      font-family: 'Helvetica', sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+    }
+
+    header {
+      background-color: #181818;
+      padding: 10px 50px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 2px solid #333;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 10;
+    }
+
+    .header-left {
+      display: flex;
+      align-items: center;
+    }
+
+    .logo {
+      height: 65px;
+      margin-right: 40px;
+    }
+
+    .name {
+      font-family: 'Signatra', sans-serif;
+      font-size: 2.8rem;
+      color: #ffffff;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+      margin: 0;
+      padding: 0;
+      line-height: 1.1;
+    }
+
+    .name a {
+      color: #ffffff;
+      text-decoration: none;
+    }
+
+    .header-right {
+      display: flex;
+      gap: 30px;
+      margin-right: 80px;
+    }
+
+    .header-right a {
+      font-size: 1.6rem;
+      color: #f0f0e6;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+    .header-right a:hover {
+      color: #00bfff;
+    }
+
+    .sidebar {
+      position: fixed;
+      top: 80px;
+      left: 0;
+      width: 250px;
+      height: calc(100vh - 80px);
+      background-color: #181818;
+      color: white;
+      padding: 20px;
+      overflow-y: auto;
+      border-right: 2px solid #333;
+    }
+
+    .sidebar ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .sidebar ul li {
+      margin-bottom: 10px;
+    }
+
+    .sidebar a {
+      color: #ffffff;
+      text-decoration: none;
+      font-size: 1.2rem;
+      display: block;
+      padding: 8px;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+
+    .sidebar a:hover {
+      background-color: #8765f8;
+      color: #181818;
+    }
+
+    main {
+      flex: 1;
+      max-width: 1000px;
+      margin: 100px auto 0 270px; /* espace à gauche pour la sidebar */
+      padding: 0 2rem;
+    }
+
+    .paragraph_title {
+      margin: 50px 0 30px;
+      padding-top: 20px;
+      text-align: left;
+      font-size: 35px;
+    }
+
+    p {
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: 400;
+      text-align: justify;
+      line-height: 1.7rem;
+      font-size: 1.2rem;
+    }
+
+    b {
+      font-weight: bold;
+    }
+
+    @media (max-width: 768px) {
+      body {
+        flex-direction: column;
+      }
+
+      .sidebar {
+        position: static;
+        width: 100%;
+        height: auto;
+        border-right: none;
+        border-bottom: 2px solid #333;
+      }
+
+      main {
+        margin: 20px;
+        padding: 1rem;
+      }
+    }
+  </style>
 </head>
 <body>
   <!-- HEADER FIXED -->
@@ -27,7 +175,7 @@
       <a href="../pages/contact.html">Contact</a>
     </nav>
   </header>
-
+  
   <!-- SIDEBAR LATERAL -->
   <button class="toggle-btn" onclick="toggleSidebar()">☰ Menu</button>
   <div class="sidebar">
@@ -4619,24 +4767,36 @@ In the next step, we will test a refined stacking system based on XGBoost for bu
 
 <script>
   document.addEventListener("DOMContentLoaded", function () {
+    // Cache les sous-catégories au chargement
+    document.querySelectorAll(".sidebar .hidden").forEach((el) => {
+      el.style.display = "none";
+    });
+
+    // Toggle des sous-catégories
     document.querySelectorAll(".sidebar .toggle").forEach((toggle) => {
       toggle.addEventListener("click", function () {
         const sublist = this.nextElementSibling;
-        if (sublist && sublist.classList.contains("hidden")) {
-          sublist.classList.toggle("hidden");
+        if (sublist) {
+          sublist.style.display = sublist.style.display === "none" ? "block" : "none";
         }
       });
     });
 
+    // Gestion de l'affichage de la sidebar mobile
     const toggleBtn = document.querySelector(".toggle-btn");
     const sidebar = document.querySelector(".sidebar");
 
-    if (toggleBtn) {
+    if (toggleBtn && sidebar) {
       toggleBtn.addEventListener("click", function () {
         sidebar.classList.toggle("active");
       });
     }
   });
+
+  // Fonction globale utilisée par le bouton ☰
+  function toggleSidebar() {
+    document.querySelector(".sidebar").classList.toggle("active");
+  }
 </script>
 </main> 
 </body>
